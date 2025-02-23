@@ -1,0 +1,113 @@
+﻿/*---------------------------------
+            頁面文字樣式              
+---------------------------------*/
+
+.menu-text {
+    color: var(--menu-text);
+}
+
+.db-title-l,
+.tb-title {
+    color: var(--color-gray-dark);
+    font-size: var(--h4-size);
+    line-height: var(--h4-line);
+    font-weight: var(--font-weight-bold);
+}
+
+.db-title-s {
+    color: var(--color-gray-dark);
+    font-size: var(--h5-size);
+    line-height: var(--h5-line);
+    font-weight: var(--font-weight-bold);
+}
+
+.db-txt,
+.tb-txt {
+    color: var(--color-gray-medium);
+    font-size: var(--p-size);
+    line-height: var(--p-line);
+    font-weight: var(--font-weight-normal);
+}
+
+/* 文字對齊 */
+.db-title-l,
+.db-title-s,
+.db-txt {
+    text-align: left;
+}
+
+.tb-title,
+.tb-txt {
+    text-align: center;
+}
+
+/*---------------------------------
+            STATUS              
+---------------------------------*/
+
+/* 上下班狀態 ICON */
+.online {
+    color: var(--blue-color);
+}
+
+.offline {
+    color: var(--gray-light-text);
+}
+
+/* 核可狀態 ICON */
+.approved {
+    color: var(--green-color);
+}
+
+.approving {
+    color: var(--gray-light-text);
+}
+
+
+/*---------------------------------
+            文字對齊方式              
+---------------------------------*/
+
+.txt-left {
+    text-align: left;
+    /* 靠左對齊 */
+}
+
+.txt-right {
+    text-align: right;
+    /* 靠右對齊 */
+}
+
+.txt-center {
+    text-align: center;
+    /* 水平置中 */
+}
+
+
+/*---------------------------------
+            物件對齊方式              
+---------------------------------*/
+
+.obj-vertical-center {
+    display: flex;
+    align-items: center;
+    /* 垂直置中 */
+}
+
+.obj-horizontal-center {
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+}
+
+.obj-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 水平+垂直置中 */
+}
+
+
+/*---------------------------------
+            物件            
+---------------------------------*/

@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Heldom_SYS</title>
+
+    @* Google Fonts *@
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    @* bootstrap *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @* Fontawesome *@
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    @* My stylesheet  *@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/Heldom_SYS.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+
+
+
+
+    @* script *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</head>
+<body>
+    @* ----- header ----- *@
+    <header class="layout_header bold">
+        <div class="layout_bars">
+                <h3><i class="fas fa-bars"></i></h3>
+        </div>
+        <div class="layout_inline">
+            <div>
+ @* logo *@
+            </div>
+            <div class="layout_name">Heldom</div>
+        </div>
+        <div class="layout_block layout_inline">
+            <div id="timeDisplay" class="layout_time">2025 / 02 / 15  14 : 39 : 21</div>
+            <div class="layout_headshot">
+                    <h3><i class="fas fa-user"></i></h3>
+            </div>
+        </div>
+    </header>
+
+    @* ----- menu ----- *@
+    <div class="layout_main color-bg-white">
+        <div id="menu" class="layout_menu_show invisible-scrollbar">
+        </div>
+        <div class="layout_display">
+            @RenderBody()
+        </div>
+    </div>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        let menuData = [
+            {
+                title:"施工監控平台",
+                iconNmae:"fa-columns",
+                kidList:["施工監控儀表板","即時監控影像"]
+            },
+            {
+                title:"考勤管理",
+                iconNmae:"fa-address-card",
+                kidList:["打卡與請假","員工出勤紀錄"]
+            },
+            {
+                title:"現場施工管理",
+                iconNmae:"fa-hammer",
+                kidList:["異常回報與追蹤","施工圖紙管理","機具設備管理"]
+            },
+            {
+                title:"安全管理",
+                iconNmae:"fa-columns",
+                kidList:["安全巡檢紀錄","事故安全回報"]
+            },
+            {
+                title:"個人資料",
+                iconNmae:"fa-user",
+                kidList:["個人資料設定","員工帳號管理"]
+            },
+            {
+                title:"系統管理",
+                iconNmae:"fa-cog",
+                kidList:["系統設定"]
+            },
+        ]
+
+        $(document).ready(function() {
+
+            //動態生成menu
+            for(let i = 0;i<menuData.length;i++){
+                let eleStr = `
+                    <div class="layout_menu_wrap bold color-menu">
+                        <div class="layout_menu_title ">
+                            <div class="layout_menu_icon">
+                                    <h6 class=""><i class="fas ${menuData[i].iconNmae}"></i></h6>
+                            </div>
+                            <div class="layout_menu_font">${menuData[i].title}</div>
+                            <div class="layout_menu_switch ">
+                                    <p><i class="fas fa-angle-up"></i></p>
+                            </div>
+                        </div>
+                        <div class="layout_menu_content_container">
+                `
+
+                for(let j = 0;j<menuData[i].kidList.length;j++ ){
+                    eleStr += `
+                        <div class="layout_menu_content">
+                            <div class="layout_menu_font">
+                                ${menuData[i].kidList[j]}
+                            </div>
+                        </div>
+                    `
+                }
+            
+                eleStr += `
+                    </div>
+                </div>
+                `
+            
+                $("#menu").append(eleStr)
+            }
+
+            let eleStr = `<div class="layout_menu_picture color-menu">`
+            for(let i = 0;i<menuData.length;i++){
+                eleStr += `
+                    <div>
+                        <h6 class=""><i class="fas ${menuData[i].iconNmae}"></i></h6>
+                    </div>
+                `
+            }
+            eleStr += `</div>`
+            $("#menu").append(eleStr)
+
+            //計時
+            function updateTime() {
+                document.getElementById("timeDisplay").innerText = new Date().toLocaleString();
+            }
+            setInterval(updateTime, 1000);
+            updateTime();
+
+            //menu顯示
+            $(".layout_menu_picture").hide()
+
+            $( ".layout_bars" ).on( "click", function(e) {
+                let className = $("#menu").prop("class")
+                if(className == "layout_menu_show"){
+                    $("#menu").prop("class","layout_menu_hide")
+
+                    $(".layout_menu_wrap").hide()
+                    $(".layout_menu_picture").show()
+
+                }else{
+                    $("#menu").prop("class","layout_menu_show")
+
+                    $(".layout_menu_wrap").show()
+                    $(".layout_menu_picture").hide()
+                }
+
+            });
+
+            //頁籤縮放
+            $(".layout_menu_content_container").hide()
+
+            $(".layout_menu_title").on( "click", function(e) {
+                let eleP = $(this).parent().parent().children()
+                let eleC = $(this).parent()
+                let index =  eleP.index(eleC);
+
+                let className = $(".layout_menu_switch")[index].className
+
+                $(this).children(".layout_menu_switch").toggleClass("rotate")
+
+                if(className.includes("rotate")){
+                    $(this).siblings(".layout_menu_content_container").hide()
+                }else{
+                    $(this).siblings(".layout_menu_content_container").show()
+                }
+
+            });
+
+            $(".layout_menu_content").on( "click", function(e) {
+
+                $(".layout_menu_content").css("background-color","#ffffff");
+                $(".layout_menu_font").css("color","#9197B3");
+
+                $( this ).css("background-color","#0040DD");
+                $( this ).children().css("color","#ffffff");
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>

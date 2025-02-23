@@ -1,0 +1,563 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@* https://localhost:7142/Attendance/Records *@
+
+<div class="main_wrap border-radius box-shadow">
+    <div id="clock" class="main_area obj-horizontal-center">
+        <div class="top_area">
+            <h4 class="bold">打卡紀錄</h4>
+            <button id="clockPopupButton" class="button button_style bold">上下班打卡</button>
+        </div>
+        <div class="middle_area">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="tb-title">日期</th>
+                        <th class="tb-title">狀態</th>
+                        <th class="tb-title">上班簽到</th>
+                        <th class="tb-title">下班簽退</th>
+                        <th class="tb-title">總時數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="end_area obj-center">
+        </div>
+    </div>
+
+    <div id="holiday" class="main_area obj-horizontal-center">
+        <div class="top_area">
+            <h4 class="bold">請假紀錄</h4>
+            <button id="holidayPopupButton" class="button button_style bold">請假申請</button>
+        </div>
+        <div class="middle_area">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="tb-title">開始時間</th>
+                        <th class="tb-title">結束時間</th>
+                        <th class="tb-title">狀態</th>
+                        <th class="tb-title">假別</th>
+                        <th class="tb-title">總時數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="end_area obj-center">
+        </div>
+    </div>
+   
+</div>
+
+<!-- clock Pop-up -->
+<div id="clockPopup" class="clock-popup-wrap">
+    <div class="clock-popup-content">
+        <div class="clock-top obj-vertical-center">
+            <div class="clock-close obj-center">&times;</div>
+        </div>
+        <div class="clock-area">
+            <h4 class="color-gray-dark bold">系統時間</h4>
+            <h1 class="color-gray-medium bold">09 : 01 : 20</h1>
+            <h4 class="color-gray-dark bold">上下班打卡</h4>
+            <div class="clock-check">
+                <button class="clock-button obj-center">
+                    <p class="bold color-white">
+                      上班簽到
+                    </p>
+                </button>
+                <button class="clock-button obj-center">
+                   <p class="bold color-white">
+                     下班簽退
+                   </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- holiday Pop-up -->
+<div id="holidayPopup" class="holiday-popup-wrap">
+    <div class="holiday-popup-content">
+        <div class="holiday-top obj-vertical-center">
+            <div class="holiday-close obj-center">&times;</div>
+        </div>
+        <div class="holiday-area">
+            <div class="message-display">
+                <h4 class="color-gray-dark bold">請假申請</h4>
+                <p class="color-gray-dark bold">提醒：特休假剩餘 16 小時。</p>
+            </div>
+            
+            <div class="chose-display">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">開始時間</p>
+                    <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+                </div>
+
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">結束時間</p>
+                    <input type="datetime-local" class="form-control" id="endDate" name="endDate">
+                </div>
+
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">假別</p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="holiday-check obj-center">
+                <button class="holiday-button obj-center">
+                    <p class="bold color-white">
+                        請假申請
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    let clockData = [
+        {
+            date:"2025/02/16",
+            status:true,
+            upTime:"04:18",
+            downTime:"11:18",
+            count:5
+        },
+        {
+            date:"2025/02/16",
+            status:false,
+            upTime:"02:18",
+            downTime:"12:18",
+            count:3
+        },
+        {
+            date:"2025/02/02",
+            status:true,
+            upTime:"02:18",
+            downTime:"12:18",
+            count:7
+        },
+        {
+            date:"2025/02/03",
+            status:false,
+            upTime:"02:18",
+            downTime:"12:18",
+            count:9
+        },
+        {
+            date:"2025/07/02",
+            status:true,
+            upTime:"02:18",
+            downTime:"12:18",
+            count:7
+        },
+        {
+            date:"2025/01/02",
+            status:true,
+            upTime:"02:18",
+            downTime:"12:18",
+            count:6
+        }
+    ]
+
+    let clockPageCount = 5;
+
+    let holidayData = [
+        {
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            status:false,
+            holidayType:"特休",
+            count:6
+        },
+        {
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            status:true,
+            holidayType:"特休",
+            count:6
+        },
+        {
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            status:false,
+            holidayType:"特休",
+            count:6
+        },
+    ]
+
+    let holidayPageCount = 3;
+
+    $(document).ready(function() {
+        
+        //打卡表格生成
+        for(let i = 0;i<clockData.length;i++){
+            let ele = `
+                <tr>
+                    <td class="tb-txt">${clockData[i].date}</td>
+                    <td class="tb-txt">
+                        <p>
+                            ${clockData[i].status ? `<i class="fas fa-check"></i>` : `<i class="fas fa-exclamation"></i>`}
+                        </p>
+                    </td>
+                    <td class="tb-txt">${clockData[i].upTime}</td>
+                    <td class="tb-txt">${clockData[i].downTime}</td>
+                    <td class="tb-txt">${clockData[i].count}</td>
+                </tr>
+            `
+
+            $("#clock .middle_area table tbody ").append(ele)
+
+        }
+
+        //打卡分頁生成
+
+        $("#clock .end_area").append(`
+            <h4><i class="fas fa-angle-left"></i></h4>
+        `)
+        
+        for(let i = 0;i<clockPageCount;i++ ){
+            $("#clock .end_area").append(`
+                <div class="page_circle obj-center">
+                    <p class="bold">${i+1}</>
+                </div>
+            `)
+        }
+
+        $("#clock .end_area").append(`
+            <h4><i class="fas fa-angle-right"></i></h4>
+        `)
+
+        //請假表格生成
+        for(let i = 0;i<holidayData.length;i++){
+            let ele = `
+                <tr>
+                    <td class="tb-txt ">
+                        <div class="center_display">
+                            <span>${holidayData[i].startDate}</span>
+                            <span>${holidayData[i].startTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt ">
+                        <div class="center_display">
+                            <span>${holidayData[i].endDate}</span>
+                            <span>${holidayData[i].endTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt td_center">
+                        <p class="center_display">
+                            ${holidayData[i].status ? `<i class="fas fa-check"></i>` : `<i class="fas fa-exclamation"></i>`}
+                        </p>
+                    </td>
+                    <td class="tb-txt td_center">
+                        ${holidayData[i].holidayType}
+                    </td>
+                    <td class="tb-txt td_center">
+                        ${holidayData[i].count}
+                    </td>
+                </tr>
+            `
+
+            $("#holiday .middle_area table tbody ").append(ele)
+
+        }
+
+        //請假分頁生成
+
+        $("#holiday .end_area").append(`
+            <h4><i class="fas fa-angle-left"></i></h4>
+        `)
+
+        for(let i = 0;i<holidayPageCount;i++ ){
+            $("#holiday .end_area").append(`
+                <div class="page_circle obj-center">
+                    <p class="bold">${i+1}</>
+                </div>
+            `)
+        }
+
+        $("#holiday .end_area").append(`
+            <h4><i class="fas fa-angle-right"></i></h4>
+        `)
+
+        //打卡視窗控制
+        $("#clockPopupButton").click(function(){
+            $("#clockPopup").fadeIn();
+        });
+
+        $(".clock-close").click(function(){
+            $("#clockPopup").fadeOut();
+        });
+
+        // 點擊背景區域關閉彈窗
+        $("#clockPopup").click(function(event) {
+            if(event.target === this) {
+                $(this).fadeOut();
+            }
+        });
+
+        //請假視窗控制
+        $("#holidayPopupButton").click(function(){
+            $("#holidayPopup").fadeIn();
+        });
+
+        $(".holiday-close").click(function(){
+            $("#holidayPopup").fadeOut();
+        });
+
+        // 點擊背景區域關閉彈窗
+        $("#holidayPopup").click(function(event) {
+            if(event.target === this) {
+                $(this).fadeOut();
+            }
+        });
+
+    });
+
+</script>
+<style>
+    
+    .main_wrap {
+        width: 100%;
+        height: auto;
+        padding: 60px 40px;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    .main_area {
+        display: flex;
+        flex-direction: column;
+        width: 705px;
+    }
+
+    .top_area {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .middle_area {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        background-color: var(--color-white);
+    }
+
+    .end_area {
+        margin-top:40px;
+        column-gap: 4px;
+    }
+
+    .button_style {
+        background-color: var(--color-blue);
+        width: 160px;
+        height: 32px;
+        border-radius: 28px;
+        font-size: var(--p-size);
+        color: var(--color-white);
+    }
+
+    .table {
+        margin-bottom: 0px !important;
+    }
+
+    .table > :not(:last-child) > :last-child > * {
+        border-bottom-color: #8E8E93 !important;
+    }
+
+    .page_circle {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: #D9D9D9;
+    }
+
+    .center_display {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .td_center{
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    /* 打卡視窗樣式 */
+    .clock-popup-wrap {
+        display: none; /* 預設隱藏 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .clock-popup-content {
+        position:absolute;
+        background: var(--color-div-bg);
+        width: 600px;
+        padding: 0px 0px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: var(--border-radius);
+        display:flex;
+        flex-direction:column;
+    }
+
+    .clock-close {
+        width: 32px;
+        height: 32px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    .clock-top{
+        width:100%;
+        height:48px;
+        background-color: var(--color-background);
+        border-top-right-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+        justify-content: end;
+        padding:0px 20px;
+    }
+
+    .clock-area{
+        width:100%;
+        padding:40px;
+        display:flex;
+        flex-direction:column;
+        row-gap:40px;
+    }
+
+    .clock-check{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .clock-button{
+        background-color: var(--color-blue);
+        width:240px;
+        height:54px;
+        border-radius: 28px;
+    }
+
+    /* 請假視窗樣式 */
+    .holiday-popup-wrap {
+        display: none; /* 預設隱藏 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(36, 36, 38, 0.7);
+    }
+
+    .holiday-popup-content {
+        position: absolute;
+        background: var(--color-div-bg);
+        width: 600px;
+        padding: 0px 0px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: var(--border-radius);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .holiday-close {
+        width: 32px;
+        height: 32px;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    .holiday-top {
+        width: 100%;
+        height: 48px;
+        background-color: var(--color-background);
+        border-top-right-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+        justify-content: end;
+        padding: 0px 20px;
+    }
+
+    .holiday-area {
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .holiday-check {
+        width: 100%;
+    }
+
+    .holiday-button {
+        background-color: var(--color-blue);
+        width: 240px;
+        height: 54px;
+        border-radius: 28px;
+    }
+    
+    .input_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form-select {
+        width:360px !important;
+    }
+
+    .p-width{
+        width:100px;
+    }
+
+    .message-display{
+        display:flex;
+        flex-direction:column;
+        row-gap:12px;
+    }
+
+    .chose-display {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .form-control{
+        width:360px !important;
+    }
+</style>
