@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Heldom_SYS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a95352fcd5a522380d6b3c972dae2e990bfe0c8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Heldom_SYS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Heldom_SYS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

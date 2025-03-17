@@ -12,12 +12,12 @@
     background-color: var(--color-div-bg);
 }
 /*切左邊右邊*/
-.profile-block {
+.profile-block{
+    
     width: 30%;
 }
-
-.pd-40 {
-    padding: 40px;
+.pd-60 {
+    padding: 60px;
 }
 /*切左邊右邊*/
 
@@ -25,9 +25,9 @@
 .profile-title {
     width: 200px;
     height: 22px;
-    margin-bottom: 8px;
+    font-weight: var(--font-weight-bold);
+    padding-bottom : 8px;
 }
-
 .pro-imgPD {
     padding-bottom: 20px;
 }
@@ -70,28 +70,28 @@
     height: 22px;
     font-size: 16px;
     font-weight: var(--font-weight-bold);
+
 }
 /*年資與特休*/
 
 /*主要資訊*/
 .details {
-    /*    margin-top: 15px;*/
+/*    margin-top: 15px;*/
 }
 
 .content-title {
     width: 200px;
     height: 22px;
-    /*    font-weight: var(--font-weight-bold);*/
+/*    font-weight: var(--font-weight-bold);*/
 }
 
 .content-content {
     width: 200px;
     height: 22px;
-    /*    font-weight: var(--font-weight-bold);*/
+/*    font-weight: var(--font-weight-bold);*/
 }
-
 .contact-block {
-    padding-right: 20px;
+    padding-right :20px;
     width: 200px;
     height: 54px;
 }
@@ -101,19 +101,18 @@
     height: 54px;
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top : 60px;
 }
-
 .contact-col {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:10px;
 }
 
-.col.full-width {
-    flex-basis: 100%;
-}
+    .col.full-width {
+        flex-basis: 100%;
+    }
 
 
 .bold {
