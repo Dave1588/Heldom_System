@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fosqKD9VVkaOzLbLNAO27wMA6qUp10bQkiggZIUEZ+4=",
+  "Hash": "As0KB5J/0k3RpY73NTVPsoKwTvdmP8HKM32llyH+fhY=",
   "Source": "Heldom_SYS",
   "BasePath": "_content/Heldom_SYS",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Heldom_SYS\\wwwroot",
       "Source": "Heldom_SYS",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "Heldom_SYS#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "QpsBpvRcT2HZobFsYMPoYdY1T/iDTPY32ry9O3qdub4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css"
+      "OriginalItemSpec": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "Heldom_SYS#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "QpsBpvRcT2HZobFsYMPoYdY1T/iDTPY32ry9O3qdub4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css"
+      "OriginalItemSpec": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Attendance/Info#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Attendance\\Info.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Attendance/Records#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Attendance\\Records.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Dashboard/Cctv#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Dashboard\\Cctv.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Dashboard/dashboard#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Dashboard\\dashboard.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/layout#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\layout.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Login/Index#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Login\\Index.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/main#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Profile/Account#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Profile\\Account.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Profile/Index#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Profile\\Index.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Project/Blueprints#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Project\\Blueprints.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Project/Issues#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Project\\Issues.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/Project/IssuesDetail#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Project\\IssuesDetail.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "img/bunch-blueprints#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bunch-blueprints.jpg"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "img/Heldom#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Heldom.png"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/cctv#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\cctv.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/dashboard#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/Dasshboard/flash#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Dasshboard\\flash.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/data#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\js\\data.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/Dcamera#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Dcamera.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1721,7 +1721,7 @@
   "Endpoints": [
     {
       "Route": "css/Attendance/Info.27jdbx1bc2.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1766,7 +1766,7 @@
     },
     {
       "Route": "css/Attendance/Info.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1803,7 +1803,7 @@
     },
     {
       "Route": "css/Attendance/Records.bft2p5hb8i.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1848,7 +1848,7 @@
     },
     {
       "Route": "css/Attendance/Records.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1885,7 +1885,7 @@
     },
     {
       "Route": "css/Dashboard/Cctv.7be04om5dd.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1930,7 +1930,7 @@
     },
     {
       "Route": "css/Dashboard/Cctv.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1967,7 +1967,7 @@
     },
     {
       "Route": "css/Dashboard/dashboard.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2004,7 +2004,7 @@
     },
     {
       "Route": "css/Dashboard/dashboard.fo70czmn0w.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2049,7 +2049,7 @@
     },
     {
       "Route": "css/layout.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2086,7 +2086,7 @@
     },
     {
       "Route": "css/layout.uerhzn8tij.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2131,7 +2131,7 @@
     },
     {
       "Route": "css/Login/Index.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2168,7 +2168,7 @@
     },
     {
       "Route": "css/Login/Index.gaimahpjp0.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2213,7 +2213,7 @@
     },
     {
       "Route": "css/main.3hzx404vk6.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2258,7 +2258,7 @@
     },
     {
       "Route": "css/main.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2295,7 +2295,7 @@
     },
     {
       "Route": "css/Profile/Account.20fpk0hr5e.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2340,7 +2340,7 @@
     },
     {
       "Route": "css/Profile/Account.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2377,7 +2377,7 @@
     },
     {
       "Route": "css/Profile/Index.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2414,7 +2414,7 @@
     },
     {
       "Route": "css/Profile/Index.olkb233nlo.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2459,7 +2459,7 @@
     },
     {
       "Route": "css/Project/Blueprints.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2496,7 +2496,7 @@
     },
     {
       "Route": "css/Project/Blueprints.hzh1jh47iw.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2541,7 +2541,7 @@
     },
     {
       "Route": "css/Project/Issues.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2578,7 +2578,7 @@
     },
     {
       "Route": "css/Project/Issues.i0nh9mbxel.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2623,7 +2623,7 @@
     },
     {
       "Route": "css/Project/IssuesDetail.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2660,7 +2660,7 @@
     },
     {
       "Route": "css/Project/IssuesDetail.rxacujufmo.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2705,7 +2705,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2742,7 +2742,7 @@
     },
     {
       "Route": "css/site.w36cmhx46w.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2787,7 +2787,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2824,7 +2824,7 @@
     },
     {
       "Route": "favicon.synecv4n6j.ico",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2869,7 +2869,7 @@
     },
     {
       "Route": "Heldom_SYS.bundle.scp.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2906,7 +2906,7 @@
     },
     {
       "Route": "Heldom_SYS.i77tz642wc.bundle.scp.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2951,7 +2951,7 @@
     },
     {
       "Route": "Heldom_SYS.i77tz642wc.styles.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2996,7 +2996,7 @@
     },
     {
       "Route": "Heldom_SYS.styles.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3033,7 +3033,7 @@
     },
     {
       "Route": "img/bunch-blueprints.8l2y5hu0n2.jpg",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3078,7 +3078,7 @@
     },
     {
       "Route": "img/bunch-blueprints.jpg",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3115,7 +3115,7 @@
     },
     {
       "Route": "img/Heldom.m1ny7utqxg.png",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3160,7 +3160,7 @@
     },
     {
       "Route": "img/Heldom.png",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3197,7 +3197,7 @@
     },
     {
       "Route": "js/cctv.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3234,7 +3234,7 @@
     },
     {
       "Route": "js/cctv.x4y5fqjso9.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3279,7 +3279,7 @@
     },
     {
       "Route": "js/dashboard.7f6g7h39h1.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3324,7 +3324,7 @@
     },
     {
       "Route": "js/dashboard.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3361,7 +3361,7 @@
     },
     {
       "Route": "js/Dasshboard/flash.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3398,7 +3398,7 @@
     },
     {
       "Route": "js/Dasshboard/flash.lb4h2nz23l.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3443,7 +3443,7 @@
     },
     {
       "Route": "js/data.53g8kfvad3.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3488,7 +3488,7 @@
     },
     {
       "Route": "js/data.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3525,7 +3525,7 @@
     },
     {
       "Route": "js/Dcamera.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3562,7 +3562,7 @@
     },
     {
       "Route": "js/Dcamera.oad1la18tx.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3607,7 +3607,7 @@
     },
     {
       "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3652,7 +3652,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3689,7 +3689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3726,7 +3726,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3771,7 +3771,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3808,7 +3808,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3853,7 +3853,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3890,7 +3890,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3935,7 +3935,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3972,7 +3972,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4017,7 +4017,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4054,7 +4054,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4099,7 +4099,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4136,7 +4136,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4181,7 +4181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4218,7 +4218,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4263,7 +4263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4300,7 +4300,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4345,7 +4345,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4390,7 +4390,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4427,7 +4427,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4464,7 +4464,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4509,7 +4509,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4546,7 +4546,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4591,7 +4591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4628,7 +4628,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4673,7 +4673,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4710,7 +4710,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4755,7 +4755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4792,7 +4792,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4829,7 +4829,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4866,7 +4866,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4911,7 +4911,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4956,7 +4956,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5001,7 +5001,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5046,7 +5046,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5083,7 +5083,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5128,7 +5128,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5165,7 +5165,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5202,7 +5202,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5239,7 +5239,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5284,7 +5284,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5329,7 +5329,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5374,7 +5374,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5411,7 +5411,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5456,7 +5456,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5493,7 +5493,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5530,7 +5530,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5567,7 +5567,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5612,7 +5612,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5657,7 +5657,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5694,7 +5694,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5739,7 +5739,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5776,7 +5776,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5821,7 +5821,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5858,7 +5858,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5895,7 +5895,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5940,7 +5940,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5985,7 +5985,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6022,7 +6022,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6067,7 +6067,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6104,7 +6104,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6141,7 +6141,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6186,7 +6186,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6223,7 +6223,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6268,7 +6268,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6313,7 +6313,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6350,7 +6350,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6395,7 +6395,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6432,7 +6432,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6477,7 +6477,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6522,7 +6522,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6559,7 +6559,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6604,7 +6604,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6641,7 +6641,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6678,7 +6678,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6723,7 +6723,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6760,7 +6760,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6805,7 +6805,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6842,7 +6842,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6879,7 +6879,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6924,7 +6924,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6969,7 +6969,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7006,7 +7006,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7051,7 +7051,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7088,7 +7088,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7125,7 +7125,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7162,7 +7162,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7207,7 +7207,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7252,7 +7252,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7297,7 +7297,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7334,7 +7334,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.z6qzljqjd0",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7379,7 +7379,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7424,7 +7424,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7461,7 +7461,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7506,7 +7506,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7551,7 +7551,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7588,7 +7588,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7625,7 +7625,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7670,7 +7670,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7707,7 +7707,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.gcjdx5jb8l.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7752,7 +7752,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7789,7 +7789,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.35gxhxa0gh.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7834,7 +7834,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7871,7 +7871,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7908,7 +7908,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7953,7 +7953,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7990,7 +7990,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8035,7 +8035,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8072,7 +8072,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8117,7 +8117,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8162,7 +8162,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8199,7 +8199,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8244,7 +8244,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8281,7 +8281,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8326,7 +8326,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {

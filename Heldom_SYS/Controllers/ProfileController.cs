@@ -47,10 +47,10 @@ namespace Heldom_SYS.Controllers
                     department = detail.Department,
                     employeeID = employee.EmployeeId,
                     birthDate = detail.BirthDate,
-                    phone = detail.PhoneNumber,
+                    phoneNumber = detail.PhoneNumber,
                     address = detail.Address,
-                    emerContact = detail.EmergencyContact,
-                    emerConPhone = detail.EmergencyContactPhone
+                    emergencyContact = detail.EmergencyContact,
+                    emergencyContactPhone = detail.EmergencyContactPhone
                 }).ToListAsync();
             return Ok(employeeWithDetail);
         }

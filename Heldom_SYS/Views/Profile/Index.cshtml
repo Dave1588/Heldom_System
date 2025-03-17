@@ -21,36 +21,36 @@
             <!-- 年資與特休 -->
             <div class="stats">
                 <div class="stat">
-                    <h1 class="stat-number">10</h1>
+                    <h1 class="stat-number" id="yearsOfService">10</h1>
                     <p class="stat-label bold">到職年資</p>
                 </div>
                 <div class="stat">
-                    <h1 class="stat-number">90</h1>
+                    <h1 class="stat-number" id="leaveDays">90</h1>
                     <p class="stat-label bold">特休天數</p>
                 </div>
             </div>
             <!-- 編輯按鈕 -->
             <div class="edit-button color-blue">
-                <button class="txt-center"><p class="bold">編輯</p></button>
+				<button class="txt-center" id="towardSettings"><p class="bold">編輯</p></button>
             </div>
         </div>
         <!-- 主要資訊 -->
         <div class="profile-block" style="width: 75%;">
             <div class="details">
                 <div class="contact-row">
-                    <div class="contact-col contact-block"><p class="content-title">到職日</p><p class="content-content bold">2025/02/20</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">職稱</p><p class="content-content bold">技士</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">部門</p><p class="content-content bold">部門名</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">到職日</p><p class="content-content bold" id="hireDate">2025/02/20</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">職稱</p><p class="content-content bold" id="position">技士</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">部門</p><p class="content-content bold" id="department">部門名</p></div>
                 </div>
                 <div class="contact-row">
-                    <div class="contact-col contact-block"><p class="content-title">員工編號</p><p class="content-content bold">ABC-123456789</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">出生日期</p><p class="content-content bold">2025/02/20</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">電話</p><p class="content-content bold">0919-123456</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">員工編號</p><p class="content-content bold" id="employeeId">ABC-123456789</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">出生日期</p><p class="content-content bold" id="birthDate">2025/02/20</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">電話</p><p class="content-content bold" id="phoneNumber">0919-123456</p></div>
                 </div>
                 <div class="contact-row">
-                    <div class="contact-col contact-block"><p class="content-title">地址</p><p class="content-content bold">台中市台中市台中市台中市台中市台中市台中市</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">緊急聯絡人</p><p class="content-content bold">2025/02/20</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">緊急電話</p><p class="content-content bold">0919-123456</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">地址</p><p class="content-content bold" id="address">台中市台中市台中市台中市台中市台中市台中市</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">緊急聯絡人</p><p class="content-content bold" id="emergencyContact">2025/02/20</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">緊急電話</p><p class="content-content bold" id="emergencyPhone">0919-123456</p></div>
                 </div>
             </div>
         </div>
@@ -63,9 +63,10 @@
 
 
 <script>
+    // Show loading indicator
+    $("#loading").show();
+
     $(document).ready(function(){
-        // Show loading indicator
-            $("#loading").show();
 
         axios.get('/Profile/GetEmployeeWithDetail')
         .then(function(response){
@@ -87,8 +88,7 @@
 
     // 載入 姓名 電子郵件
     function appendProfileInfo(data) {
-
-        console.log("Appending profile info:",data.name,data.email); // Debugging line
+        console.log("Appending profile info:",data.hireDate,data.position); // Debugging line
 
         // Get the container where you want to append the new elements
         const profileContainer = document.getElementById("profile-info");
@@ -105,7 +105,41 @@
 
         // Append the new elements to the container
         profileContainer.append(nameElement,emailElement);
-    }
+
+        document.getElementById("yearsOfService").textContent = data.yearsbetween;
+        document.getElementById("leaveDays").textContent = data.leaveDays;
+
+        // 代入右側 9個項目資料
+        document.getElementById("hireDate").textContent = data.hireDate;
+        document.getElementById("position").textContent = data.position;
+        document.getElementById("department").textContent = data.department;
+        document.getElementById("employeeId").textContent = data.employeeID;
+        document.getElementById("birthDate").textContent = data.birthDate;
+        document.getElementById("phoneNumber").textContent = data.phoneNumber;
+        document.getElementById("address").textContent = data.address;
+        document.getElementById("emergencyContact").textContent = data.emergencyContact;
+        document.getElementById("emergencyPhone").textContent = data.emergencyContactPhone;
+
+        // 儲存需要傳遞的資料到 sessionStorage
+        const dataToTransfer = {
+            name: data.name,
+            email: data.email,
+            hireDate: data.hireDate,
+            position: data.position,
+            department: data.department,
+            employeeID: data.employeeID,
+            birthDate: data.birthDate,
+            phoneNumber: data.phoneNumber,
+            address: data.address,
+            emergencyContact: data.emergencyContact,
+            emergencyContactPhone: data.emergencyContactPhone
+        };
+        sessionStorage.setItem('profileData', JSON.stringify(dataToTransfer));
+    };
+
+    $('#towardSettings').click(function(){
+        location.href ="https://" + location.hostname + ":" +window.location.port + "/Profile/Settings";
+    });
 </script>
 
 <style>
