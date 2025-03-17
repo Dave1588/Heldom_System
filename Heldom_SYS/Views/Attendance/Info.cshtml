@@ -1,0 +1,328 @@
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Attendance/Info.css" asp-append-version="true" />
+
+@* https://localhost:7142/Attendance/Info *@
+
+
+<div class="main_wrap border-radius box-shadow">
+    <div id="work" class="work_main_area obj-horizontal-center">
+        <div class="top_area">
+            <h4 class="bold">員工出勤與紀錄</h4>
+        </div>
+        <div class="chose-display">
+            <div class="input_wrap">
+                <p class="color-gray-dark bold p-width">查詢項目</p>
+                <select id="choseType" class="form-select" aria-label="Default select example">
+                    <option value="1" selected>上班打卡</option>
+                    <option value="2">請假紀錄</option>
+                </select>
+            </div>
+
+            <div class="input_wrap">
+                <p class="color-gray-dark bold p-width">員工姓名</p>
+                <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+            </div>
+
+            <div class="input_wrap">
+                <p class="color-gray-dark bold p-width">開始時間</p>
+                <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+            </div>
+           
+            <div class="input_wrap">
+                <p class="color-gray-dark bold p-width">結束時間</p>
+                <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+            </div>
+
+            <button class="search-button obj-center">
+                <p class="bold color-white">
+                    查詢
+                </p>
+            </button>
+        </div>
+        <div class="middle_area work_middle_area">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="tb-title">序號</th>
+                        <th class="tb-title">狀態</th>
+                        <th class="tb-title">照片</th>
+                        <th class="tb-title">員工姓名</th>
+                        <th class="tb-title">員工編號</th>
+                        <th class="tb-title">上班簽到</th>
+                        <th class="tb-title">下班簽退</th>
+                        <th class="tb-title">總時數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="middle_area leave_middle_area">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="tb-title">序號</th>
+                        <th class="tb-title">照片</th>
+                        <th class="tb-title">員工姓名</th>
+                        <th class="tb-title">開始時間</th>
+                        <th class="tb-title">結束時間</th>
+                        <th class="tb-title">狀態</th>
+                        <th class="tb-title">假别</th>
+                        <th class="tb-title">總時數</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="end_area obj-center">
+        </div>
+    </div>
+
+</div>
+
+<!-- holiday Pop-up -->
+<div id="holidayPopup" class="holiday-popup-wrap">
+    <div class="holiday-popup-content">
+        <div class="holiday-top obj-vertical-center">
+            <div class="holiday-close obj-center">&times;</div>
+        </div>
+        <div class="holiday-area">
+            <div class="message-display">
+                <h4 class="color-gray-dark bold">是否同意核可請假?</h4>
+            </div>
+            <div class="obj-center holiday-check">
+                <button class="holiday-button obj-center">
+                    <p class="bold color-white">
+                        是
+                    </p>
+                </button>
+                <button class="holiday-button obj-center">
+                    <p class="bold color-white">
+                        否
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<script>
+
+
+    let workData = [
+        {
+            id:1,
+            status:true,
+            photo:"zxc",
+            employeeName:"asd",
+            employeeID:"123",
+            startTime:"04:18",
+            endTime:"11:18",
+            countTime:5
+        },
+        {
+            id:1,
+            status:true,
+            photo:"zxc",
+            employeeName:"asd",
+            employeeID:"123",
+            startTime:"04:18",
+            endTime:"11:18",
+            countTime:5
+        },
+    ]
+
+    let workPageCount = 5;
+    
+    let leaveData = [
+        {
+            id:1,
+            photo:"zxc",
+            employeeName:"asd",
+            startDate:"2025/02/16",
+            startTime:"04:18",
+            endDate:"2025/02/16",
+            endTime:"11:18",
+            status:true,
+            leaveType:"特休",
+            countTime:5
+        },
+        {
+            id:1,
+            photo:"zxc",
+            employeeName:"asd",
+            startDate:"2025/02/16",
+            startTime:"04:18",
+            endDate:"2025/02/16",
+            endTime:"11:18",
+            status:false,
+            leaveType:"特休",
+            countTime:5
+        },
+        {
+            id:1,
+            photo:"zxc",
+            employeeName:"asd",
+            startDate:"2025/02/16",
+            startTime:"04:18",
+            endDate:"2025/02/16",
+            endTime:"11:18",
+            status:true,
+            leaveType:"特休",
+            countTime:5
+        },
+        {
+            id:1,
+            photo:"zxc",
+            employeeName:"asd",
+            startDate:"2025/02/16",
+            startTime:"04:18",
+            endDate:"2025/02/16",
+            endTime:"11:18",
+            status:false,
+            leaveType:"特休",
+            countTime:5
+        },
+        {
+            id:1,
+            photo:"zxc",
+            employeeName:"asd",
+            startDate:"2025/02/16",
+            startTime:"04:18",
+            endDate:"2025/02/16",
+            endTime:"11:18",
+            status:true,
+            leaveType:"特休",
+            countTime:5
+        },
+        {
+            id:1,
+            photo:"zxc",
+            employeeName:"asd",
+            startDate:"2025/02/16",
+            startTime:"04:18",
+            endDate:"2025/02/16",
+            endTime:"11:18",
+            status:true,
+            leaveType:"特休",
+            countTime:5
+        },
+    ]
+
+    let leavePageCount = 5;
+ 
+    $(document).ready(function() {
+        //上下班表格生成
+
+        for(let i = 0;i<workData.length;i++){
+            //let statusClass = workData[i].status ? "status-approved" : "status-approving";
+            let ele = `
+                <tr>
+                    <td class="tb-txt">${workData[i].id}</td>
+                    <td class="tb-txt">
+                        <p>
+                            ${workData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
+                        </p>
+                    </td>
+                    <td class="tb-txt">${workData[i].photo}</td>
+                    <td class="tb-txt">${workData[i].employeeName}</td>
+                    <td class="tb-txt">${workData[i].employeeID}</td>
+                    <td class="tb-txt">${workData[i].startTime}</td>
+                    <td class="tb-txt">${workData[i].endTime}</td>
+                    <td class="tb-txt">${workData[i].countTime}</td>
+                </tr>
+            `
+
+            $("#work .work_middle_area table tbody ").append(ele)
+
+        }
+
+        //上下班分頁生成
+
+        $("#work .end_area").append(`
+            <h4><i class="fas fa-angle-left"></i></h4>
+        `)
+
+        for(let i = 0;i<workPageCount;i++ ){
+            $("#work .end_area").append(`
+                <div class="page_circle obj-center">
+                    <p class="bold">${i+1}</>
+                </div>
+            `)
+        }
+
+        $("#work .end_area").append(`
+            <h4><i class="fas fa-angle-right"></i></h4>
+        `)
+        
+
+        //請假表格生成
+        for(let i = 0;i<leaveData.length;i++){
+
+            let ele = `
+                <tr>
+                    <td class="tb-txt">${leaveData[i].id}</td>
+                    <td class="tb-txt">${leaveData[i].photo}</td>
+                    <td class="tb-txt">${leaveData[i].employeeName}</td>
+                    <td class="tb-txt ">
+                        <div class="center_display">
+                            <span>${leaveData[i].startDate}</span>
+                            <span>${leaveData[i].startTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt ">
+                        <div class="center_display">
+                            <span>${leaveData[i].endDate}</span>
+                            <span>${leaveData[i].endTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt holiday-click">
+                        <p>
+                            ${leaveData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
+                        </p>
+                    </td>
+                    <td class="tb-txt">${leaveData[i].leaveType}</td>
+                    <td class="tb-txt">${leaveData[i].countTime}</td>
+                </tr>
+            `
+
+            $("#work .leave_middle_area table tbody ").append(ele)
+
+        }
+
+        //控制table顯示
+        $(".leave_middle_area").hide()
+
+        $('#choseType').on("change", function () {
+            let selectedValue = $(this).val();
+            if(selectedValue == 1){
+                $(".work_middle_area").show()
+                $(".leave_middle_area").hide()
+            }else{
+                $(".work_middle_area").hide()
+                $(".leave_middle_area").show()
+            }
+            
+        });
+
+        //請假視窗控制
+   
+        $(".holiday-click").click(function(){
+            $("#holidayPopup").fadeIn();
+        });
+
+        $(".holiday-close").click(function(){
+            $("#holidayPopup").fadeOut();
+        });
+
+        // 點擊背景區域關閉彈窗
+        $("#holidayPopup").click(function(event) {
+            if(event.target === this) {
+                $(this).fadeOut();
+            }
+        });
+    });
+
+</script>

@@ -1,0 +1,163 @@
+﻿@* stylesheet *@
+
+@* https://localhost:7142/Profile/Settings *@
+
+
+<div class="main_wrap border-radius box-shadow">
+    <div class="setting_main_area obj-horizontal-center">
+        <div class="top_area txt-left">
+            <h4 class="bold">個人資料設定</h4>
+        </div>
+        <div class="middle_area">
+            <div class="setting-row">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">員工姓名</p>
+                    <input type="text" id="employeeName" class="form-control" value="姓名" disabled />
+                </div>
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">職位</p>
+                    <input type="text" id="position" class="form-control" value="技士" disabled />
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">員工編號</p>
+                    <input type="text" id="employeeId" class="form-control" value="" disabled />
+                </div>
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">生日</p>
+                    <input type="date" id="birthday" class="form-control" value="2025-02-20" disabled />
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">聯絡電話</p>
+                    <input type="tel" id="phone" class="form-control" value="0919-123456" />
+                </div>
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">地址</p>
+                    <input type="text" id="address" class="form-control" value="台中市台中市台中市台中市台中市" />
+                </div>
+            </div>
+            <div class="setting-row">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">緊急聯絡人</p>
+                    <input type="text" id="emergencyContact" class="form-control" value="聯絡人" />
+                </div>
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold">緊急電話</p>
+                    <input type="tel" id="emergencyPhone" class="form-control" value="0919-123456" />
+                </div>
+            </div>
+        </div>
+        <div class="button_area">
+            <button type="button" class="btn btn-outline"><p class="color-blue">取消</p></button>
+            <button type="button" class="btn btn-primary"><p>儲存</p></button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .main_wrap {
+        width: 100%;
+        height: auto;
+        padding: 60px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .setting_main_area {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .top_area {
+        width: 100%;
+        display: flex;
+    }
+
+    .middle_area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .setting-row {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .input_wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input_wrap p {
+        margin: 0;
+        width: 100px;
+    }
+
+    .form-control {
+        width: 360px !important;
+        height: 48px !important;
+        padding: 4px 12px;
+        border: 1px solid var(--color-line);
+        border-radius: 10px !important;
+    }
+
+    .button_area {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .button_area button {
+        width: 240px !important;
+        height: 54px !important;
+        border-radius: 28px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button_area button p {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    /* 修改取消按鈕樣式 */
+    .btn-outline {
+        background-color: rgba(0, 64, 221, 0.2); !important;   /* 使用 20% 透明度 */
+        border: 1px solid var(--color-blue) !important;
+    }
+
+    .btn-outline p {
+        color: var(--color-blue) !important;
+    }
+
+    /* 保持儲存按鈕樣式 */
+    .btn-primary {
+        background-color: var(--color-blue);
+    }
+
+    .btn-primary p {
+        color: white;
+    }
+
+    /* 新增：設定 disabled 狀態的 input 樣式 */
+    .form-control:disabled {
+        background-color: var(--color-gray-light-opacity) !important;
+        opacity: 1 !important; /* 確保文字清晰可見 */
+        cursor: not-allowed;
+    }
+</style>

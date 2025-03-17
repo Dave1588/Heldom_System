@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PRsu6geEZpPeL3joWJk//+LlA3OQ7kc3kZXJIfIEA8s=",
+  "Hash": "fosqKD9VVkaOzLbLNAO27wMA6qUp10bQkiggZIUEZ+4=",
   "Source": "Heldom_SYS",
   "BasePath": "_content/Heldom_SYS",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Heldom_SYS\\wwwroot",
       "Source": "Heldom_SYS",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "Heldom_SYS#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "QpsBpvRcT2HZobFsYMPoYdY1T/iDTPY32ry9O3qdub4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css"
+      "OriginalItemSpec": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "Heldom_SYS#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,97 @@
       "Integrity": "QpsBpvRcT2HZobFsYMPoYdY1T/iDTPY32ry9O3qdub4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css"
+      "OriginalItemSpec": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Attendance/Info#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "27jdbx1bc2",
+      "Integrity": "boHC7rCTD6IfUA6TnuCChP4R1d8ireCId8bwRh7YDLY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Attendance\\Info.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Attendance/Records#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bft2p5hb8i",
+      "Integrity": "iUELgvf/Ur7lUUBsegN/zzks4D5xADns7fIwZaU+H58=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Attendance\\Records.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Dashboard/Cctv#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7be04om5dd",
+      "Integrity": "c8x5+dD1W7ID6fQqG+pIKXMscCmDDYNnTbKQwudq6WI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Dashboard\\Cctv.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Dashboard/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fo70czmn0w",
+      "Integrity": "3z47z+TTJ5hVQO33nUIZXKZDd3wxVMMoEtVlRv9N+Os=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Dashboard\\dashboard.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/layout#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -73,17 +157,38 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b86hwx5e9p",
-      "Integrity": "y03v4HV5WLkmD6DbEvod0uA8vE1G7iocL6rcRmzx0qk=",
+      "Fingerprint": "uerhzn8tij",
+      "Integrity": "BiQWqaydRlQosDnTw1B5W3jBY2IKq4QjunZ8QD4viwM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\layout.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Login/Index#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gaimahpjp0",
+      "Integrity": "GITF/tOme+0W7YsCmqM0SROsmSenSLd0AGF5oHdau2Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Login\\Index.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/main#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -94,17 +199,122 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vnnzp0omrq",
-      "Integrity": "ixsAxVsNzyhbhu17QPVKtiQpdxHCnPKw36Zkbodb7Yo=",
+      "Fingerprint": "3hzx404vk6",
+      "Integrity": "17XAKtcfCX0cFHijIw28yzC81lodOkPApmiaMdfGTYw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Profile/Account#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "20fpk0hr5e",
+      "Integrity": "MnzgN+7sTPAlVZJS8rqllBqsdyawPzgToP42kQvzN8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Profile\\Account.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Profile/Index#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "olkb233nlo",
+      "Integrity": "9KT6nWOtTjq2HsH3SO5+7FqtZTFQS0RRNdOvQj+hGSY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Profile\\Index.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Project/Blueprints#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hzh1jh47iw",
+      "Integrity": "TegOGDK8kERjjS4HFVeU8BZCGeDOcPATHSgVKjt9ecU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Project\\Blueprints.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Project/Issues#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i0nh9mbxel",
+      "Integrity": "wj/7g+IuTfVIzSvMJc0cVV/4+Dy1zGA7w5kG/Q+rtZ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Project\\Issues.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "css/Project/IssuesDetail#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rxacujufmo",
+      "Integrity": "X2wDY4+7Vj1PUIvhcLLEr6kubx6vmm8cM3x3D8W0nbg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Project\\IssuesDetail.css"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -136,17 +346,164 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "synecv4n6j",
+      "Integrity": "LCdSIH1dF8WX9+mdcQylfN9rZxkXk7htYt1lJcLV+hc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "img/bunch-blueprints#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8l2y5hu0n2",
+      "Integrity": "nCrwz9RLUbsvFa7bgtF5gqANoaDSAohs2ZZYLrbfWlo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bunch-blueprints.jpg"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "img/Heldom#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1ny7utqxg",
+      "Integrity": "KpjzGeC0FSMAWeryPFWqEKNvR92kJgSpbjCatuC8rz0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Heldom.png"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "js/cctv#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x4y5fqjso9",
+      "Integrity": "EYNS6H3u4htHcfrzGBQYmyn+YHhuOSIh2S67+5eccT4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\cctv.js"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "js/dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7f6g7h39h1",
+      "Integrity": "gz/G0Zz6dHxQjwGOjx9wxE80ZG7CP9QMUNplacNhYyE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "js/Dasshboard/flash#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lb4h2nz23l",
+      "Integrity": "Id6mm3jL4LxaGGOydCp49FnSlkxImfGxRSOYJcXz1k4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Dasshboard\\flash.js"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "js/data#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "53g8kfvad3",
+      "Integrity": "caNwX9mcjS1qNzhKsgH3XKHK3OFQG9pRFyCbRo/Mxuk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\data.js"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "BasePath": "_content/Heldom_SYS",
+      "RelativePath": "js/Dcamera#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oad1la18tx",
+      "Integrity": "cFnYSygUFOr1HXO3RV43fdu3NgeeQKLyUvM7g+vet5g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Dcamera.js"
+    },
+    {
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "SourceId": "Heldom_SYS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -164,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -206,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -248,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -290,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -311,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -332,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -353,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -374,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -395,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -416,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -437,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -458,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -500,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -521,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -542,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -563,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -584,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -605,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -626,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -647,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -668,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -689,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -710,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -731,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -752,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -773,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -794,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -815,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -836,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -857,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -899,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -920,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -941,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -962,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -983,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1004,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1025,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1046,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1067,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1088,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1109,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1130,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1151,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1172,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1193,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1235,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1277,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1298,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1319,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1340,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Heldom_SYS",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
+      "ContentRoot": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\",
       "BasePath": "_content/Heldom_SYS",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1363,8 +1720,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/layout.b86hwx5e9p.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Route": "css/Attendance/Info.27jdbx1bc2.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1373,7 +1730,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2539"
+          "Value": "6752"
         },
         {
           "Name": "Content-Type",
@@ -1381,11 +1738,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y03v4HV5WLkmD6DbEvod0uA8vE1G7iocL6rcRmzx0qk=\""
+          "Value": "\"boHC7rCTD6IfUA6TnuCChP4R1d8ireCId8bwRh7YDLY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1395,7 +1752,372 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b86hwx5e9p"
+          "Value": "27jdbx1bc2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Attendance/Info.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-boHC7rCTD6IfUA6TnuCChP4R1d8ireCId8bwRh7YDLY="
+        }
+      ]
+    },
+    {
+      "Route": "css/Attendance/Info.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"boHC7rCTD6IfUA6TnuCChP4R1d8ireCId8bwRh7YDLY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-boHC7rCTD6IfUA6TnuCChP4R1d8ireCId8bwRh7YDLY="
+        }
+      ]
+    },
+    {
+      "Route": "css/Attendance/Records.bft2p5hb8i.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9175"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iUELgvf/Ur7lUUBsegN/zzks4D5xADns7fIwZaU+H58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bft2p5hb8i"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Attendance/Records.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iUELgvf/Ur7lUUBsegN/zzks4D5xADns7fIwZaU+H58="
+        }
+      ]
+    },
+    {
+      "Route": "css/Attendance/Records.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9175"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iUELgvf/Ur7lUUBsegN/zzks4D5xADns7fIwZaU+H58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iUELgvf/Ur7lUUBsegN/zzks4D5xADns7fIwZaU+H58="
+        }
+      ]
+    },
+    {
+      "Route": "css/Dashboard/Cctv.7be04om5dd.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c8x5+dD1W7ID6fQqG+pIKXMscCmDDYNnTbKQwudq6WI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7be04om5dd"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Dashboard/Cctv.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c8x5+dD1W7ID6fQqG+pIKXMscCmDDYNnTbKQwudq6WI="
+        }
+      ]
+    },
+    {
+      "Route": "css/Dashboard/Cctv.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2038"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c8x5+dD1W7ID6fQqG+pIKXMscCmDDYNnTbKQwudq6WI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c8x5+dD1W7ID6fQqG+pIKXMscCmDDYNnTbKQwudq6WI="
+        }
+      ]
+    },
+    {
+      "Route": "css/Dashboard/dashboard.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3z47z+TTJ5hVQO33nUIZXKZDd3wxVMMoEtVlRv9N+Os=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3z47z+TTJ5hVQO33nUIZXKZDd3wxVMMoEtVlRv9N+Os="
+        }
+      ]
+    },
+    {
+      "Route": "css/Dashboard/dashboard.fo70czmn0w.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3z47z+TTJ5hVQO33nUIZXKZDd3wxVMMoEtVlRv9N+Os=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fo70czmn0w"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Dashboard/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3z47z+TTJ5hVQO33nUIZXKZDd3wxVMMoEtVlRv9N+Os="
+        }
+      ]
+    },
+    {
+      "Route": "css/layout.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BiQWqaydRlQosDnTw1B5W3jBY2IKq4QjunZ8QD4viwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BiQWqaydRlQosDnTw1B5W3jBY2IKq4QjunZ8QD4viwM="
+        }
+      ]
+    },
+    {
+      "Route": "css/layout.uerhzn8tij.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BiQWqaydRlQosDnTw1B5W3jBY2IKq4QjunZ8QD4viwM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uerhzn8tij"
         },
         {
           "Name": "label",
@@ -1403,13 +2125,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y03v4HV5WLkmD6DbEvod0uA8vE1G7iocL6rcRmzx0qk="
+          "Value": "sha256-BiQWqaydRlQosDnTw1B5W3jBY2IKq4QjunZ8QD4viwM="
         }
       ]
     },
     {
-      "Route": "css/layout.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Route": "css/Login/Index.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1418,7 +2140,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2539"
+          "Value": "7047"
         },
         {
           "Name": "Content-Type",
@@ -1426,11 +2148,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y03v4HV5WLkmD6DbEvod0uA8vE1G7iocL6rcRmzx0qk=\""
+          "Value": "\"GITF/tOme+0W7YsCmqM0SROsmSenSLd0AGF5oHdau2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1440,13 +2162,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y03v4HV5WLkmD6DbEvod0uA8vE1G7iocL6rcRmzx0qk="
+          "Value": "sha256-GITF/tOme+0W7YsCmqM0SROsmSenSLd0AGF5oHdau2Y="
         }
       ]
     },
     {
-      "Route": "css/main.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "Route": "css/Login/Index.gaimahpjp0.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1455,7 +2177,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1972"
+          "Value": "7047"
         },
         {
           "Name": "Content-Type",
@@ -1463,48 +2185,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ixsAxVsNzyhbhu17QPVKtiQpdxHCnPKw36Zkbodb7Yo=\""
+          "Value": "\"GITF/tOme+0W7YsCmqM0SROsmSenSLd0AGF5oHdau2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ixsAxVsNzyhbhu17QPVKtiQpdxHCnPKw36Zkbodb7Yo="
-        }
-      ]
-    },
-    {
-      "Route": "css/main.vnnzp0omrq.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1972"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ixsAxVsNzyhbhu17QPVKtiQpdxHCnPKw36Zkbodb7Yo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1514,7 +2199,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vnnzp0omrq"
+          "Value": "gaimahpjp0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login/Index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GITF/tOme+0W7YsCmqM0SROsmSenSLd0AGF5oHdau2Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.3hzx404vk6.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"17XAKtcfCX0cFHijIw28yzC81lodOkPApmiaMdfGTYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3hzx404vk6"
         },
         {
           "Name": "label",
@@ -1522,13 +2252,460 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ixsAxVsNzyhbhu17QPVKtiQpdxHCnPKw36Zkbodb7Yo="
+          "Value": "sha256-17XAKtcfCX0cFHijIw28yzC81lodOkPApmiaMdfGTYw="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3975"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"17XAKtcfCX0cFHijIw28yzC81lodOkPApmiaMdfGTYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-17XAKtcfCX0cFHijIw28yzC81lodOkPApmiaMdfGTYw="
+        }
+      ]
+    },
+    {
+      "Route": "css/Profile/Account.20fpk0hr5e.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnzgN+7sTPAlVZJS8rqllBqsdyawPzgToP42kQvzN8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "20fpk0hr5e"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Profile/Account.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnzgN+7sTPAlVZJS8rqllBqsdyawPzgToP42kQvzN8c="
+        }
+      ]
+    },
+    {
+      "Route": "css/Profile/Account.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MnzgN+7sTPAlVZJS8rqllBqsdyawPzgToP42kQvzN8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MnzgN+7sTPAlVZJS8rqllBqsdyawPzgToP42kQvzN8c="
+        }
+      ]
+    },
+    {
+      "Route": "css/Profile/Index.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9KT6nWOtTjq2HsH3SO5+7FqtZTFQS0RRNdOvQj+hGSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 17:40:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9KT6nWOtTjq2HsH3SO5+7FqtZTFQS0RRNdOvQj+hGSY="
+        }
+      ]
+    },
+    {
+      "Route": "css/Profile/Index.olkb233nlo.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2151"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9KT6nWOtTjq2HsH3SO5+7FqtZTFQS0RRNdOvQj+hGSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 17:40:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "olkb233nlo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Profile/Index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9KT6nWOtTjq2HsH3SO5+7FqtZTFQS0RRNdOvQj+hGSY="
+        }
+      ]
+    },
+    {
+      "Route": "css/Project/Blueprints.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TegOGDK8kERjjS4HFVeU8BZCGeDOcPATHSgVKjt9ecU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TegOGDK8kERjjS4HFVeU8BZCGeDOcPATHSgVKjt9ecU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Project/Blueprints.hzh1jh47iw.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6645"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TegOGDK8kERjjS4HFVeU8BZCGeDOcPATHSgVKjt9ecU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hzh1jh47iw"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Project/Blueprints.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TegOGDK8kERjjS4HFVeU8BZCGeDOcPATHSgVKjt9ecU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Project/Issues.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10201"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wj/7g+IuTfVIzSvMJc0cVV/4+Dy1zGA7w5kG/Q+rtZ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wj/7g+IuTfVIzSvMJc0cVV/4+Dy1zGA7w5kG/Q+rtZ4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Project/Issues.i0nh9mbxel.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10201"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wj/7g+IuTfVIzSvMJc0cVV/4+Dy1zGA7w5kG/Q+rtZ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i0nh9mbxel"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Project/Issues.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wj/7g+IuTfVIzSvMJc0cVV/4+Dy1zGA7w5kG/Q+rtZ4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Project/IssuesDetail.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X2wDY4+7Vj1PUIvhcLLEr6kubx6vmm8cM3x3D8W0nbg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X2wDY4+7Vj1PUIvhcLLEr6kubx6vmm8cM3x3D8W0nbg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Project/IssuesDetail.rxacujufmo.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X2wDY4+7Vj1PUIvhcLLEr6kubx6vmm8cM3x3D8W0nbg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rxacujufmo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Project/IssuesDetail.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-X2wDY4+7Vj1PUIvhcLLEr6kubx6vmm8cM3x3D8W0nbg="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1549,7 +2726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1565,7 +2742,7 @@
     },
     {
       "Route": "css/site.w36cmhx46w.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1586,7 +2763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1609,53 +2786,8 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
       "Route": "favicon.ico",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1664,7 +2796,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "9662"
         },
         {
           "Name": "Content-Type",
@@ -1672,11 +2804,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"LCdSIH1dF8WX9+mdcQylfN9rZxkXk7htYt1lJcLV+hc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1686,13 +2818,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-LCdSIH1dF8WX9+mdcQylfN9rZxkXk7htYt1lJcLV+hc="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.synecv4n6j.ico",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LCdSIH1dF8WX9+mdcQylfN9rZxkXk7htYt1lJcLV+hc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "synecv4n6j"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LCdSIH1dF8WX9+mdcQylfN9rZxkXk7htYt1lJcLV+hc="
         }
       ]
     },
     {
       "Route": "Heldom_SYS.bundle.scp.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1713,7 +2890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 15:19:24 GMT"
+          "Value": "Sun, 16 Mar 2025 17:40:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1729,7 +2906,7 @@
     },
     {
       "Route": "Heldom_SYS.i77tz642wc.bundle.scp.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1750,7 +2927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 15:19:24 GMT"
+          "Value": "Sun, 16 Mar 2025 17:40:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1774,7 +2951,7 @@
     },
     {
       "Route": "Heldom_SYS.i77tz642wc.styles.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1795,7 +2972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 15:19:24 GMT"
+          "Value": "Sun, 16 Mar 2025 17:40:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1819,7 +2996,7 @@
     },
     {
       "Route": "Heldom_SYS.styles.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Heldom_SYS.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1840,7 +3017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 15:19:24 GMT"
+          "Value": "Sun, 16 Mar 2025 17:40:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1855,8 +3032,582 @@
       ]
     },
     {
+      "Route": "img/bunch-blueprints.8l2y5hu0n2.jpg",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1230790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nCrwz9RLUbsvFa7bgtF5gqANoaDSAohs2ZZYLrbfWlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8l2y5hu0n2"
+        },
+        {
+          "Name": "label",
+          "Value": "img/bunch-blueprints.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nCrwz9RLUbsvFa7bgtF5gqANoaDSAohs2ZZYLrbfWlo="
+        }
+      ]
+    },
+    {
+      "Route": "img/bunch-blueprints.jpg",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1230790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nCrwz9RLUbsvFa7bgtF5gqANoaDSAohs2ZZYLrbfWlo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nCrwz9RLUbsvFa7bgtF5gqANoaDSAohs2ZZYLrbfWlo="
+        }
+      ]
+    },
+    {
+      "Route": "img/Heldom.m1ny7utqxg.png",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "619521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KpjzGeC0FSMAWeryPFWqEKNvR92kJgSpbjCatuC8rz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1ny7utqxg"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Heldom.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KpjzGeC0FSMAWeryPFWqEKNvR92kJgSpbjCatuC8rz0="
+        }
+      ]
+    },
+    {
+      "Route": "img/Heldom.png",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "619521"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KpjzGeC0FSMAWeryPFWqEKNvR92kJgSpbjCatuC8rz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KpjzGeC0FSMAWeryPFWqEKNvR92kJgSpbjCatuC8rz0="
+        }
+      ]
+    },
+    {
+      "Route": "js/cctv.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EYNS6H3u4htHcfrzGBQYmyn+YHhuOSIh2S67+5eccT4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EYNS6H3u4htHcfrzGBQYmyn+YHhuOSIh2S67+5eccT4="
+        }
+      ]
+    },
+    {
+      "Route": "js/cctv.x4y5fqjso9.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3850"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EYNS6H3u4htHcfrzGBQYmyn+YHhuOSIh2S67+5eccT4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x4y5fqjso9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cctv.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EYNS6H3u4htHcfrzGBQYmyn+YHhuOSIh2S67+5eccT4="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.7f6g7h39h1.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gz/G0Zz6dHxQjwGOjx9wxE80ZG7CP9QMUNplacNhYyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7f6g7h39h1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gz/G0Zz6dHxQjwGOjx9wxE80ZG7CP9QMUNplacNhYyE="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11699"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gz/G0Zz6dHxQjwGOjx9wxE80ZG7CP9QMUNplacNhYyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gz/G0Zz6dHxQjwGOjx9wxE80ZG7CP9QMUNplacNhYyE="
+        }
+      ]
+    },
+    {
+      "Route": "js/Dasshboard/flash.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Id6mm3jL4LxaGGOydCp49FnSlkxImfGxRSOYJcXz1k4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Id6mm3jL4LxaGGOydCp49FnSlkxImfGxRSOYJcXz1k4="
+        }
+      ]
+    },
+    {
+      "Route": "js/Dasshboard/flash.lb4h2nz23l.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2164"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Id6mm3jL4LxaGGOydCp49FnSlkxImfGxRSOYJcXz1k4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lb4h2nz23l"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Dasshboard/flash.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Id6mm3jL4LxaGGOydCp49FnSlkxImfGxRSOYJcXz1k4="
+        }
+      ]
+    },
+    {
+      "Route": "js/data.53g8kfvad3.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"caNwX9mcjS1qNzhKsgH3XKHK3OFQG9pRFyCbRo/Mxuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "53g8kfvad3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/data.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-caNwX9mcjS1qNzhKsgH3XKHK3OFQG9pRFyCbRo/Mxuk="
+        }
+      ]
+    },
+    {
+      "Route": "js/data.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"caNwX9mcjS1qNzhKsgH3XKHK3OFQG9pRFyCbRo/Mxuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-caNwX9mcjS1qNzhKsgH3XKHK3OFQG9pRFyCbRo/Mxuk="
+        }
+      ]
+    },
+    {
+      "Route": "js/Dcamera.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cFnYSygUFOr1HXO3RV43fdu3NgeeQKLyUvM7g+vet5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cFnYSygUFOr1HXO3RV43fdu3NgeeQKLyUvM7g+vet5g="
+        }
+      ]
+    },
+    {
+      "Route": "js/Dcamera.oad1la18tx.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cFnYSygUFOr1HXO3RV43fdu3NgeeQKLyUvM7g+vet5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oad1la18tx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Dcamera.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cFnYSygUFOr1HXO3RV43fdu3NgeeQKLyUvM7g+vet5g="
+        }
+      ]
+    },
+    {
       "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1877,7 +3628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1901,7 +3652,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1922,7 +3673,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1938,7 +3689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1959,7 +3710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1975,7 +3726,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1996,7 +3747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2020,7 +3771,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2041,7 +3792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2057,7 +3808,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2078,7 +3829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2102,7 +3853,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2123,7 +3874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2139,7 +3890,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2160,7 +3911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2184,7 +3935,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2205,7 +3956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2221,7 +3972,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2242,7 +3993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2266,7 +4017,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2287,7 +4038,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2303,7 +4054,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2324,7 +4075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2348,7 +4099,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2369,7 +4120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2385,7 +4136,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2406,7 +4157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2430,7 +4181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2451,7 +4202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2467,7 +4218,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2488,7 +4239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2512,7 +4263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2533,7 +4284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2549,7 +4300,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2570,7 +4321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2594,7 +4345,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2615,7 +4366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2639,7 +4390,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2660,7 +4411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2676,7 +4427,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2697,7 +4448,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2713,7 +4464,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2734,7 +4485,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2758,7 +4509,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2779,7 +4530,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2795,7 +4546,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2816,7 +4567,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2840,7 +4591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2861,7 +4612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2877,7 +4628,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2898,7 +4649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2922,7 +4673,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2943,7 +4694,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2959,7 +4710,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2980,7 +4731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3004,7 +4755,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3025,7 +4776,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3041,7 +4792,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3062,7 +4813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3078,7 +4829,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3099,7 +4850,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3115,7 +4866,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3136,7 +4887,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3160,7 +4911,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3181,7 +4932,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3205,7 +4956,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3226,7 +4977,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3250,7 +5001,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3271,7 +5022,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3295,7 +5046,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3316,7 +5067,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3332,7 +5083,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3353,7 +5104,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3377,7 +5128,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3398,7 +5149,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3414,7 +5165,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3435,7 +5186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3451,7 +5202,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3472,7 +5223,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3488,7 +5239,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3509,7 +5260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3533,7 +5284,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3554,7 +5305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3578,7 +5329,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3599,7 +5350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3623,7 +5374,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3644,7 +5395,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3660,7 +5411,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3681,7 +5432,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3705,7 +5456,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3726,7 +5477,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3742,7 +5493,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3763,7 +5514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3779,7 +5530,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3800,7 +5551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3816,7 +5567,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3837,7 +5588,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3861,7 +5612,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3882,7 +5633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3906,7 +5657,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3927,7 +5678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3943,7 +5694,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3964,7 +5715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3988,7 +5739,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4009,7 +5760,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4025,7 +5776,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4046,7 +5797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4070,7 +5821,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4091,7 +5842,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4107,7 +5858,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4128,7 +5879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4144,7 +5895,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4165,7 +5916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4189,7 +5940,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4210,7 +5961,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4234,7 +5985,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4255,7 +6006,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4271,7 +6022,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4292,7 +6043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4316,7 +6067,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4337,7 +6088,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4353,7 +6104,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4374,7 +6125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4390,7 +6141,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4411,7 +6162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4435,7 +6186,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4456,7 +6207,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4472,7 +6223,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4493,7 +6244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4517,7 +6268,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4538,7 +6289,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4562,7 +6313,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4583,7 +6334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4599,7 +6350,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4620,7 +6371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4644,7 +6395,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4665,7 +6416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4681,7 +6432,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4702,7 +6453,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4726,7 +6477,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4747,7 +6498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4771,7 +6522,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4792,7 +6543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4808,7 +6559,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4829,7 +6580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4853,7 +6604,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4874,7 +6625,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4890,7 +6641,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4911,7 +6662,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4927,7 +6678,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4948,7 +6699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4972,7 +6723,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4993,7 +6744,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5009,7 +6760,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5030,7 +6781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5054,7 +6805,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5075,7 +6826,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5091,7 +6842,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5112,7 +6863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5128,7 +6879,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5149,7 +6900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5173,7 +6924,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5194,7 +6945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5218,7 +6969,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5239,7 +6990,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5255,7 +7006,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5276,7 +7027,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5300,7 +7051,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5321,7 +7072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5337,7 +7088,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5358,7 +7109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5374,7 +7125,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5395,7 +7146,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5411,7 +7162,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5432,7 +7183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5456,7 +7207,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5477,7 +7228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5501,7 +7252,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5522,7 +7273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5546,7 +7297,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5567,7 +7318,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5583,7 +7334,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.z6qzljqjd0",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5604,7 +7355,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5628,7 +7379,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5649,7 +7400,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5673,7 +7424,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5694,7 +7445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5710,7 +7461,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5731,7 +7482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5755,7 +7506,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5776,7 +7527,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5800,7 +7551,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5821,7 +7572,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5837,7 +7588,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5858,7 +7609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5874,7 +7625,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5895,7 +7646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5919,7 +7670,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5940,7 +7691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5956,7 +7707,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.gcjdx5jb8l.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5977,7 +7728,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6001,7 +7752,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6022,7 +7773,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6038,7 +7789,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.35gxhxa0gh.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6059,7 +7810,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6083,7 +7834,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6104,7 +7855,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6120,7 +7871,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6141,7 +7892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6157,7 +7908,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6178,7 +7929,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6202,7 +7953,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6223,7 +7974,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6239,7 +7990,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6260,7 +8011,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6284,7 +8035,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6305,7 +8056,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6321,7 +8072,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6342,7 +8093,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6366,7 +8117,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6387,7 +8138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6411,7 +8162,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6432,7 +8183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6448,7 +8199,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6469,7 +8220,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6493,7 +8244,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6514,7 +8265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6530,7 +8281,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6551,7 +8302,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6575,7 +8326,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6596,7 +8347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 12:04:04 GMT"
+          "Value": "Thu, 13 Mar 2025 08:55:47 GMT"
         },
         {
           "Name": "Cache-Control",

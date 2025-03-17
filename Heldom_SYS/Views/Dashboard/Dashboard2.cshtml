@@ -1,0 +1,285 @@
+﻿@* stylesheet *@
+<link href="~/css/dashboard/dashboard.css" rel="stylesheet" />
+<script src="~/js/dashboard.js"></script>
+
+<div class="dashboard-container">
+    <!-- 現場作業人員 -->
+    <div class="">
+        <div class="card worker-card  " id="openPopup">
+            <h3 class="db-title-l">現場作業人員</h3>
+            <h1 class="worker-count">123 <span class="color-gray-light">人</span></h1>
+            <h5 class="db-title-s">人員狀態</h5>
+
+            <div class="worker-list border-radius">
+                <div class="worker-area">
+                    <h3 class="worker-title">水電</h3>
+                    <h3 class="worker-area-count">213<span class="color-gray-light">人</span></h3>
+                </div>
+                <div class="worker-area">
+                    <h3 class="worker-title">板模</h3>
+                    <h3 class="worker-area-count">5<span class="color-gray-light">人</span></h3>
+                </div>
+                <div class="worker-area">
+                    <h3 class="worker-title">泥作</h3>
+                    <h3 class="worker-area-count">4<span class="color-gray-light">人</span></h3>
+                </div>
+                <div class="worker-area">
+                    <h3 class="worker-title">起重</h3>
+                    <h3 class="worker-area-count">2<span class="color-gray-light">人</span></h3>
+                </div>
+                <div class="worker-area">
+                    <h3 class="worker-title">焊接</h3>
+                    <h3 class="worker-area-count">2<span class="color-gray-light">人</span></h3>
+                </div>
+                <div class="worker-area">
+                    <h3 class="worker-title">其他</h3>
+                    <h3 class="worker-area-count">1<span class="color-gray-light">人</span></h3>
+                </div>
+            </div>
+            <div class=" approve border-radius">
+
+                @* <p>簽核事件 </p> *@  
+
+                <div id="bell-container">
+
+                    <h1 class="approve-event">1 <span>件</span></h1>
+
+                    <div class="bell">
+                        <canvas id="rippleCanvas"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+
+            @* @section Scripts { *@
+            @*     <script type="module"> *@
+            @*         import { initRippleAnimation } from '/js/dasshboard/flash.js'; *@
+
+            @*         // 初始化水波效果，並傳遞 bell-container 的 id *@
+            @*         document.addEventListener("DOMContentLoaded", function () { *@
+            @*             initRippleAnimation('bell-container'); *@
+            @*         }); *@
+            @*     </script> *@
+            @* } *@
+        </div>
+
+        <!-- 異常回報通知 -->
+        <div class="card notification-card">
+            <h3 class="db-title-l">異常回報通知</h3>
+
+
+
+            <ul class="notification-list border-radius">
+                <li class="green">王大明 上班簽到 09:54</li>
+                <li class="green">王大明 上班簽到 09:54</li>
+                <li class="red">回報異常通知 09:54</li>
+                <li class="green">王大明 下班簽退 18:31</li>
+                <li class="red">回報異常通知 18:31</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 即時監控影像 -->
+    <div class="card video-card">
+
+        <h3 class="db-title-l">即時監控影像</h3>
+        @* <a asp-controller="Dashboard" asp-action="Cctv"> *@
+        <img class="video-feed" id="mainVideo" src="" alt="監控影像">
+
+
+        <div class="camera-list border-radius">
+            <button type="button" class="nav-button" id="prevButton"><i class="fas fa-chevron-left"></i></button>
+            <!-- 動態生成 camera-item -->
+            <button type="button" class="nav-button" id="nextButton"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- 環境監測 -->
+    <div class="card environment-card">
+
+        <h3 class="db-title-l">環境監測</h3>
+        @* weather *@
+        <div class="weather-section">
+            <div class="weather-icon" id="weather-icon">🌦️</div>
+            <p class="weather-status" id="weather-status">載入中...</p>
+        </div>
+
+        <div class="monitor-grid" id="monitor-grid">
+            @* 噪音 *@
+            <div class="monitor-item">
+                <p class="db-title-s">噪音</p>
+                <div class="data-circle noise-alert" id="noise">
+                    ...
+                    <p class="description" id="noise-desc">...</p>
+                </div>
+            </div>
+            @* PM2.5 *@
+            <div class="monitor-item">
+                <p class="db-title-s">PM2.5</p>
+                <div class="data-circle pm25-alert" id="pm25">
+                    ...
+                    <p class="description" id="pm25-desc">...</p>
+                </div>
+            </div>
+            @* 風速 *@
+            <div class="monitor-item">
+                <p class="db-title-s">風速</p>
+                <div class="data-circle wind-alert" id="wind">
+                    ...
+                    <p class="description" id="wind-desc">...</p>
+                </div>
+            </div>
+            @* 氣溫 *@
+            <div class="monitor-item">
+                <p class="db-title-s">氣溫</p>
+                <div class="data-circle temp-alert" id="temp">
+                    ...
+                    <p class="description" id="temp-desc">...</p>
+                </div>
+            </div>
+            @* 濕度 *@
+            <div class="monitor-item">
+                <p class="db-title-s">濕度</p>
+                <div class="data-circle humidity-alert" id="humidity">
+                    ...
+                    <p class="description" id="humidity-desc">...</p>
+                </div>
+            </div>
+            @* 雨量 *@
+            <div class="monitor-item">
+                <p class="db-title-s">雨量</p>
+                <div class="data-circle rain-alert" id="rain">
+                    ...
+                    <p class="description" id="rain-desc">...</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+<!-- 自訂 Pop-up -->
+<div id="customPopup" class="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+    <div class="popup-content">
+        <div class="popup-header">
+            <button class="close txt-right" aria-label="關閉彈窗"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="popup-body">
+            <div class="content-area">
+                <div>
+                    <p class="db-title-l">現場作業人員</p>
+                </div>
+                <div class="peopleNumShow">
+                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue">123</h1></div>
+                    <div class="peopleNum2"><p class="db-title-s peopleNum3">人</p></div>
+                </div>
+                <div>
+                    <p class="db-title-l">人員出入資訊</p>
+                </div>
+                <div class="txt-table">
+                    <table class="table table-striped txt-center table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">序號</th>
+                                <th scope="col">狀態</th>
+                                <th scope="col">照片</th>
+                                <th scope="col">員工姓名</th>
+                                <th scope="col">員工編號</th>
+                                <th scope="col">上班簽到</th>
+                                <th scope="col">下班簽退</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><i class="fas fa-circle color-blue"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><i class="fas fa-circle color-blue"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><i class="fas fa-circle color-gray-light"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td>18:08</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><i class="fas fa-circle color-blue"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><i class="fas fa-circle color-gray-light"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td>18:08</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><i class="fas fa-circle color-gray-light"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td>18:08</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><i class="fas fa-circle color-blue"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><i class="fas fa-circle color-blue"></i></td>
+                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                                <td>員姓名</td>
+                                <td>A-25060301</td>
+                                <td>09:18</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagenav-container">
+                <div class="pagenav">
+                    <!-- 頁面導航將由JavaScript動態生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/js/data.js"></script>
+<script src="~/js/cctv.js"></script>
+<script src="~/js/dcamera.js"></script>
+<script src="~/js/dasshboard/flash.js"></script>

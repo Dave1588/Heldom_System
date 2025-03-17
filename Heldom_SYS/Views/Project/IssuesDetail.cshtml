@@ -1,0 +1,314 @@
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Project/IssuesDetail.css" asp-append-version="true" />
+
+@* https://localhost:7142/Project/Issues?type=Unusual&id=123&motion=add *@
+
+
+<div class="main_wrap border-radius box-shadow">
+    <h4 class="bold">新增異常回報紀錄</h4>
+    <div class="report-display">
+        
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">事件標題</p>
+            </div>
+            <input  maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
+        </div>
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">事件編號</p>
+            </div>
+            <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+        </div>
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">事件類型</p>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected value="CON001">結構錯誤</option>
+                <option value="CON002">施工尺寸不符</option>
+                <option value="CON003">材料瑕疵</option>
+                <option value="CON004">焊接 / 固定異常</option>
+            </select>
+        </div>
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">發生時間</p>
+            </div>
+            <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+        </div>
+
+        <div class="explain_wrap">
+            <div class="text-wrap">
+                <p maxlength="50" class="color-gray-dark bold p-width">事件描述</p>
+            </div>
+            <textarea maxlength="100" class="textarea_style"></textarea>
+        </div>
+
+        <div class="file_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">事件圖片</p>
+            </div>
+
+        </div>
+
+    </div>
+    @if (!(ViewBag.Motion == "add" && ViewBag.Type == "Unusual"))
+    {
+        <div class="track-display">
+            <div class="explain_wrap">
+                <div class="text-wrap">
+                    <p maxlength="50" class="color-gray-dark bold p-width">回覆內容</p>
+                </div>
+                <textarea maxlength="100" class="textarea_style"></textarea>
+            </div>
+
+            <div class="file_wrap track">
+                <div class="text-wrap">
+                    <p class="color-gray-dark bold p-width">回覆圖片</p>
+                </div>
+
+            </div>
+
+        </div>
+    }
+    
+    <div class="end-check">
+        <button class="back-button obj-center">
+            <p class="bold color-white">
+                取消
+            </p>
+        </button>
+        @if (ViewBag.Motion == "add"){
+            <button class="save-button obj-center">
+                <p class="bold color-white">
+                    儲存
+                </p>
+            </button>
+        }
+
+    </div>
+
+    @* 圖片放大 *@
+    <div id="picturePopup" class="picture-popup-wrap">
+        <div class="picture-popup-content">
+            <img class="picture-img" src="#" alt="Alternate Text" />
+        </div>
+    </div>
+
+    <input type="file" class="form-control d-none" id="fileAdd" accept="image" multiple>
+    <input type="file" class="form-control d-none" id="fileAddTrack" accept="image" multiple>
+</div>
+<script>
+    let Motion = @Html.Raw(Json.Serialize(ViewBag.Motion));
+    let Type = @Html.Raw(Json.Serialize(ViewBag.Type));
+
+    $(document).ready(function() {
+        let fileList = []
+        let fileListTrack = []
+        let maxSize = 1024 * 1024 * 3 // 3M
+
+        // 回報區塊
+        let fileDiv = `
+            <div class="file-area obj-center chose-temp">
+                <h3><i class="fas fa-plus"></i></h3>
+            </div>
+        `
+
+        if(!(Motion == "add" && Type == "Track")){
+            $(".report-display .file_wrap").append(fileDiv)
+        }
+
+        let listenFile = () => {
+            $(".report-display .file_wrap .file-area").on("click", function(e) {
+                if(fileList.length < 5){
+                    $("#fileAdd").click()
+                }
+                
+            });
+        }
+        listenFile()
+
+        //圖片放大
+        $("#picturePopup").hide();
+        let listenImg = () => {
+            $(".img-area").on("click", function(e) {
+                $(".picture-img").prop("src",e.target.src)
+                $("#picturePopup").fadeIn();
+            });
+
+            $(".picture-close").click(function(){
+                $("#picturePopup").fadeOut();
+            });
+
+            // 點擊背景區域關閉彈窗
+            $("#picturePopup").click(function(event) {
+                if(event.target === this) {
+                    $(this).fadeOut();
+                }
+            });
+        }
+
+        //刪除圖片
+        let listenDeleteButton = () => {
+            $(".error-icon").on("click", function(e) {
+
+                let index = $(".report-display .file_wrap .img-wrap").index($(this).parent())
+                
+                if(Type == "Track"){
+                    fileListTrack.splice(index,1)
+                    let addDivCount = $(".track-display .file_wrap .chose-temp").length
+
+                    if((fileListTrack.length < 5) && (addDivCount == 0)){
+                        $(".track-display .file_wrap").append(fileDiv)
+                        listenFileTrack()
+                    }
+
+                }else{
+                    fileList.splice(index,1)
+                    let addDivCount = $(".report-display .file_wrap .chose-temp").length
+                    if((fileList.length < 5) && (addDivCount == 0)){
+                        $(".report-display .file_wrap").append(fileDiv)
+                        listenFile()
+                    }
+
+                }
+
+                $(this).parent().remove()
+
+            });
+        }
+
+        let unListenDeleteButton = () => {
+            $(".error-icon").unbind();
+        }
+
+        let unListenFile = () => {
+            $(document).off("click", ".report-display .file_wrap .file-area");
+        }
+
+        // 新增圖片
+        $("#fileAdd").on("change", async function(event) {
+            let fileChoseList = event.target.files
+            let check = true && ((fileChoseList.length + fileList.length) <=5)
+            $.each(fileChoseList, function(index, item) {
+                if(!item.type.startsWith("image/") || !(item.size < maxSize)){
+                    check = false
+                    return
+                }
+            });
+            if(check){
+                Array.from(fileChoseList).forEach((file) => {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        unListenFile()
+                        unListenDeleteButton()
+                        let imgStr = e.target.result
+                        fileList.push(imgStr)
+                        let imgDiv = `
+                            <div class="obj-center img-wrap">
+                                <div class="error-icon obj-center"><i class="fas fa-times"></i></div>
+                                <img src="${imgStr}" class="img-area">
+                            </div>
+                        `
+                        $(".report-display .file_wrap .chose-temp").remove()
+                        $(".report-display .file_wrap").append(imgDiv)
+                        if(fileList.length < 5){
+                            $(".report-display .file_wrap").append(fileDiv)
+                        }
+                        listenFile()
+                        listenImg()
+                        listenDeleteButton()
+                    };
+                    reader.readAsDataURL(file);
+                });
+            }else{
+                console.log("檔案格式不正確 || 超過3M || 超過5個");
+            }
+        });
+
+        // 追蹤區塊
+        
+        $(".track-display .file_wrap").append(fileDiv)
+
+        let listenFileTrack = () => {
+            $(".track-display .file_wrap .file-area").on("click", function(e) {
+                if(fileListTrack.length < 5){
+                   $("#fileAddTrack").click()
+                }
+                
+            });
+        }
+
+        listenFileTrack()
+
+        let unListenFileTrack = () => {
+            $(document).off("click", ".track-display .file_wrap .file-area");
+        }
+
+        // 新增追蹤圖片
+
+        $("#fileAddTrack").on("change", async function(event) {
+            let fileChoseList = event.target.files
+            let check = true && ((fileChoseList.length + fileListTrack.length) <=5)
+            $.each(fileChoseList, function(index, item) {
+                if(!item.type.startsWith("image/") || !(item.size < maxSize)){
+                    check = false
+                    return
+                }
+            });
+            if(check){
+                Array.from(fileChoseList).forEach((file) => {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        unListenFileTrack()
+                        unListenDeleteButton()
+                        let imgStr = e.target.result
+                        fileListTrack.push(imgStr)
+                        let imgDiv = `
+                            <div class="obj-center img-wrap">
+                                <div class="error-icon obj-center"><i class="fas fa-times"></i></div>
+                                <img src="${imgStr}" class="img-area">
+                            </div>
+                        `
+                        $(".track-display .file_wrap .chose-temp").remove()
+                        $(".track-display .file_wrap").append(imgDiv)
+                        if(fileListTrack.length < 5){
+                            $(".track-display .file_wrap").append(fileDiv)
+                        }
+                        listenFileTrack()
+                        listenImg()
+                        listenDeleteButton()
+                    };
+                    reader.readAsDataURL(file);
+                });
+            }else{
+                console.log("檔案格式不正確 || 超過3M || 超過5個");
+            }
+        });
+
+        //輸入控制
+        
+        if(Motion == "select"){
+            $("input").prop('disabled', true)
+            $("textarea").prop('disabled', true)
+            $("select").prop('disabled', true)
+            $(".chose-temp").hide()
+        }else if(Motion == "add" && Type == "Track"){
+            $(".report-display .input_wrap input").prop('disabled', true)
+            $(".report-display .input_wrap select").prop('disabled', true)
+            $(".report-display .explain_wrap textarea").prop('disabled', true)
+        }
+
+        //回上頁
+        $(".back-button").on("click", function(e) {
+            location.href='/Project/Issues'
+        });
+
+
+    });
+
+</script>

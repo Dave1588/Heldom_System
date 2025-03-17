@@ -1,10 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Attendance/Records.css" asp-append-version="true" />
 
 @* https://localhost:7142/Attendance/Records *@
+
 
 <div class="main_wrap border-radius box-shadow">
     <div id="clock" class="main_area obj-horizontal-center">
@@ -16,7 +14,7 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th class="tb-title">日期</th>
+                        <th><p class="tb-title">日期</p></th>
                         <th class="tb-title">狀態</th>
                         <th class="tb-title">上班簽到</th>
                         <th class="tb-title">下班簽退</th>
@@ -30,30 +28,32 @@
         <div class="end_area obj-center">
         </div>
     </div>
+    @if(ViewBag.Role != "P"){
+        <div id="holiday" class="main_area obj-horizontal-center">
+            <div class="top_area">
+                <h4 class="bold">請假紀錄</h4>
+                <button id="holidayPopupButton" class="button button_style bold">請假申請</button>
+            </div>
+            <div class="middle_area">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="tb-title">開始時間</th>
+                            <th class="tb-title">結束時間</th>
+                            <th class="tb-title">狀態</th>
+                            <th class="tb-title">假別</th>
+                            <th class="tb-title">總時數</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="end_area obj-center">
+            </div>
+        </div>
 
-    <div id="holiday" class="main_area obj-horizontal-center">
-        <div class="top_area">
-            <h4 class="bold">請假紀錄</h4>
-            <button id="holidayPopupButton" class="button button_style bold">請假申請</button>
-        </div>
-        <div class="middle_area">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th class="tb-title">開始時間</th>
-                        <th class="tb-title">結束時間</th>
-                        <th class="tb-title">狀態</th>
-                        <th class="tb-title">假別</th>
-                        <th class="tb-title">總時數</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
-        <div class="end_area obj-center">
-        </div>
-    </div>
+    }
    
 </div>
 
@@ -65,7 +65,7 @@
         </div>
         <div class="clock-area">
             <h4 class="color-gray-dark bold">系統時間</h4>
-            <h1 class="color-gray-medium bold">09 : 01 : 20</h1>
+            <h1 id="timeClock" class="color-gray-medium bold">09 : 01 : 20</h1>
             <h4 class="color-gray-dark bold">上下班打卡</h4>
             <div class="clock-check">
                 <button class="clock-button obj-center">
@@ -109,10 +109,20 @@
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">假別</p>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="1">婚假</option>
+                        <option value="2">喪假</option>
+                        <option value="3">病假</option>
+                        <option selected value="4">事假</option>
+                        <option value="5">公假</option>
+                        <option value="6">特休假</option>
+                        <option value="7">公傷病假</option>
+                        <option value="8">生理假</option>
+                        <option value="9">產假</option>
+                        <option value="10">產檢假</option>
+                        <option value="11">陪產檢及陪產假</option>
+                        <option value="12">安胎假</option>
+                        <option value="13">育嬰留職停薪</option>
+                        <option value="14">家庭照顧假</option>
                     </select>
                 </div>
             </div>
@@ -218,7 +228,7 @@
                     <td class="tb-txt">${clockData[i].date}</td>
                     <td class="tb-txt">
                         <p>
-                            ${clockData[i].status ? `<i class="fas fa-check"></i>` : `<i class="fas fa-exclamation"></i>`}
+                            ${clockData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
                         </p>
                     </td>
                     <td class="tb-txt">${clockData[i].upTime}</td>
@@ -267,7 +277,7 @@
                     </td>
                     <td class="tb-txt td_center">
                         <p class="center_display">
-                            ${holidayData[i].status ? `<i class="fas fa-check"></i>` : `<i class="fas fa-exclamation"></i>`}
+                            ${holidayData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
                         </p>
                     </td>
                     <td class="tb-txt td_center">
@@ -333,231 +343,13 @@
             }
         });
 
+        //計時
+        function updateTime() {
+            document.getElementById("timeClock").innerText = new Date().toLocaleTimeString();
+        }
+        
+        setInterval(updateTime, 1000);
+
     });
 
 </script>
-<style>
-    
-    .main_wrap {
-        width: 100%;
-        height: auto;
-        padding: 60px 40px;
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        row-gap: 40px;
-    }
-
-    .main_area {
-        display: flex;
-        flex-direction: column;
-        width: 705px;
-    }
-
-    .top_area {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .middle_area {
-        margin-top: 40px;
-        width: 100%;
-        display: flex;
-        background-color: var(--color-white);
-    }
-
-    .end_area {
-        margin-top:40px;
-        column-gap: 4px;
-    }
-
-    .button_style {
-        background-color: var(--color-blue);
-        width: 160px;
-        height: 32px;
-        border-radius: 28px;
-        font-size: var(--p-size);
-        color: var(--color-white);
-    }
-
-    .table {
-        margin-bottom: 0px !important;
-    }
-
-    .table > :not(:last-child) > :last-child > * {
-        border-bottom-color: #8E8E93 !important;
-    }
-
-    .page_circle {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        background-color: #D9D9D9;
-    }
-
-    .center_display {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .td_center{
-        text-align: center;
-        vertical-align: middle;
-    }
-
-    /* 打卡視窗樣式 */
-    .clock-popup-wrap {
-        display: none; /* 預設隱藏 */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-    }
-
-    .clock-popup-content {
-        position:absolute;
-        background: var(--color-div-bg);
-        width: 600px;
-        padding: 0px 0px;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        border-radius: var(--border-radius);
-        display:flex;
-        flex-direction:column;
-    }
-
-    .clock-close {
-        width: 32px;
-        height: 32px;
-        font-size: 32px;
-        cursor: pointer;
-    }
-
-    .clock-top{
-        width:100%;
-        height:48px;
-        background-color: var(--color-background);
-        border-top-right-radius: 20px !important;
-        border-top-left-radius: 20px !important;
-        justify-content: end;
-        padding:0px 20px;
-    }
-
-    .clock-area{
-        width:100%;
-        padding:40px;
-        display:flex;
-        flex-direction:column;
-        row-gap:40px;
-    }
-
-    .clock-check{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .clock-button{
-        background-color: var(--color-blue);
-        width:240px;
-        height:54px;
-        border-radius: 28px;
-    }
-
-    /* 請假視窗樣式 */
-    .holiday-popup-wrap {
-        display: none; /* 預設隱藏 */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(36, 36, 38, 0.7);
-    }
-
-    .holiday-popup-content {
-        position: absolute;
-        background: var(--color-div-bg);
-        width: 600px;
-        padding: 0px 0px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: var(--border-radius);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .holiday-close {
-        width: 32px;
-        height: 32px;
-        font-size: 32px;
-        cursor: pointer;
-    }
-
-    .holiday-top {
-        width: 100%;
-        height: 48px;
-        background-color: var(--color-background);
-        border-top-right-radius: 20px !important;
-        border-top-left-radius: 20px !important;
-        justify-content: end;
-        padding: 0px 20px;
-    }
-
-    .holiday-area {
-        width: 100%;
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-    }
-
-    .holiday-check {
-        width: 100%;
-    }
-
-    .holiday-button {
-        background-color: var(--color-blue);
-        width: 240px;
-        height: 54px;
-        border-radius: 28px;
-    }
-    
-    .input_wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .form-select {
-        width:360px !important;
-    }
-
-    .p-width{
-        width:100px;
-    }
-
-    .message-display{
-        display:flex;
-        flex-direction:column;
-        row-gap:12px;
-    }
-
-    .chose-display {
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    .form-control{
-        width:360px !important;
-    }
-</style>

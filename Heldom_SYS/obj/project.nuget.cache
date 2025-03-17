@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GsoLuwNsjtU=",
+  "dgSpecHash": "rLdPWlr31WU=",
   "success": true,
-  "projectFilePath": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\Heldom_SYS.csproj",
+  "projectFilePath": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\Heldom_SYS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zsefv\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\zsefv\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

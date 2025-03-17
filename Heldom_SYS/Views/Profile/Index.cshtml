@@ -1,0 +1,116 @@
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Profile/Index.css" asp-append-version="true" />
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+@* https://localhost:7142/Profile/Index *@
+
+<div id="loading" style="display: none;">Loading...</div>
+<div class="main_wrap border-radius box-shadow" id="profileContainer" style="display: none;">
+    <div class="profile-card">
+        <div class="profile-block pd-40">
+            <!-- 頭像與基本資訊 -->
+            <div class="obj-center ">
+                <div class="profile-info" id="profile-info">
+                    <div class="obj-center pro-imgPD">
+                        <img id="ProfileImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Jo-Zc-Hu7svz7o5YQQCGShFYdZ2-IJscfw&s" alt="Profile Image" class="profile-image">
+
+                    </div>
+                    @*姓名、Email*@
+                </div>
+            </div>
+
+            <!-- 年資與特休 -->
+            <div class="stats">
+                <div class="stat">
+                    <h1 class="stat-number">10</h1>
+                    <p class="stat-label bold">到職年資</p>
+                </div>
+                <div class="stat">
+                    <h1 class="stat-number">90</h1>
+                    <p class="stat-label bold">特休天數</p>
+                </div>
+            </div>
+            <!-- 編輯按鈕 -->
+            <div class="edit-button color-blue">
+                <button class="txt-center"><p class="bold">編輯</p></button>
+            </div>
+        </div>
+        <!-- 主要資訊 -->
+        <div class="profile-block" style="width: 75%;">
+            <div class="details">
+                <div class="contact-row">
+                    <div class="contact-col contact-block"><p class="content-title">到職日</p><p class="content-content bold">2025/02/20</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">職稱</p><p class="content-content bold">技士</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">部門</p><p class="content-content bold">部門名</p></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-col contact-block"><p class="content-title">員工編號</p><p class="content-content bold">ABC-123456789</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">出生日期</p><p class="content-content bold">2025/02/20</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">電話</p><p class="content-content bold">0919-123456</p></div>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-col contact-block"><p class="content-title">地址</p><p class="content-content bold">台中市台中市台中市台中市台中市台中市台中市</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">緊急聯絡人</p><p class="content-content bold">2025/02/20</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">緊急電話</p><p class="content-content bold">0919-123456</p></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div> @*原div*@
+
+
+<script>
+    $(document).ready(function(){
+        // Show loading indicator
+            $("#loading").show();
+
+        axios.get('/Profile/GetEmployeeWithDetail')
+        .then(function(response){
+
+            console.log(response);
+            console.log(response.data[0].name);
+            document.getElementById("ProfileImage").src = "data:image/jpg;base64," + response.data[0].Photo;
+            appendProfileInfo(response.data[0]);
+        })
+        .catch(function(error){
+            console.error("GetEmployeeWithDetail failed!",error);
+        })
+        .finally(function() {
+            // Hide loading indicator and show profile content
+            $("#loading").hide();
+            $("#profileContainer").show();
+        });
+    });
+
+    // 載入 姓名 電子郵件
+    function appendProfileInfo(data) {
+
+        console.log("Appending profile info:",data.name,data.email); // Debugging line
+
+        // Get the container where you want to append the new elements
+        const profileContainer = document.getElementById("profile-info");
+
+        // Create a paragraph element for the name
+        const nameElement = document.createElement("p");
+        nameElement.className = "txt-center profile-title bold"; // Set class
+        nameElement.textContent = data.name; // Set text content
+
+        // Create a paragraph element for the email
+        const emailElement = document.createElement("p");
+        emailElement.className = "txt-center profile-title"; // Set class
+        emailElement.textContent = data.email; // Set text content
+
+        // Append the new elements to the container
+        profileContainer.append(nameElement,emailElement);
+    }
+</script>
+
+<style>
+    .main_wrap {
+        width: 1040px;
+        height: 458px;
+    }
+</style>

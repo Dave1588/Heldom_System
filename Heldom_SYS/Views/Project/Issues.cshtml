@@ -1,0 +1,437 @@
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Project/Issues.css" asp-append-version="true" />
+
+@* https://localhost:7142/Project/Issues *@
+
+
+<div class=" main_wrap test border-radius box-shadow">
+    <div id="unusual" class="unusual_main_area obj-horizontal-center">
+        <div class="top_area">
+            <h4 class="bold">異常回報紀錄</h4>
+            <button id="unusualPopupButton" class="button button_style bold">新增</button>
+        </div>
+        <div class="middle_area">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="tb-title">序號</th>
+                        <th class="tb-title">狀態</th>
+                        <th class="tb-title">事件編號</th>
+                        <th class="tb-title">事件類型</th>
+                        <th class="tb-title">事件標題</th>
+                        <th class="tb-title">開始時間</th>
+                        <th class="tb-title">結束時間</th>
+                        <th class="tb-title">紀錄員工</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="end_area obj-center">
+        </div>
+    </div>
+
+    @if ((ViewBag.Role == "A") || (ViewBag.Role == "M")) {
+        <div id="track" class="track_main_area obj-horizontal-center">
+            <div class="top_area">
+                <h4 class="bold">異常回報追蹤處理</h4>
+            </div>
+            <div class="chose-display">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">發生期間</p>
+                    <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+                </div>
+
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">紀錄員工</p>
+                    <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+                </div>
+
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">事件類型</p>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected value="CON001">結構錯誤</option>
+                        <option value="CON002">施工尺寸不符</option>
+                        <option value="CON003">材料瑕疵</option>
+                        <option value="CON004">焊接 / 固定異常</option>
+                    </select>
+                </div>
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">事件標題</p>
+                    <input maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
+                </div>
+                <button class="button button_style bold">查詢</button>
+            </div>
+            <div class="middle_area">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="tb-title">序號</th>
+                            <th class="tb-title">狀態</th>
+                            <th class="tb-title">事件編號</th>
+                            <th class="tb-title">事件類型</th>
+                            <th class="tb-title">事件標題</th>
+                            <th class="tb-title">開始時間</th>
+                            <th class="tb-title">結束時間</th>
+                            <th class="tb-title">紀錄員工</th>
+                            <th class="tb-title">編輯</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="end_area obj-center">
+            </div>
+        </div>
+    
+    }
+    
+</div>
+
+<!-- track Pop-up -->
+<div id="trackPopup" class="track-popup-wrap">
+    <div class="track-popup-content">
+        <div class="track-top obj-vertical-center">
+            <div class="track-close obj-center">&times;</div>
+        </div>
+        <div class="track-area">
+            <div class="message-display">
+                <h4 class="color-gray-dark bold">是否刪除此異常回報追蹤?</h4>
+            </div>
+            <div class="obj-center track-check">
+                <button class="track-button obj-center">
+                    <p class="bold color-white">
+                        是
+                    </p>
+                </button>
+                <button class="track-button obj-center">
+                    <p class="bold color-white">
+                        否
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    let unusualData = [
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:true,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:true,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        }
+    ]
+
+    let unusualPageCount = 5;
+
+    let trackData = [
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:true,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:true,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        },
+        {
+            id:"1",
+            status:false,
+            eventId:"PRG002",
+            eventType:"事件類型",
+            eventTitle:"事件標題",
+            startDate:"2025/02/16",
+            startTime:"09:00",
+            endDate:"2025/02/16",
+            endTime:"09:00",
+            recordName:"員工名"
+        }
+    ]
+
+    let trackPageCount = 3;
+
+    $(document).ready(function() {
+
+        //打卡表格生成
+        for(let i = 0;i<unusualData.length;i++){
+            let ele = `
+                <tr>
+                    <td class="tb-txt">${unusualData[i].id}</td>
+                    <td class="tb-txt">
+                        <p>
+                            ${unusualData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
+                        </p>
+                    </td>
+                    <td class="tb-txt">${unusualData[i].eventId}</td>
+                    <td class="tb-txt">${unusualData[i].eventType}</td>
+                    <td class="tb-txt">${unusualData[i].eventTitle}</td>
+                    <td class="tb-txt">
+                        <div class="center_display">
+                            <span>${unusualData[i].startDate}</span>
+                            <span>${unusualData[i].startTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt">
+                       <div class="center_display">
+                            <span>${unusualData[i].endDate}</span>
+                            <span>${unusualData[i].endTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt">${unusualData[i].recordName}</td>
+                </tr>
+            `
+
+            $("#unusual .middle_area table tbody ").append(ele)
+
+        }
+
+        //打卡分頁生成
+
+        $("#unusual .end_area").append(`
+            <h4><i class="fas fa-angle-left"></i></h4>
+        `)
+
+        for(let i = 0;i<unusualPageCount;i++ ){
+            $("#unusual .end_area").append(`
+                <div class="page_circle obj-center">
+                    <p class="bold">${i+1}</>
+                </div>
+            `)
+        }
+
+        $("#unusual .end_area").append(`
+            <h4><i class="fas fa-angle-right"></i></h4>
+        `)
+
+        //請假表格生成
+        for(let i = 0;i<trackData.length;i++){
+            let ele = `
+                <tr>
+                    <td class="tb-txt">${unusualData[i].id}</td>
+                    <td class="tb-txt">
+                        <p>
+                            ${unusualData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
+                        </p>
+                    </td>
+                    <td class="tb-txt">${unusualData[i].eventId}</td>
+                    <td class="tb-txt">${unusualData[i].eventType}</td>
+                    <td class="tb-txt">${unusualData[i].eventTitle}</td>
+                    <td class="tb-txt">
+                        <div class="center_display">
+                            <span>${unusualData[i].startDate}</span>
+                            <span>${unusualData[i].startTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt">
+                       <div class="center_display">
+                            <span>${unusualData[i].endDate}</span>
+                            <span>${unusualData[i].endTime}</span>
+                        </div>
+                    </td>
+                    <td class="tb-txt">${unusualData[i].recordName}</td>
+                    <td class="tb-txt td_center">
+                       <div class="icon_display">
+                            <p class="trackPopupButton">
+                                <i class="fas fa-pen"></i>
+                            </p>
+                            <p class="deleteTrack">
+                                <i class="fas fa-trash"></i>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            `
+
+            $("#track .middle_area table tbody ").append(ele)
+
+        }
+
+        //請假分頁生成
+
+        $("#track .end_area").append(`
+            <h4><i class="fas fa-angle-left"></i></h4>
+        `)
+
+        for(let i = 0;i<trackPageCount;i++ ){
+            $("#track .end_area").append(`
+                <div class="page_circle obj-center">
+                    <p class="bold">${i+1}</>
+                </div>
+            `)
+        }
+
+        $("#track .end_area").append(`
+            <h4><i class="fas fa-angle-right"></i></h4>
+        `)
+
+
+        // 新增異常
+        $("#unusualPopupButton").on("click", function(e) {
+            location.href='/Project/Issues?type=Unusual&id=123&motion=add'
+        });
+
+        // 查看異常
+        $("#unusual .middle_area table tbody tr").on("click", function(e) {
+            location.href='/Project/Issues?type=Unusual&id=123&motion=select'
+        });
+
+        // 新增回復
+        $(".trackPopupButton").on("click", function(e) {
+            e.stopPropagation();
+            location.href='/Project/Issues?type=Track&id=456&motion=add'
+        });
+
+        // 查看回復
+        $("#track .middle_area table tbody tr").on("click", function(e) {
+            e.stopPropagation();
+            location.href='/Project/Issues?type=Track&id=123&motion=select'
+        });
+
+        // 刪除回復
+        $(".deleteTrack").on("click", function(e) {
+            e.stopPropagation();
+            $(".track-popup-wrap").show()
+        });
+
+
+        // 點擊背景區域關閉彈窗
+        $("#trackPopup").click(function(e) {
+            e.stopPropagation();
+            if(e.target === this) {
+                $(this).fadeOut();
+            }
+        });
+
+        // 點擊關閉彈窗
+        $(".track-close").click(function(e) {
+            e.stopPropagation();
+            if(e.target === this) {
+                $(".track-popup-wrap").fadeOut()
+            }
+        });
+ 
+    });
+
+</script>

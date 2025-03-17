@@ -1,255 +1,323 @@
 {
   "Files": [
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Heldom_SYS.bundle.scp.css",
       "PackagePath": "staticwebassets\\Heldom_SYS.i77tz642wc.bundle.scp.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Info.css",
+      "PackagePath": "staticwebassets\\css\\Attendance\\Info.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Attendance\\Records.css",
+      "PackagePath": "staticwebassets\\css\\Attendance\\Records.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\Cctv.css",
+      "PackagePath": "staticwebassets\\css\\Dashboard\\Cctv.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Dashboard\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Dashboard\\dashboard.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Login\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Login\\Index.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Account.css",
+      "PackagePath": "staticwebassets\\css\\Profile\\Account.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Profile\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Profile\\Index.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Blueprints.css",
+      "PackagePath": "staticwebassets\\css\\Project\\Blueprints.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\Issues.css",
+      "PackagePath": "staticwebassets\\css\\Project\\Issues.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\Project\\IssuesDetail.css",
+      "PackagePath": "staticwebassets\\css\\Project\\IssuesDetail.css"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\layout.css",
       "PackagePath": "staticwebassets\\css\\layout.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\main.css",
       "PackagePath": "staticwebassets\\css\\main.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\Heldom.png",
+      "PackagePath": "staticwebassets\\img\\Heldom.png"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\img\\bunch-blueprints.jpg",
+      "PackagePath": "staticwebassets\\img\\bunch-blueprints.jpg"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dasshboard\\flash.js",
+      "PackagePath": "staticwebassets\\js\\Dasshboard\\flash.js"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\Dcamera.js",
+      "PackagePath": "staticwebassets\\js\\Dcamera.js"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\cctv.js",
+      "PackagePath": "staticwebassets\\js\\cctv.js"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\data.js",
+      "PackagePath": "staticwebassets\\js\\data.js"
+    },
+    {
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\MyBigProject\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\新增資料夾\\Heldom_SYS-master\\Heldom_SYS\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

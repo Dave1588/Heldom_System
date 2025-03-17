@@ -27,5 +27,20 @@ Scaffold-DbContext 指令可以根據資料庫底下的資料表生成對應的�
 
 
         c. 在 套件管理器主控台 輸入 Scaffold-DbCoNtext 指令 並執行
+		
+			Scaffold-DbContext "Name=ConnectionStrings:ConstructionDB" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
-Scaffold-DbContext "Name=ConnectionStrings:XXXXXXXXXXXXXXXXXX" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+
+builder.Services.AddDbContext<ConstructionDbContext>(
+            options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConstructionDBConnstring")));
+
+
+    "ConnectionStrings": {
+        "ConstructionDB": "Server=localhost\\SQLEXPRESS;Database=ConstructionDB;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True"
+    },
+	
+test
+	
+

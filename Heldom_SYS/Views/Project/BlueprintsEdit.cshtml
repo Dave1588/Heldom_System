@@ -1,0 +1,252 @@
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Project/Blueprints.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/Project/IssuesDetail.css" asp-append-version="true" />
+
+<div class="main_wrap border-radius box-shadow">
+    <h4 class="bold">新增圖紙</h4>
+    <div class="report-display">
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">圖紙類型</p>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option value="??001">結構工程圖</option>
+                <option value="??002">建築設計圖</option>
+                <option value="??003">公共設施圖</option>
+                <option value="??004">施工細部圖</option>
+                <option value="??005">機電設備圖</option>
+                <option value="??006">其他</option>
+            </select>
+        </div>
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">版本號碼</p>
+            </div>
+            <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+        </div>
+
+
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">圖紙名稱</p>
+            </div>
+            <input maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
+        </div>
+
+        <div class="file_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">事件圖片</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="end-check">
+        <button class="back-button obj-center">
+            <p class="bold color-white">
+                取消
+            </p>
+        </button>
+        @if (ViewBag.Motion == "add")
+        {
+            <button class="save-button obj-center">
+                <p class="bold color-white">
+                    儲存
+                </p>
+            </button>
+        }
+
+    </div>
+
+    @* 圖片放大 *@
+    <div id="picturePopup" class="picture-popup-wrap">
+        <div class="picture-popup-content">
+            <img class="picture-img" src="#" alt="Alternate Text" />
+        </div>
+    </div>
+
+    <input type="file" class="form-control d-none" id="fileAdd" accept="image">
+    <input type="file" class="form-control d-none" id="fileAddTrack" accept="image">
+</div>
+
+
+<script>
+    let Motion = @Html.Raw(Json.Serialize(ViewBag.Motion));
+    let Type = @Html.Raw(Json.Serialize(ViewBag.Type));
+
+    $(document).ready(function() {
+        // 回報區塊
+        let fileList = []
+
+        let fileDiv = `
+            <div class="file-area obj-center chose-temp">
+                <h3><i class="fas fa-plus"></i></h3>
+            </div>
+        `
+
+        if(!(Motion == "add" && Type == "Track")){
+            $(".report-display .file_wrap").append(fileDiv)
+        }
+
+        let listenFile = () => {
+            $(".report-display .file_wrap .file-area").on("click", function(e) {
+                if(fileList.length < 5){
+                    $("#fileAdd").click()
+                }
+
+            });
+        }
+
+        //圖片放大
+        $("#picturePopup").hide();
+        let listenImg = () => {
+            $(".img-area").on("click", function(e) {
+                $(".picture-img").prop("src",e.target.src)
+                $("#picturePopup").fadeIn();
+            });
+
+            $(".picture-close").click(function(){
+                $("#picturePopup").fadeOut();
+            });
+
+            // 點擊背景區域關閉彈窗
+            $("#picturePopup").click(function(event) {
+                if(event.target === this) {
+                    $(this).fadeOut();
+                }
+            });
+        }
+
+        listenFile()
+
+        let unListenFile = () => {
+            $(document).off("click", ".report-display .file_wrap .file-area");
+        }
+
+        $("#fileAdd").on("change", function(event) {
+
+            let file = event.target.files[0];
+
+            if (file && file.type.startsWith("image/") && (fileList.length < 5)) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+
+                    unListenFile()
+
+                    let imgStr = e.target.result
+                    fileList.push(imgStr)
+                    let imgDiv = `
+                        <div class="obj-center img-wrap">
+                            <img src="${imgStr}" class="img-area">
+                        </div>
+                    `
+
+                    $(".report-display .file_wrap .chose-temp").remove()
+                    $(".report-display .file_wrap").append(imgDiv)
+                    if(fileList.length < 5){
+                        $(".report-display .file_wrap").append(fileDiv)
+                    }
+
+                    listenFile()
+                    listenImg()
+
+                };
+                reader.readAsDataURL(file);
+            } else {
+                console.log("請選擇圖片檔案");
+            }
+        });
+
+        // 追蹤區塊
+        let fileListTrack = []
+
+        let fileDivTrack = `
+            <div class="file-area obj-center chose-temp">
+                <h3><i class="fas fa-plus"></i></h3>
+            </div>
+        `
+        $(".track-display .file_wrap").append(fileDivTrack)
+
+
+        let listenFileTrack = () => {
+            $(".track-display .file_wrap .file-area").on("click", function(e) {
+                if(fileListTrack.length < 5){
+                   $("#fileAddTrack").click()
+                }
+
+            });
+        }
+
+        listenFileTrack()
+
+        let unListenFileTrack = () => {
+            $(document).off("click", ".track-display .file_wrap .file-area");
+        }
+
+        $("#fileAddTrack").on("change", function(event) {
+
+            let file = event.target.files[0];
+
+            if (file && file.type.startsWith("image/") && (fileListTrack.length < 5)) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+
+                    unListenFileTrack()
+
+                    let imgStr = e.target.result
+                    fileListTrack.push(imgStr)
+                    let imgDiv = `
+                        <div class="obj-center img-wrap">
+                            <img src="${imgStr}" class="img-area">
+                        </div>
+                    `
+
+                    // let tempDiv = `
+                    //     <div class="obj-center img-wrap">
+                    //         <p> <i class="fas fa-times"></i></p>
+                    //         <img src="${imgStr}" class="img-area">
+                    //     </div>
+                    // `
+                    // let deleteDiv = `<p> <i class="fas fa-times"></i></p>`
+
+                    $(".track-display .file_wrap .chose-temp").remove()
+                    $(".track-display .file_wrap").append(imgDiv)
+                    if(fileListTrack.length < 5){
+                        $(".track-display .file_wrap").append(fileDivTrack)
+                    }
+
+                    listenFileTrack()
+                    listenImg()
+                };
+                reader.readAsDataURL(file);
+            } else {
+                console.log("請選擇圖片檔案");
+            }
+        });
+
+        //輸入控制
+
+        if(Motion == "select"){
+            $("input").prop('disabled', true)
+            $("textarea").prop('disabled', true)
+            $("select").prop('disabled', true)
+            $(".chose-temp").hide()
+        }else if(Motion == "add" && Type == "Track"){
+            $(".report-display .input_wrap input").prop('disabled', true)
+            $(".report-display .input_wrap select").prop('disabled', true)
+            $(".report-display .explain_wrap textarea").prop('disabled', true)
+        }
+
+        //回上頁
+        $(".back-button").on("click", function(e) {
+            location.href='/Project/Issues'
+        });
+
+
+    });
+
+</script>

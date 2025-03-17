@@ -1,594 +1,197 @@
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\appsettings.Development.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\appsettings.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.runtime.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.endpoints.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.exe
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.deps.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.runtimeconfig.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.pdb
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Azure.Core.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Azure.Identity.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Dapper.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Enums.NET.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ExtendedNumerics.BigDecimal.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Humanizer.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\MathNet.Numerics.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.Core.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.OOXML.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXml4Net.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXmlFormats.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.AspNetCore.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.DependencyInjection.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.Hosting.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\SixLabors.Fonts.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\SixLabors.ImageSharp.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.ClientModel.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.CodeDom.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Formats.Asn1.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.IO.Pipelines.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Memory.Data.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Text.Json.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.AssemblyReference.cache
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.GeneratedMSBuildEditorConfig.editorconfig
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfoInputs.cache
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfo.cs
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.CoreCompileInputs.cache
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.MvcApplicationPartsAssemblyInfo.cache
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cache
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cs
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\bundle\Heldom_SYS.styles.css
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\projectbundle\Heldom_SYS.bundle.scp.css
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.development.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.build.Heldom_SYS.props
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Heldom_SYS.props
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Heldom_SYS.props
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.Up2Date
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\refint\Heldom_SYS.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.pdb
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.genruntimeconfig.cache
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\ref\Heldom_SYS.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\appsettings.Development.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\appsettings.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.runtime.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.endpoints.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.exe
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.deps.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.runtimeconfig.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.pdb
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Azure.Core.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Azure.Identity.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Dapper.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Enums.NET.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ExtendedNumerics.BigDecimal.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Humanizer.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\MathNet.Numerics.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Newtonsoft.Json.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.Core.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.OOXML.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXml4Net.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXmlFormats.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.AspNetCore.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.DependencyInjection.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.Hosting.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\SixLabors.Fonts.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\SixLabors.ImageSharp.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.ClientModel.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.CodeDom.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.Convention.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.Hosting.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.Runtime.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Composition.TypedParts.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Drawing.Common.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Formats.Asn1.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.IO.Pipelines.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Memory.Data.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Runtime.Caching.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Text.Json.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\System.Windows.Extensions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.AssemblyReference.cache
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.GeneratedMSBuildEditorConfig.editorconfig
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfoInputs.cache
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfo.cs
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.CoreCompileInputs.cache
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.MvcApplicationPartsAssemblyInfo.cache
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cache
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cs
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.sourcelink.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\bundle\Heldom_SYS.styles.css
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\projectbundle\Heldom_SYS.bundle.scp.css
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.development.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssets.props
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.build.Heldom_SYS.props
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Heldom_SYS.props
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Heldom_SYS.props
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.pack.json
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.Up2Date
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\refint\Heldom_SYS.dll
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.pdb
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.genruntimeconfig.cache
-C:\code\ispan_Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\ref\Heldom_SYS.dll
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.sourcelink.json
-D:\Zoe\C#\00. project\Heldom_SYS\Heldom_SYS\obj\Debug\net8.0\scopedcss\Views\Attendance\Records.cshtml.rz.scp.css
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\appsettings.Development.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\appsettings.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.runtime.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.endpoints.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.exe
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.deps.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.runtimeconfig.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.pdb
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Azure.Core.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Azure.Identity.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Dapper.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Enums.NET.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ExtendedNumerics.BigDecimal.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Humanizer.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\MathNet.Numerics.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Build.Locator.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Mono.TextTemplating.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.Core.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.OOXML.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXml4Net.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXmlFormats.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.AspNetCore.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.DependencyInjection.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.Hosting.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\SixLabors.Fonts.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\SixLabors.ImageSharp.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.ClientModel.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.CodeDom.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.Convention.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.Hosting.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.Runtime.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.TypedParts.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Drawing.Common.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Formats.Asn1.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.IO.Pipelines.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Memory.Data.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Runtime.Caching.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Text.Encodings.Web.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Text.Json.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Windows.Extensions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.AssemblyReference.cache
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.GeneratedMSBuildEditorConfig.editorconfig
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfoInputs.cache
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfo.cs
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.CoreCompileInputs.cache
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.MvcApplicationPartsAssemblyInfo.cache
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cache
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cs
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\scopedcss\bundle\Heldom_SYS.styles.css
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\scopedcss\projectbundle\Heldom_SYS.bundle.scp.css
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.development.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssets.props
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.build.Heldom_SYS.props
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Heldom_SYS.props
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Heldom_SYS.props
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.pack.json
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.Up2Date
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\refint\Heldom_SYS.dll
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.pdb
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.genruntimeconfig.cache
-D:\MyBigProject\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\ref\Heldom_SYS.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\appsettings.Development.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\appsettings.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.runtime.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.staticwebassets.endpoints.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.exe
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.deps.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.runtimeconfig.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Heldom_SYS.pdb
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Azure.Core.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Azure.Identity.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Dapper.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Enums.NET.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ExtendedNumerics.BigDecimal.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Humanizer.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\MathNet.Numerics.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.Core.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.OOXML.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXml4Net.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\NPOI.OpenXmlFormats.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.AspNetCore.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.DependencyInjection.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\Quartz.Extensions.Hosting.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\SixLabors.Fonts.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.ClientModel.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.CodeDom.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Memory.Data.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Text.Json.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.AssemblyReference.cache
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.GeneratedMSBuildEditorConfig.editorconfig
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfoInputs.cache
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.AssemblyInfo.cs
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.CoreCompileInputs.cache
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.MvcApplicationPartsAssemblyInfo.cache
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cache
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.RazorAssemblyInfo.cs
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\scopedcss\bundle\Heldom_SYS.styles.css
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\scopedcss\projectbundle\Heldom_SYS.bundle.scp.css
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.development.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssets.props
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.Heldom_SYS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.build.Heldom_SYS.props
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Heldom_SYS.props
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Heldom_SYS.props
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.pack.json
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.csproj.Up2Date
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\refint\Heldom_SYS.dll
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.pdb
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\Heldom_SYS.genruntimeconfig.cache
+D:\新增資料夾\Heldom_SYS-master\Heldom_SYS\obj\Debug\net8.0\ref\Heldom_SYS.dll

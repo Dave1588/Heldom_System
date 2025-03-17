@@ -1,0 +1,208 @@
+﻿@* stylesheet *@
+<link rel="stylesheet" href="~/css/Profile/Account.css" asp-append-version="true" />
+
+
+<div class="main_wrap border-radius box-shadow">
+    <div id="work" class="work_main_area obj-horizontal-center">
+        <div class="top_area">
+            <h4 class="bold">員工帳號管理</h4>
+        </div>
+        <div class="chose-display">
+            <div class="search-row">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">部門</p>
+                    <select id="departmentSelect" class="form-select" aria-label="部門選擇">
+                        <option value="1" selected>工務工程部</option>
+                        <option value="2">工務管理部</option>
+                        <option value="3">行政管理部</option>
+                    </select>
+                </div>
+
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">啟用狀態</p>
+                    <select id="statusSelect" class="form-select" aria-label="啟用狀態選擇">
+                        <option value="1" selected>啟用中</option>
+                        <option value="2">已關閉</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-row">
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">員工編號</p>
+                    <input maxlength="10" type="text" class="form-control" id="employeeId" name="employeeId">
+                </div>
+
+                <div class="input_wrap">
+                    <p class="color-gray-dark bold p-width">員工姓名</p>
+                    <input maxlength="10" type="text" class="form-control" id="employeeName" name="employeeName">
+                </div>
+
+                <div class="buttons">
+                    <button class="search-button obj-center">
+                        <p class="bold color-white">查詢</p>
+                    </button>
+                    <button id="unusualPopupButton" class="button button_style bold">
+                        <p class="bold color-white">新增</p>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="middle_area">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="tb-title">序號</th>
+                        <th class="tb-title">照片</th>
+                        <th class="tb-title">員工姓名</th>
+                        <th class="tb-title">員工編號</th>
+                        <th class="tb-title">聯絡電話</th>
+                        <th class="tb-title">部門</th>
+                        <th class="tb-title">職稱</th>
+                        <th class="tb-title">到職日</th>
+                        <th class="tb-title">啟用狀態</th>
+                        <th class="tb-title">編輯</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-check-circle color-green"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-check-circle color-green"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-check-circle color-green"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-check-circle color-green"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-check-circle color-green"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-check-circle color-green"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-exclamation-circle color-gray-light"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>員姓名</td>
+                        <td>ABC-123456</td>
+                        <td>0919-12345</td>
+                        <td>管理部</td>
+                        <td>現場主管</td>
+                        <td>2012/02/01</td>
+                        <td><i class="fas fa-exclamation-circle color-gray-light"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="end_area obj-center">
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    $(document).ready(function () {
+
+
+        // 頁次生成
+        $(".end_area").append(`
+                <h4><i class="fas fa-chevron-left txt-center" id="Last"></i></h4>
+            `);
+
+        for (let i = 0; i < 5; i++) {
+            $(".end_area").append(`
+                    <div class="page_circle obj-center" id="page_circle${i + 1}">
+                        <p class="bold">${i + 1}</p>
+                    </div>
+                `);
+        }
+
+        $(".end_area").append(`
+                <h4><i class="fas fa-chevron-right txt-center" id="Next"></i></h4>
+        `);
+
+        // 初始化第一頁圓圈為選中狀態
+        document.getElementById("page_circle1").style.backgroundColor = '#D9D9D9';
+
+    });
+
+    // 新增員工帳號
+    $("#unusualPopupButton").on("click", function(e) {
+        location.href='/Profile'
+        //location.href='/Project/Issues?type=Unusual&id=123&motion=add'
+    });
+
+</script>

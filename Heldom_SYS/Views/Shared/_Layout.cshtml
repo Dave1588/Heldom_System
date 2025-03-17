@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
 
 
-
-
     @* script *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -29,20 +27,26 @@
 <body>
     @* ----- header ----- *@
     <header class="layout_header bold">
+        @* left *@
         <div class="layout_bars">
-                <h3><i class="fas fa-bars"></i></h3>
+            <h6 class="layout_menu_bar color-menu"><i class="fas fa-bars"></i></h6>
         </div>
-        <div class="layout_inline">
-            <div>
- @* logo *@
+        @* logo *@
+        <div class="layout_inline layout_logo">
+            <div class="logo-img">
+                <img src="~/img/Heldom.png" class="img-fluid">
             </div>
-            <div class="layout_name">Heldom</div>
+            <div class="layout_name color-gray-medium">Heldom</div>
         </div>
+        @* right *@
+        <div class="mb-display-none">
         <div class="layout_block layout_inline">
-            <div id="timeDisplay" class="layout_time">2025 / 02 / 15  14 : 39 : 21</div>
+            <div id="timeDisplay" class="layout_time"> 2025 / 02 / 15  14:39:21</div>
+            @* >>> 待加入照片 *@
             <div class="layout_headshot">
                     <h3><i class="fas fa-user"></i></h3>
             </div>
+        </div>
         </div>
     </header>
 
@@ -57,51 +61,51 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 
-    <script>
-        let menuData = [
-            {
-                title:"施工監控平台",
-                iconNmae:"fa-columns",
-                kidList:["施工監控儀表板","即時監控影像"]
-            },
-            {
-                title:"考勤管理",
-                iconNmae:"fa-address-card",
-                kidList:["打卡與請假","員工出勤紀錄"]
-            },
-            {
-                title:"現場施工管理",
-                iconNmae:"fa-hammer",
-                kidList:["異常回報與追蹤","施工圖紙管理","機具設備管理"]
-            },
-            {
-                title:"安全管理",
-                iconNmae:"fa-columns",
-                kidList:["安全巡檢紀錄","事故安全回報"]
-            },
-            {
-                title:"個人資料",
-                iconNmae:"fa-user",
-                kidList:["個人資料設定","員工帳號管理"]
-            },
-            {
-                title:"系統管理",
-                iconNmae:"fa-cog",
-                kidList:["系統設定"]
-            },
-        ]
+    <script async>
+        let controllerName = "@ViewContext.RouteData.Values["controller"]"
+        let actionName = "@ViewContext.RouteData.Values["action"]";
+        
+        //拿取menu資料
+        function GetMenu() {
+          return new Promise((resolve, reject) => {
+            $.ajax({
+              url: "/Tool/GetMenu",
+              type: "GET",
+              success: resolve,
+              error: reject
+            });
+          });
+        }
 
-        $(document).ready(function() {
+
+        $(document).ready(async function() {
+            let menuData = await GetMenu();
+            menuData = JSON.parse(menuData)
+            // console.log('menuData',menuData)
+
+            // 調整手機版樣式
+            let addMobileStyle = () => {
+
+                if($(document).width() < 992){
+                    let className = $("#menu").prop("class")
+                    if(!className.includes("mobile-menu-style")){
+                        $("#menu").addClass("mobile-menu-style")
+                    }
+
+                }
+            }
+            addMobileStyle()
 
             //動態生成menu
             for(let i = 0;i<menuData.length;i++){
+
                 let eleStr = `
                     <div class="layout_menu_wrap bold color-menu">
                         <div class="layout_menu_title ">
                             <div class="layout_menu_icon">
-                                    <h6 class=""><i class="fas ${menuData[i].iconNmae}"></i></h6>
+                                    <h6 class=""><i class="fas ${menuData[i].IconNmae}"></i></h6>
                             </div>
-                            <div class="layout_menu_font">${menuData[i].title}</div>
+                            <div class="layout_menu_font">${menuData[i].Title}</div>
                             <div class="layout_menu_switch ">
                                     <p><i class="fas fa-angle-up"></i></p>
                             </div>
@@ -109,16 +113,18 @@
                         <div class="layout_menu_content_container">
                 `
 
-                for(let j = 0;j<menuData[i].kidList.length;j++ ){
+                for(let j = 0;j<menuData[i].KidList.length;j++ ){
                     eleStr += `
                         <div class="layout_menu_content">
-                            <div class="layout_menu_font">
-                                ${menuData[i].kidList[j]}
-                            </div>
+                            <a class="a-style" href="${menuData[i].KidList[j].Link}">
+                              <div class="layout_menu_font">
+                                ${menuData[i].KidList[j].Name}
+                              </div>
+                            </a>
                         </div>
                     `
                 }
-            
+
                 eleStr += `
                     </div>
                 </div>
@@ -131,7 +137,7 @@
             for(let i = 0;i<menuData.length;i++){
                 eleStr += `
                     <div>
-                        <h6 class=""><i class="fas ${menuData[i].iconNmae}"></i></h6>
+                        <h6 class=""><i class="fas ${menuData[i].IconNmae}"></i></h6>
                     </div>
                 `
             }
@@ -150,18 +156,21 @@
 
             $( ".layout_bars" ).on( "click", function(e) {
                 let className = $("#menu").prop("class")
-                if(className == "layout_menu_show"){
-                    $("#menu").prop("class","layout_menu_hide")
 
+                if(className.includes("layout_menu_show")){
+                    $("#menu").prop("class","layout_menu_hide")
+                    
                     $(".layout_menu_wrap").hide()
                     $(".layout_menu_picture").show()
-
+                    
                 }else{
                     $("#menu").prop("class","layout_menu_show")
 
                     $(".layout_menu_wrap").show()
                     $(".layout_menu_picture").hide()
                 }
+
+                addMobileStyle()
 
             });
 
@@ -191,9 +200,33 @@
                 $(".layout_menu_font").css("color","#9197B3");
 
                 $( this ).css("background-color","#0040DD");
-                $( this ).children().css("color","#ffffff");
+                $( this ).children().children().css("color","#ffffff");
 
             });
+
+            //維持開啟時藍色            
+            for(let i = 0;i<menuData.length;i++){
+
+                for(let j = 0;j<menuData[i].KidList.length;j++ ){
+                    let nowPath = menuData[i].KidList[j].Link.toUpperCase()
+                    let Path = "/" + controllerName.toUpperCase() + "/" + actionName.toUpperCase()
+                    if(Path == nowPath){
+                        // console.log("大標:",i)
+                        // console.log("小標:",j)
+                        $(".layout_menu_title").eq(i).click();
+                        $(".layout_menu_content_container").eq(i).children().eq(j).click()
+                        break;
+                    }
+                    
+                }
+            
+            }
+
+            // 手機版需隱藏
+            $( ".layout_bars" ).click()
+            if($(document).width() < 992){
+                $("#timeDisplay").hide()
+            }
 
         });
 

@@ -1,0 +1,433 @@
+﻿@* stylesheet *@
+
+@* https://localhost:7142/Profile/NewAccount *@
+
+<div class="main_wrap border-radius box-shadow">
+	<div class="top_area">
+		<h4 class="bold">編輯員工資料</h4>
+		<div class="form-check form-switch switch_wrap">
+			<label class="form-check-label" for="flexSwitchCheckDefault" id="switch_txt">啟用中</label>
+			<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+		</div>
+	</div>
+	<div class="middle_area">
+		<div class="middle_area_left">
+			<div class="photo_wrap">
+				<p class="color-gray-dark bold p_width">員工照片</p>
+				<div class="photo-box" id="photoBox">
+					<div class="upload-area obj-center">
+						<i class="fas fa-plus obj-center"></i>
+					</div>
+				</div>
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">員工姓名</p>
+				<input value="姓名" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">身分證編號</p>
+				<input value="A123456789" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">聯絡電話</p>
+				<input value="0919-123456" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">緊急聯絡人</p>
+				<input value="聯絡人" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">到職日</p>
+				<input type="date" value="" class="form-control" />
+			</div>
+		</div>
+		<div class="middle_area_right">
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">員工編號</p>
+				<input value="ABC-123456" class="form-control" disabled />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">帳號權限</p>
+				<select class="form-select">
+					<option selected>限制權限</option>
+					<option>所有權限</option>
+					<option>管理權限</option>
+					<option>一般權限</option>
+				</select>
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">部門</p>
+				<select class="form-select">
+					<option selected>管理部</option>
+				</select>
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">職稱</p>
+				<select class="form-select">
+					<option>工地主任</option>
+					<option selected>一般職員</option>
+				</select>
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">出生日期</p>
+				<input type="date" value="" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">地址</p>
+				<input value="台中市台中市台中市台中市台中市" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">緊急電話</p>
+				<input value="0919-123456" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">離職日</p>
+				<input type="date" value="" class="form-control" />
+			</div>
+		</div>
+	</div>
+	<div class="end_area obj-center">
+		<button type="button" class="btn btn-outline"><p class="color-blue">取消</p></button>
+		<button type="button" class="btn btn-primary" id="save_btn"><p>儲存</p></button>
+	</div>
+</div>
+
+<!-- 文件上傳輸入框 -->
+<input type="file" class="form-control d-none" id="fileAdd" accept="image">
+
+<!-- 儲存按鈕 Modal -->
+<div id="clockPopup" class="modal clock-popup-wrap">
+	<div class="modal-dialog clock-popup-content">
+		<div class="modal-content">
+			<div class="modal-header clock-top obj-vertical-center">
+				<h5 class="modal-title color-gray-dark bold">提醒已離職人員</h5>
+				<div class="clock-close obj-center"><i class="fas fa-times"></i></div>
+			</div>
+			<div class="modal-body clock-area">
+				<h1 id="timeClock" class="color-gray-medium bold">提交後將關閉啟用狀態</h1>
+				<h4 class="color-gray-dark bold">是否確認提交?</h4>
+			</div>
+			<div class="modal-footer clock-check">
+				<button class="clock-button_cancel obj-center">
+					<p class="bold color-blue">否</p>
+				</button>
+				<button class="clock-button obj-center">
+					<p class="bold color-white">是</p>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.main_wrap {
+		width: 100%;
+		height: auto;
+		padding: 60px 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 40px;
+	}
+
+	.top_area {
+		width: 100%;
+		max-width: 1000px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.middle_area {
+		width: 100%;
+		max-width: 1000px;
+		display: flex;
+		gap: 40px;
+	}
+
+	.end_area {
+		max-width: 1000px;
+		column-gap: 40px;
+	}
+
+	.middle_area_left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.middle_area_right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.input_wrap {
+		width: 480px;
+		height: 48px;
+		justify-content: space-between;
+		display: flex;
+		align-items: center;
+	}
+
+	input {
+		width: 360px;
+		height: 48px;
+		background-color: #ffffff;
+		border-radius: 10px;
+		border: 1px solid var(--color-line);
+		padding: 13px 12px 13px 12px;
+	}
+
+		input:disabled {
+			background-color: var(--color-gray-light);
+		}
+
+	.form-select {
+		width: 360px;
+		height: 48px;
+	}
+
+	.form-control {
+		width: 360px;
+	}
+
+	.form-check-input:checked {
+		width: 80px !important;
+		height: 40px !important;
+		background-color: var(--color-green) !important;
+		border: 0 !important;
+	}
+
+	.form-check-input {
+		width: 80px !important;
+		height: 40px !important;
+		background-color: var(--color-gray-light) !important;
+	}
+
+	.switch_wrap {
+		width: 348px;
+		height: 40px;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
+
+	.form-check-label {
+		margin-right: 60px;
+	}
+
+	.photo-box {
+		width: 160px;
+		height: 160px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10px;
+		background-color: #ffffff;
+		border: 1px solid var(--color-line);
+		margin-right: 200px;
+		display: flex;
+		cursor: pointer;
+	}
+
+	.photo_wrap {
+		width: 480px;
+		height: 160px;
+		justify-content: space-between;
+		display: flex;
+		margin-bottom: 24px;
+	}
+
+	.fa-plus {
+		font-size: 40px;
+		color: var(--color-menu-text);
+	}
+
+	.p_width {
+		width: 100px;
+	}
+
+	.end_area button {
+		width: 240px !important;
+		height: 54px !important;
+		border-radius: 28px;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+		.end_area button p {
+			margin: 0;
+			font-weight: bold;
+		}
+
+
+	/* 打卡視窗樣式 */
+	.clock-popup-wrap {
+		display: none; /* 預設隱藏 */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.clock-popup-content {
+		max-width: 600px;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.modal-content {
+		background: var(--color-div-bg);
+		border-radius: var(--border-radius);
+		width: 600px;
+	}
+
+	.modal-header {
+		border-bottom: none;
+		padding: 0;
+	}
+
+	.modal-body {
+		padding: 40px;
+	}
+
+	.modal-footer {
+		border-top: none;
+		padding: 0 40px 40px 40px;
+	}
+
+	.clock-close {
+		width: 32px;
+		height: 32px;
+		font-size: 32px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+	}
+
+	.clock-top {
+		width: 100%;
+		height: 48px;
+		background-color: var(--color-background);
+		border-top-right-radius: 20px !important;
+		border-top-left-radius: 20px !important;
+		padding: 0px 20px;
+	}
+
+	.clock-area {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+	}
+
+	.clock-check {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0;
+	}
+
+	.clock-button {
+		background-color: var(--color-blue);
+		width: 240px;
+		height: 54px;
+		border-radius: 28px;
+	}
+
+	.clock-button_cancel {
+		background-color: rgba(0, 64, 221, 0.2) !important; /* 使用 20% 透明度 */
+		border: 1px solid var(--color-blue) !important;
+		width: 240px;
+		height: 54px;
+		border-radius: 28px;
+	}
+
+	/* 添加預覽圖片相關樣式 */
+	.preview-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.upload-area {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+</style>
+
+<script>
+	// 是否啟用 文字控制
+	const switchInput = document.getElementById("flexSwitchCheckDefault");
+	const switchLabel = document.getElementById("switch_txt");
+
+	switchInput.addEventListener("change", function() {
+		if (this.checked) {
+			switchLabel.textContent = "啟用中";
+		} else {
+			switchLabel.textContent = "已關閉";
+		}
+	});
+
+	//打卡視窗控制
+	$("#save_btn").click(function(){
+		$("#clockPopup").fadeIn();
+	});
+
+	$(".clock-close").click(function(){
+		$("#clockPopup").fadeOut();
+	});
+
+	// 點擊背景區域關閉彈窗
+	$("#clockPopup").click(function(event) {
+		if(event.target === this) {
+			$(this).fadeOut();
+		}
+	});
+
+	// 照片上傳功能
+	$(document).ready(function() {
+		let currentPhoto = null;
+
+		// 點擊上傳區域觸發文件選擇
+		$("#photoBox").on("click", function() {
+			$("#fileAdd").click();
+		});
+
+		// 監聽文件上傳
+		$("#fileAdd").on("change", function(event) {
+			let file = event.target.files[0];
+
+			if (file && file.type.startsWith("image/")) {
+				let reader = new FileReader();
+				reader.onload = function(e) {
+					let imgStr = e.target.result;
+					currentPhoto = imgStr;
+
+					// 更新預覽圖
+					$(".upload-area").remove();
+					$("#photoBox").html(`
+						<img src="${imgStr}" class="preview-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+					`);
+				};
+				reader.readAsDataURL(file);
+			} else {
+				console.log("請選擇圖片檔案");
+			}
+		});
+	});
+</script>
