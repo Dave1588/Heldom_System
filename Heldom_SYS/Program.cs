@@ -32,8 +32,8 @@ builder.Services.AddScoped<IPrintCategoryService, PrintCategoryService>();
 builder.Services.AddSession(); // 啟用 Session
 
 // 資料庫連線
-//builder.Services.AddDbContext<ConstructionDbContext>(
-//            options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConstructionDBConnstring")));
+builder.Services.AddDbContext<ConstructionDbContext>(
+            options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConstructionDB")));
 
 // 添加身份驗證
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -44,7 +44,7 @@ builder.Services.AddSession(); // 啟用 Session
 //    });
 
 // 從 appsettings.json 中讀取 DefaultConnection 連接字串
-string? connectionString = builder.Configuration.GetConnectionString("ConstructionDB2");
+string? connectionString = builder.Configuration.GetConnectionString("ConstructionDB");
 
 // 可以將連接字串註冊到依賴注入容器
 builder.Services.AddScoped<SqlConnection>(provider => new SqlConnection(connectionString));
