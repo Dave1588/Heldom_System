@@ -3,16 +3,28 @@
 <link rel="stylesheet" href="~/css/Project/Blueprints.css" asp-append-version="true" />
 
 
+
+
 <body>
 
     <!-- Main Start -->
     <div class="main_wrap border-radius box-shadow">
         <div class="container">
-            <div class="mb-4" data-wow-delay="0.1s" style="max-width: 600px;">
-                <div class="top_area">
+            <div class="mb-4" data-wow-delay="0.1s" style="max-width: 100%;">
+
+
+                <div class="top_area2">
                     <h4 class="db-title-l">圖紙版本管理</h4>
+                    <div class="btn-link">
                     <button id="unusualPopupButton" class="button button_style bold">新增</button>
+                    @* 返回*@
+                    <a asp-controller="Project" asp-action="BlueprintsCategories">
+                    <p class="back-icon"><i class="fas fa-reply end-arrow" style="align-items:center"></i></p>
+                    </a>
+                    </div>
                 </div>
+
+
             </div>
 
     <div class="container-fluid ">

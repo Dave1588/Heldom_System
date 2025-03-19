@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Heldom_SYS.Interface;
 using Heldom_SYS.Models;
+using MathNet.Numerics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -9,6 +10,8 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using NPOI.HSSF.Record;
 using NPOI.SS.Formula.Functions;
+using System.Reflection;
+using System;
 
 namespace Heldom_SYS.Controllers
 {
@@ -80,7 +83,7 @@ namespace Heldom_SYS.Controllers
                     UserRoleStore.UserName = user.EmployeeName;
                 }
             }
-
+ 
             if (!UserRoleStore.UserID.IsNullOrEmpty())
             {
                 string roleSql = @"SELECT * FROM Employee where EmployeeID = @EmployeeID";
@@ -93,6 +96,9 @@ namespace Heldom_SYS.Controllers
                 if (role != null) {
                     string roleName = role.PositionRole;
                     UserRoleStore.SetRole(roleName);
+                    HttpContext.Session.SetString("UserID", UserRoleStore.UserID);
+                    HttpContext.Session.SetString("UserName", UserRoleStore.UserName);
+                    HttpContext.Session.SetString("Role", UserRoleStore.GetRole());
                 }
                 
             }

@@ -1,9 +1,10 @@
 ﻿@* stylesheet *@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 @* https://localhost:7142/Profile/Settings *@
 
-
-<div class="main_wrap border-radius box-shadow">
+<div id="loading" style="display: none;">Loading...</div>
+<div class="main_wrap border-radius box-shadow" id="profileContainer">
     <div class="setting_main_area obj-horizontal-center">
         <div class="top_area txt-left">
             <h4 class="bold">個人資料設定</h4>
@@ -26,13 +27,13 @@
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">生日</p>
-                    <input type="date" id="birthday" class="form-control" value="2025-02-20" disabled />
+                    <input type="date" id="birthDate" class="form-control" value="2025-02-20" disabled />
                 </div>
             </div>
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">聯絡電話</p>
-                    <input type="tel" id="phone" class="form-control" value="0919-123456" />
+                    <input type="tel" id="phoneNumber" class="form-control" value="0919-123456" />
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">地址</p>
@@ -51,11 +52,96 @@
             </div>
         </div>
         <div class="button_area">
-            <button type="button" class="btn btn-outline"><p class="color-blue">取消</p></button>
-            <button type="button" class="btn btn-primary"><p>儲存</p></button>
+            <button type="button" class="btn btn-outline" id="cancel"><p class="color-blue">取消</p></button>
+            <button type="button" class="btn btn-primary" id="save"><p>儲存</p></button>
         </div>
     </div>
 </div>
+
+<script>
+    // Show loading indicator
+    $("#loading").show();
+
+    $(document).ready(function(){
+
+        axios.get('/Profile/GetSettingsData')
+        .then(function(response){
+
+            console.log(response);
+            console.log(response.data[0].name);
+            appendProfileInfo(response.data[0]);
+        })
+        .catch(function(error){
+            console.error("GetSettingsData failed!",error);
+        })
+        .finally(function() {
+            // Hide loading indicator and show profile content
+            $("#loading").hide();
+            $("#profileContainer").show();
+        });
+    });
+
+    function appendProfileInfo(data){
+        console.log("Appending profile info:",data.employeeID); // Debugging line
+
+        document.getElementById("employeeName").value = data.name;
+        document.getElementById("position").value = data.position;
+        document.getElementById("employeeId").value = data.employeeID;
+        document.getElementById("birthDate").value = formatDate(data.birthDate);
+        document.getElementById("phoneNumber").value = data.phoneNumber;
+        document.getElementById("address").value = data.address;
+        document.getElementById("emergencyContact").value = data.emergencyContact;
+        document.getElementById("emergencyPhone").value = data.emergencyContactPhone;
+    }
+
+    // 轉換日期格式
+    function formatDate(dateString) {
+        if (!dateString) return '';
+        let date = new Date(dateString);
+        let year = date.getFullYear();
+        // getDate() 取 0-11而已, 要自己 +1
+        let month = String(date.getMonth() + 1).padStart(2, '0');
+        let day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    }
+
+    $('#cancel').click(function(){
+        location.href ="https://" + location.hostname + ":" +window.location.port + "/Profile/Index";
+    });
+
+    $('#save').click(function(){
+
+        let phoneNumber = document.getElementById("phoneNumber").value;
+        let address = document.getElementById("address").value;
+        let emergencyContact = document.getElementById("emergencyContact").value;
+        let emergencyContactPhone = document.getElementById("emergencyPhone").value;
+
+        // 準備要發送的資料
+        let updateData = {
+            phoneNumber: phoneNumber,
+            address: address,
+            emergencyContact: emergencyContact,
+            emergencyContactPhone: emergencyContactPhone
+        };
+
+        // 發送 POST 請求到後端
+        axios.post('/Profile/UpdateEmployeeInfo', updateData)
+            .then(function(response) {
+                if (response.data.success) {
+                    alert('資料更新成功！');
+                    // 更新成功後返回上一頁
+                    window.location.href = '/Profile/Index';
+                } else {
+                    alert('更新失敗：' + response.data.message);
+                }
+            })
+            .catch(function(error) {
+                console.error('更新失敗：', error);
+                alert('更新失敗，請稍後再試！');
+            });
+    });
+
+</script>
 
 <style>
     .main_wrap {
@@ -101,10 +187,10 @@
         align-items: center;
     }
 
-    .input_wrap p {
-        margin: 0;
-        width: 100px;
-    }
+        .input_wrap p {
+            margin: 0;
+            width: 100px;
+        }
 
     .form-control {
         width: 360px !important;
@@ -120,39 +206,40 @@
         gap: 40px;
     }
 
-    .button_area button {
-        width: 240px !important;
-        height: 54px !important;
-        border-radius: 28px;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        .button_area button {
+            width: 240px !important;
+            height: 54px !important;
+            border-radius: 28px;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .button_area button p {
-        margin: 0;
-        font-weight: bold;
-    }
+            .button_area button p {
+                margin: 0;
+                font-weight: bold;
+            }
 
     /* 修改取消按鈕樣式 */
     .btn-outline {
-        background-color: rgba(0, 64, 221, 0.2); !important;   /* 使用 20% 透明度 */
+        background-color: rgba(0, 64, 221, 0.2);
+        !important; /* 使用 20% 透明度 */
         border: 1px solid var(--color-blue) !important;
     }
 
-    .btn-outline p {
-        color: var(--color-blue) !important;
-    }
+        .btn-outline p {
+            color: var(--color-blue) !important;
+        }
 
     /* 保持儲存按鈕樣式 */
     .btn-primary {
         background-color: var(--color-blue);
     }
 
-    .btn-primary p {
-        color: white;
-    }
+        .btn-primary p {
+            color: white;
+        }
 
     /* 新增：設定 disabled 狀態的 input 樣式 */
     .form-control:disabled {

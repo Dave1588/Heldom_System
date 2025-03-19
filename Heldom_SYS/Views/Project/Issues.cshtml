@@ -14,14 +14,12 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th class="tb-title">序號</th>
-                        <th class="tb-title">狀態</th>
                         <th class="tb-title">事件編號</th>
+                        <th class="tb-title">狀態</th>
                         <th class="tb-title">事件類型</th>
                         <th class="tb-title">事件標題</th>
                         <th class="tb-title">開始時間</th>
                         <th class="tb-title">結束時間</th>
-                        <th class="tb-title">紀錄員工</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,36 +38,37 @@
             <div class="chose-display">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">發生期間</p>
-                    <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+                    <input type="datetime-local" class="form-control" id="occurInput">
                 </div>
 
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">紀錄員工</p>
-                    <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+                    <input maxlength="10" type="text" class="form-control" id="staffInput">
                 </div>
 
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">事件類型</p>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected value="CON001">結構錯誤</option>
-                        <option value="CON002">施工尺寸不符</option>
-                        <option value="CON003">材料瑕疵</option>
-                        <option value="CON004">焊接 / 固定異常</option>
+                    <select id="categorySelect" class="form-select" aria-label="Default select example">
+                        <option selected value="ALL">全部</option>
+                        <option value="CON001">施工與圖紙尺寸不符</option>
+                        <option value="CON002">材料瑕疵</option>
+                        <option value="CON003">工地安全</option>
+                        <option value="CON004">人員受傷</option>
+                        <option value="CON004">設備故障</option>
                     </select>
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">事件標題</p>
-                    <input maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
+                    <input maxlength="50" type="text" class="form-control" id="titleInput">
                 </div>
-                <button class="button button_style bold">查詢</button>
+                <button id="AccidentSearch" class="button button_style bold">查詢</button>
             </div>
             <div class="middle_area">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="tb-title">序號</th>
-                            <th class="tb-title">狀態</th>
                             <th class="tb-title">事件編號</th>
+                            <th class="tb-title">狀態</th>
                             <th class="tb-title">事件類型</th>
                             <th class="tb-title">事件標題</th>
                             <th class="tb-title">開始時間</th>
@@ -117,189 +116,101 @@
 </div>
 
 <script>
+    let nowReportPage = 1
+    let nowTrackPage = 1
+    
+    function GetReport() {
 
-    let unusualData = [
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:true,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:true,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
+        let req = {
+            Page: nowReportPage.toString(),
         }
-    ]
 
-    let unusualPageCount = 5;
 
-    let trackData = [
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:true,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:true,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
-        },
-        {
-            id:"1",
-            status:false,
-            eventId:"PRG002",
-            eventType:"事件類型",
-            eventTitle:"事件標題",
-            startDate:"2025/02/16",
-            startTime:"09:00",
-            endDate:"2025/02/16",
-            endTime:"09:00",
-            recordName:"員工名"
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: "/Accident/GetReport",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(req),
+                success: resolve,
+                error: reject
+            });
+        });
+    }
+
+    function GetTrack() {
+
+        let req = {
+            Page: nowTrackPage.toString(),
         }
-    ]
 
-    let trackPageCount = 3;
 
-    $(document).ready(function() {
+        if($("#occurInput").val()){
+            let jsDateStr = $("#occurInput").val();
+            let jsDate = new Date(jsDateStr);
+            let formattedDate = jsDate.toISOString().slice(0, 19).replace("T", " ");
 
-        //打卡表格生成
-        for(let i = 0;i<unusualData.length;i++){
+            req.Date = formattedDate
+        }
+
+        if($("#titleInput").val()){
+            req.Title = $("#titleInput").val()
+        }
+
+        if($("#staffInput").val()){
+            req.Name = $("#staffInput").val()
+        }
+
+        if($("#categorySelect option:selected").text()){
+            req.Type = $("#categorySelect option:selected").text()
+        }
+
+
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: "/Accident/GetTrack",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(req),
+                success: resolve,
+                error: reject
+            });
+        });
+    }
+
+    //拿取異常回報紀錄
+    let createReportTable = async() => {
+        let data = await GetReport();
+        let tableData = data.data
+            
+        $("#unusual .middle_area table tbody ").empty()
+
+        for(let i = 0;i<tableData.length;i++){
+            let StartTime = tableData[i]?.StartTime?.split('T') || ["" , ""]
+            let EndTime = tableData[i]?.EndTime?.split('T') || ["" , ""]
+
             let ele = `
                 <tr>
-                    <td class="tb-txt">${unusualData[i].id}</td>
+                    <td class="tb-txt">${tableData[i].AccidentId}</td>
                     <td class="tb-txt">
                         <p>
-                            ${unusualData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
+                            ${tableData[i].IncidentStatus ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
                         </p>
                     </td>
-                    <td class="tb-txt">${unusualData[i].eventId}</td>
-                    <td class="tb-txt">${unusualData[i].eventType}</td>
-                    <td class="tb-txt">${unusualData[i].eventTitle}</td>
+                    <td class="tb-txt">${tableData[i].AccidentType}</td>
+                    <td class="tb-txt">${tableData[i].AccidentTitle}</td>
                     <td class="tb-txt">
                         <div class="center_display">
-                            <span>${unusualData[i].startDate}</span>
-                            <span>${unusualData[i].startTime}</span>
+                            <span>${StartTime[0] }</span>
+                            <span>${StartTime[1] }</span>
                         </div>
                     </td>
                     <td class="tb-txt">
-                       <div class="center_display">
-                            <span>${unusualData[i].endDate}</span>
-                            <span>${unusualData[i].endTime}</span>
+                        <div class="center_display">
+                            <span>${EndTime[0] }</span>
+                            <span>${EndTime[1] }</span>
                         </div>
                     </td>
-                    <td class="tb-txt">${unusualData[i].recordName}</td>
                 </tr>
             `
 
@@ -307,50 +218,88 @@
 
         }
 
-        //打卡分頁生成
 
+        $("#unusual .end_area ").empty()
+
+        //回報分頁生成
         $("#unusual .end_area").append(`
             <h4><i class="fas fa-angle-left"></i></h4>
         `)
 
-        for(let i = 0;i<unusualPageCount;i++ ){
-            $("#unusual .end_area").append(`
-                <div class="page_circle obj-center">
-                    <p class="bold">${i+1}</>
-                </div>
-            `)
+        for(let i = 0;i<data.pageCount;i++ ){
+            if((i+1) == nowReportPage){
+                $("#unusual .end_area").append(`
+                    <div class="page_circle obj-center circle_show" >
+                        <p class="bold">${i+1}</>
+                    </div>
+                `)
+            }else{
+                $("#unusual .end_area").append(`
+                    <div class="page_circle obj-center" >
+                        <p class="bold">${i+1}</>
+                    </div>
+                `)
+            }
+           
         }
 
         $("#unusual .end_area").append(`
             <h4><i class="fas fa-angle-right"></i></h4>
         `)
 
-        //請假表格生成
-        for(let i = 0;i<trackData.length;i++){
+        changeReportPage()
+
+        // 查看異常
+        $("#unusual .middle_area table tbody tr").on("click", function(e) {
+            let ID = $(this).children().eq(0).text().trim()
+            location.href='/Project/Issues?type=Unusual&id=' + ID + '&motion=select'
+        });
+
+    }
+
+    let changeReportPage = () => {
+        $('#unusual .end_area .page_circle').on('click', function(event) {
+            nowReportPage = $(this).children().text().trim()
+            createReportTable()
+        });
+
+    }
+
+    //拿取異常追蹤紀錄
+    let createTrackTable = async() => {
+        let data = await GetTrack();
+        let tableData = data.data
+       
+        $("#track .middle_area table tbody ").empty()
+
+        for(let i = 0;i<tableData.length;i++){
+
+            let StartTime = tableData[i]?.StartTime?.split('T') || ["" , ""]
+            let EndTime = tableData[i]?.EndTime?.split('T') || ["" , ""]
+
             let ele = `
                 <tr>
-                    <td class="tb-txt">${unusualData[i].id}</td>
+                    <td class="tb-txt">${tableData[i].AccidentId}</td>
                     <td class="tb-txt">
                         <p>
-                            ${unusualData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
+                            ${tableData[i].IncidentStatus ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
                         </p>
                     </td>
-                    <td class="tb-txt">${unusualData[i].eventId}</td>
-                    <td class="tb-txt">${unusualData[i].eventType}</td>
-                    <td class="tb-txt">${unusualData[i].eventTitle}</td>
+                    <td class="tb-txt">${tableData[i].AccidentType}</td>
+                    <td class="tb-txt">${tableData[i].AccidentTitle}</td>
                     <td class="tb-txt">
                         <div class="center_display">
-                            <span>${unusualData[i].startDate}</span>
-                            <span>${unusualData[i].startTime}</span>
+                            <span>${StartTime[0]}</span>
+                            <span>${StartTime[1]}</span>
                         </div>
                     </td>
                     <td class="tb-txt">
                        <div class="center_display">
-                            <span>${unusualData[i].endDate}</span>
-                            <span>${unusualData[i].endTime}</span>
+                            <span>${EndTime[0]}</span>
+                            <span>${EndTime[1]}</span>
                         </div>
                     </td>
-                    <td class="tb-txt">${unusualData[i].recordName}</td>
+                    <td class="tb-txt">${tableData[i].EmployeeName}</td>
                     <td class="tb-txt td_center">
                        <div class="icon_display">
                             <p class="trackPopupButton">
@@ -368,46 +317,51 @@
 
         }
 
-        //請假分頁生成
 
+        $("#track .end_area ").empty()
+
+        //追蹤分頁生成
         $("#track .end_area").append(`
             <h4><i class="fas fa-angle-left"></i></h4>
         `)
 
-        for(let i = 0;i<trackPageCount;i++ ){
-            $("#track .end_area").append(`
-                <div class="page_circle obj-center">
-                    <p class="bold">${i+1}</>
-                </div>
-            `)
+        for(let i = 0;i<data.pageCount;i++ ){
+            if((i+1) == nowTrackPage){
+                $("#track .end_area").append(`
+                    <div class="page_circle obj-center circle_show">
+                        <p class="bold">${i+1}</>
+                    </div>
+                `)
+            }else{
+                $("#track .end_area").append(`
+                    <div class="page_circle obj-center">
+                        <p class="bold">${i+1}</>
+                    </div>
+                `)
+            }
         }
 
         $("#track .end_area").append(`
             <h4><i class="fas fa-angle-right"></i></h4>
         `)
 
+        changeTrackPage()
 
-        // 新增異常
-        $("#unusualPopupButton").on("click", function(e) {
-            location.href='/Project/Issues?type=Unusual&id=123&motion=add'
+         // 查看回復
+        $("#track .middle_area table tbody tr").on("click", function(e) {
+            e.stopPropagation();
+            let ID = $(this).children().eq(0).text().trim()
+            location.href='/Project/Issues?type=Track&id=' + ID + '&motion=select'
         });
 
-        // 查看異常
-        $("#unusual .middle_area table tbody tr").on("click", function(e) {
-            location.href='/Project/Issues?type=Unusual&id=123&motion=select'
-        });
 
         // 新增回復
         $(".trackPopupButton").on("click", function(e) {
             e.stopPropagation();
-            location.href='/Project/Issues?type=Track&id=456&motion=add'
+            let ID = $(this).parent().parent().parent().children().eq(0).text().trim()
+            location.href='/Project/Issues?type=Track&id=' + ID + '&motion=add'
         });
 
-        // 查看回復
-        $("#track .middle_area table tbody tr").on("click", function(e) {
-            e.stopPropagation();
-            location.href='/Project/Issues?type=Track&id=123&motion=select'
-        });
 
         // 刪除回復
         $(".deleteTrack").on("click", function(e) {
@@ -431,7 +385,34 @@
                 $(".track-popup-wrap").fadeOut()
             }
         });
+
+    }
  
+    let changeTrackPage = () => {
+        $('#track .end_area .page_circle').on('click', function(event) {
+            nowTrackPage = $(this).children().text().trim()
+            createTrackTable()
+        });
+
+    }
+
+
+    $(document).ready(async function() {
+        
+        createReportTable()
+        createTrackTable()
+
+
+        $("#AccidentSearch").on("click", function(e) {
+            nowTrackPage = 1
+            createTrackTable()
+        });
+
+        // 新增異常
+        $("#unusualPopupButton").on("click", function(e) {
+            location.href='/Project/Issues?type=Unusual&id=123&motion=add'
+        });
+
     });
 
 </script>

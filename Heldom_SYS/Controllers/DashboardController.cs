@@ -8,7 +8,6 @@ namespace Heldom_SYS.Controllers
         {
             return View();
         }
-
         public IActionResult Cctv(int? index)
         {
             ViewData["InitialIndex"] = index ?? 0;

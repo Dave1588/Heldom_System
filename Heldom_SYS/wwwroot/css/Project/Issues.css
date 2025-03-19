@@ -1,7 +1,7 @@
 ﻿
 /* 手機 */
 @media (max-width: 991.98px) {
-
+    top_area
     .main_wrap {
         width: 100%;
         height: auto;
@@ -68,7 +68,11 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background-color: #D9D9D9;
+/*        background-color: #D9D9D9;*/
+    }
+
+    .circle_show {
+        background-color: #7f9fee;
     }
 
     .center_display {
@@ -247,6 +251,9 @@
         max-width: 70vw !important;
     }
 
+    .table td {
+        width: 100% !important;
+    }
 }
 
 /* PC */
@@ -315,7 +322,11 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background-color: #D9D9D9;
+/*        background-color: #D9D9D9;*/
+    }
+
+    .circle_show {
+        background-color: #7f9fee;
     }
 
     .center_display {
@@ -493,5 +504,9 @@
 
     .form-control {
         width: 360px !important;
+    }
+
+    .table td {
+        width: 100% !important;
     }
 }

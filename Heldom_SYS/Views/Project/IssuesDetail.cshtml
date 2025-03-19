@@ -12,25 +12,27 @@
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">事件標題</p>
             </div>
-            <input  maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
+            <input  maxlength="10" type="text" class="form-control" id="title">
         </div>
 
-        <div class="input_wrap">
-            <div class="text-wrap">
-                <p class="color-gray-dark bold p-width">事件編號</p>
-            </div>
-            <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
-        </div>
+        @* <div class="input_wrap"> *@
+        @*     <div class="text-wrap"> *@
+        @*         <p class="color-gray-dark bold p-width">事件編號</p> *@
+        @*     </div> *@
+        @*     <input maxlength="10" type="text" class="form-control" id="number"> *@
+        @* </div> *@
+
 
         <div class="input_wrap">
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">事件類型</p>
             </div>
-            <select class="form-select" aria-label="Default select example">
-                <option selected value="CON001">結構錯誤</option>
-                <option value="CON002">施工尺寸不符</option>
-                <option value="CON003">材料瑕疵</option>
-                <option value="CON004">焊接 / 固定異常</option>
+            <select id="categorySelect" class="form-select" aria-label="Default select example">
+                <option selected value="CON001">施工與圖紙尺寸不符</option>
+                <option value="CON002">材料瑕疵</option>
+                <option value="CON003">工地安全</option>
+                <option value="CON004">人員受傷</option>
+                <option value="CON004">設備故障</option>
             </select>
         </div>
 
@@ -38,14 +40,21 @@
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">發生時間</p>
             </div>
-            <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+            <input type="datetime-local" class="form-control" id="startDate">
+        </div>
+
+        <div class="input_wrap">
+            <div class="text-wrap">
+                <p class="color-gray-dark bold p-width">結束時間</p>
+            </div>
+            <input type="datetime-local" class="form-control" id="endDate">
         </div>
 
         <div class="explain_wrap">
             <div class="text-wrap">
                 <p maxlength="50" class="color-gray-dark bold p-width">事件描述</p>
             </div>
-            <textarea maxlength="100" class="textarea_style"></textarea>
+            <textarea maxlength="100" id="description" class="textarea_style"></textarea>
         </div>
 
         <div class="file_wrap">
@@ -63,7 +72,7 @@
                 <div class="text-wrap">
                     <p maxlength="50" class="color-gray-dark bold p-width">回覆內容</p>
                 </div>
-                <textarea maxlength="100" class="textarea_style"></textarea>
+                <textarea maxlength="100" id="reply" class="textarea_style"></textarea>
             </div>
 
             <div class="file_wrap track">
@@ -105,8 +114,109 @@
 <script>
     let Motion = @Html.Raw(Json.Serialize(ViewBag.Motion));
     let Type = @Html.Raw(Json.Serialize(ViewBag.Type));
+    let ID = @Html.Raw(Json.Serialize(ViewBag.ID));
 
-    $(document).ready(function() {
+
+    function GetDetail() {
+
+        let req = {
+            ID: ID.toString(),
+        }
+
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: "/Accident/GetDetail",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(req),
+                success: resolve,
+                error: reject
+            });
+        });
+    }
+
+    let setDetailData =  async() => {
+        let detail = await GetDetail()
+
+        $("#title").val(detail.data.AccidentTitle)
+        $("#categorySelect option:contains('" + detail.data.AccidentType + "')").prop("selected", true);
+        $("#startDate").val(detail.data.StartTime);
+        if(detail?.data?.EndTime){
+            $("#endDate").val(detail?.data?.EndTime)
+        }
+        $("#description").text(detail.data.Description);
+        $("#reply").text(detail.data.Response);
+        
+    }
+
+
+    function AddAccident() {
+
+        let title = $("#title").val()
+        let category = $("#categorySelect option:selected").text()
+        let description = $("#description").val()
+        let StartTime = $("#startDate").val()
+        let EndTime = $("#endDate").val()
+
+        if(!title || !description || !StartTime){
+            return
+        }
+
+        // console.log("=================================================================")
+        // console.log(new Date(StartTime).getTime())
+        // console.log(new Date(EndTime).getTime())
+
+        if (new Date(StartTime).getTime() > new Date(EndTime).getTime()) {
+            console.log("結束時間早於開始時間");
+            return 
+            
+        }
+
+
+        // console.log("title=================================================================")
+        // console.log("title",$("#title").val())
+        // console.log("categorySelect",$("#categorySelect option:selected").text())
+        // console.log("description",$("#description").val())
+        // console.log("StartTime",$("#startDate").val())
+        // console.log("EndTime",$("#endDate").val())
+
+
+        let req = {
+            AccidentTitle:title,
+            AccidentType:category,
+            Description:description,
+            StartTime: new Date(StartTime).toISOString().slice(0, 19).replace("T", " "),
+        }
+
+
+        if(EndTime){
+            let jsDateStr = EndTime;
+            let jsDate = new Date(jsDateStr);
+            let formattedDate = jsDate.toISOString().slice(0, 19).replace("T", " ");
+            req.EndTime = formattedDate
+        }
+
+
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: "/Accident/AddAccident",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(req),
+                success: resolve,
+                error: reject
+            });
+        });
+    }
+  
+
+    $(document).ready(async function() {
+
+        if((Motion == "select") || (Motion == "add" && Type == "Track")){
+            await setDetailData()
+        }
+
+
         let fileList = []
         let fileListTrack = []
         let maxSize = 1024 * 1024 * 3 // 3M
@@ -308,6 +418,18 @@
             location.href='/Project/Issues'
         });
 
+
+        //新增
+        $(".save-button").on("click", async function(e) {
+            if(Type == "Unusual" && Motion == "add"){
+                await AddAccident()
+                location.href='/Project/Issues'
+            }else if(Motion == "add" && Type == "Track"){
+                // location.href='/Project/Issues'
+            }
+            
+        });
+        
 
     });
 

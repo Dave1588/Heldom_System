@@ -1,6 +1,7 @@
 ﻿@* stylesheet *@
 <link rel="stylesheet" href="~/css/Profile/Account.css" asp-append-version="true" />
 
+@* https://localhost:7142/Profile/Account *@
 
 <div class="main_wrap border-radius box-shadow">
     <div id="work" class="work_main_area obj-horizontal-center">
@@ -12,9 +13,9 @@
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">部門</p>
                     <select id="departmentSelect" class="form-select" aria-label="部門選擇">
-                        <option value="1" selected>工務工程部</option>
-                        <option value="2">工務管理部</option>
-                        <option value="3">行政管理部</option>
+                        <option value="工務工程部" selected>工務工程部</option>
+                        <option value="工務管理部">工務管理部</option>
+                        <option value="行政管理部">行政管理部</option>
                     </select>
                 </div>
 
@@ -22,7 +23,7 @@
                     <p class="color-gray-dark bold p-width">啟用狀態</p>
                     <select id="statusSelect" class="form-select" aria-label="啟用狀態選擇">
                         <option value="1" selected>啟用中</option>
-                        <option value="2">已關閉</option>
+                        <option value="0">已關閉</option>
                     </select>
                 </div>
             </div>
@@ -39,10 +40,10 @@
                 </div>
 
                 <div class="buttons">
-                    <button class="search-button obj-center">
+                    <button id="searchButton" class="search-button obj-center">
                         <p class="bold color-white">查詢</p>
                     </button>
-                    <button id="unusualPopupButton" class="button button_style bold">
+                    <button id="createButton" class="button button_style bold">
                         <p class="bold color-white">新增</p>
                     </button>
 
@@ -53,7 +54,7 @@
         <div class="middle_area">
             <table class="table">
                 <thead>
-                    <tr>
+                    <tr id="tableHeader">
                         <th class="tb-title">序號</th>
                         <th class="tb-title">照片</th>
                         <th class="tb-title">員工姓名</th>
@@ -77,7 +78,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -89,7 +90,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -101,7 +102,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -113,7 +114,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>5</td>
@@ -125,7 +126,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -137,7 +138,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -149,7 +150,7 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-exclamation-circle color-gray-light"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -161,48 +162,139 @@
                         <td>現場主管</td>
                         <td>2012/02/01</td>
                         <td><i class="fas fa-exclamation-circle color-gray-light"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i><i class="fas fa-trash-alt color-gray-medium"></i></td>
+                        <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="end_area obj-center">
+        <div class="end_area obj-center" id="endArea">
         </div>
     </div>
 
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
-    $(document).ready(function () {
+        
 
+        addPageButton();
 
-        // 頁次生成
-        $(".end_area").append(`
-                <h4><i class="fas fa-chevron-left txt-center" id="Last"></i></h4>
-            `);
+        // 查詢資料按鈕
+        document.getElementById("searchButton").addEventListener("click", function(e) {
+            // 在這裡新增查詢邏輯
+        });
 
-        for (let i = 0; i < 5; i++) {
-            $(".end_area").append(`
-                    <div class="page_circle obj-center" id="page_circle${i + 1}">
-                        <p class="bold">${i + 1}</p>
-                    </div>
-                `);
+        // 新增員工帳號按鈕
+        document.getElementById("createButton").addEventListener("click", function(e) {
+            location.href='/Profile/NewAccount?motion=add';
+            //location.href='/Project/Issues?type=Unusual&id=123&motion=add'
+        });
+        
+    });
+
+    // dataModel
+        const tableData = [
+            { id: 1, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            { id: 2, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            { id: 3, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            { id: 4, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            { id: 5, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            { id: 6, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            { id: 7, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
+            // 繼續新增
+        ];
+
+        let testingData = tableData.slice(2,4);
+        console.log(testingData);
+
+        // 取 tbody
+        const tbody = document.querySelector('.table tbody');
+
+        // 清空
+        tbody.innerHTML = '';
+
+        // 動態生成 RowData
+        tableData.forEach(row => {
+            const tr = document.createElement('tr');
+
+            // 新增 Row
+            tr.innerHTML = `
+                <td>${row.id}</td>
+                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                <td>${row.name}</td>
+                <td>${row.employeeId}</td>
+                <td>${row.phone}</td>
+                <td>${row.department}</td>
+                <td>${row.position}</td>
+                <td>${row.startDate}</td>
+                <td><i class="fas ${row.status ? 'fa-check-circle color-green' : 'fa-exclamation-circle color-gray-light'}"></i></td>
+            `;
+
+            tbody.appendChild(tr);
+        });
+
+        // 編輯 column顯示
+        const hasPermission = true; // 條件
+        if (hasPermission) {
+            // 取 Row
+            const allRows = document.querySelectorAll('.table tbody tr');
+
+            <th class="tb-title">編輯</th>
+
+            let createEditHeader = document.createElement('td');
+            createEditHeader.className = tb-title;
+            document.getElementById('tableHeader').appendChild(createEditHeader);
+
+            // 新增 Column
+            allRows.forEach(row => {
+                const operationTd = document.createElement('td');
+                operationTd.innerHTML = '<i class="fas fa-edit color-gray-medium"></i>';
+                row.appendChild(operationTd);
+            });
+        }
+        
+        const addPageButton = () => {
+            // 頁次生成
+            const endArea = document.getElementById('endArea');
+
+            // 上一頁按鈕
+            const lastButton = document.createElement('h4');
+            lastButton.innerHTML = '<i class="fas fa-chevron-left txt-center" id="Last"></i>';
+            endArea.appendChild(lastButton);
+
+            // 頁碼生成
+            for (let i = 0; i < 5; i++) {
+                const pageCircle = document.createElement('div');
+                pageCircle.className = 'page_circle obj-center';
+                pageCircle.id = `page_circle${i + 1}`;
+
+                const pageNumber = document.createElement('p');
+                pageNumber.className = 'bold';
+                pageNumber.textContent = i + 1;
+
+                pageCircle.appendChild(pageNumber);
+                endArea.appendChild(pageCircle);
+            }
+
+            // 下一頁按鈕
+            const nextButton = document.createElement('h4');
+            nextButton.innerHTML = '<i class="fas fa-chevron-right txt-center" id="Next"></i>';
+            endArea.appendChild(nextButton);
+
+            // 初始化第一頁圓圈為選中狀態
+            document.getElementById("page_circle1").style.backgroundColor = '#D9D9D9';
         }
 
-        $(".end_area").append(`
-                <h4><i class="fas fa-chevron-right txt-center" id="Next"></i></h4>
-        `);
-
-        // 初始化第一頁圓圈為選中狀態
-        document.getElementById("page_circle1").style.backgroundColor = '#D9D9D9';
-
-    });
-
-    // 新增員工帳號
-    $("#unusualPopupButton").on("click", function(e) {
-        location.href='/Profile'
-        //location.href='/Project/Issues?type=Unusual&id=123&motion=add'
-    });
+        // const getAccountData = ()=>{
+        //     $ajax({
+        //         url:"/Profile/GetAccountData",
+        //         type:"GET",
+        //         contentType:"application.json",
+        //         data:JSON.stringify(),
+        //         success:,
+        //         error:
+        //     })
+        // }
 
 </script>

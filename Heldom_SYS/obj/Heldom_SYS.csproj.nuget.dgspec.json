@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\Heldom_SYS.csproj": {}
+    "C:\\Users\\User\\Desktop\\Dave\\Heldom_SYS\\Heldom_SYS.csproj": {}
   },
   "projects": {
-    "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\Heldom_SYS.csproj": {
+    "C:\\Users\\User\\Desktop\\Dave\\Heldom_SYS\\Heldom_SYS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\Heldom_SYS.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Dave\\Heldom_SYS\\Heldom_SYS.csproj",
         "projectName": "Heldom_SYS",
-        "projectPath": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\Heldom_SYS.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Dave\\Heldom_SYS\\Heldom_SYS.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\大專題測試區\\Heldom_SYS-master\\Heldom_SYS\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Dave\\Heldom_SYS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

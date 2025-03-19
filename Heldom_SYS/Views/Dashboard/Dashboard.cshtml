@@ -4,9 +4,9 @@
 
 <div class="dashboard-container">
     <!-- 現場作業人員 -->
-    <div class="">
+    @* <div class=""> *@
         <div class="card worker-card  " id="openPopup">
-            <h3 class="db-title-l">現場作業人員</h3>
+            <h3 class="db-title-l"><i class="fas fa-users"></i> 現場作業人員</h3>
             <h1 class="worker-count">123 <span class="color-gray-light">人</span></h1>
             <h5 class="db-title-s">人員狀態</h5>
 
@@ -36,56 +36,84 @@
                     <h3 class="worker-area-count">1<span class="color-gray-light">人</span></h3>
                 </div>
             </div>
-            <div class=" approve border-radius">
 
-            @* <p>簽核事件 </p> *@  
-
-                <div id="bell-container">
-                    
-                    <h1 class="approve-event">1 <span>件</span></h1>
-                   
-                    <div class="bell">
-                        <canvas id="rippleCanvas"></canvas>
+        @*  <p>簽核事件 </p>  *@
+        <div class="card border-left-warning shadow h-100 py-2 card-hover">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <h5 class="text-xs font-weight-bold text-uppercase mb-1 color-menu ">
+                            臨時工入場核可
+                        </h5>
+                        <div class="mb-0"><h5 class="db-title-l padding-20-0">18</h5></div>
                     </div>
-
+                    <div class="col-auto">
+                        <i class="fas fa-user-plus fa-2x text-gray-300"></i>
+                    </div>
                 </div>
-
             </div>
+        </div>
 
-            @* @section Scripts { *@
-            @*     <script type="module"> *@
-            @*         import { initRippleAnimation } from '/js/dasshboard/flash.js'; *@
 
-            @*         // 初始化水波效果，並傳遞 bell-container 的 id *@
-            @*         document.addEventListener("DOMContentLoaded", function () { *@
-            @*             initRippleAnimation('bell-container'); *@
-            @*         }); *@
-            @*     </script> *@
-            @* } *@
+
+            @*  <p>簽核事件 </p>  *@
+            @* <div class=" approve border-radius"> *@
+            @*     <div id="bell-container">  *@
+                    
+            @*   <h1 class="approve-event">1 <span>件</span></h1> *@
+            @*          <div class="bell">  *@
+            @*             <canvas id="rippleCanvas"></canvas>  *@
+            @*          </div>  *@
+            @*      </div> *@
+            @* </div> *@
+
+        <!-- 異常回報通知 -->
+        <h3 class="db-title-l padding-20-0"><i class="fas fa-exclamation-circle"></i> 異常回報通知</h3>
+        <div class="card border-left-warning shadow h-100 py-2 card-hover">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <h5 class="text-xs font-weight-bold text-uppercase mb-1 color-menu ">
+                            未處理異常
+                        </h5>
+                        <div class="mb-0"><h5 class="db-title-l padding-20-0">18</h5></div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-comment fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
         </div>
 
         <!-- 異常回報通知 -->
-        <div class="card notification-card">
-            <h3 class="db-title-l">異常回報通知</h3>
+
+        @* <div class="card notification-card"> *@
+        @*     <h3 class="db-title-l"><i class="fas fa-exclamation-circle"></i> 異常回報通知</h3> *@
 
 
 
-            <ul class="notification-list border-radius">
-                <li class="green">王大明 上班簽到 09:54</li>
-                <li class="green">王大明 上班簽到 09:54</li>
-                <li class="red">回報異常通知 09:54</li>
-                <li class="green">王大明 下班簽退 18:31</li>
-                <li class="red">回報異常通知 18:31</li>
-            </ul>
-        </div>
-    </div>
+        @*     <ul class="notification-list border-radius"> *@
+        @*         <li class="green">王大明 上班簽到 09:54</li> *@
+        @*         <li class="green">王大明 上班簽到 09:54</li> *@
+        @*         <li class="red">回報異常通知 09:54</li> *@
+        @*         <li class="green">王大明 下班簽退 18:31</li> *@
+        @*         <li class="red">回報異常通知 18:31</li> *@
+        @*     </ul> *@
+        @* </div> *@
+    @* </div> *@
     <!-- 即時監控影像 -->
     <div class="card video-card">
 
-        <h3 class="db-title-l">即時監控影像</h3>
+        <h3 class="db-title-l"><i class="fas fa-closed-captioning"></i> 即時監控影像</h3>
         @* <a asp-controller="Dashboard" asp-action="Cctv"> *@
         <img class="video-feed" id="mainVideo" src="" alt="監控影像">
-
 
         <div class="camera-list border-radius">
             <button type="button" class="nav-button" id="prevButton"><i class="fas fa-chevron-left"></i></button>
@@ -97,7 +125,7 @@
     <!-- 環境監測 -->
     <div class="card environment-card">
 
-        <h3 class="db-title-l">環境監測</h3>
+        <h3 class="db-title-l"><i class="fas fa-temperature-high"></i> 環境監測</h3>
             @* weather *@
             <div class="weather-section">
                 <div class="weather-icon" id="weather-icon">🌦️</div>

@@ -3,20 +3,20 @@
 <link rel="stylesheet" href="~/css/Project/IssuesDetail.css" asp-append-version="true" />
 
 <div class="main_wrap border-radius box-shadow">
-    <h4 class="bold">新增圖紙</h4>
+    <h4 class="bold">新增圖紙 </h4>
     <div class="report-display">
 
         <div class="input_wrap">
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">圖紙類型</p>
             </div>
-            <select class="form-select" aria-label="Default select example">
-                <option value="??001">結構工程圖</option>
-                <option value="??002">建築設計圖</option>
-                <option value="??003">公共設施圖</option>
-                <option value="??004">施工細部圖</option>
-                <option value="??005">機電設備圖</option>
-                <option value="??006">其他</option>
+            <select id="categorySelectd"  class="form-select" aria-label="Default select example">
+                <option value="PC1">結構工程圖</option>
+                <option value="PC2">建築設計圖</option>
+                <option value="PC3">公共設施圖</option>
+                <option value="PC4">施工細部圖</option>
+                <option value="PC5">機電設備圖</option>
+                <option value="PC6">其他</option>
             </select>
         </div>
 
@@ -24,7 +24,14 @@
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">版本號碼</p>
             </div>
-            <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+            @{
+                //if判斷從Bp還是Detail來
+                    //BP:
+                    <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate" value="1.0">
+                    //Detail:
+                    //切一半放version:最新
+            }
+            
         </div>
 
 
@@ -33,7 +40,7 @@
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">圖紙名稱</p>
             </div>
-            <input maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
+                    <input maxlength="50" type="text" class="form-control" id="endDate" name="endDate">
         </div>
 
         <div class="file_wrap">
@@ -46,19 +53,21 @@
     </div>
 
     <div class="end-check">
+        <a href="~/Project/Blueprints?id=" id ="CateID">
         <button class="back-button obj-center">
             <p class="bold color-white">
-                取消
+                取消 
             </p>
         </button>
-        @if (ViewBag.Motion == "add")
-        {
+        </a>
+        @* @if (ViewBag.Motion == "add") *@
+        @* { *@
             <button class="save-button obj-center">
                 <p class="bold color-white">
                     儲存
                 </p>
             </button>
-        }
+        @* } *@
 
     </div>
 
@@ -75,10 +84,70 @@
 
 
 <script>
+    let cID;
+    function GetID() {
+        let req = {             }
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: "/Project/GetUsingCategary",
+                type: "GET",
+                contentType: "application/json",
+                data: JSON.stringify(req),
+                success: resolve,
+                error: reject
+            });
+         });
+      }
+    async function  useFunc(){
+        cID = await GetID();
+        $("#CateID").prop("href", "/Project/Blueprints?id="+cID)
+        console.log(cID);
+        document.getElementById("categorySelectd").value = cID;
+    }
+
+
+    // 變數來控制預設選項
+    // 設定 select 的預設值
+    
+
+    /*
+    [FromQuery]是?
+    yourapiurl/api/MyController/
+這裡填寫的是?
+    */
+    //testing
+    function a (){
+        const data = {
+        name: "工程圖",
+        id: "PC1"
+        };
+        // 把資料轉換為JSON字串
+        const jsonData = JSON.stringify(data);
+        // 發送GET請求到API
+        fetch(`http://yourapiurl/api/MyController/Myfunction?data=${encodeURIComponent(jsonData)}`, {
+            method: 'GET', // 使用GET方法
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())  // 解析回應為JSON
+        .then(result => {
+            console.log('從後端獲得的數據:', result);  // 在控制台輸出後端返回的結果
+        })
+        .catch(error => {
+            console.error('錯誤:', error);  // 捕獲錯誤
+        });
+    }
+
+    //testing
+
     let Motion = @Html.Raw(Json.Serialize(ViewBag.Motion));
     let Type = @Html.Raw(Json.Serialize(ViewBag.Type));
 
     $(document).ready(function() {
+        //useFunc
+            useFunc();
+
         // 回報區塊
         let fileList = []
 
@@ -88,9 +157,9 @@
             </div>
         `
 
-        if(!(Motion == "add" && Type == "Track")){
+        // if(!(Motion == "add" && Type == "Track")){
             $(".report-display .file_wrap").append(fileDiv)
-        }
+        // }
 
         let listenFile = () => {
             $(".report-display .file_wrap .file-area").on("click", function(e) {
@@ -241,10 +310,7 @@
             $(".report-display .explain_wrap textarea").prop('disabled', true)
         }
 
-        //回上頁
-        $(".back-button").on("click", function(e) {
-            location.href='/Project/Issues'
-        });
+
 
 
     });

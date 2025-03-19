@@ -31,7 +31,7 @@
             </div>
             <!-- 編輯按鈕 -->
             <div class="edit-button color-blue">
-				<button class="txt-center" id="towardSettings"><p class="bold">編輯</p></button>
+                <button class="txt-center" id="towardSettings"><p class="bold">編輯</p></button>
             </div>
         </div>
         <!-- 主要資訊 -->
@@ -68,16 +68,16 @@
 
     $(document).ready(function(){
 
-        axios.get('/Profile/GetEmployeeWithDetail')
+        axios.get('/Profile/GetIndexData')
         .then(function(response){
 
             console.log(response);
             console.log(response.data[0].name);
-            document.getElementById("ProfileImage").src = "data:image/jpg;base64," + response.data[0].Photo;
+            document.getElementById("ProfileImage").src = "data:image/jpg;base64," + response.data[0].photo;
             appendProfileInfo(response.data[0]);
         })
         .catch(function(error){
-            console.error("GetEmployeeWithDetail failed!",error);
+            console.error("GetIndexData failed!",error);
         })
         .finally(function() {
             // Hide loading indicator and show profile content
@@ -109,33 +109,43 @@
         document.getElementById("yearsOfService").textContent = data.yearsbetween;
         document.getElementById("leaveDays").textContent = data.leaveDays;
 
+        // 格式化日期函數
+        function formatDate(dateString) {
+            if (!dateString) return '';
+            const date = new Date(dateString);
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
         // 代入右側 9個項目資料
-        document.getElementById("hireDate").textContent = data.hireDate;
+        document.getElementById("hireDate").textContent = formatDate(data.hireDate);
         document.getElementById("position").textContent = data.position;
         document.getElementById("department").textContent = data.department;
         document.getElementById("employeeId").textContent = data.employeeID;
-        document.getElementById("birthDate").textContent = data.birthDate;
+        document.getElementById("birthDate").textContent = formatDate(data.birthDate);
         document.getElementById("phoneNumber").textContent = data.phoneNumber;
         document.getElementById("address").textContent = data.address;
         document.getElementById("emergencyContact").textContent = data.emergencyContact;
         document.getElementById("emergencyPhone").textContent = data.emergencyContactPhone;
 
         // 儲存需要傳遞的資料到 sessionStorage
-        const dataToTransfer = {
-            name: data.name,
-            email: data.email,
-            hireDate: data.hireDate,
-            position: data.position,
-            department: data.department,
-            employeeID: data.employeeID,
-            birthDate: data.birthDate,
-            phoneNumber: data.phoneNumber,
-            address: data.address,
-            emergencyContact: data.emergencyContact,
-            emergencyContactPhone: data.emergencyContactPhone
-        };
-        sessionStorage.setItem('profileData', JSON.stringify(dataToTransfer));
-    };
+        // const dataToTransfer = {
+        //     name: data.name,
+        //     email: data.email,
+        //     hireDate: formatDate(data.hireDate),
+        //     position: data.position,
+        //     department: data.department,
+        //     employeeID: data.employeeID,
+        //     birthDate: formatDate(data.birthDate),
+        //     phoneNumber: data.phoneNumber,
+        //     address: data.address,
+        //     emergencyContact: data.emergencyContact,
+        //     emergencyContactPhone: data.emergencyContactPhone
+        // };
+        // sessionStorage.setItem('profileData', JSON.stringify(dataToTransfer));
+    }
 
     $('#towardSettings').click(function(){
         location.href ="https://" + location.hostname + ":" +window.location.port + "/Profile/Settings";

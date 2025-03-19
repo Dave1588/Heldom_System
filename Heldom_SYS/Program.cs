@@ -27,13 +27,19 @@ builder.Services.AddControllersWithViews();
 // 添加 role 服務
 builder.Services.AddSingleton<IUserStoreService, UserStoreService>();
 
-//PrintCategory
-builder.Services.AddScoped<IPrintCategoryService, PrintCategoryService>();
+//  加入 Session 設定
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // 設定 Session 有效時間
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 builder.Services.AddSession(); // 啟用 Session
 
-// 資料庫連線
-builder.Services.AddDbContext<ConstructionDbContext>(
-            options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConstructionDB")));
+builder.Services.AddScoped<IAccidentService, AccidentService>();
+
 
 // 添加身份驗證
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -43,11 +49,27 @@ builder.Services.AddDbContext<ConstructionDbContext>(
 //        options.AccessDeniedPath = "/Profile/AccessDenied";
 //    });
 
-// 從 appsettings.json 中讀取 DefaultConnection 連接字串
-string? connectionString = builder.Configuration.GetConnectionString("ConstructionDB");
+// 資料庫連線 FEcore(快取)   
+builder.Services.AddDbContext<ConstructionDbContext>(
+            options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConstructionDB")));
 
-// 可以將連接字串註冊到依賴注入容器
-builder.Services.AddScoped<SqlConnection>(provider => new SqlConnection(connectionString));
+// 資料庫連線 從 appsettings.json 中讀取 Connection 連接字串 目前有3種
+string? primaryConnection = builder.Configuration.GetConnectionString("ConstructionDB");
+string? secondaryConnection = builder.Configuration.GetConnectionString("ConstructionDB2");
+string? thirdConnection = builder.Configuration.GetConnectionString("ConstructionDB3");
+
+// 測試並選擇可用的連線字串  
+string? finalConnection = TestDatabaseConnection(primaryConnection) ? primaryConnection :
+                         TestDatabaseConnection(secondaryConnection) ? secondaryConnection :
+                         TestDatabaseConnection(thirdConnection) ? thirdConnection :
+                         throw new InvalidOperationException("連線失敗");
+
+// 可以將連接字串註冊到依賴注入容器 (直接使用資料庫)
+builder.Services.AddScoped<SqlConnection>(provider => new SqlConnection(finalConnection));
+
+
+
+
 
 var app = builder.Build();
 
@@ -70,34 +92,41 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// 自訂路由
-//app.MapControllerRoute(
-//    name: "AttendanceById",
-//    pattern: "Attendance/{id}",
-//    defaults: new { controller = "Attendance", action = "Index" });
 
-//app.MapControllerRoute(
-//    name: "profileById",
-//    pattern: "profile/{id}",
-//    defaults: new { controller = "Profile", action = "Index" });
-
-//app.MapControllerRoute(
-//    name: "login",
-//    pattern: "Login",
-//    defaults: new { controller = "Login", action = "Index" });
 
 app.MapControllerRoute(
     name: "default",
-    //pattern: "{controller=Login}/{action=Index}");
     pattern: "{controller=Login}/{action=Index}");
 
-// 預設路由
-//app.MapControllerRoute(
-//    name: "default",
+//    pattern: "{controller=Project}/{action=BlueprintsCategories}/{id?}");
+
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
+
 //    pattern: "{controller=Dashboard}/{action=Dashboard}/{id?}");
-//Project   Profile  Index  IssuesDetail
+
+
+
+
 app.Run();
+
+//檢測連線
+static bool TestDatabaseConnection(string? connectionString)
+{
+    if (string.IsNullOrEmpty(connectionString))
+        return false;
+
+    try
+    {
+        using (var connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+            return true;
+        }
+    }
+    catch
+    {
+        Console.WriteLine($"資料庫連線失敗: {connectionString}");
+        return false;
+    }
+}
