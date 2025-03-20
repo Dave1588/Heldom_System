@@ -1,6 +1,5 @@
 ﻿@* stylesheet *@
 <link rel="stylesheet" href="~/css/Profile/Index.css" asp-append-version="true" />
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 @* https://localhost:7142/Profile/Index *@
 
 <div id="loading" style="display: none;">Loading...</div>
@@ -68,6 +67,33 @@
 
     $(document).ready(function(){
 
+        $.ajax({
+        url: '/Profile/GetIndexData',      
+        type: 'GET',              
+        dataType: 'json',         
+        success: function(response) {
+            
+            console.log(response);  
+            
+            if (response.length > 0) {
+                const employee = response[0];
+                console.log('Name:', employee.name);
+                console.log('Email:', employee.email);
+                
+                document.getElementById("ProfileImage").src = "data:image/jpg;base64," + employee.photo;
+                appendProfileInfo(employee);
+
+                $("#loading").hide();
+                $("#profileContainer").show();
+            }
+        },
+        error: function(xhr, status, error) {
+            
+            console.error('Error fetching data:', error);
+        }
+        });
+
+        /* axios寫法
         axios.get('/Profile/GetIndexData')
         .then(function(response){
 
@@ -84,9 +110,10 @@
             $("#loading").hide();
             $("#profileContainer").show();
         });
+        */
     });
 
-    // 載入 姓名 電子郵件
+    // 使用資料 姓名 電子郵件
     function appendProfileInfo(data) {
         console.log("Appending profile info:",data.hireDate,data.position); // Debugging line
 
@@ -148,7 +175,7 @@
     }
 
     $('#towardSettings').click(function(){
-        location.href ="https://" + location.hostname + ":" +window.location.port + "/Profile/Settings";
+        location.href ="https://" + location.hostname + ":" +window.location.port + "/profile/settings";
     });
 </script>
 

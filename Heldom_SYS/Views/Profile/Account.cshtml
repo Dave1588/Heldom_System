@@ -43,7 +43,7 @@
                     <button id="searchButton" class="search-button obj-center">
                         <p class="bold color-white">查詢</p>
                     </button>
-                    <button id="createButton" class="button button_style bold">
+                    <button id="addButton" class="button button_style bold">
                         <p class="bold color-white">新增</p>
                     </button>
 
@@ -176,18 +176,17 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
 
-        
-
         addPageButton();
 
         // 查詢資料按鈕
-        document.getElementById("searchButton").addEventListener("click", function(e) {
+        document.getElementById("searchButton").addEventListener("click", function() {
             // 在這裡新增查詢邏輯
         });
 
         // 新增員工帳號按鈕
-        document.getElementById("createButton").addEventListener("click", function(e) {
-            location.href='/Profile/NewAccount?motion=add';
+        document.getElementById("addButton").addEventListener("click", function() {
+            console.log("按鈕被點擊");
+            location.href="/Profile/NewAccount";
             //location.href='/Project/Issues?type=Unusual&id=123&motion=add'
         });
         
@@ -205,7 +204,7 @@
             // 繼續新增
         ];
 
-        let testingData = tableData.slice(2,4);
+        /*let testingData = tableData.slice(2,4);
         console.log(testingData);
 
         // 取 tbody
@@ -233,9 +232,10 @@
 
             tbody.appendChild(tr);
         });
+        */
 
         // 編輯 column顯示
-        const hasPermission = true; // 條件
+        /*const hasPermission = true; // 條件
         if (hasPermission) {
             // 取 Row
             const allRows = document.querySelectorAll('.table tbody tr');
@@ -252,7 +252,7 @@
                 operationTd.innerHTML = '<i class="fas fa-edit color-gray-medium"></i>';
                 row.appendChild(operationTd);
             });
-        }
+        }*/
         
         const addPageButton = () => {
             // 頁次生成

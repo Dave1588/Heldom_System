@@ -22,73 +22,81 @@
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">員工姓名</p>
-				<input value="姓名" class="form-control" />
+				<input id="employeeName" value="姓名" class="form-control" />
 			</div>
 			<div class="input_wrap">
-				<p class="color-gray-dark bold p_width">身分證編號</p>
-				<input value="A123456789" class="form-control" />
+				<p class="color-gray-dark bold p_width">直屬主管</p>
+				<select id="ImmediateSupervisor" class="form-select">
+					<option selected>Peter</option>
+					<option>Dave</option>
+					<option>Shun</option>
+					<option>Zoe</option>
+					<option>Y</option>
+				</select>
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">聯絡電話</p>
-				<input value="0919-123456" class="form-control" />
+				<input id="phone" value="0919-123456" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">緊急聯絡人</p>
-				<input value="聯絡人" class="form-control" />
+				<input id="emergencyContact" value="聯絡人" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">到職日</p>
-				<input type="date" value="" class="form-control" />
+				<input type="date" class="form-control" id="hireDay"/>
 			</div>
 		</div>
 		<div class="middle_area_right">
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">員工編號</p>
-				<input value="ABC-123456" class="form-control" disabled />
+				<input id="employeeId" value="ABC-123456" class="form-control" disabled />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">帳號權限</p>
-				<select class="form-select">
-					<option selected>限制權限</option>
-					<option>所有權限</option>
-					<option>管理權限</option>
-					<option>一般權限</option>
+				<select id="employeeRole" class="form-select">
+					<option value="M">管理權限</option>
+					<option value="E">所有權限</option>
+					<option value="A" selected>一般權限</option>
 				</select>
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">部門</p>
-				<select class="form-select">
-					<option selected>管理部</option>
+				<select id="department" class="form-select">
+					<option selected>行政管理部</option>
+					<option>工務管理部</option>
+					<option>行政工程部</option>
 				</select>
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">職稱</p>
-				<select class="form-select">
+				<select id="position" class="form-select">
+					<option>高層</option>
 					<option>工地主任</option>
-					<option selected>一般職員</option>
+					<option selected>一般員工</option>
 				</select>
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">出生日期</p>
-				<input type="date" value="" class="form-control" />
+				<input type="date" id="birthDate" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">地址</p>
-				<input value="台中市台中市台中市台中市台中市" class="form-control" />
+				<input id="address" value="台中市台中市台中市台中市台中市" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">緊急電話</p>
-				<input value="0919-123456" class="form-control" />
+				<input id="emergencyPhone" value="0919-123456" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">離職日</p>
-				<input type="date" value="" class="form-control" />
+				<input type="date" class="form-control" id="resignDay"/>
 			</div>
 		</div>
 	</div>
 	<div class="end_area obj-center">
-		<button type="button" class="btn btn-outline" id="cancel"><p class="color-blue">取消</p></button>
-		<button type="button" class="btn btn-primary" id="save_btn"><p>儲存</p></button>
+		<button type="button" class="btn btn-outline" id="cancel-btn"><p class="color-blue">取消</p></button>
+		<button type="button" class="btn btn-primary" id="save-btn"><p>儲存</p></button>
 	</div>
 </div>
 
@@ -100,7 +108,7 @@
 	<div class="modal-dialog clock-popup-content">
 		<div class="modal-content">
 			<div class="modal-header clock-top obj-vertical-center">
-				<h5 class="modal-title color-gray-dark bold">提醒已離職人員</h5>
+				<h5 class="modal-title color-gray-dark bold">提醒：為已離職人員</h5>
 				<div class="clock-close obj-center"><i class="fas fa-times"></i></div>
 			</div>
 			<div class="modal-body clock-area">
@@ -108,10 +116,10 @@
 				<h4 class="color-gray-dark bold">是否確認提交?</h4>
 			</div>
 			<div class="modal-footer clock-check">
-				<button class="clock-button_cancel obj-center">
+				<button class="clock-button_cancel obj-center" id="no-Button">
 					<p class="bold color-blue">否</p>
 				</button>
-				<button class="clock-button obj-center">
+				<button class="clock-button obj-center" id="yes-Button">
 					<p class="bold color-white">是</p>
 				</button>
 			</div>
@@ -122,7 +130,112 @@
 
 
 <script>
-	// 是否啟用 文字控制
+
+
+	//打卡視窗控制
+
+	$(document).ready(function() {
+
+		uploadPhoto();
+		switcher();
+		popup();
+	});
+
+	// 取消按鈕
+	$('#cancel-btn').click(function(){
+		location.href = "/profile/Account";
+	})
+
+	function popup(){
+		$("#save-btn").click(function(){
+
+			let resignDayValue = document.getElementById('resignDay').value;
+			let dateNow = Date.now();
+			let resignDay = new Date(resignDayValue);
+
+			if(dateNow > resignDay){
+				$("#clockPopup").fadeIn();
+			}
+			else{
+
+			}
+		});
+
+		$(".clock-close").click(function(){
+			$("#clockPopup").fadeOut();
+		});
+
+		$('#no-Button').click(function(){
+			$("#clockPopup").fadeOut();
+		})
+
+		// 點擊背景區域關閉彈窗
+		$("#clockPopup").click(function(event) {
+			if(event.target === this) {
+				$(this).fadeOut();
+			}
+		});
+	}
+
+	// 存檔POST資料
+	$('#yes-Button').click(function(){
+		// 获取所有表单数据
+		const formData = {
+			// 基本信息
+			employeeName: document.getElementById('employeeName').value,
+			ImmediateSupervisor: document.getElementById('ImmediateSupervisor').value,
+			phone: document.getElementById('phone').value,
+			emergencyContact: document.getElementById('emergencyContact').value,
+			hireDate: document.getElementById('hireDay').value,
+			
+			// 员工编号（系统生成）
+			employeeId: document.getElementById('employeeId').value,
+			
+			// 权限和部门信息
+			permission: document.getElementById('employeeRole').value,
+			department: document.getElementById('department').value,
+			position: document.getElementById('position').value,
+			
+			// 其他信息
+			birthDate: document.getElementById('birthDate').value,
+			address: document.getElementById('address').value,
+			emergencyPhone: document.getElementById('emergencyPhone').value,
+			resignDate: document.getElementById('resignDay').value,
+			
+			// 状态信息
+			isActive: document.getElementById('flexSwitchCheckDefault').checked,
+
+			// 照片信息（base64字符串）
+			photo: document.getElementById('imgload').src.split(",")[1]
+		};
+		console.log(formData)
+		
+		/*
+		$.ajax({
+			url: '/Profile/SubmitAccount',
+			type: 'POST',
+			dataType: 'json',
+			contentType: 'application/json',
+			data: JSON.stringify(formData),
+			success: function(response) {
+				console.log('Success:', response);
+				if(response.success) {
+					alert('保存成功');
+					location.href = '/Profile/Account';
+				} else {
+					alert('保存失败：' + response.message);
+				}
+			},
+			error: function(xhr, status, error) {
+				console.error('Error:', error);
+				alert('保存失败，请稍后重试');
+			}
+		});
+		*/
+	})
+
+	function switcher(){
+	// 是否啟用區域的文字控制
 	const switchInput = document.getElementById("flexSwitchCheckDefault");
 	const switchLabel = document.getElementById("switch_txt");
 
@@ -133,27 +246,9 @@
 			switchLabel.textContent = "已關閉";
 		}
 	});
-
-	//打卡視窗控制
-	$("#save_btn").click(function(){
-		$("#clockPopup").fadeIn();
-	});
-
-	$(".clock-close").click(function(){
-		$("#clockPopup").fadeOut();
-	});
-
-	// 點擊背景區域關閉彈窗
-	$("#clockPopup").click(function(event) {
-		if(event.target === this) {
-			$(this).fadeOut();
-		}
-	});
-
-	// 照片上傳功能
-	$(document).ready(function() {
-		let currentPhoto = null;
-
+	}
+	function uploadPhoto(){
+		// 照片上傳功能
 		// 點擊上傳區域觸發文件選擇
 		$("#photoBox").on("click", function() {
 			$("#fileAdd").click();
@@ -167,12 +262,11 @@
 				let reader = new FileReader();
 				reader.onload = function(e) {
 					let imgStr = e.target.result;
-					currentPhoto = imgStr;
-
+					
 					// 更新預覽圖
 					$(".upload-area").remove();
 					$("#photoBox").html(`
-						<img src="${imgStr}" class="preview-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+						<img src="${imgStr}" class="preview-img" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" id="imgload">
 					`);
 				};
 				reader.readAsDataURL(file);
@@ -180,9 +274,5 @@
 				console.log("請選擇圖片檔案");
 			}
 		});
-	});
-
-	$('#cancel').click(function(){
-		location.href = "/Profile/Account";
-	})
+	}
 </script>

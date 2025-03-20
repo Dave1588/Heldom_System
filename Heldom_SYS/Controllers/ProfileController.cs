@@ -172,6 +172,39 @@ namespace Heldom_SYS.Controllers
             }
 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateEmployeeDetail([FromBody] EmployeeDetailCreateModel model)
+        {
+            try
+            {
+                string userID = UserRoleStore.UserID;
+
+                // 更新 EmployeeDetail 表
+                var employeeDetail = await DbContext.EmployeeDetails
+                    .FirstOrDefaultAsync(ed => ed.EmployeeId == userID);
+
+                if (employeeDetail != null)
+                {
+                    //employeeDetail.PhoneNumber = model.phoneNumber;
+                    //employeeDetail.Address = model.address;
+                    //employeeDetail.EmergencyContact = model.emergencyContact;
+                    //employeeDetail.EmergencyContactPhone = model.emergencyContactPhone;
+
+                    await DbContext.SaveChangesAsync();
+
+                    return Ok(new { success = true, message = "資料更新成功" });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "找不到員工資料" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = "更新失敗：" + ex.Message });
+            }
+        }
     }
 
     public class EmployeeDetailUpdateModel
@@ -180,6 +213,11 @@ namespace Heldom_SYS.Controllers
         public string address { get; set; }
         public string emergencyContact { get; set; }
         public string emergencyContactPhone { get; set; }
+    }
+
+    public class EmployeeDetailCreateModel
+    {
+
     }
 
 }

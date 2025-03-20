@@ -117,7 +117,7 @@ namespace Heldom_SYS.Service
                     },
                     new KidItem {
                         Name = "新增員工帳號",
-                        Link = "/profile/NewAccount?motion=add",
+                        Link = "/profile/NewAccount",
                         Access = new List<string>() { "A" },
                     },
                 }
