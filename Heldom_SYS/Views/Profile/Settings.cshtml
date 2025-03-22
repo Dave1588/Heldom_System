@@ -1,10 +1,9 @@
 ﻿@* stylesheet *@
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+<link rel="stylesheet" href="/css/Profile/Settings.css" />
 @* https://localhost:7142/Profile/Settings *@
 
 <div id="loading" style="display: none;">Loading...</div>
-<div class="main_wrap border-radius box-shadow" id="profileContainer">
+<div class="main_wrap border-radius box-shadow" id="profileContainer" style="display:none">
     <div class="setting_main_area obj-horizontal-center">
         <div class="top_area txt-left">
             <h4 class="bold">個人資料設定</h4>
@@ -33,7 +32,9 @@
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">聯絡電話</p>
-                    <input type="tel" id="phoneNumber" class="form-control" value="0919-123456" />
+                    <input type="tel" id="phoneNumber" class="form-control" value="0919-123456" 
+                           pattern="[0-9]{4}-[0-9]{6}" 
+                           title="請輸入正確的手機號碼格式 (例如: 0919-123456)" />
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">地址</p>
@@ -47,7 +48,9 @@
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">緊急電話</p>
-                    <input type="tel" id="emergencyPhone" class="form-control" value="0919-123456" />
+                    <input type="tel" id="emergencyPhone" class="form-control" value="0919-123456" 
+                           pattern="[0-9]{4}-[0-9]{6}" 
+                           title="請輸入正確的手機號碼格式 (例如: 0919-123456)" />
                 </div>
             </div>
         </div>
@@ -58,193 +61,143 @@
     </div>
 </div>
 
+<!-- Popup -->
+<div id="clockPopup" class="modal clock-popup-wrap">
+    <div class="modal-dialog clock-popup-content">
+        <div class="modal-content">
+            <div class="modal-header clock-top obj-vertical-center">
+                <h5 class="modal-title color-gray-dark bold">提醒</h5>
+                <div class="clock-close obj-center"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="modal-body clock-area">
+                <h1 id="timeClock" class="color-gray-medium bold">電話號碼格式錯誤</h1>
+                <h4 class="color-gray-dark bold">請重新確認後儲存</h4>
+            </div>
+            <div class="modal-footer clock-check">
+                <button class="clock-button obj-center" id="yes-Button">
+                    <p class="bold color-white">確認</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
-    // Show loading indicator
     $("#loading").show();
 
     $(document).ready(function(){
-
-        axios.get('/Profile/GetSettingsData')
-        .then(function(response){
-
-            console.log(response);
-            console.log(response.data[0].name);
-            appendProfileInfo(response.data[0]);
-        })
-        .catch(function(error){
-            console.error("GetSettingsData failed!",error);
-        })
-        .finally(function() {
-            // Hide loading indicator and show profile content
-            $("#loading").hide();
-            $("#profileContainer").show();
+        // 取得個人資料
+        $.ajax({
+            url: '/Profile/GetSettingsData',
+            method: 'GET',
+            success: function(response) {
+                appendProfileInfo(response[0]);
+            },
+            error: function(error) {
+                console.error("GetSettingsData failed!", error);
+            },
+            complete: function() {
+                $("#loading").hide();
+                $("#profileContainer").show();
+            }
         });
     });
 
+    // 顯示個人資料
     function appendProfileInfo(data){
-        console.log("Appending profile info:",data.employeeID); // Debugging line
+        // console.log("Appending profile info:",data.phoneNumber);
 
-        document.getElementById("employeeName").value = data.name;
+        document.getElementById("employeeName").value = data.employeeName;
         document.getElementById("position").value = data.position;
-        document.getElementById("employeeId").value = data.employeeID;
+        document.getElementById("employeeId").value = data.employeeId;
         document.getElementById("birthDate").value = formatDate(data.birthDate);
-        document.getElementById("phoneNumber").value = data.phoneNumber;
+        document.getElementById("phoneNumber").value = formatPhone(data.phoneNumber);
         document.getElementById("address").value = data.address;
         document.getElementById("emergencyContact").value = data.emergencyContact;
-        document.getElementById("emergencyPhone").value = data.emergencyContactPhone;
+        document.getElementById("emergencyPhone").value = formatPhone(data.emergencyContactPhone);
     }
 
-    // 轉換日期格式
     function formatDate(dateString) {
         if (!dateString) return '';
         let date = new Date(dateString);
         let year = date.getFullYear();
-        // getDate() 取 0-11而已, 要自己 +1
         let month = String(date.getMonth() + 1).padStart(2, '0');
         let day = String(date.getDate()).padStart(2, '0');
         return `${year}-${month}-${day}`;
+    }
+
+    function formatPhone(phoneString){
+        if(!phoneString) return;
+        return phoneString.slice(0,4) + "-" + phoneString.slice(4);
     }
 
     $('#cancel').click(function(){
         location.href ="https://" + location.hostname + ":" +window.location.port + "/Profile/Index";
     });
 
+    // 更新個人資料
     $('#save').click(function(){
-
         let phoneNumber = document.getElementById("phoneNumber").value;
         let address = document.getElementById("address").value;
         let emergencyContact = document.getElementById("emergencyContact").value;
         let emergencyContactPhone = document.getElementById("emergencyPhone").value;
 
-        // 準備要發送的資料
+        const phonePattern = /^[0-9]{4}-[0-9]{6}$/;
+        if (!phonePattern.test(phoneNumber)||!phonePattern.test(emergencyContactPhone)) {
+            $("#clockPopup").fadeIn();
+            popup();
+            return;
+        }
+
         let updateData = {
-            phoneNumber: phoneNumber,
+            phoneNumber: phoneNumber.slice(0,4) + phoneNumber.slice(5),
             address: address,
             emergencyContact: emergencyContact,
-            emergencyContactPhone: emergencyContactPhone
+            emergencyContactPhone: emergencyContactPhone.slice(0,4) + emergencyContactPhone.slice(5)
         };
-
-        // 發送 POST 請求到後端
-        axios.post('/Profile/UpdateEmployeeInfo', updateData)
-            .then(function(response) {
-                if (response.data.success) {
-                    alert('資料更新成功！');
-                    // 更新成功後返回上一頁
-                    window.location.href = '/Profile/Index';
-                } else {
-                    alert('更新失敗：' + response.data.message);
+        
+        if(updateData){
+            $.ajax({
+                url: '/Profile/UpdateSettingsData',
+                method: 'POST',
+                data: updateData,
+                success: function(response) {
+                    if (response==true) {
+                        // 有空再做即將跳轉，把alert刪掉
+                        alert('資料更新成功！');
+                        window.location.href = '/Profile/Index';
+                    } else {
+                        alert('更新失敗：' + response.message);
+                    }
+                },
+                error: function(error) {
+                    console.error('更新失敗：', error);
+                    alert('更新失敗，請稍後再試！');
                 }
-            })
-            .catch(function(error) {
-                console.error('更新失敗：', error);
-                alert('更新失敗，請稍後再試！');
             });
+        }
     });
 
-</script>
+    // 電話號碼格式錯誤
+    function popup(){
 
-<style>
-    .main_wrap {
-        width: 100%;
-        height: auto;
-        padding: 60px 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+        $("#yes-Button").click(function(){
+            $("#clockPopup").fadeOut();
+        });
 
-    .setting_main_area {
-        max-width: 1000px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        row-gap: 40px;
-    }
+        $(".clock-close").click(function(){
+            $("#clockPopup").fadeOut();
+        });
 
-    .top_area {
-        width: 100%;
-        display: flex;
-    }
+        $('#no-Button').click(function(){
+            $("#clockPopup").fadeOut();
+        })
 
-    .middle_area {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .setting-row {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
-
-    .input_wrap {
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-        .input_wrap p {
-            margin: 0;
-            width: 100px;
-        }
-
-    .form-control {
-        width: 360px !important;
-        height: 48px !important;
-        padding: 4px 12px;
-        border: 1px solid var(--color-line);
-        border-radius: 10px !important;
-    }
-
-    .button_area {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-    }
-
-        .button_area button {
-            width: 240px !important;
-            height: 54px !important;
-            border-radius: 28px;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-            .button_area button p {
-                margin: 0;
-                font-weight: bold;
+        // 點擊背景區域關閉彈窗
+        $("#clockPopup").click(function(event) {
+            if(event.target === this) {
+                $(this).fadeOut();
             }
-
-    /* 修改取消按鈕樣式 */
-    .btn-outline {
-        background-color: rgba(0, 64, 221, 0.2);
-        !important; /* 使用 20% 透明度 */
-        border: 1px solid var(--color-blue) !important;
+        });
     }
-
-        .btn-outline p {
-            color: var(--color-blue) !important;
-        }
-
-    /* 保持儲存按鈕樣式 */
-    .btn-primary {
-        background-color: var(--color-blue);
-    }
-
-        .btn-primary p {
-            color: white;
-        }
-
-    /* 新增：設定 disabled 狀態的 input 樣式 */
-    .form-control:disabled {
-        background-color: var(--color-gray-light-opacity) !important;
-        opacity: 1 !important; /* 確保文字清晰可見 */
-        cursor: not-allowed;
-    }
-</style>
+</script>

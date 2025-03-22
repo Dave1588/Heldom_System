@@ -31,7 +31,7 @@
             <div class="search-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">員工編號</p>
-                    <input maxlength="10" type="text" class="form-control" id="employeeId" name="employeeId">
+                    <input maxlength="6" type="text" class="form-control" id="employeeId" name="employeeId">
                 </div>
 
                 <div class="input_wrap">
@@ -43,9 +43,9 @@
                     <button id="searchButton" class="search-button obj-center">
                         <p class="bold color-white">查詢</p>
                     </button>
-                    <button id="addButton" class="button button_style bold">
-                        <p class="bold color-white">新增</p>
-                    </button>
+                    <div id="buttons">
+
+                    </div>
 
                 </div>
             </div>
@@ -64,85 +64,108 @@
                         <th class="tb-title">職稱</th>
                         <th class="tb-title">到職日</th>
                         <th class="tb-title">啟用狀態</th>
-                        <th class="tb-title">編輯</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
-                        <td>管理部</td>
-                        <td>現場主管</td>
-                        <td>2012/02/01</td>
-                        <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    <td>1</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-check-circle color-green"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
-                        <td>管理部</td>
-                        <td>現場主管</td>
-                        <td>2012/02/01</td>
-                        <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    <td>2</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-check-circle color-green"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
-                        <td>管理部</td>
-                        <td>現場主管</td>
-                        <td>2012/02/01</td>
-                        <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    <td>3</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-check-circle color-green"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>4</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
-                        <td>管理部</td>
-                        <td>現場主管</td>
-                        <td>2012/02/01</td>
-                        <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    <td>4</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-check-circle color-green"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>5</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
-                        <td>管理部</td>
-                        <td>現場主管</td>
-                        <td>2012/02/01</td>
-                        <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    <td>5</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-check-circle color-green"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>6</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
-                        <td>管理部</td>
-                        <td>現場主管</td>
-                        <td>2012/02/01</td>
-                        <td><i class="fas fa-check-circle color-green"></i></td>
-                        <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    <td>6</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-check-circle color-green"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>7</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                    <td>7</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-exclamation-circle color-gray-light"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                    <td>8</td>
+                    <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
+                    <td>員姓名</td>
+                    <td>ABC-123456</td>
+                    <td>0919-12345</td>
+                    <td>管理部</td>
+                    <td>現場主管</td>
+                    <td>2012/02/01</td>
+                    <td><i class="fas fa-exclamation-circle color-gray-light"></i></td>
+                    <td><i class="fas fa-edit color-gray-medium"></i></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
                         <td>員姓名</td>
                         <td>ABC-123456</td>
                         <td>0919-12345</td>
@@ -153,8 +176,8 @@
                         <td><i class="fas fa-edit color-gray-medium"></i></td>
                     </tr>
                     <tr>
-                        <td>8</td>
-                        <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
+                        <td>10</td>
+                        <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
                         <td>員姓名</td>
                         <td>ABC-123456</td>
                         <td>0919-12345</td>
@@ -174,127 +197,207 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    let currentPage = 1;
+    let totalPage = 1;
+    let apiLoading = 0;
+    document.addEventListener('DOMContentLoaded', function async () {
 
         addPageButton();
 
-        // 查詢資料按鈕
-        document.getElementById("searchButton").addEventListener("click", function() {
-            // 在這裡新增查詢邏輯
-        });
-
-        // 新增員工帳號按鈕
-        document.getElementById("addButton").addEventListener("click", function() {
-            console.log("按鈕被點擊");
-            location.href="/Profile/NewAccount";
-            //location.href='/Project/Issues?type=Unusual&id=123&motion=add'
-        });
-        
+        setTable();
+        console.log(totalPage);
     });
 
-    // dataModel
-        const tableData = [
-            { id: 1, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            { id: 2, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            { id: 3, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            { id: 4, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            { id: 5, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            { id: 6, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            { id: 7, name: '員姓名', employeeId: 'ABC-123456', phone: '0919-12345', department: '管理部', position: '現場主管', startDate: '2012/02/01', status: true },
-            // 繼續新增
-        ];
+    document.getElementById("searchButton").addEventListener("click", function() {
+        currentPage = 1;
+        setTable();
+    });
 
-        /*let testingData = tableData.slice(2,4);
-        console.log(testingData);
-
-        // 取 tbody
-        const tbody = document.querySelector('.table tbody');
-
-        // 清空
-        tbody.innerHTML = '';
-
-        // 動態生成 RowData
-        tableData.forEach(row => {
-            const tr = document.createElement('tr');
-
-            // 新增 Row
-            tr.innerHTML = `
-                <td>${row.id}</td>
-                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                <td>${row.name}</td>
-                <td>${row.employeeId}</td>
-                <td>${row.phone}</td>
-                <td>${row.department}</td>
-                <td>${row.position}</td>
-                <td>${row.startDate}</td>
-                <td><i class="fas ${row.status ? 'fa-check-circle color-green' : 'fa-exclamation-circle color-gray-light'}"></i></td>
+    if("@ViewBag.role" == "A"){
+        const buttons = document.getElementById("buttons");
+        buttons.innerHTML = `
+            <button id="addButton" class="button button_style bold addBtn">
+                <p class="bold color-white">新增</p>
+            </button>
             `;
-
-            tbody.appendChild(tr);
+        document.getElementById("addButton").addEventListener("click", function() {
+            location.href="/Profile/NewAccount";
         });
-        */
+    }
 
-        // 編輯 column顯示
-        /*const hasPermission = true; // 條件
-        if (hasPermission) {
-            // 取 Row
-            const allRows = document.querySelectorAll('.table tbody tr');
+    let setTable = async() =>{
+        if(apiLoading){
+            return;
+        }
+        apiLoading = 1;
+        let data = await getAccounts();
+        let tableData = data.data;
+        console.log(tableData);
 
-            <th class="tb-title">編輯</th>
+        const tableHeader = document.getElementById("tableHeader");
+        tableHeader.innerHTML = `
+            <th>ID</th>
+            <th>照片</th>
+            <th>姓名</th>
+            <th>工號</th>
+            <th>電話</th>
+            <th>部門</th>
+            <th>職位</th>
+            <th>入職日期</th>
+            <th>狀態</th>
+        `;
 
-            let createEditHeader = document.createElement('td');
-            createEditHeader.className = tb-title;
-            document.getElementById('tableHeader').appendChild(createEditHeader);
+        if("@ViewBag.role" == "A"){
+            const headerElement = document.createElement('th');
+            headerElement.className = "tb-title";
+            headerElement.textContent = "編輯";
 
-            // 新增 Column
-            allRows.forEach(row => {
-                const operationTd = document.createElement('td');
-                operationTd.innerHTML = '<i class="fas fa-edit color-gray-medium"></i>';
-                row.appendChild(operationTd);
-            });
-        }*/
-        
-        const addPageButton = () => {
-            // 頁次生成
-            const endArea = document.getElementById('endArea');
-
-            // 上一頁按鈕
-            const lastButton = document.createElement('h4');
-            lastButton.innerHTML = '<i class="fas fa-chevron-left txt-center" id="Last"></i>';
-            endArea.appendChild(lastButton);
-
-            // 頁碼生成
-            for (let i = 0; i < 5; i++) {
-                const pageCircle = document.createElement('div');
-                pageCircle.className = 'page_circle obj-center';
-                pageCircle.id = `page_circle${i + 1}`;
-
-                const pageNumber = document.createElement('p');
-                pageNumber.className = 'bold';
-                pageNumber.textContent = i + 1;
-
-                pageCircle.appendChild(pageNumber);
-                endArea.appendChild(pageCircle);
-            }
-
-            // 下一頁按鈕
-            const nextButton = document.createElement('h4');
-            nextButton.innerHTML = '<i class="fas fa-chevron-right txt-center" id="Next"></i>';
-            endArea.appendChild(nextButton);
-
-            // 初始化第一頁圓圈為選中狀態
-            document.getElementById("page_circle1").style.backgroundColor = '#D9D9D9';
+            document.getElementById("tableHeader").appendChild(headerElement);
         }
 
-        // const getAccountData = ()=>{
-        //     $ajax({
-        //         url:"/Profile/GetAccountData",
-        //         type:"GET",
-        //         contentType:"application.json",
-        //         data:JSON.stringify(),
-        //         success:,
-        //         error:
-        //     })
-        // }
+        const tbody = document.querySelector('.table tbody');
+        tbody.innerHTML = '';
 
+        tableData.forEach((row, index)=> {
+            const tr = document.createElement('tr');
+            let hireDate = formatDate(row.hireDate)
+            // 新增 Row
+            tr.innerHTML = `
+            <td>${index + 1}</td>
+            <td><img class="employeeImg" src="${row.employeePhoto}" alt="員工頭貼" /></td>
+            <td>${row.employeeName}</td>
+            <td>${row.employeeId}</td>
+            <td>${row.phoneNumber}</td>
+            <td>${row.department}</td>
+            <td>${row.position}</td>
+            <td>${hireDate}</td>
+            <td><i class="fas ${row.isActive ? 'fa-check-circle color-green' : 'fa-exclamation-circle color-gray-light'}"></i></td>
+            @if (ViewBag.role == "A")
+            {
+                        <td><i class="fas fa-edit color-gray-medium" name="${row.EmployeeId}"></i></td>
+            }
+            `;
+                    tbody.appendChild(tr);
+        });
+
+        totalPage = data.totalPage;
+        if (totalPage !== $('.page_circle').length) {
+            addPageButton();
+        }
+
+        apiLoading = 0;
+    };
+
+
+    function getAccounts(){
+
+        let options = {
+            currentPage:currentPage.toString(),
+        }
+
+        if($("#departmentSelect").val()){
+            options.department = $("#departmentSelect").val();
+        }
+
+        if($("#statusSelect").val()){
+            options.IsActive = $("#statusSelect").val();
+        }
+
+        if($("#employeeId").val()){
+            options.employeeId = $("#employeeId").val();
+        }
+
+        if($("#employeeName").val()){
+            options.employeeName = $("#employeeName").val();
+        }
+
+        return new Promise((resolve, reject) => {
+            $.ajax({
+                url: "/Profile/GetAccountsData",
+                type:"POST",
+                contentType:"application/json",
+                data: JSON.stringify(options),
+                success: resolve,
+                error: reject
+            });
+        });
+    };
+
+    const addPageButton = () => {
+        // 頁次生成
+        const $endArea = $('#endArea');
+        $endArea.empty();
+
+        // 上一頁按鈕
+        const lastButton = document.createElement('h4');
+        lastButton.innerHTML = '<i class="fas fa-chevron-left txt-center" id="Last"></i>';
+        endArea.appendChild(lastButton);
+
+        // 頁碼生成
+        for (let i = 1; i <= totalPage; i++) {
+            const pageCircle = document.createElement('div');
+            pageCircle.className = 'page_circle obj-center';
+            pageCircle.id = `page_circle${i}`;
+
+            const pageNumber = document.createElement('p');
+            pageNumber.className = 'bold';
+            pageNumber.textContent = i;
+
+            pageCircle.appendChild(pageNumber);
+            endArea.appendChild(pageCircle);
+        }
+
+        // 下一頁按鈕
+        const nextButton = document.createElement('h4');
+        nextButton.innerHTML = '<i class="fas fa-chevron-right txt-center" id="Next"></i>';
+        endArea.appendChild(nextButton);
+
+        updatePageSelection();
+
+        bindPageEvents();
+    };
+
+
+    const updatePageSelection = () => {
+        $('.page_circle').css('backgroundColor', '');
+        $(`#page_circle${currentPage}`).css('backgroundColor', '#D9D9D9');
+    };
+
+
+    const bindPageEvents = () => {
+
+        $('#Last').click(function() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePageSelection();
+                setTable();
+            }
+        });
+
+        $('#Next').click(function() {
+            if (currentPage < totalPage) {
+                currentPage++;
+                updatePageSelection();
+                setTable();
+            }
+        });
+
+        $('.page_circle').click(function() {
+            const newPage = parseInt($(this).attr('id').replace('page_circle', ''));
+            if (newPage !== currentPage) {
+                currentPage = newPage;
+                updatePageSelection();
+                setTable();
+            }
+        });
+    };
+
+    function formatDate(dateString) {
+        if (!dateString) return '';
+        let date = new Date(dateString);
+        let yyyy = date.getFullYear();
+        let mm = String(date.getMonth() + 1).padStart(2, '0');
+        let dd = String(date.getDate()).padStart(2, '0');
+        return `${yyyy}/${mm}/${dd}`;
+    }
 </script>

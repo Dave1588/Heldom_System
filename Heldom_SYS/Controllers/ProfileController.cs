@@ -1,223 +1,102 @@
 ﻿using Heldom_SYS.Interface;
 using Heldom_SYS.Models;
+using Heldom_SYS.CustomModel;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Heldom_SYS.Service;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Heldom_SYS.Controllers
 {
+    [Route("[controller]")]
     public class ProfileController : Controller
     {
         private readonly SqlConnection DataBase;
         private readonly IUserStoreService UserRoleStore;
         private readonly ConstructionDbContext DbContext;
-        public ProfileController(SqlConnection connection, IUserStoreService _UserRoleStore, ConstructionDbContext dbContext)
+        private readonly IProfileService ProfileService;
+        public ProfileController(SqlConnection connection, IUserStoreService _UserRoleStore, ConstructionDbContext dbContext, IProfileService _ProfileService)
         {
             DataBase = connection;
             UserRoleStore = _UserRoleStore;
             DbContext = dbContext;
+            ProfileService = _ProfileService;
         }
 
+        [HttpGet]
+        [Route("Index")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Route("/Profile/Settings")]
+        [HttpGet]
+        [Route("Settings")]
         public IActionResult Settings()
         {
             return View();
         }
 
-
-        [Route("/Profile/Account")]
+        [HttpGet]
+        [Route("Account")]
         public IActionResult Account()
         {
             ViewBag.role = UserRoleStore.Role;
             return View();
         }
 
-        [Route("/Profile/NewAccount")]
+        [HttpGet]
+        [Route("NewAccount")]
         public IActionResult NewAccount()
         {
             return View();
         }
 
         [HttpGet]
+        [Route("NewAccount/{id}")]
+        public IActionResult NewAccount(string id)
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [Route("GetIndexData")]
         public async Task<IActionResult> GetIndexData()
         {
-
-            string userID = UserRoleStore.UserID;
-            var employeeWithDetail = await DbContext.Employees
-                .Where(employee => employee.EmployeeId == userID)
-                .Join(DbContext.EmployeeDetails,
-                employee => employee.EmployeeId,
-                detail => detail.EmployeeId,
-                (employee, detail) => new
-                {
-                    photo = Convert.ToBase64String(detail.EmployeePhoto),
-                    name = detail.EmployeeName,
-                    email = detail.Mail,
-                    yearsbetween = (int)((employee.ResignationDate ?? DateTime.Now) - employee.HireDate).TotalDays / 365,
-                    leaveDays = detail.AnnualLeave,
-                    hireDate = employee.HireDate,
-                    position = employee.Position,
-                    department = detail.Department,
-                    employeeID = employee.EmployeeId,
-                    birthDate = detail.BirthDate,
-                    phoneNumber = detail.PhoneNumber,
-                    address = detail.Address,
-                    emergencyContact = detail.EmergencyContact,
-                    emergencyContactPhone = detail.EmergencyContactPhone
-                }).ToListAsync();
-            return Ok(employeeWithDetail);
+            var result = await ProfileService.GetIndexData();
+            return Ok(result);
         }
 
         [HttpGet]
+        [Route("GetSettingsData")]
         public async Task<IActionResult> GetSettingsData()
         {
-            try
-            {
-                string userID = UserRoleStore.UserID;
-
-                var employeeWithDetail = await DbContext.Employees
-                    .Where(employee => employee.EmployeeId == userID)
-                    .Join(DbContext.EmployeeDetails,
-                    employee => employee.EmployeeId,
-                    detail => detail.EmployeeId,
-                    (employee, detail) => new
-                    {
-                        name = detail.EmployeeName,
-                        position = employee.Position,
-                        employeeID = employee.EmployeeId,
-                        birthDate = detail.BirthDate,
-                        phoneNumber = detail.PhoneNumber,
-                        address = detail.Address,
-                        emergencyContact = detail.EmergencyContact,
-                        emergencyContactPhone = detail.EmergencyContactPhone
-                    }).ToListAsync();
-                return Ok(employeeWithDetail);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { success = false, message = "資料取得失敗", error = ex.Message });
-            }
-
+            var result = await ProfileService.GetSettingsData();
+            return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateEmployeeInfo([FromBody] EmployeeDetailUpdateModel model)
+        [Route("UpdateSettingsData")]
+        public async Task<IActionResult> UpdateSettingsData([FromBody] ProfileSettings userInput)
         {
-            try
-            {
-                string userID = UserRoleStore.UserID;
-
-                // 更新 EmployeeDetail 表
-                var employeeDetail = await DbContext.EmployeeDetails
-                    .FirstOrDefaultAsync(ed => ed.EmployeeId == userID);
-
-                if (employeeDetail != null)
-                {
-                    employeeDetail.PhoneNumber = model.phoneNumber;
-                    employeeDetail.Address = model.address;
-                    employeeDetail.EmergencyContact = model.emergencyContact;
-                    employeeDetail.EmergencyContactPhone = model.emergencyContactPhone;
-
-                    await DbContext.SaveChangesAsync();
-
-                    return Ok(new { success = true, message = "資料更新成功" });
-                }
-                else
-                {
-                    return BadRequest(new { success = false, message = "找不到員工資料" });
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { success = false, message = "更新失敗：" + ex.Message });
-            }
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetAccountData()
-        {
-            try
-            {
-                string userID = UserRoleStore.UserID;
-
-                var employeesWithDetail = await DbContext.Employees
-                    .Where(employee => employee.EmployeeId == userID)
-                    .Join(DbContext.EmployeeDetails,
-                    employee => employee.EmployeeId,
-                    detail => detail.EmployeeId,
-                    (employee, detail) => new
-                    {
-                        photo = Convert.ToBase64String(detail.EmployeePhoto),
-                        name = detail.EmployeeName,
-                        employeeID = employee.EmployeeId,
-                        phoneNumber = detail.PhoneNumber,
-                        department = detail.Department,
-                        position = employee.Position,
-                        hireDate = employee.HireDate,
-                        activestat = employee.IsActive
-
-                    }).ToListAsync();
-                return Ok(employeesWithDetail);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { success = false, message = "資料取得失敗", error = ex.Message });
-            }
-
+            bool result = await ProfileService.UpdateSettingsData(userInput);
+            return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateEmployeeDetail([FromBody] EmployeeDetailCreateModel model)
+        [Route("GetAccountsData")]
+        public async Task<IActionResult> GetAccountsData([FromBody] ProfileOptions options)
         {
-            try
+            var response = new
             {
-                string userID = UserRoleStore.UserID;
-
-                // 更新 EmployeeDetail 表
-                var employeeDetail = await DbContext.EmployeeDetails
-                    .FirstOrDefaultAsync(ed => ed.EmployeeId == userID);
-
-                if (employeeDetail != null)
-                {
-                    //employeeDetail.PhoneNumber = model.phoneNumber;
-                    //employeeDetail.Address = model.address;
-                    //employeeDetail.EmergencyContact = model.emergencyContact;
-                    //employeeDetail.EmergencyContactPhone = model.emergencyContactPhone;
-
-                    await DbContext.SaveChangesAsync();
-
-                    return Ok(new { success = true, message = "資料更新成功" });
-                }
-                else
-                {
-                    return BadRequest(new { success = false, message = "找不到員工資料" });
-                }
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { success = false, message = "更新失敗：" + ex.Message });
-            }
+                data = await ProfileService.GetAccountsData(options),
+                totalPage = await ProfileService.GetTotalPage(options)
+            };
+            return Ok(response);
         }
     }
-
-    public class EmployeeDetailUpdateModel
-    {
-        public string phoneNumber { get; set; }
-        public string address { get; set; }
-        public string emergencyContact { get; set; }
-        public string emergencyContactPhone { get; set; }
-    }
-
-    public class EmployeeDetailCreateModel
-    {
-
-    }
-
 }

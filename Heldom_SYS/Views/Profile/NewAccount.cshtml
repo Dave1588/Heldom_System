@@ -156,9 +156,6 @@
 			if(dateNow > resignDay){
 				$("#clockPopup").fadeIn();
 			}
-			else{
-
-			}
 		});
 
 		$(".clock-close").click(function(){
@@ -179,33 +176,29 @@
 
 	// 存檔POST資料
 	$('#yes-Button').click(function(){
-		// 获取所有表单数据
+		// 取得form資料
 		const formData = {
-			// 基本信息
+			// 基本資料
+			employeeId: document.getElementById('employeeId').value,
 			employeeName: document.getElementById('employeeName').value,
 			ImmediateSupervisor: document.getElementById('ImmediateSupervisor').value,
 			phone: document.getElementById('phone').value,
-			emergencyContact: document.getElementById('emergencyContact').value,
+			birthDate: document.getElementById('birthDate').value,
 			hireDate: document.getElementById('hireDay').value,
+			resignDate: document.getElementById('resignDay').value,
+			address: document.getElementById('address').value,
+			emergencyPhone: document.getElementById('emergencyPhone').value,
+			emergencyContact: document.getElementById('emergencyContact').value,
 			
-			// 员工编号（系统生成）
-			employeeId: document.getElementById('employeeId').value,
-			
-			// 权限和部门信息
+			// 權限和部門
 			permission: document.getElementById('employeeRole').value,
 			department: document.getElementById('department').value,
 			position: document.getElementById('position').value,
 			
-			// 其他信息
-			birthDate: document.getElementById('birthDate').value,
-			address: document.getElementById('address').value,
-			emergencyPhone: document.getElementById('emergencyPhone').value,
-			resignDate: document.getElementById('resignDay').value,
-			
-			// 状态信息
+			// 是否啟用
 			isActive: document.getElementById('flexSwitchCheckDefault').checked,
 
-			// 照片信息（base64字符串）
+			// 員工照片（base64字符串）
 			photo: document.getElementById('imgload').src.split(",")[1]
 		};
 		console.log(formData)
@@ -228,7 +221,7 @@
 			},
 			error: function(xhr, status, error) {
 				console.error('Error:', error);
-				alert('保存失败，请稍后重试');
+				alert('儲存失敗，請稍後再試');
 			}
 		});
 		*/

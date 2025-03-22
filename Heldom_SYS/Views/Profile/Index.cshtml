@@ -73,14 +73,14 @@
         dataType: 'json',         
         success: function(response) {
             
-            console.log(response);  
+            // console.log(response);  
             
             if (response.length > 0) {
                 const employee = response[0];
-                console.log('Name:', employee.name);
-                console.log('Email:', employee.email);
+                // console.log('Name:', employee.name);
+                // console.log('Email:', employee.email);
                 
-                document.getElementById("ProfileImage").src = "data:image/jpg;base64," + employee.photo;
+                document.getElementById("ProfileImage").src = "data:image/jpg;base64," + employee.employeePhoto;
                 appendProfileInfo(employee);
 
                 $("#loading").hide();
@@ -93,7 +93,7 @@
         }
         });
 
-        /* axios寫法
+        /* axios
         axios.get('/Profile/GetIndexData')
         .then(function(response){
 
@@ -111,30 +111,30 @@
             $("#profileContainer").show();
         });
         */
+
+        $('#towardSettings').click(function(){
+            location.href ="https://" + location.hostname + ":" +window.location.port + "/profile/settings";
+        });
     });
 
-    // 使用資料 姓名 電子郵件
+    // 顯示資料
     function appendProfileInfo(data) {
-        console.log("Appending profile info:",data.hireDate,data.position); // Debugging line
+        // console.log("Appending profile info:",data.hireDate,data.position);
 
-        // Get the container where you want to append the new elements
         const profileContainer = document.getElementById("profile-info");
 
-        // Create a paragraph element for the name
         const nameElement = document.createElement("p");
-        nameElement.className = "txt-center profile-title bold"; // Set class
-        nameElement.textContent = data.name; // Set text content
+        nameElement.className = "txt-center profile-title bold";
+        nameElement.textContent = data.employeeName;
 
-        // Create a paragraph element for the email
         const emailElement = document.createElement("p");
-        emailElement.className = "txt-center profile-title"; // Set class
-        emailElement.textContent = data.email; // Set text content
+        emailElement.className = "txt-center profile-title";
+        emailElement.textContent = data.mail;
 
-        // Append the new elements to the container
         profileContainer.append(nameElement,emailElement);
 
-        document.getElementById("yearsOfService").textContent = data.yearsbetween;
-        document.getElementById("leaveDays").textContent = data.leaveDays;
+        document.getElementById("yearsOfService").textContent = data.yearsBetween;
+        document.getElementById("leaveDays").textContent = data.annualLeave;
 
         // 格式化日期函數
         function formatDate(dateString) {
@@ -150,14 +150,13 @@
         document.getElementById("hireDate").textContent = formatDate(data.hireDate);
         document.getElementById("position").textContent = data.position;
         document.getElementById("department").textContent = data.department;
-        document.getElementById("employeeId").textContent = data.employeeID;
+        document.getElementById("employeeId").textContent = data.employeeId;
         document.getElementById("birthDate").textContent = formatDate(data.birthDate);
         document.getElementById("phoneNumber").textContent = data.phoneNumber;
         document.getElementById("address").textContent = data.address;
         document.getElementById("emergencyContact").textContent = data.emergencyContact;
         document.getElementById("emergencyPhone").textContent = data.emergencyContactPhone;
 
-        // 儲存需要傳遞的資料到 sessionStorage
         // const dataToTransfer = {
         //     name: data.name,
         //     email: data.email,
@@ -174,9 +173,6 @@
         // sessionStorage.setItem('profileData', JSON.stringify(dataToTransfer));
     }
 
-    $('#towardSettings').click(function(){
-        location.href ="https://" + location.hostname + ":" +window.location.port + "/profile/settings";
-    });
 </script>
 
 <style>

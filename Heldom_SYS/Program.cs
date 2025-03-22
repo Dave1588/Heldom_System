@@ -39,6 +39,7 @@ builder.Services.AddSession(options =>
 builder.Services.AddSession(); // 啟用 Session
 
 builder.Services.AddScoped<IAccidentService, AccidentService>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
 
 
 // 添加身份驗證
