@@ -12,6 +12,7 @@ using NPOI.HSSF.Record;
 using NPOI.SS.Formula.Functions;
 using System.Reflection;
 using System;
+using Heldom_SYS.CustomModel;
 
 namespace Heldom_SYS.Controllers
 {
@@ -35,6 +36,14 @@ namespace Heldom_SYS.Controllers
             public required string Type { get; set; }
             public required string Account { get; set; }
             public required string PassWord { get; set; }
+            public required string CompanyID { get; set; }
+            
+        }
+
+        public class PIDData
+        {
+            public required string EmployeeID { get; set; }
+
         }
 
         [HttpPost]
@@ -57,10 +66,50 @@ namespace Heldom_SYS.Controllers
                         EmployeeName = data.Account,
                         PhoneNumber = data.PassWord,
                     });
-                
-                if (user != null) {
+
+                if (user != null)
+                {
                     UserRoleStore.UserID = user.EmployeeId;
-                    UserRoleStore.UserName= user.EmployeeName;
+                    UserRoleStore.UserName = user.EmployeeName;
+                }
+                else {
+                    string checkID = @"SELECT top(1) EmployeeID FROM Employee where PositionRole = 'P' order by EmployeeID Desc";
+                    IEnumerable<PIDData> ? PIDData = await DataBase.QueryAsync<PIDData>(checkID);
+
+                    // 新增最新PID
+                    string resultID = PIDData.Select(x => x.EmployeeID).ToList().First().ToString();
+                    int count = int.Parse(resultID.Substring(1)) + 1;
+                    string EmployeeID = "P" + count.ToString().PadLeft(5, '0');
+
+
+                    string addEmployeeSql = @"INSERT INTO Employee (EmployeeID,IsActive,Position,PositionRole,HireDate,ResignationDate)
+                                VALUES (@EmployeeID,@IsActive,@Position,@PositionRole,@HireDate,@ResignationDate)";
+
+                    await DataBase.QuerySingleOrDefaultAsync<int>(addEmployeeSql, new
+                    {
+                        EmployeeID = EmployeeID,
+                        IsActive = false,
+                        Position = "臨時員工",
+                        PositionRole = "P",
+                        HireDate = DateTime.Now,
+                        ResignationDate = DateTime.Now,
+                    });
+
+
+                    string addTemporarierSql = @"INSERT INTO Temporarier(EmployeeID,EmployeeName,PhoneNumber,CompanyID) 
+                                            VALUES  (@EmployeeID,@EmployeeName,@PhoneNumber,@CompanyID)";
+
+                    await DataBase.QuerySingleOrDefaultAsync<int>(addTemporarierSql, new
+                    {
+                        EmployeeID = EmployeeID,
+                        EmployeeName = data.Account,
+                        PhoneNumber = data.PassWord,
+                        CompanyID = data.CompanyID,
+                    });
+
+                    UserRoleStore.UserID = EmployeeID;
+                    UserRoleStore.UserName = data.Account;
+
                 }
 
             }

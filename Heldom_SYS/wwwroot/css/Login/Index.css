@@ -155,7 +155,7 @@
 @media (min-width: 992px) {
     .login-container {
         width: 390px;
-        height: 600px;
+        height: 650px;
         background-color: #ffffff;
         display: flex;
         margin: 0 auto; /* 水平居中 */

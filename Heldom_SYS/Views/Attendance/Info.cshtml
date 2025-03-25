@@ -1,9 +1,6 @@
 ﻿@* stylesheet *@
 <link rel="stylesheet" href="~/css/Attendance/Info.css" asp-append-version="true" />
 
-@* https://localhost:7142/Attendance/Info *@
-
-
 <div class="main_wrap border-radius box-shadow">
     <div id="work" class="work_main_area obj-horizontal-center">
         <div class="top_area">
@@ -13,39 +10,33 @@
             <div class="input_wrap">
                 <p class="color-gray-dark bold p-width">查詢項目</p>
                 <select id="choseType" class="form-select" aria-label="Default select example">
-                    <option value="1" selected>上班打卡</option>
-                    <option value="2">請假紀錄</option>
+                    <option value="1" selected>請假紀錄</option>
+                    <option value="2">上班打卡</option>
                 </select>
             </div>
-
             <div class="input_wrap">
                 <p class="color-gray-dark bold p-width">員工姓名</p>
-                <input maxlength="10" type="text" class="form-control" id="endDate" name="endDate">
+                <input maxlength="10" type="text" class="form-control" id="employeeName" name="employeeName">
             </div>
-
             <div class="input_wrap">
                 <p class="color-gray-dark bold p-width">開始時間</p>
                 <input type="datetime-local" class="form-control" id="startDate" name="startDate">
             </div>
-           
             <div class="input_wrap">
                 <p class="color-gray-dark bold p-width">結束時間</p>
-                <input type="datetime-local" class="form-control" id="startDate" name="startDate">
+                <input type="datetime-local" class="form-control" id="endDate" name="endDate">
             </div>
-
-            <button class="search-button obj-center">
-                <p class="bold color-white">
-                    查詢
-                </p>
+            <button class="search-button obj-center" id="searchBtn">
+                <p class="bold color-white">查詢</p>
             </button>
         </div>
-        <div class="middle_area work_middle_area">
+        <div class="middle_area work_middle_area" style="display: none;">
             <table class="table">
                 <thead>
                     <tr>
                         <th class="tb-title">序號</th>
                         <th class="tb-title">狀態</th>
-                        <th class="tb-title">照片</th>
+                        <th class="tb-title">打卡日期</th>
                         <th class="tb-title">員工姓名</th>
                         <th class="tb-title">員工編號</th>
                         <th class="tb-title">上班簽到</th>
@@ -53,11 +44,10 @@
                         <th class="tb-title">總時數</th>
                     </tr>
                 </thead>
-                <tbody>
-                </tbody>
+                <tbody id="workTableBody"></tbody>
             </table>
         </div>
-        <div class="middle_area leave_middle_area">
+        <div class="middle_area leave_middle_area" style="display: block;">
             <table class="table">
                 <thead>
                     <tr>
@@ -67,262 +57,303 @@
                         <th class="tb-title">開始時間</th>
                         <th class="tb-title">結束時間</th>
                         <th class="tb-title">狀態</th>
-                        <th class="tb-title">假别</th>
+                        <th class="tb-title">假別</th>
                         <th class="tb-title">總時數</th>
                     </tr>
                 </thead>
-                <tbody>
-                </tbody>
+                <tbody id="leaveTableBody"></tbody>
             </table>
         </div>
-        <div class="end_area obj-center">
-        </div>
+        <div class="end_area obj-center" id="pagination"></div>
     </div>
-
 </div>
 
-<!-- holiday Pop-up -->
+<!-- Holiday Pop-up -->
 <div id="holidayPopup" class="holiday-popup-wrap">
     <div class="holiday-popup-content">
         <div class="holiday-top obj-vertical-center">
-            <div class="holiday-close obj-center">&times;</div>
+            <div class="holiday-close obj-center">×</div>
         </div>
         <div class="holiday-area">
             <div class="message-display">
                 <h4 class="color-gray-dark bold">是否同意核可請假?</h4>
             </div>
             <div class="obj-center holiday-check">
-                <button class="holiday-button obj-center">
-                    <p class="bold color-white">
-                        是
-                    </p>
+                <button class="holiday-button obj-center" id="approveBtn">
+                    <p class="bold color-white">是</p>
                 </button>
-                <button class="holiday-button obj-center">
-                    <p class="bold color-white">
-                        否
-                    </p>
+                <button class="holiday-button obj-center" id="rejectBtn">
+                    <p class="bold color-white">否</p>
                 </button>
             </div>
         </div>
     </div>
-</div> 
-
+</div>
 
 <script>
+    const pageSize = 5;
+    let currentPage = 1;
+    let currentData = [];
+    let selectedEmployeeId = null;
+    let selectedStartTime = null;
 
-
-    let workData = [
-        {
-            id:1,
-            status:true,
-            photo:"zxc",
-            employeeName:"asd",
-            employeeID:"123",
-            startTime:"04:18",
-            endTime:"11:18",
-            countTime:5
-        },
-        {
-            id:1,
-            status:true,
-            photo:"zxc",
-            employeeName:"asd",
-            employeeID:"123",
-            startTime:"04:18",
-            endTime:"11:18",
-            countTime:5
-        },
-    ]
-
-    let workPageCount = 5;
-    
-    let leaveData = [
-        {
-            id:1,
-            photo:"zxc",
-            employeeName:"asd",
-            startDate:"2025/02/16",
-            startTime:"04:18",
-            endDate:"2025/02/16",
-            endTime:"11:18",
-            status:true,
-            leaveType:"特休",
-            countTime:5
-        },
-        {
-            id:1,
-            photo:"zxc",
-            employeeName:"asd",
-            startDate:"2025/02/16",
-            startTime:"04:18",
-            endDate:"2025/02/16",
-            endTime:"11:18",
-            status:false,
-            leaveType:"特休",
-            countTime:5
-        },
-        {
-            id:1,
-            photo:"zxc",
-            employeeName:"asd",
-            startDate:"2025/02/16",
-            startTime:"04:18",
-            endDate:"2025/02/16",
-            endTime:"11:18",
-            status:true,
-            leaveType:"特休",
-            countTime:5
-        },
-        {
-            id:1,
-            photo:"zxc",
-            employeeName:"asd",
-            startDate:"2025/02/16",
-            startTime:"04:18",
-            endDate:"2025/02/16",
-            endTime:"11:18",
-            status:false,
-            leaveType:"特休",
-            countTime:5
-        },
-        {
-            id:1,
-            photo:"zxc",
-            employeeName:"asd",
-            startDate:"2025/02/16",
-            startTime:"04:18",
-            endDate:"2025/02/16",
-            endTime:"11:18",
-            status:true,
-            leaveType:"特休",
-            countTime:5
-        },
-        {
-            id:1,
-            photo:"zxc",
-            employeeName:"asd",
-            startDate:"2025/02/16",
-            startTime:"04:18",
-            endDate:"2025/02/16",
-            endTime:"11:18",
-            status:true,
-            leaveType:"特休",
-            countTime:5
-        },
-    ]
-
-    let leavePageCount = 5;
- 
     $(document).ready(function() {
-        //上下班表格生成
+            $('#choseType').on("change", function() {
+                const selectedValue = $(this).val();
+                console.log("切換查詢項目:", selectedValue);
+                if (selectedValue == "1") {
+                    $(".work_middle_area").hide();
+                    $(".leave_middle_area").show();
+                } else {
+                    $(".work_middle_area").show();
+                    $(".leave_middle_area").hide();
+                }
+                currentPage = 1; // 交換選單後重置頁碼為 >>>  1
+                fetchData();
+            });
 
-        for(let i = 0;i<workData.length;i++){
-            //let statusClass = workData[i].status ? "status-approved" : "status-approving";
-            let ele = `
-                <tr>
-                    <td class="tb-txt">${workData[i].id}</td>
-                    <td class="tb-txt">
-                        <p>
-                            ${workData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
-                        </p>
-                    </td>
-                    <td class="tb-txt">${workData[i].photo}</td>
-                    <td class="tb-txt">${workData[i].employeeName}</td>
-                    <td class="tb-txt">${workData[i].employeeID}</td>
-                    <td class="tb-txt">${workData[i].startTime}</td>
-                    <td class="tb-txt">${workData[i].endTime}</td>
-                    <td class="tb-txt">${workData[i].countTime}</td>
-                </tr>
-            `
+        $("#searchBtn").click(function() {
+            currentPage = 1;
+            fetchData();
+        });
 
-            $("#work .work_middle_area table tbody ").append(ele)
+        function fetchData() {
+            const choseType = $("#choseType").val();
+            const employeeName = $("#employeeName").val();
+            const startDate = $("#startDate").val();
+            const endDate = $("#endDate").val();
 
+            const url = choseType == "1" ? '@Url.Action("GetLeaveRecords", "Attendance")' : '@Url.Action("GetAttendanceRecords", "Attendance")';
+            console.log("查詢 URL:", url, { employeeName, startDate, endDate });
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: {
+                    employeeName: employeeName,
+                    startDate: startDate,
+                    endDate: endDate
+                },
+                success: function(data) {
+                    console.log("取得的資料:", data);
+                    currentData = data || [];
+                    renderTable();
+                    renderPagination();
+                },
+                error: function(xhr, status, error) {
+                    console.error("查詢失敗:", error);
+                    alert("查詢失敗，請稍後再試: " + error);
+                }
+            });
         }
 
-        //上下班分頁生成
+        function renderTable() {
+            const start = (currentPage - 1) * pageSize;
+            const end = Math.min(start + pageSize, currentData.length);
+            const paginatedData = currentData.slice(start, end);
+            const isLeave = $("#choseType").val() == "1";
+            const tbody = isLeave ? $("#leaveTableBody") : $("#workTableBody");
 
-        $("#work .end_area").append(`
-            <h4><i class="fas fa-angle-left"></i></h4>
-        `)
+            console.log("選擇的表格:", isLeave ? "leaveTableBody" : "workTableBody");
+            console.log("分頁資料:", paginatedData);
 
-        for(let i = 0;i<workPageCount;i++ ){
-            $("#work .end_area").append(`
-                <div class="page_circle obj-center">
-                    <p class="bold">${i+1}</>
-                </div>
-            `)
-        }
+            tbody.empty();
 
-        $("#work .end_area").append(`
-            <h4><i class="fas fa-angle-right"></i></h4>
-        `)
-        
-
-        //請假表格生成
-        for(let i = 0;i<leaveData.length;i++){
-
-            let ele = `
-                <tr>
-                    <td class="tb-txt">${leaveData[i].id}</td>
-                    <td class="tb-txt">${leaveData[i].photo}</td>
-                    <td class="tb-txt">${leaveData[i].employeeName}</td>
-                    <td class="tb-txt ">
-                        <div class="center_display">
-                            <span>${leaveData[i].startDate}</span>
-                            <span>${leaveData[i].startTime}</span>
-                        </div>
-                    </td>
-                    <td class="tb-txt ">
-                        <div class="center_display">
-                            <span>${leaveData[i].endDate}</span>
-                            <span>${leaveData[i].endTime}</span>
-                        </div>
-                    </td>
-                    <td class="tb-txt holiday-click">
-                        <p>
-                            ${leaveData[i].status ? `<i class="fas fa-check-circle color-green"></i>` : `<i class="fas fa-exclamation-circle color-gray-light"></i>`}
-                        </p>
-                    </td>
-                    <td class="tb-txt">${leaveData[i].leaveType}</td>
-                    <td class="tb-txt">${leaveData[i].countTime}</td>
-                </tr>
-            `
-
-            $("#work .leave_middle_area table tbody ").append(ele)
-
-        }
-
-        //控制table顯示
-        $(".leave_middle_area").hide()
-
-        $('#choseType').on("change", function () {
-            let selectedValue = $(this).val();
-            if(selectedValue == 1){
-                $(".work_middle_area").show()
-                $(".leave_middle_area").hide()
-            }else{
-                $(".work_middle_area").hide()
-                $(".leave_middle_area").show()
+            if (paginatedData.length === 0) {
+                tbody.append('<tr><td colspan="' + (isLeave ? 8 : 8) + '">無資料</td></tr>');
+                return;
             }
-            
+
+            paginatedData.forEach((item, index) => {
+                if (isLeave) {
+                    const photoSrc = item.photo ? `data:image/jpeg;base64,${item.photo}` : "https://via.placeholder.com/50";
+                    const employeeId = item.employeeId || '未知';
+                    const startTime = item.startDate && item.startTime ? `${item.startDate.replace(/\//g, '-') + 'T' + item.startTime + ':00'}` : '未知';
+                    const row = `
+                        <tr data-employee-id="${employeeId}" data-start-time="${startTime}">
+                            <td class="tb-txt">${start + index + 1}</td>
+                            <td class="tb-txt"><img src="${photoSrc}" width="50" height="50" alt="Photo" /></td>
+                            <td class="tb-txt">${item.employeeName || '未知'}</td>
+                            <td class="tb-txt"><div class="center_display"><span>${item.startDate || ''}</span><span>${item.startTime || ''}</span></div></td>
+                            <td class="tb-txt"><div class="center_display"><span>${item.endDate || ''}</span><span>${item.endTime || ''}</span></div></td>
+                            <td class="tb-txt ${item.status ? '' : 'holiday-click'}" data-status="${item.status}">
+                                <p>${item.status ? '<i class="fas fa-check-circle color-green"></i>' : '<i class="fas fa-exclamation-circle color-gray-light"></i>'}</p>
+                            </td>
+                            <td class="tb-txt">${item.leaveType || '未知'}</td>
+                            <td class="tb-txt">${item.countTime || '0'}</td>
+                        </tr>`;
+                    tbody.append(row);
+                } else {
+                    const row = `
+                        <tr>
+                            <td class="tb-txt">${start + index + 1}</td>
+                            <td class="tb-txt">
+                                <p>${item.status ? '<i class="fas fa-check-circle color-green"></i>' : '<i class="fas fa-exclamation-circle color-gray-light"></i>'}</p>
+                            </td>
+                            <td class="tb-txt">${item.workDate || '未知'}</td>
+                            <td class="tb-txt">${item.employeeName || '未知'}</td>
+                            <td class="tb-txt">${item.employeeId || '未知'}</td>
+                            <td class="tb-txt">${item.startTime || ''}</td>
+                            <td class="tb-txt">${item.endTime || ''}</td>
+                            <td class="tb-txt">${item.countTime || '0'}</td>
+                        </tr>`;
+                    tbody.append(row);
+                }
+            });
+
+            console.log("表格內容:", tbody.html());
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(currentData.length / pageSize);
+            const maxPagesToShow = 5;
+            $("#pagination").empty();
+
+            $("#pagination").append('<h4 id="prevPage" class="pagination-arrow"><i class="fas fa-angle-left"></i></h4>');
+
+            let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+            let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
+
+            if (endPage - startPage + 1 < maxPagesToShow) {
+                startPage = Math.max(1, endPage - maxPagesToShow + 1);
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                $("#pagination").append(`
+                    <div class="page_circle obj-center ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                        <p class="bold">${i}</p>
+                    </div>`);
+            }
+
+            $("#pagination").append('<h4 id="nextPage" class="pagination-arrow"><i class="fas fa-angle-right"></i></h4>');
+
+            $("#prevPage").toggleClass("disabled", currentPage === 1);
+            $("#nextPage").toggleClass("disabled", currentPage === totalPages);
+
+            $("#prevPage").click(function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable();
+                    renderPagination();
+                }
+            });
+
+            $("#nextPage").click(function() {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderTable();
+                    renderPagination();
+                }
+            });
+
+            $(".page_circle").click(function() {
+                currentPage = parseInt($(this).data("page"));
+                renderTable();
+                renderPagination();
+            });
+        }
+
+        $(document).on("click", ".holiday-click", function() {
+            const tr = $(this).closest("tr");
+            selectedEmployeeId = tr.attr("data-employee-id");
+            selectedStartTime = tr.attr("data-start-time");
+            const currentStatus = $(this).attr("data-status");
+
+            console.log("點擊請假記錄:", { selectedEmployeeId, selectedStartTime, currentStatus });
+            if (!selectedEmployeeId || !selectedStartTime) {
+                console.error("缺少必要資料:", { selectedEmployeeId, selectedStartTime });
+                alert("無法獲取員工ID或開始時間");
+                return;
+            }
+            if (currentStatus === "false" || currentStatus === false) {
+                $("#holidayPopup").fadeIn();
+            }
         });
 
-        //請假視窗控制
-   
-        $(".holiday-click").click(function(){
-            $("#holidayPopup").fadeIn();
+        $("#approveBtn").click(function() {
+            updateLeaveStatus(true);
         });
 
-        $(".holiday-close").click(function(){
+        $("#rejectBtn").click(function() {
+            updateLeaveStatus(false);
+        });
+
+        function updateLeaveStatus(approve) {
+            if (!selectedEmployeeId || !selectedStartTime) {
+                console.error("更新失敗：缺少員工ID或開始時間");
+                alert("無法更新：員工ID或開始時間缺失");
+                return;
+            }
+
+            console.log("更新請假狀態參數:", { employeeId: selectedEmployeeId, startTime: selectedStartTime, approve });
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("UpdateLeaveStatus", "Attendance")',
+                data: {
+                    employeeId: selectedEmployeeId,
+                    startTime: selectedStartTime,
+                    approve: approve
+                },
+                success: function(response) {
+                    console.log("更新回應:", response);
+                    if (response.success) {
+                        alert(response.message);
+                        $("#holidayPopup").fadeOut();
+                        fetchData();
+                    } else {
+                        alert("更新失敗: " + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("更新錯誤:", xhr.responseText);
+                    alert("更新失敗，請稍後再試: " + error);
+                }
+            });
+        }
+
+        $(".holiday-close").click(function() {
             $("#holidayPopup").fadeOut();
         });
 
-        // 點擊背景區域關閉彈窗
         $("#holidayPopup").click(function(event) {
-            if(event.target === this) {
+            if (event.target === this) {
                 $(this).fadeOut();
             }
         });
-    });
 
+        fetchData();
+    });
 </script>
+
+<style>
+    .pagination-arrow.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .page_circle {
+        user-select: none;
+        -webkit-user-drag: none;
+        cursor: pointer;
+    }
+
+        .page_circle.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .page_circle:hover {
+            background-color: #e0e0e0;
+        }
+
+        .page_circle.active:hover {
+            background-color: #0056b3;
+        }
+
+    .holiday-click {
+        cursor: pointer; /* 未核准時顯示手型光標 */
+    }
+
+        .holiday-click:hover {
+            background-color: #f5f5f5; /* 未核准時懸停效果 */
+        }
+</style>

@@ -5,9 +5,9 @@
 <div class="dashboard-container">
     <!-- 現場作業人員 -->
     @* <div class=""> *@
-        <div class="card worker-card  " id="openPopup">
+        <div class="card worker-card">
             <h3 class="db-title-l"><i class="fas fa-users"></i> 現場作業人員</h3>
-            <h1 class="worker-count">123 <span class="color-gray-light">人</span></h1>
+        <h1 class="worker-count" id="openPopupTrigger">123 <span class="color-gray-light">人</span></h1>
             <h5 class="db-title-s">人員狀態</h5>
 
             <div class="worker-list border-radius">
@@ -37,14 +37,12 @@
                 </div>
             </div>
 
-        @*  <p>簽核事件 </p>  *@
-        <div class="card border-left-warning shadow h-100 py-2 card-hover">
+        @*  臨時工入場待核可  *@
+        <div class="card border-left-warning shadow h-100 py-2 card-hover" id="openPopupTrigger2">
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <h5 class="text-xs font-weight-bold text-uppercase mb-1 color-menu ">
-                            臨時工入場核可
-                        </h5>
+                        <h5 class="text-xs font-weight-bold text-uppercase mb-1 color-menu ">臨時工入場待核可</h5> 
                         <div class="mb-0"><h5 class="db-title-l padding-20-0">18</h5></div>
                     </div>
                     <div class="col-auto">
@@ -54,22 +52,9 @@
             </div>
         </div>
 
-
-
-            @*  <p>簽核事件 </p>  *@
-            @* <div class=" approve border-radius"> *@
-            @*     <div id="bell-container">  *@
-                    
-            @*   <h1 class="approve-event">1 <span>件</span></h1> *@
-            @*          <div class="bell">  *@
-            @*             <canvas id="rippleCanvas"></canvas>  *@
-            @*          </div>  *@
-            @*      </div> *@
-            @* </div> *@
-
         <!-- 異常回報通知 -->
         <h3 class="db-title-l padding-20-0"><i class="fas fa-exclamation-circle"></i> 異常回報通知</h3>
-        <div class="card border-left-warning shadow h-100 py-2 card-hover">
+        <div class="card border-left-warning shadow h-100 py-2 card-hover" id="openPopupTrigger3">
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
@@ -84,30 +69,8 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
         </div>
 
-        <!-- 異常回報通知 -->
-
-        @* <div class="card notification-card"> *@
-        @*     <h3 class="db-title-l"><i class="fas fa-exclamation-circle"></i> 異常回報通知</h3> *@
-
-
-
-        @*     <ul class="notification-list border-radius"> *@
-        @*         <li class="green">王大明 上班簽到 09:54</li> *@
-        @*         <li class="green">王大明 上班簽到 09:54</li> *@
-        @*         <li class="red">回報異常通知 09:54</li> *@
-        @*         <li class="green">王大明 下班簽退 18:31</li> *@
-        @*         <li class="red">回報異常通知 18:31</li> *@
-        @*     </ul> *@
-        @* </div> *@
-    @* </div> *@
     <!-- 即時監控影像 -->
     <div class="card video-card">
 
@@ -183,8 +146,8 @@
 
 
 
-<!-- 自訂 Pop-up -->
-<div id="customPopup" class="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+<!-- 現場作業人員 Pop-up -->
+<div id="openPopup" class="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
     <div class="popup-content">
         <div class="popup-header">
             <button class="close txt-right" aria-label="關閉彈窗"><i class="fas fa-times"></i></button>
@@ -224,68 +187,107 @@
                                 <td>09:18</td>
                                 <td></td>
                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagenav-container">
+                <div class="pagenav">
+                    <!-- 頁面導航將由JavaScript動態生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 臨時工入場待核可 Pop-up -->
+<div id="openPopup2" class="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+    <div class="popup-content">
+        <div class="popup-header">
+            <button class="close txt-right" aria-label="關閉彈窗"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="popup-body">
+            <div class="content-area">
+                <div>
+                    <p class="db-title-l">臨時工入場待核可</p>
+                </div>
+                <div class="peopleNumShow">
+                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue">123</h1></div>
+                    <div class="peopleNum2"><p class="db-title-s peopleNum3">人</p></div>
+                </div>
+                @* <div><p class="db-title-l">人員出入資訊</p></div> *@
+                <div class="txt-table">
+                    <table class="table table-striped txt-center table-hover">
+                        <thead>
                             <tr>
-                                <td>2</td>
+                                <th scope="col">核可</th>
+                                <th scope="col">序號</th>
+                                <th scope="col">員工姓名</th>
+                                <th scope="col">員工電話</th>
+                                <th scope="col">上班簽到</th>
+                                <th scope="col">廠商名稱</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></td>
+                                <td>1</td>
+                                <td>員姓名</td>
+                                <td>0912-3456789</td>
+                                <td>09:18</td>
+                                <td>達威起重機械</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagenav-container">
+                <div class="pagenav">
+                    <!-- 頁面導航將由JavaScript動態生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 未處理異常 Pop-up -->
+<div id="openPopup3" class="popup" role="dialog" aria-labelledby="popupTitle" aria-modal="true">
+    <div class="popup-content">
+        <div class="popup-header">
+            <button class="close txt-right" aria-label="關閉彈窗"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="popup-body">
+            <div class="content-area">
+                <div>
+                    <p class="db-title-l">未處理異常</p>
+                </div>
+                <div class="peopleNumShow">
+                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue">123</h1></div>
+                    <div class="peopleNum2"><p class="db-title-s peopleNum3">件</p></div>
+                </div>
+                @* <div><p class="db-title-l">未處理異常</p></div> *@
+                <div class="txt-table">
+                    <table class="table table-striped txt-center table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">事件編號</th>
+                                <th scope="col">狀態</th>
+                                <th scope="col">事件類型</th>
+                                <th scope="col">事件標題</th>
+                                <th scope="col">開始時間</th>
+                                <th scope="col">結束時間</th>
+                                <th scope="col">紀錄員工</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
                                 <td><i class="fas fa-circle color-blue"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
+                                <td>工地安全</td>
+                                <td>高空墜落</td>
                                 <td>09:18</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><i class="fas fa-circle color-gray-light"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
-                                <td>09:18</td>
-                                <td>18:08</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><i class="fas fa-circle color-blue"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
-                                <td>09:18</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td><i class="fas fa-circle color-gray-light"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
-                                <td>09:18</td>
-                                <td>18:08</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td><i class="fas fa-circle color-gray-light"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
-                                <td>09:18</td>
-                                <td>18:08</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td><i class="fas fa-circle color-blue"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
-                                <td>09:18</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td><i class="fas fa-circle color-blue"></i></td>
-                                <td><img class="employeeImg" src="/員工頭像.jpg" alt="員工頭貼" /></td>
-                                <td>員姓名</td>
-                                <td>A-25060301</td>
-                                <td>09:18</td>
-                                <td></td>
+                                <td> </td>
+                                <td>王大華</td>
                             </tr>
                         </tbody>
                     </table>

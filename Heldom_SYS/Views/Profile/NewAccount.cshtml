@@ -22,17 +22,15 @@
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">員工姓名</p>
-				<input id="employeeName" value="姓名" class="form-control" />
+				<input id="employeeName" value="姓名" class="form-control form-control-small" />
+				<select id="Gender" class="form-select form-select-small">
+					<option value="M" selected>男性</option>
+					<option value="F">女性</option>
+				</select>
 			</div>
 			<div class="input_wrap">
-				<p class="color-gray-dark bold p_width">直屬主管</p>
-				<select id="ImmediateSupervisor" class="form-select">
-					<option selected>Peter</option>
-					<option>Dave</option>
-					<option>Shun</option>
-					<option>Zoe</option>
-					<option>Y</option>
-				</select>
+				<p class="color-gray-dark bold p_width">出生日期</p>
+				<input type="date" id="birthDate" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">聯絡電話</p>
@@ -40,11 +38,22 @@
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">緊急聯絡人</p>
-				<input id="emergencyContact" value="聯絡人" class="form-control" />
+				<input id="emergencyContact" value="聯絡人" class="form-control form-control-small" />
+				<select id="position" class="form-select form-select-small">
+					<option value="父" selected>父親</option>
+					<option value="母">母親</option>
+					<option value="丈夫">丈夫</option>
+					<option value="妻子">妻子</option>
+					<option value="其他">其他</option>
+				</select>
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">緊急電話</p>
+				<input id="emergencyPhone" value="0919-123456" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">到職日</p>
-				<input type="date" class="form-control" id="hireDay"/>
+				<input type="date" class="form-control" id="hireDay" />
 			</div>
 		</div>
 		<div class="middle_area_right">
@@ -54,7 +63,7 @@
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">帳號權限</p>
-				<select id="employeeRole" class="form-select">
+				<select id="employeeRole" class="form-select form-select-big">
 					<option value="M">管理權限</option>
 					<option value="E">所有權限</option>
 					<option value="A" selected>一般權限</option>
@@ -62,7 +71,7 @@
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">部門</p>
-				<select id="department" class="form-select">
+				<select id="department" class="form-select form-select-big">
 					<option selected>行政管理部</option>
 					<option>工務管理部</option>
 					<option>行政工程部</option>
@@ -70,27 +79,37 @@
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">職稱</p>
-				<select id="position" class="form-select">
+				<select id="position" class="form-select form-select-big">
 					<option>高層</option>
 					<option>工地主任</option>
 					<option selected>一般員工</option>
 				</select>
 			</div>
 			<div class="input_wrap">
-				<p class="color-gray-dark bold p_width">出生日期</p>
-				<input type="date" id="birthDate" class="form-control" />
+				<p class="color-gray-dark bold p_width">直屬主管</p>
+				<select id="ImmediateSupervisor" class="form-select form-select-big">
+					<option selected>Peter</option>
+					<option>Dave</option>
+					<option>Shun</option>
+					<option>Zoe</option>
+					<option>Y</option>
+				</select>
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">地址</p>
 				<input id="address" value="台中市台中市台中市台中市台中市" class="form-control" />
 			</div>
 			<div class="input_wrap">
-				<p class="color-gray-dark bold p_width">緊急電話</p>
-				<input id="emergencyPhone" value="0919-123456" class="form-control" />
+				<p class="color-gray-dark bold p_width">電子郵件</p>
+				<input type="email" id="mail" value="123@gmail.com" class="form-control" />
+			</div>
+			<div class="input_wrap">
+				<p class="color-gray-dark bold p_width">設定密碼</p>
+				<input type="password" id="password" class="form-control" />
 			</div>
 			<div class="input_wrap">
 				<p class="color-gray-dark bold p_width">離職日</p>
-				<input type="date" class="form-control" id="resignDay"/>
+				<input type="date" class="form-control" id="resignDay" />
 			</div>
 		</div>
 	</div>
@@ -130,7 +149,7 @@
 
 
 <script>
-
+	let Motion = 'Add';
 
 	//打卡視窗控制
 
@@ -139,17 +158,94 @@
 		uploadPhoto();
 		switcher();
 		popup();
+		getData();
+
 	});
+	let getData = function GetData(){
+		
+		if(Motion == 'Edit'){
+
+		}else{
+			$.ajax({
+				url:'/Profile/GetNewId',
+				type: 'GET',
+				dataType: 'json',
+				success: function(response) {
+					if (response.length != 0) {
+						const employee = response.data;
+						$("#employeeId").prop('value', employee);
+					}
+				},
+				error: function(xhr, status, error) {
+
+					console.error('Error fetching data:', error);
+				}
+			});
+			$.ajax({
+				url:'/Profile/GetSupervisor',
+				type: 'GET',
+				dataType: 'json',
+				success: function(response) {
+					if (response.length != 0) {
+						setSupervisor(response);
+					}
+				},
+				error: function(xhr, status, error) {
+
+					console.error('Error fetching data:', error);
+				}
+			});
+		};
+	}
+	
+	function SaveData(){
+
+		let dataEmployee = new
+		{
+			EmployeeId : $('#employeeId').val(),
+			IsActive : $('#flexSwitchCheckDefault').prop('checked'),
+			Position : $('#position').val(),
+			PositionRole : $('#employeeRole').val(),
+			HireDate : $('#hireDay').val(),
+			ResignationDate : $('#resignDay').val()
+		};
+
+		let dataEmpWithDetail = new
+		{
+			EmployeeId : $('#employeeId').val(),
+			Department : $('#department').val(),
+			ImmediateSupervisor : $('#ImmediateSupervisor').val(),
+			EmployeePhoto : 0,
+			EmployeeName : $('#employeeName').val(),
+			PhoneNumber : $('#phone').val(),
+			Mail : 0,
+			Password : 0,
+			Address : $('#address').val(),
+			Gender : 0,
+			BirthDate : $('#birthDate').val(),
+			EmergencyContact : $('#emergencyContact').val(),
+			EmergencyRelationship : 0,
+			EmergencyContactPhone : $('#emergencyPhone').val(),
+			AnnualLeave : 0
+		}
+
+		if(Motion == 'Edit')
+		{
+
+		}else{
+
+		}
+	}
 
 	// 取消按鈕
 	$('#cancel-btn').click(function(){
 		location.href = "/profile/Account";
 	})
 
-	function popup(){
+	let popup = function Popup(){
 		$("#save-btn").click(function(){
 
-			let resignDayValue = document.getElementById('resignDay').value;
+			let resignDayValue = $('#resignDay').val();
 			let dateNow = Date.now();
 			let resignDay = new Date(resignDayValue);
 
@@ -179,30 +275,30 @@
 		// 取得form資料
 		const formData = {
 			// 基本資料
-			employeeId: document.getElementById('employeeId').value,
-			employeeName: document.getElementById('employeeName').value,
-			ImmediateSupervisor: document.getElementById('ImmediateSupervisor').value,
-			phone: document.getElementById('phone').value,
-			birthDate: document.getElementById('birthDate').value,
-			hireDate: document.getElementById('hireDay').value,
-			resignDate: document.getElementById('resignDay').value,
-			address: document.getElementById('address').value,
-			emergencyPhone: document.getElementById('emergencyPhone').value,
-			emergencyContact: document.getElementById('emergencyContact').value,
-			
+			employeeId: $('#employeeId').val(),
+			employeeName: $('#employeeName').val(),
+			ImmediateSupervisor: $('#ImmediateSupervisor').val(),
+			phone: $('#phone').val(),
+			birthDate: $('#birthDate').val(),
+			hireDate: $('#hireDay').val(),
+			resignDate: $('#resignDay').val(),
+			address: $('#address').val(),
+			emergencyPhone: $('#emergencyPhone').val(),
+			emergencyContact: $('#emergencyContact').val(),
+
 			// 權限和部門
-			permission: document.getElementById('employeeRole').value,
-			department: document.getElementById('department').value,
-			position: document.getElementById('position').value,
-			
+			permission: $('#employeeRole').val(),
+			department: $('#department').val(),
+			position: $('#position').val(),
+
 			// 是否啟用
-			isActive: document.getElementById('flexSwitchCheckDefault').checked,
+			isActive: $('#flexSwitchCheckDefault').prop('checked'),
 
 			// 員工照片（base64字符串）
-			photo: document.getElementById('imgload').src.split(",")[1]
+			photo: $('#imgload').src.split(",")[1]
 		};
 		console.log(formData)
-		
+
 		/*
 		$.ajax({
 			url: '/Profile/SubmitAccount',
@@ -227,20 +323,21 @@
 		*/
 	})
 
-	function switcher(){
+	let switcher = function Switcher(){
 	// 是否啟用區域的文字控制
-	const switchInput = document.getElementById("flexSwitchCheckDefault");
-	const switchLabel = document.getElementById("switch_txt");
+	const switchInput = $('#flexSwitchCheckDefault');
+	const switchLabel = $('#switch_txt');
 
-	switchInput.addEventListener("change", function() {
-		if (this.checked) {
-			switchLabel.textContent = "啟用中";
-		} else {
-			switchLabel.textContent = "已關閉";
-		}
-	});
+		$('#flexSwitchCheckDefault').on('change', function() {
+			
+			if ($(this).prop('checked')) {
+				$('#switch_txt').text('啟用中');
+			} else {
+				$('#switch_txt').text('停用中');
+			}
+		});
 	}
-	function uploadPhoto(){
+	let uploadPhoto = function UploadPhoto(){
 		// 照片上傳功能
 		// 點擊上傳區域觸發文件選擇
 		$("#photoBox").on("click", function() {
@@ -255,7 +352,7 @@
 				let reader = new FileReader();
 				reader.onload = function(e) {
 					let imgStr = e.target.result;
-					
+
 					// 更新預覽圖
 					$(".upload-area").remove();
 					$("#photoBox").html(`
@@ -267,5 +364,20 @@
 				console.log("請選擇圖片檔案");
 			}
 		});
+	}
+	let setSupervisor = function(response){
+		$("#ImmediateSupervisor").empty();
+		for(let i = 0;i<response.length;i++){
+			let option = document.createElement('option');
+			option.textContent = response[i].employeeName;
+			option.value = response[i].employeeId;
+			$("#ImmediateSupervisor").append(option);
+		};
+
+		let firstOption = document.createElement('option');
+		firstOption.textContent = '總經理';
+		firstOption.value = null;
+		firstOption.selected = true;
+		$("#ImmediateSupervisor").append(firstOption);
 	}
 </script>

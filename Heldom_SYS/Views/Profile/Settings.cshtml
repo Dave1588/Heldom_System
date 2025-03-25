@@ -32,8 +32,8 @@
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">聯絡電話</p>
-                    <input type="tel" id="phoneNumber" class="form-control" value="0919-123456" 
-                           pattern="[0-9]{4}-[0-9]{6}" 
+                    <input type="tel" id="phoneNumber" class="form-control" value="0919-123456"
+                           pattern="[0-9]{4}-[0-9]{6}"
                            title="請輸入正確的手機號碼格式 (例如: 0919-123456)" />
                 </div>
                 <div class="input_wrap">
@@ -48,8 +48,8 @@
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">緊急電話</p>
-                    <input type="tel" id="emergencyPhone" class="form-control" value="0919-123456" 
-                           pattern="[0-9]{4}-[0-9]{6}" 
+                    <input type="tel" id="emergencyPhone" class="form-control" value="0919-123456"
+                           pattern="[0-9]{4}-[0-9]{6}"
                            title="請輸入正確的手機號碼格式 (例如: 0919-123456)" />
                 </div>
             </div>
@@ -155,7 +155,7 @@
             emergencyContact: emergencyContact,
             emergencyContactPhone: emergencyContactPhone.slice(0,4) + emergencyContactPhone.slice(5)
         };
-        
+
         if(updateData){
             $.ajax({
                 url: '/Profile/UpdateSettingsData',

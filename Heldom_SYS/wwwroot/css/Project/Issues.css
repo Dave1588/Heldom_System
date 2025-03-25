@@ -68,7 +68,7 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-/*        background-color: #D9D9D9;*/
+        /*        background-color: #D9D9D9;*/
     }
 
     .circle_show {
@@ -222,7 +222,7 @@
     .input_wrap {
         width: 480px;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
 
     .form-select {
@@ -253,6 +253,10 @@
 
     .table td {
         width: 100% !important;
+    }
+
+    .mouse-pointer {
+        cursor: pointer;
     }
 }
 
@@ -508,5 +512,9 @@
 
     .table td {
         width: 100% !important;
+    }
+
+    .mouse-pointer {
+        cursor: pointer;
     }
 }

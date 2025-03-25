@@ -12,6 +12,7 @@ namespace Heldom_SYS.Interface
         Task<IEnumerable<ProfileAccount>> GetAccountsData(ProfileOptions options);
         Task<int> GetTotalPage(ProfileOptions options);
         Task<string> GetNewId();
+        Task<IEnumerable<ProfileNewAccountData>> GetSupervisor();
         Task<bool> CreateAccount(ProfileAccount userInput);
         Task<IEnumerable<ProfileAccount>> GetAccountData();
         Task<bool> UpdateAccount(ProfileAccount userInput);

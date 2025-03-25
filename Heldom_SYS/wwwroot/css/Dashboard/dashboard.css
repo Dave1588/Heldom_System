@@ -574,6 +574,7 @@
     display: inline-flex;
     flex-direction: row;
     align-items: flex-end;
+    padding-bottom: 20px;
 }
 
 .peopleNum {
@@ -584,9 +585,10 @@
 }
 
 .txtNumber {
+    font-family: Inter;
     font-size: 80px;
-    line-height: 1; 
-    margin: 0; 
+    line-height: 1;
+    margin: 0;
 }
 
 .peopleNum2 {
@@ -728,16 +730,6 @@
     border-radius: 50%; 
 }
 
-.bell {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    right: 40px;
-    bottom: 32px;
-    transform: translate(-50%, -50%);
-    background: url('https://cdn-icons-png.flaticon.com/512/1827/1827504.png') no-repeat center;
-    background-size: contain;
-}
 
 canvas {
     position: relative; 

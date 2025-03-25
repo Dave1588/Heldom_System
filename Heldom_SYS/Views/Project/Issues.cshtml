@@ -190,7 +190,7 @@
             let EndTime = tableData[i]?.EndTime?.split('T') || ["" , ""]
 
             let ele = `
-                <tr>
+                <tr class="mouse-pointer">
                     <td class="tb-txt">${tableData[i].AccidentId}</td>
                     <td class="tb-txt">
                         <p>
@@ -222,10 +222,12 @@
         $("#unusual .end_area ").empty()
 
         //回報分頁生成
-        $("#unusual .end_area").append(`
-            <h4><i class="fas fa-angle-left"></i></h4>
-        `)
-
+        if(nowReportPage != 1){
+            $("#unusual .end_area").append(`
+                <h4 class="step-report mouse-pointer"><i class="fas fa-angle-left"></i></h4>
+            `)
+        }
+        
         for(let i = 0;i<data.pageCount;i++ ){
             if((i+1) == nowReportPage){
                 $("#unusual .end_area").append(`
@@ -235,7 +237,7 @@
                 `)
             }else{
                 $("#unusual .end_area").append(`
-                    <div class="page_circle obj-center" >
+                    <div class="page_circle obj-center mouse-pointer" >
                         <p class="bold">${i+1}</>
                     </div>
                 `)
@@ -243,11 +245,14 @@
            
         }
 
-        $("#unusual .end_area").append(`
-            <h4><i class="fas fa-angle-right"></i></h4>
-        `)
-
+        if(nowReportPage != data.pageCount){
+            $("#unusual .end_area").append(`
+                <h4 class="step-report mouse-pointer"><i class="fas fa-angle-right"></i></h4>
+            `)
+        }
+        
         changeReportPage()
+        stepReportPage()
 
         // 查看異常
         $("#unusual .middle_area table tbody tr").on("click", function(e) {
@@ -265,6 +270,20 @@
 
     }
 
+    let stepReportPage = () => {
+        $('.step-report').on('click', function(event) {
+            let className = $(this).children().prop('class')
+
+            if(className.includes("left")){
+                nowReportPage = parseInt(nowReportPage) - 1
+            }else if(className.includes("right")){
+                nowReportPage = parseInt(nowReportPage) + 1
+            }
+            createReportTable()
+        });
+    }
+
+
     //拿取異常追蹤紀錄
     let createTrackTable = async() => {
         let data = await GetTrack();
@@ -278,7 +297,7 @@
             let EndTime = tableData[i]?.EndTime?.split('T') || ["" , ""]
 
             let ele = `
-                <tr>
+                <tr class="mouse-pointer">
                     <td class="tb-txt">${tableData[i].AccidentId}</td>
                     <td class="tb-txt">
                         <p>
@@ -321,9 +340,11 @@
         $("#track .end_area ").empty()
 
         //追蹤分頁生成
-        $("#track .end_area").append(`
-            <h4><i class="fas fa-angle-left"></i></h4>
-        `)
+        if(nowTrackPage != 1){
+            $("#track .end_area").append(`
+                <h4 class="step-track mouse-pointer"><i class="fas fa-angle-left"></i></h4>
+            `)
+        }
 
         for(let i = 0;i<data.pageCount;i++ ){
             if((i+1) == nowTrackPage){
@@ -334,18 +355,22 @@
                 `)
             }else{
                 $("#track .end_area").append(`
-                    <div class="page_circle obj-center">
+                    <div class="page_circle obj-center mouse-pointer">
                         <p class="bold">${i+1}</>
                     </div>
                 `)
             }
         }
 
-        $("#track .end_area").append(`
-            <h4><i class="fas fa-angle-right"></i></h4>
-        `)
+        if(nowTrackPage != data.pageCount){
+             $("#track .end_area").append(`
+                <h4 class="step-track mouse-pointer"><i class="fas fa-angle-right"></i></h4>
+            `)
+        }
+       
 
         changeTrackPage()
+        stepTrackPage()
 
          // 查看回復
         $("#track .middle_area table tbody tr").on("click", function(e) {
@@ -396,6 +421,18 @@
 
     }
 
+    let stepTrackPage = () => {
+        $('.step-track').on('click', function(event) {
+            let className = $(this).children().prop('class')
+
+            if(className.includes("left")){
+                nowTrackPage = parseInt(nowTrackPage) - 1
+            }else if(className.includes("right")){
+                nowTrackPage = parseInt(nowTrackPage) + 1
+            }
+            createTrackTable()
+        });
+    }
 
     $(document).ready(async function() {
         
@@ -410,7 +447,7 @@
 
         // 新增異常
         $("#unusualPopupButton").on("click", function(e) {
-            location.href='/Project/Issues?type=Unusual&id=123&motion=add'
+            location.href='/Project/Issues?type=Unusual&id=000&motion=add'
         });
 
     });

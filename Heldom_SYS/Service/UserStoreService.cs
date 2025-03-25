@@ -71,7 +71,7 @@ namespace Heldom_SYS.Service
                     new KidItem {
                         Name = "打卡與請假",
                         Link = "/attendance/Records",
-                        Access = new List<string>() { "E","P" },
+                        Access = new List<string>() { "E","P","M" },
                     },
                     new KidItem {
                         Name = "員工出勤紀錄",

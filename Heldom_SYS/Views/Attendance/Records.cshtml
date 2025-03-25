@@ -19,7 +19,7 @@
                         <th class="tb-title">狀態</th>
                         <th class="tb-title">上班簽到</th>
                         <th class="tb-title">下班簽退</th>
-                        <th class="tb-title">總時數</th>
+                        <th class="tb-title">時數</th>
                     </tr>
                 </thead>
                 <tbody id="clockTableBody">
@@ -48,7 +48,7 @@
                             <th class="tb-title">結束時間</th>
                             <th class="tb-title">狀態</th>
                             <th class="tb-title">假別</th>
-                            <th class="tb-title">總時數</th>
+                            <th class="tb-title">時數</th>
                         </tr>
                     </thead>
                     <tbody id="holidayTableBody">
@@ -142,16 +142,19 @@
         <div class="holiday-area">
             <div class="message-display">
                 <h4 class="color-gray-dark bold">請假申請</h4>
-                <p class="color-gray-dark bold">提醒：特休假剩餘 <span id="leaveBalance">16</span> 小時。</p>
+                <p class="color-gray-dark bold">提醒：特休假剩餘 <span id="leaveBalance">@ViewBag.RemainingLeave</span> 小時。</p>
             </div>
+
             <div class="chose-display">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">開始時間</p>
-                    <input type="datetime-local" class="form-control" id="startDate">
+                    <input type="datetime-local" class="form-control" id="startDate" step="3600"
+                           value="@($"{DateTime.Now:yyyy-MM-dd}T08:00")">
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">結束時間</p>
-                    <input type="datetime-local" class="form-control" id="endDate">
+                    <input type="datetime-local" class="form-control" id="endDate" step="3600"
+                           value="@($"{DateTime.Now:yyyy-MM-dd}T17:00")">
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold p-width">假別</p>
@@ -182,12 +185,52 @@
     </div>
 </div>
 <script>
+    $("#applyLeaveBtn").click(function() {
+        const startDate = $("#startDate").val();
+        const endDate = $("#endDate").val();
+
+        if (!startDate || !endDate) {
+            alert("請填寫所有欄位");
+            return;
+        }
+
+        if (new Date(startDate) >= new Date(endDate)) {
+            alert("結束時間必須晚於開始時間");
+            return;
+        }
+
+        $("#applyLeaveBtn").prop("disabled", true).text("申請中...");
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("LeaveRequest", "Attendance")',
+            data: {
+                employeeId: "@ViewBag.userId",
+                startDate: startDate, // 直接傳遞字串，避免時區錯誤
+                endDate: endDate
+            },
+            success: function(response) {
+                alert(response.message);
+                if (response.success) {
+                    $("#holidayPopup").fadeOut();
+                    location.reload();
+                }
+            },
+            error: function(xhr, status, error) {
+                alert("請假申請失敗，請稍後再試: " + error);
+            },
+            complete: function() {
+                $("#applyLeaveBtn").prop("disabled", false).text("申請請假");
+            }
+        });
+    });
 
 </script>
 
 <script>
     const clockData = @Html.Raw(Json.Serialize(Model.AttendanceRecords.Select(record => new
         {
+            attendanceId = record.AttendanceId, // 簽退功能-依靠值
             workDate = record.WorkDate.ToString("yyyy/MM/dd"),
             status = record.CheckOutTime.HasValue,
             checkInTime = record.CheckInTime.ToString("HH:mm"),

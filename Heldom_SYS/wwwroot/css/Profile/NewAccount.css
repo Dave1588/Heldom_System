@@ -62,13 +62,22 @@ input {
         background-color: var(--color-gray-light);
     }
 
-.form-select {
+.form-select-big {
     width: 360px;
+    height: 48px;
+}
+
+.form-select-small {
+    width: 90px!important;
     height: 48px;
 }
 
 .form-control {
     width: 360px;
+}
+
+.form-control-small {
+    width: 250px;
 }
 
 .form-check-input:checked {

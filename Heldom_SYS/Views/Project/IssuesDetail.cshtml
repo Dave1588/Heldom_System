@@ -1,7 +1,7 @@
 ﻿@* stylesheet *@
 <link rel="stylesheet" href="~/css/Project/IssuesDetail.css" asp-append-version="true" />
 
-@* https://localhost:7142/Project/Issues?type=Unusual&id=123&motion=add *@
+@* https://localhost:7142/Project/Issues?type=Unusual&id=000&motion=add *@
 
 
 <div class="main_wrap border-radius box-shadow">
@@ -115,6 +115,48 @@
     let Motion = @Html.Raw(Json.Serialize(ViewBag.Motion));
     let Type = @Html.Raw(Json.Serialize(ViewBag.Type));
     let ID = @Html.Raw(Json.Serialize(ViewBag.ID));
+    let AccidentId = ""
+    let fileList = []
+    let fileListTrack = []
+    let maxSize = 1024 * 1024 * 3 // 3M
+    // 回報區塊
+    let fileDiv = `
+        <div class="file-area obj-center chose-temp">
+            <h3><i class="fas fa-plus"></i></h3>
+        </div>
+    `
+
+    function AddReply() {
+        let reply = $("#reply").val();
+
+        if(!reply || !AccidentId){
+            return false
+        }
+
+
+        let formData = new FormData();
+        formData.append("Reply", reply);
+        formData.append("AccidentId", AccidentId);
+
+        for(let i = 0;i < fileListTrack.length;i++){
+            formData.append("Files", fileListTrack[i]);
+        }
+
+        $.ajax({
+            url: "/Accident/AddReply",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                location.href='/Project/Issues'
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('錯誤：', textStatus, errorThrown);
+            }
+        });
+
+    }
 
 
     function GetDetail() {
@@ -135,20 +177,9 @@
         });
     }
 
-    let setDetailData =  async() => {
-        let detail = await GetDetail()
 
-        $("#title").val(detail.data.AccidentTitle)
-        $("#categorySelect option:contains('" + detail.data.AccidentType + "')").prop("selected", true);
-        $("#startDate").val(detail.data.StartTime);
-        if(detail?.data?.EndTime){
-            $("#endDate").val(detail?.data?.EndTime)
-        }
-        $("#description").text(detail.data.Description);
-        $("#reply").text(detail.data.Response);
-        
-    }
 
+    // 新增回報
 
     function AddAccident() {
 
@@ -159,146 +190,210 @@
         let EndTime = $("#endDate").val()
 
         if(!title || !description || !StartTime){
-            return
+            return false
         }
 
-        // console.log("=================================================================")
-        // console.log(new Date(StartTime).getTime())
-        // console.log(new Date(EndTime).getTime())
 
         if (new Date(StartTime).getTime() > new Date(EndTime).getTime()) {
             console.log("結束時間早於開始時間");
-            return 
-            
+            return false
+
         }
+      
 
-
-        // console.log("title=================================================================")
-        // console.log("title",$("#title").val())
-        // console.log("categorySelect",$("#categorySelect option:selected").text())
-        // console.log("description",$("#description").val())
-        // console.log("StartTime",$("#startDate").val())
-        // console.log("EndTime",$("#endDate").val())
-
-
-        let req = {
-            AccidentTitle:title,
-            AccidentType:category,
-            Description:description,
-            StartTime: new Date(StartTime).toISOString().slice(0, 19).replace("T", " "),
-        }
-
+        let formData = new FormData();
+        formData.append("AccidentTitle", title);
+        formData.append("AccidentType", category);
+        formData.append("Description", description);
+        formData.append("StartTime", new Date(StartTime).toISOString().slice(0, 19).replace("T", " "));
 
         if(EndTime){
             let jsDateStr = EndTime;
             let jsDate = new Date(jsDateStr);
             let formattedDate = jsDate.toISOString().slice(0, 19).replace("T", " ");
-            req.EndTime = formattedDate
+            formData.append("EndTime", formattedDate);
         }
 
+        formData.append("Id", ID);
 
-        return new Promise((resolve, reject) => {
-            $.ajax({
-                url: "/Accident/AddAccident",
-                type: "POST",
-                contentType: "application/json",
-                data: JSON.stringify(req),
-                success: resolve,
-                error: reject
-            });
+        for(let i = 0;i < fileList.length;i++){
+            formData.append("Files", fileList[i]);
+        }
+
+        $.ajax({
+            url: "/Accident/AddAccident",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                location.href='/Project/Issues'
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.error('錯誤：', textStatus, errorThrown);
+            }
         });
     }
-  
+    
+     //監聽上傳回報檔案按鈕
+    let listenFile = () => {
+        $(".report-display .file_wrap .file-area").on("click", function(e) {
+            if(fileList.length < 5){
+                $("#fileAdd").click()
+            }
+
+        });
+    }
+
+    //監聽刪除圖片按鈕
+    let listenDeleteButton = () => {
+        $(".error-icon").on("click", function(e) {
+
+            if(Type == "Track"){
+                let index = $(".track-display .file_wrap .img-wrap").index($(this).parent())
+                fileListTrack.splice(index,1)
+                let addDivCount = $(".track-display .file_wrap .chose-temp").length
+
+                if((fileListTrack.length < 5) && (addDivCount == 0)){
+                    $(".track-display .file_wrap").append(fileDiv)
+                    listenFileTrack()
+                }
+
+            }else{
+                let index = $(".report-display .file_wrap .img-wrap").index($(this).parent())
+                fileList.splice(index,1)
+                let addDivCount = $(".report-display .file_wrap .chose-temp").length
+                if((fileList.length < 5) && (addDivCount == 0)){
+                    $(".report-display .file_wrap").append(fileDiv)
+                    listenFile()
+                }
+
+            }
+
+            $(this).parent().remove()
+
+        });
+    }
+    //取消監聽刪除按鈕
+    let unListenDeleteButton = () => {
+        $(".error-icon").unbind();
+    }
+    //取消監聽上傳檔案按鈕
+    let unListenFile = () => {
+        $(document).off("click", ".report-display .file_wrap .file-area");
+    }
+
+
+    //監聽上傳追蹤檔案按鈕
+    let listenFileTrack = () => {
+        $(".track-display .file_wrap .file-area").on("click", function(e) {
+            if(fileListTrack.length < 5){
+                $("#fileAddTrack").click()
+            }
+
+        });
+    }
+
+
+    //取消監聽追蹤檔案按鈕
+    let unListenFileTrack = () => {
+        $(document).off("click", ".track-display .file_wrap .file-area");
+    }
+    //圖片放大
+    let listenImg = () => {
+        $(".img-area").on("click", function(e) {
+            $(".picture-img").prop("src",e.target.src)
+            $("#picturePopup").fadeIn();
+        });
+
+        $(".picture-close").click(function(){
+            $("#picturePopup").fadeOut();
+        });
+
+        // 點擊背景區域關閉彈窗
+        $("#picturePopup").click(function(event) {
+            if(event.target === this) {
+                $(this).fadeOut();
+            }
+        });
+    }
+    // 讀取詳細資料
+    let setDetailData =  async() => {
+        let detail = await GetDetail()
+
+        AccidentId = detail.data.AccidentId
+        $("#title").val(detail.data.AccidentTitle)
+        $("#categorySelect option:contains('" + detail.data.AccidentType + "')").prop("selected", true);
+        $("#startDate").val(detail.data.StartTime);
+        if(detail?.data?.EndTime){
+            $("#endDate").val(detail?.data?.EndTime)
+        }
+        $("#description").text(detail.data.Description);
+        $("#reply").text(detail.data.Response);
+
+        //生成回報圖片
+        let reportFiles = detail.reportImg
+        // unListenFile()
+        for(let i = 0;i<reportFiles.length;i++){
+
+            let imgStr = "data:image/png;base64," + reportFiles[i]?.FileImage
+            fileList.push(reportFiles[i]?.FileImage)
+
+            let imgDiv = `
+                <div class="obj-center img-wrap">
+                    <img src="${imgStr}" class="img-area">
+                </div>
+            `
+            $(".report-display .file_wrap").append(imgDiv)
+        }
+        // listenFile()
+        listenImg()
+
+        //生成追蹤圖片
+        let trackFiles = detail.trackImg
+        for(let i = 0;i<trackFiles.length;i++){
+
+            let imgStr = "data:image/png;base64," +trackFiles[i]?.FileImage
+            fileListTrack.push(trackFiles[i]?.FileImage)
+
+            let imgDiv = ''
+            unListenDeleteButton() 
+            if(Motion == "add"){
+                imgDiv = `
+                    <div class="obj-center img-wrap">
+                        <div class="error-icon obj-center"><i class="fas fa-times"></i></div>
+                        <img src="${imgStr}" class="img-area">
+                    </div>
+                `
+            }else{
+                imgDiv = `
+                    <div class="obj-center img-wrap">
+                        <img src="${imgStr}" class="img-area">
+                    </div>
+                `
+            }
+            $(".track-display .file_wrap").append(imgDiv)
+            listenDeleteButton()
+
+        }
+        listenImg()
+
+    }
+
 
     $(document).ready(async function() {
-
-        if((Motion == "select") || (Motion == "add" && Type == "Track")){
+         if((Motion == "select") || (Motion == "add" && Type == "Track")){
             await setDetailData()
         }
 
 
-        let fileList = []
-        let fileListTrack = []
-        let maxSize = 1024 * 1024 * 3 // 3M
-
-        // 回報區塊
-        let fileDiv = `
-            <div class="file-area obj-center chose-temp">
-                <h3><i class="fas fa-plus"></i></h3>
-            </div>
-        `
-
         if(!(Motion == "add" && Type == "Track")){
             $(".report-display .file_wrap").append(fileDiv)
         }
-
-        let listenFile = () => {
-            $(".report-display .file_wrap .file-area").on("click", function(e) {
-                if(fileList.length < 5){
-                    $("#fileAdd").click()
-                }
-                
-            });
-        }
-        listenFile()
-
-        //圖片放大
+       
+        //圖片popup預設隱藏
         $("#picturePopup").hide();
-        let listenImg = () => {
-            $(".img-area").on("click", function(e) {
-                $(".picture-img").prop("src",e.target.src)
-                $("#picturePopup").fadeIn();
-            });
-
-            $(".picture-close").click(function(){
-                $("#picturePopup").fadeOut();
-            });
-
-            // 點擊背景區域關閉彈窗
-            $("#picturePopup").click(function(event) {
-                if(event.target === this) {
-                    $(this).fadeOut();
-                }
-            });
-        }
-
-        //刪除圖片
-        let listenDeleteButton = () => {
-            $(".error-icon").on("click", function(e) {
-
-                let index = $(".report-display .file_wrap .img-wrap").index($(this).parent())
-                
-                if(Type == "Track"){
-                    fileListTrack.splice(index,1)
-                    let addDivCount = $(".track-display .file_wrap .chose-temp").length
-
-                    if((fileListTrack.length < 5) && (addDivCount == 0)){
-                        $(".track-display .file_wrap").append(fileDiv)
-                        listenFileTrack()
-                    }
-
-                }else{
-                    fileList.splice(index,1)
-                    let addDivCount = $(".report-display .file_wrap .chose-temp").length
-                    if((fileList.length < 5) && (addDivCount == 0)){
-                        $(".report-display .file_wrap").append(fileDiv)
-                        listenFile()
-                    }
-
-                }
-
-                $(this).parent().remove()
-
-            });
-        }
-
-        let unListenDeleteButton = () => {
-            $(".error-icon").unbind();
-        }
-
-        let unListenFile = () => {
-            $(document).off("click", ".report-display .file_wrap .file-area");
-        }
+        
 
         // 新增圖片
         $("#fileAdd").on("change", async function(event) {
@@ -342,21 +437,8 @@
 
         // 追蹤區塊
         
-        $(".track-display .file_wrap").append(fileDiv)
-
-        let listenFileTrack = () => {
-            $(".track-display .file_wrap .file-area").on("click", function(e) {
-                if(fileListTrack.length < 5){
-                   $("#fileAddTrack").click()
-                }
-                
-            });
-        }
-
-        listenFileTrack()
-
-        let unListenFileTrack = () => {
-            $(document).off("click", ".track-display .file_wrap .file-area");
+        if(fileListTrack.length < 5){
+            $(".track-display .file_wrap").append(fileDiv)
         }
 
         // 新增追蹤圖片
@@ -378,6 +460,8 @@
                         unListenDeleteButton()
                         let imgStr = e.target.result
                         fileListTrack.push(imgStr)
+
+
                         let imgDiv = `
                             <div class="obj-center img-wrap">
                                 <div class="error-icon obj-center"><i class="fas fa-times"></i></div>
@@ -421,15 +505,20 @@
 
         //新增
         $(".save-button").on("click", async function(e) {
+
             if(Type == "Unusual" && Motion == "add"){
                 await AddAccident()
-                location.href='/Project/Issues'
             }else if(Motion == "add" && Type == "Track"){
-                // location.href='/Project/Issues'
+                await AddReply()
             }
-            
+
         });
         
+
+        listenFile()
+        listenFileTrack()
+
+ 
 
     });
 

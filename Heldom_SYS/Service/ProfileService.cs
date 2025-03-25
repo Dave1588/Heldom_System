@@ -241,15 +241,35 @@ namespace Heldom_SYS.Service
 
         public async Task<string> GetNewId()
         {
-            string sql = "";
+            string sql = "SELECT TOP 1 EmployeeID FROM EmployeeDetail ORDER BY EmployeeID DESC";
+            string sql2 = "SELECT DISTINCT ImmediateSupervisor FROM EmployeeDetail WHERE ImmediateSupervisor IS NOT NULL ORDER BY ImmediateSupervisor ASC";
             try
             {
-                string NewId = await DataBase.QueryFirstOrDefault(sql);
+                string NewId = await DataBase.QueryFirstAsync<string>(sql);
+                int NewIdNum = int.Parse(NewId.Substring(1));
+                NewIdNum = NewIdNum + 1;
+                NewId = "E" + NewIdNum.ToString().PadLeft(5, '0');
                 return NewId;
             }
             catch(Exception ex)
             {
                 throw new Exception("Id 取得失敗: "+ ex.Message);
+            }
+        }
+        public async Task<IEnumerable<ProfileNewAccountData>> GetSupervisor()
+        {
+            string sql = "SELECT e.EmployeeID, ed.EmployeeName " +
+                "FROM Employee e JOIN EmployeeDetail ed ON e.EmployeeID = ed.EmployeeID " +
+                "WHERE e.PositionRole = 'M' OR e.PositionRole = 'A'";
+            try
+            {
+                IEnumerable<ProfileNewAccountData> ISupervisor = await DataBase.QueryAsync<ProfileNewAccountData>(sql);
+
+                return ISupervisor;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Id 取得失敗: " + ex.Message);
             }
         }
         // 新增員工個人帳號資料

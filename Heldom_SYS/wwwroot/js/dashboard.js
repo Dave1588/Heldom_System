@@ -1,4 +1,69 @@
-﻿const WEATHER_API_KEY = 'CWA-78E720C0-B051-41F5-A176-58421841767B'; // 中央氣象署 API Key
+﻿// 等待 DOM 內容加載完成
+document.addEventListener("DOMContentLoaded", function () {
+    // 獲取所有觸發按鈕
+    const triggers = document.querySelectorAll("#openPopupTrigger, #openPopupTrigger2, #openPopupTrigger3");
+    // 獲取所有彈窗
+    const popups = document.querySelectorAll("#openPopup, #openPopup2, #openPopup3");
+
+    // 遍歷所有觸發按鈕，綁定點擊事件
+    triggers.forEach((trigger, index) => {
+        trigger.addEventListener("click", function () {
+            console.log(`開啟彈窗 #${index + 1}`); // 測試事件是否觸發
+            popups[index].style.display = "block"; // 顯示對應的彈窗
+        });
+    });
+
+    // 遍歷所有彈窗，為每個彈窗的關閉按鈕綁定事件
+    popups.forEach((popup) => {
+        const closeButton = popup.querySelector(".close");
+        if (closeButton) {
+            closeButton.addEventListener("click", function () {
+                console.log("關閉彈窗");
+                popup.style.display = "none"; // 隱藏彈窗
+            });
+        }
+
+        // 點擊彈窗外部時關閉該彈窗
+        popup.addEventListener("click", function (event) {
+            if (event.target === popup) {
+                console.log("點擊彈窗外部，關閉彈窗");
+                popup.style.display = "none";
+            }
+        });
+    });
+});
+
+
+//// 等待 DOM 內容加載完成
+
+//document.addEventListener("DOMContentLoaded", function () {
+//    // 獲取觸發元素和彈窗元素
+//    const trigger = document.querySelector("#openPopupTrigger"); // 觸發按鈕
+//    const popup = document.querySelector("#openPopup");          // 彈窗
+//    const closeButton = popup.querySelector(".close");           // 關閉按鈕
+
+//    // 點擊觸發元素時顯示彈窗
+//    trigger.addEventListener("click", function () {
+//        popup.style.display = "block"; // 顯示彈窗
+//    });
+
+//    // 點擊關閉按鈕時隱藏彈窗
+//    closeButton.addEventListener("click", function () {
+//        popup.style.display = "none"; // 隱藏彈窗
+//    });
+
+//    // 可選：點擊彈窗外部時關閉彈窗
+//    window.addEventListener("click", function (event) {
+//        if (event.target === popup) {
+//            popup.style.display = "none";
+//        }
+//    });
+//});
+
+
+//------------------------------------------------------------------
+
+const WEATHER_API_KEY = 'CWA-78E720C0-B051-41F5-A176-58421841767B'; // 中央氣象署 API Key
 const AIR_API_KEY = 'f9d919c8-5d1d-4787-b885-a96542a42aa2'; // 環境部空氣品質 API Key
 
 

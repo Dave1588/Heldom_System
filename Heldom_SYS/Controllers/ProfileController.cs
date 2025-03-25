@@ -98,5 +98,24 @@ namespace Heldom_SYS.Controllers
             };
             return Ok(response);
         }
+
+        [HttpGet]
+        [Route("GetNewId")]
+        public async Task<IActionResult> GetNewId()
+        {
+            var response = new
+            {
+                data = await ProfileService.GetNewId()
+            };
+            return Ok(response);
+        }
+
+        [HttpGet]
+        [Route("GetSupervisor")]
+        public async Task<IActionResult> GetSupervisor()
+        {
+            IEnumerable<ProfileNewAccountData> supervisor = await ProfileService.GetSupervisor();
+            return Ok(supervisor);
+        }
     }
 }

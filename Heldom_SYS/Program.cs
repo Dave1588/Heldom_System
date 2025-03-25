@@ -41,7 +41,6 @@ builder.Services.AddSession(); // 啟用 Session
 builder.Services.AddScoped<IAccidentService, AccidentService>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 
-
 // 添加身份驗證
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 //    .AddCookie(options =>
@@ -50,9 +49,6 @@ builder.Services.AddScoped<IProfileService, ProfileService>();
 //        options.AccessDeniedPath = "/Profile/AccessDenied";
 //    });
 
-// 資料庫連線 FEcore(快取)   
-builder.Services.AddDbContext<ConstructionDbContext>(
-            options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConstructionDB")));
 
 // 資料庫連線 從 appsettings.json 中讀取 Connection 連接字串 目前有3種
 string? primaryConnection = builder.Configuration.GetConnectionString("ConstructionDB");
@@ -70,6 +66,9 @@ builder.Services.AddScoped<SqlConnection>(provider => new SqlConnection(finalCon
 
 
 
+// 資料庫連線 FEcore(快取)   
+builder.Services.AddDbContext<ConstructionDbContext>(
+            options => options.UseSqlServer(builder.Configuration.GetConnectionString($" {finalConnection}")));
 
 
 var app = builder.Build();
