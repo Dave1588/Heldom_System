@@ -1,4 +1,419 @@
-﻿// 等待 DOM 內容加載完成
+﻿//現場作業人員
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("/Dashboard/GetActiveWorkingCount")
+        .then(response => response.json())
+        .then(data => {
+            document.querySelectorAll(".worker-count").forEach(el => {
+                el.textContent = data.count;
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching active working count:", error);
+            document.querySelectorAll(".worker-count").forEach(el => {
+                el.textContent = "N/A";
+            });
+        });
+});
+
+// 現場作業人員 popup
+document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = 1;
+    const PageSize = 10;
+    let workersData = [];
+
+    function renderPaginationPopup1(currentPage, totalPages) {
+        let paginationContainer = document.querySelector("#paginationPopup1");
+        paginationContainer.innerHTML = "";
+
+        if (totalPages <= 1) return;
+
+        paginationContainer.innerHTML += `<h4 class="prev-page-Popup1"><i class="fas fa-angle-left"></i></h4>`;
+
+        for (let i = 1; i <= totalPages; i++) {
+            paginationContainer.innerHTML += `
+                    <div class="page_circle-Popup1 obj-center ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                        <p class="bold">${i}</p>
+                    </div>`;
+        }
+
+        paginationContainer.innerHTML += `<h4 class="next-page-Popup1"><i class="fas fa-angle-right"></i></h4>`;
+
+        document.querySelectorAll(".page_circle-Popup1").forEach(el => {
+            el.addEventListener("click", function () {
+                fetchActiveWorkers(parseInt(this.getAttribute("data-page")));
+            });
+        });
+
+        document.querySelector(".prev-page-Popup1").addEventListener("click", function () {
+            if (currentPage > 1) fetchActiveWorkers(currentPage - 1);
+        });
+
+        document.querySelector(".next-page-Popup1").addEventListener("click", function () {
+            if (currentPage < totalPages) fetchActiveWorkers(currentPage + 1);
+        });
+    }
+
+
+    function fetchActiveWorkers(page = 1) {
+        fetch(`/Dashboard/GetActiveWorkers?page=${page}`)
+            .then(response => response.json())
+            .then(data => {
+                workersData = data.data
+
+                let tbody = document.querySelector("#openPopup tbody");
+                tbody.innerHTML = ""; // 清空舊資料
+
+                // 排序：未簽退 (color-blue) 在前，已簽退 (color-menu) 在後
+                //data.sort((a, b) => (a.CheckOutTime ? 1 : -1));
+
+                // 生成表格內容
+                workersData.forEach((worker, index) => {
+                    let statusClass = worker.CheckOutTime ? "color-menu" : "color-blue";
+                    let statusIcon = `<p class="${statusClass}"><i class="fas fa-circle"></i></p>`;
+                    let photoSrc = worker.EmployeePhoto ? `data:image/jpeg;base64,${worker.EmployeePhoto}` : "/default-avatar.jpg";
+
+                    let row = `
+                        <tr>
+                            <td>${ ((page-1)*10) + index + 1}</td> 
+                            <td>${statusIcon}</td> 
+                            <td><img class="employeeImg" src="${photoSrc}" alt="員工頭像"></td>
+                            <td>${worker.EmployeeName}</td>
+                            <td>${worker.EmployeeID}</td>
+                            <td>${worker.CheckInTime ? worker.CheckInTime.split("T")[1].substring(0, 5) : "--:--"}</td>
+                            <td>${worker.CheckOutTime ? worker.CheckOutTime.split("T")[1].substring(0, 5) : "--:--"}</td>
+                        </tr>`;
+
+                    tbody.innerHTML += row;
+                });
+
+                renderPaginationPopup1(page, Math.ceil(data.pageCount / PageSize));
+
+            })
+            .catch(error => {
+                console.error("Error fetching active workers:", error);
+            });
+    }
+
+
+    document.getElementById("openPopupTrigger").addEventListener("click", function () {
+        fetchActiveWorkers()
+    });
+
+    document.getElementById("openPopupTrigger1").addEventListener("click", function () {
+        fetchActiveWorkers();
+        document.getElementById("openPopup1").style.display = "block";
+    });
+
+});
+
+
+//人員狀態
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("/Dashboard/GetWorkerCounts")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("C01Num").innerHTML = data.C01 || 0 + '<span class="color-gray-light">人</span>';
+                document.getElementById("C02Num").innerHTML = data.C02 || 0 + '<span class="color-gray-light">人</span>';
+                document.getElementById("C03Num").innerHTML = data.C03 || 0 + '<span class="color-gray-light">人</span>';
+                document.getElementById("C04Num").innerHTML = data.C04 || 0 + '<span class="color-gray-light">人</span>';
+                document.getElementById("C05Num").innerHTML = data.C05 || 0 + '<span class="color-gray-light">人</span>';
+                document.getElementById("othersNum").innerHTML = data.others || 0 + '<span class="color-gray-light">人</span>';
+            })
+            .catch(error => {
+                console.error("Error fetching worker counts:", error);
+            });
+    });
+
+//臨時工入場待核可
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("/Dashboard/GetTempWorkerCount")
+        .then(response => response.json())
+        .then(data => {
+            document.querySelectorAll(".approvingTempNum").forEach(el => {
+                el.textContent = data.count;
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching temp worker count:", error);
+            document.querySelectorAll(".approvingTempNum").forEach(el => {
+                el.textContent = "N/A";
+            });
+        });
+});
+
+//臨時工入場待核可 pop-up
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("openPopupTrigger2").addEventListener("click", function () {
+        fetch("/Dashboard/GetPendingTempWorkers")
+            .then(response => response.json())
+            .then(data => {
+                let tbody = document.querySelector("#openPopup2 tbody");
+                tbody.innerHTML = ""; // 清空舊資料
+
+                // 更新總人數
+                document.querySelectorAll(".approvingTempNum").forEach(el => {
+                    el.textContent = data.length;
+                });
+
+                // 生成表格內容
+                data.forEach((worker, index) => {
+                    let row = `
+                        <tr>
+                            <td><input class="form-check-input worker-checkbox" type="checkbox" value="${worker.EmployeeID}"></td>
+                            <td>${index + 1}</td>
+                            <td>${worker.EmployeeName}</td>
+                            <td>${worker.PhoneNumber}</td>
+                            <td>${worker.CompanyName}</td>
+                        </tr>`;
+                    tbody.innerHTML += row;
+                });
+
+                // 綁定全選按鈕事件
+                document.getElementById("selectAll").addEventListener("change", function () {
+                    document.querySelectorAll(".worker-checkbox").forEach(cb => {
+                        cb.checked = this.checked;
+                    });
+                });
+                
+                $('#selectAll').prop('checked', false);
+
+            })
+            .catch(error => {
+                console.error("Error fetching temp workers:", error);
+            });
+    });
+});
+
+// 改變 IsActive 狀態 0 => 1
+document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = 1;
+    const PageSize = 10; // 每頁顯示 10 筆
+    let tempWorkersData = []; // 儲存員工數據
+
+    function fetchTempWorkers() {
+        fetch("/Dashboard/GetPendingTempWorkers")
+            .then(response => response.json())
+            .then(data => {
+                tempWorkersData = data;
+                renderTable();
+                renderPagination();
+            })
+            .catch(error => console.error("Error fetching temp workers:", error));
+    }
+
+    function renderTable() {
+        let tbody = document.querySelector("#openPopup2 tbody");
+        tbody.innerHTML = ""; // 清空舊資料
+
+        let start = (currentPage - 1) * PageSize;
+        let end = start + PageSize;
+        let currentData = tempWorkersData.slice(start, end); // 取得當前頁面資料
+
+        currentData.forEach((worker, index) => {
+            let row = `
+                <tr>
+                    <td><input class="form-check-input worker-checkbox" type="checkbox" value="${worker.EmployeeID}"></td>
+                    <td>${start + index + 1}</td>
+                    <td>${worker.EmployeeName}</td>
+                    <td>${worker.PhoneNumber}</td>
+                    <td>${worker.CompanyName}</td>
+                </tr>`;
+            tbody.innerHTML += row;
+        });
+    }
+
+    function renderPagination() {
+        let pageCount = Math.ceil(tempWorkersData.length / PageSize);
+        let paginationContainer = document.querySelector("#pagination");
+        paginationContainer.innerHTML = ""; // 清空舊分頁
+
+        paginationContainer.innerHTML += `<h4 class="prev-page"><i class="fas fa-angle-left"></i></h4>`;
+
+        for (let i = 1; i <= pageCount; i++) {
+            paginationContainer.innerHTML += `
+                <div class="page_circle obj-center ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                    <p class="bold">${i}</p>
+                </div>`;
+        }
+
+        paginationContainer.innerHTML += `<h4 class="next-page"><i class="fas fa-angle-right"></i></h4>`;
+
+        // 綁定分頁點擊事件
+        document.querySelectorAll(".page_circle").forEach(el => {
+            el.addEventListener("click", function () {
+                currentPage = parseInt(this.getAttribute("data-page"));
+                renderTable();
+                renderPagination();
+            });
+        });
+
+        // 綁定上一頁
+        document.querySelector(".prev-page").addEventListener("click", function () {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTable();
+                renderPagination();
+            }
+        });
+
+        // 綁定下一頁
+        document.querySelector(".next-page").addEventListener("click", function () {
+            if (currentPage < pageCount) {
+                currentPage++;
+                renderTable();
+                renderPagination();
+            }
+        });
+    }
+
+    // 綁定「核可」按鈕事件
+    document.getElementById("approveButton").addEventListener("click", function () {
+        let selectedWorkers = Array.from(document.querySelectorAll(".worker-checkbox:checked"))
+            .map(cb => cb.value);
+
+        if (selectedWorkers.length === 0) {
+            alert("請選擇至少一名員工");
+            return;
+        }
+
+        fetch("/Dashboard/ApproveTempWorkers", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(selectedWorkers)
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert(`成功核可 ${data.updatedCount} 位員工！`);
+                    fetchTempWorkers(); // 重新載入數據
+                } else {
+                    alert("核可失敗，請重試！");
+                }
+            })
+            .catch(error => console.error("Error approving workers:", error));
+    });
+
+    document.getElementById("openPopupTrigger2").addEventListener("click", function () {
+        fetchTempWorkers();
+    });
+});
+
+
+//未處理異常 
+
+//取得異常數量
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("/Dashboard/GetIssueCounts")
+        .then(response => response.json())
+        .then(data => {
+            // 依據登入角色顯示不同數據
+            let userRole = document.body.getAttribute("data-role"); // 前端有角色資訊
+            let admin = JSON.stringify(data.a);
+            let manager = JSON.stringify(data.m);
+            let issueCount = userRole === "A" ? admin : manager;
+
+            // 將物件轉成字串
+            //console.log('異常數量:' + admin + userRole);
+
+            // 更新異常數量
+            document.getElementById("issuesNum1").textContent = issueCount;
+            document.querySelectorAll(".issuesNum").forEach(el => el.textContent = issueCount);
+        })
+        .catch(error => {
+            console.error("Error fetching issue counts:", error);
+
+        });
+});
+
+//未處理異常 Pop-up
+
+//表格
+document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = 1;
+    const PageSize = 10;
+    let issuesData = [];
+    
+    function fetchIssues(page = 1) {
+        fetch(`/Dashboard/GetPendingIssues?page=${page}`)
+            .then(response => response.json())
+            .then(data => {
+                issuesData = data.data;
+                renderTable(page);
+                renderPaginationPopup3(page, Math.ceil(data.pageCount / PageSize));
+            })
+            .catch(error => console.error("Error fetching issues:", error));
+    }
+
+    function renderTable(page) {
+        let tbody = document.querySelector("#openPopup3 tbody");
+        tbody.innerHTML = "";
+
+        let start = (page - 1) * PageSize;
+        issuesData.forEach((issue, index) => {
+            let row = `
+                <tr>
+                    <td>${start + index + 1}</td>
+                    <td>${issue.AccidentID}</td>
+                    <td>${issue.AccidentType}</td>
+                    <td>${issue.AccidentTitle}</td>
+                    <td>${issue.StartTime}</td>
+                    <td>${issue.UploadTime}</td>
+                    <td>${issue.EmployeeName}</td>
+                </tr>`;
+            tbody.innerHTML += row;
+
+        });
+
+        $("#openPopup3 .popup-content .popup-body .content-area .txt-table table tbody tr").on("click", function (e) {
+            let id = $(this).children().eq(1).text().trim()
+            location.href = '/Project/Issues?type=Track&id=' + id + '&motion=add'
+        });
+    }
+
+    function renderPaginationPopup3(currentPage, totalPages) {
+        let paginationContainer = document.querySelector("#paginationPopup3");
+        paginationContainer.innerHTML = "";
+
+        if (totalPages <= 1) return;
+
+        paginationContainer.innerHTML += `<h4 class="prev-page-Popup3"><i class="fas fa-angle-left"></i></h4>`;
+
+        for (let i = 1; i <= totalPages; i++) {
+            paginationContainer.innerHTML += `
+                <div class="page_circle-Popup3 obj-center ${i === currentPage ? 'active' : ''}" data-page="${i}">
+                    <p class="bold">${i}</p>
+                </div>`;
+        }
+
+        paginationContainer.innerHTML += `<h4 class="next-page-Popup3"><i class="fas fa-angle-right"></i></h4>`;
+
+        document.querySelectorAll(".page_circle-Popup3").forEach(el => {
+            el.addEventListener("click", function () {
+                fetchIssues(parseInt(this.getAttribute("data-page")));
+            });
+        });
+
+        document.querySelector(".prev-page-Popup3").addEventListener("click", function () {
+            if (currentPage > 1) fetchIssues(currentPage - 1);
+        });
+
+        document.querySelector(".next-page-Popup3").addEventListener("click", function () {
+            if (currentPage < totalPages) fetchIssues(currentPage + 1);
+        });
+    }
+
+    document.getElementById("openPopupTrigger3").addEventListener("click", function () {
+        fetchIssues();
+        document.getElementById("openPopup3").style.display = "block";
+    });
+});
+
+
+
+
+
+//pop-up
+// 等待 DOM 內容加載完成
 document.addEventListener("DOMContentLoaded", function () {
     // 獲取所有觸發按鈕
     const triggers = document.querySelectorAll("#openPopupTrigger, #openPopupTrigger2, #openPopupTrigger3");
@@ -8,7 +423,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 遍歷所有觸發按鈕，綁定點擊事件
     triggers.forEach((trigger, index) => {
         trigger.addEventListener("click", function () {
-            console.log(`開啟彈窗 #${index + 1}`); // 測試事件是否觸發
+            //console.log(`開啟彈窗 #${index + 1}`); // 測試事件是否觸發
             popups[index].style.display = "block"; // 顯示對應的彈窗
         });
     });
@@ -18,7 +433,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const closeButton = popup.querySelector(".close");
         if (closeButton) {
             closeButton.addEventListener("click", function () {
-                console.log("關閉彈窗");
+                //console.log("關閉彈窗");
                 popup.style.display = "none"; // 隱藏彈窗
             });
         }

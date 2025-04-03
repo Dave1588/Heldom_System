@@ -15,7 +15,7 @@
 				</div>
 				<div class="btn-link">
 				
-					<a  href="~/Project/BlueprintsEdit?id=@TempData["ID"]"><button id="unusualPopupButton" class="button button_style bold">新增</button></a>
+					<a  href="~/Project/BlueprintsEdit?id=@TempData["ID"]&fromName=BP"><button id="unusualPopupButton" class="button button_style bold">新增</button></a>
 					
 				@* 返回*@
 				<a asp-controller="Project" asp-action="BlueprintsCategories">
@@ -38,7 +38,7 @@
 				{
 						
 							 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"> 
-								 <a  href="~/Project/BlueprintsDetail">
+									<a  href="~/Project/BlueprintsDetail?id=@TempData["ID"]&BPName=@blueprint.Name">
 								 <div class="service-item bg-light rounded h-100 p-5"> 
 									 <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4">
 										 <img src="data:jpg;base64,@Convert.ToBase64String(blueprint.Image)" class="img-fluid" style="max-width: 100%; height: auto;"> 

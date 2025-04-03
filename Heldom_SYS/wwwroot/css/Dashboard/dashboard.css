@@ -1,4 +1,13 @@
-﻿.padding-20-0 {
+﻿.pointer {
+    cursor: pointer;
+}
+.right-align {
+    display: flex;
+    justify-content: flex-end; /* 將物件齊右排列 */
+    align-items: flex-end; /* 將物件切齊底部 */
+}
+
+.padding-20-0 {
     padding: 20px 0;
 }
 
@@ -514,8 +523,9 @@
     position: absolute;
     background: var(--color-div-bg);
     width: 1100px;
-    height: 850px;
-    margin-top: 32px;
+    height:80%;
+    /*    height: 850px;*/
+    /*    margin-top: 32px;*/
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -558,7 +568,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 50px 73px 40px 40px;
+    padding: 40px;
     height: calc(100% - 48px); /* 扣除header高度 */
     background-color: var(--color-div-bg);
     border-radius: 20px;
@@ -670,7 +680,7 @@
     }
 
     .table td {
-        width: 141px;
+/*        width: 141px;*/
         height: 56px;
         vertical-align: middle;
         padding: 0; 

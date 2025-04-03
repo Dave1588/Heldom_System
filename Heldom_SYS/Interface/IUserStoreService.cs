@@ -1,4 +1,6 @@
-﻿namespace Heldom_SYS.Interface
+﻿using Heldom_SYS.Service;
+
+namespace Heldom_SYS.Interface
 {
     public interface IUserStoreService
     {
@@ -6,6 +8,7 @@
         string MenuStr { set; get; }
         string UserID { set; get; }
         string UserName { set; get; }
+        List<MenuItem> MenuData { set; get; }
 
         void SetRole();
 

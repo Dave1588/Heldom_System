@@ -16,11 +16,13 @@ namespace Heldom_SYS.Interface
 
         Task<Accident> GetDetail(string id);
 
-        Task AddAccident(string AccidentType, string AccidentTitle,string Description,string StartTime, string EndTime, string AccidentId, List<string> Files);
+        Task AddAccident(string AccidentType, string AccidentTitle,string Description,string StartTime, string AccidentId, List<string> Files);
 
-        Task AddReply(string Reply,string AccidentId, List<string> Files);
+        Task AddReply(string Reply,string AccidentId,string Status, string EndTime, List<string> Files);
 
         Task<IEnumerable<AccidentFile>> GetDetailFile(string id, bool type);
+
+        Task<int> DeleteDetail(string id);
 
     }
 }

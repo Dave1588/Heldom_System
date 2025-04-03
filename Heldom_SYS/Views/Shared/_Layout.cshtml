@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
 
-    <link rel="stylesheet" href="~/Heldom_SYS.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
 
 
@@ -58,6 +57,30 @@
             @RenderBody()
         </div>
     </div>
+
+
+    <!-- Holiday Pop-up -->
+    <div id="logoutViewPopup" class="logoutView-popup-wrap">
+        <div class="logoutView-popup-content">
+            <div class="logoutView-top obj-vertical-center">
+                <div class="logoutView-close obj-center">×</div>
+            </div>
+            <div class="logoutView-area">
+                <div class="message-display">
+                    <h4 class="color-gray-dark bold">是否登出?</h4>
+                </div>
+                <div class="obj-center logoutView-check">
+                    <button class="logoutView-button obj-center" style="margin-right:20px;" id="outBtn">
+                        <p class="bold color-white">是</p>
+                    </button>
+                    <button class="logoutView-button obj-center" id="backBtn">
+                        <p class="bold color-white">否</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 
@@ -144,88 +167,126 @@
             eleStr += `</div>`
             $("#menu").append(eleStr)
 
-            //計時
+            //生成登出icon
+            let createLogout = () => {
+                let eleStrLogOut = `
+                    <div id="logoutArea" class="layout_menu_wrap bold color-menu">
+                        <div class="layout_menu_title ">
+                            <div class="layout_menu_icon">
+                                    <h6 class=""><i class="fas fa-sign-out-alt"></i></h6>
+                            </div>
+                            <div class="layout_menu_font">登出</div>
+                            <div class="layout_menu_switch ">
+                                    <p><i class="fas fa-outdent"></i></p>
+                            </div>
+                        </div>
+                        <div class="layout_menu_content_container"></div>
+                    </div>
+                `
+
+                $("#menu").append(eleStrLogOut)
+
+                let eleStrIcon = `
+                    <div>
+                        <h6 class=""><i class="fas fa-sign-out-alt"></i></h6>
+                    </div>
+                `
+
+                $(".layout_menu_picture").append(eleStrIcon)
+
+                $("#logoutArea").on("click", function(e) {
+                    e.stopPropagation()
+                    $("#logoutViewPopup").fadeIn();
+                });
+              
+                $(".logoutView-popup-wrap").on("click", function(e) {
+                    if (e.target === this) {
+                        $(this).fadeOut();
+                    }
+                    e.stopPropagation()
+                });
+
+                $(".logoutView-close").on("click", function(e) {
+                    if (e.target === this) {
+                        $("#logoutViewPopup").fadeOut();
+                    }
+                    e.stopPropagation()
+                });
+
+                $("#backBtn").on("click", function(e) {
+                    e.stopPropagation()
+                    $("#logoutViewPopup").fadeOut();
+                });
+
+                $("#outBtn").on("click", function(e) {
+                    e.stopPropagation()
+                    location.href = "/"
+                });
+            }
+            createLogout()
+
+
+            // 計時
             function updateTime() {
                 document.getElementById("timeDisplay").innerText = new Date().toLocaleString();
             }
             setInterval(updateTime, 1000);
             updateTime();
 
-            //menu顯示
-            $(".layout_menu_picture").hide()
 
-            $( ".layout_bars" ).on( "click", function(e) {
-                let className = $("#menu").prop("class")
+            $(".layout_menu_picture").hide();
 
-                if(className.includes("layout_menu_show")){
-                    $("#menu").prop("class","layout_menu_hide")
-                    
-                    $(".layout_menu_wrap").hide()
-                    $(".layout_menu_picture").show()
-                    
-                }else{
-                    $("#menu").prop("class","layout_menu_show")
-
-                    $(".layout_menu_wrap").show()
-                    $(".layout_menu_picture").hide()
+            // 選單切換邏輯
+            $(".layout_bars").on("click", function(e) {
+                let className = $("#menu").prop("class");
+                if (className.includes("layout_menu_show")) {
+                    $("#menu").prop("class", "layout_menu_hide");
+                    $(".layout_menu_wrap").hide();
+                    $(".layout_menu_picture").show();
+                } else {
+                    $("#menu").prop("class", "layout_menu_show");
+                    $(".layout_menu_wrap").show();
+                    $(".layout_menu_picture").hide();
                 }
-
-                addMobileStyle()
-
+                addMobileStyle();
             });
 
-            //頁籤縮放
-            $(".layout_menu_content_container").hide()
+            // 頁籤縮放
+            $(".layout_menu_content_container").hide();
+            $(".layout_menu_title").on("click", function(e) {
+                let eleP = $(this).parent().parent().children();
+                let eleC = $(this).parent();
+                let index = eleP.index(eleC);
+                let className = $(".layout_menu_switch")[index]?.className;
 
-            $(".layout_menu_title").on( "click", function(e) {
-                let eleP = $(this).parent().parent().children()
-                let eleC = $(this).parent()
-                let index =  eleP.index(eleC);
-
-                let className = $(".layout_menu_switch")[index].className
-
-                $(this).children(".layout_menu_switch").toggleClass("rotate")
-
-                if(className.includes("rotate")){
-                    $(this).siblings(".layout_menu_content_container").hide()
-                }else{
-                    $(this).siblings(".layout_menu_content_container").show()
+                if(!className){
+                    return ;
                 }
 
-            });
-
-            $(".layout_menu_content").on( "click", function(e) {
-
-                $(".layout_menu_content").css("background-color","#ffffff");
-                $(".layout_menu_font").css("color","#9197B3");
-
-                $( this ).css("background-color","#0040DD");
-                $( this ).children().children().css("color","#ffffff");
-
-            });
-
-            //維持開啟時藍色            
-            for(let i = 0;i<menuData.length;i++){
-
-                for(let j = 0;j<menuData[i].KidList.length;j++ ){
-                    let nowPath = menuData[i].KidList[j].Link.toUpperCase()
-                    let Path = "/" + controllerName.toUpperCase() + "/" + actionName.toUpperCase()
-                    if(Path == nowPath){
-                        // console.log("大標:",i)
-                        // console.log("小標:",j)
-                        $(".layout_menu_title").eq(i).click();
-                        $(".layout_menu_content_container").eq(i).children().eq(j).click()
-                        break;
-                    }
-                    
+                $(this).children(".layout_menu_switch").toggleClass("rotate");
+                if (className.includes("rotate")) {
+                    $(this).siblings(".layout_menu_content_container").hide();
+                } else {
+                    $(this).siblings(".layout_menu_content_container").show();
                 }
-            
-            }
+            });
 
-            // 手機版需隱藏
-            $( ".layout_bars" ).click()
-            if($(document).width() < 992){
-                $("#timeDisplay").hide()
+            // 點擊內容時不關閉選單
+            $(".layout_menu_content").on("click", function(e) {
+                $(".layout_menu_content").css("background-color", "#ffffff");
+                $(".layout_menu_font").css("color", "#9197B3");
+
+                // 設定當前點擊項目的樣式            
+                $(this).css("background-color", "#0040DD");
+                $(this).children().children().css("color", "#ffffff");
+
+                e.stopPropagation();
+            });
+
+            // 手機版初始隱藏
+            if ($(document).width() < 992) {
+                $(".layout_bars").click();
+                $("#timeDisplay").hide();
             }
 
         });

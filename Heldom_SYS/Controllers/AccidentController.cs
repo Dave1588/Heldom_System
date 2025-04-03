@@ -34,6 +34,13 @@ namespace Heldom_SYS.Controllers
         {
             dynamic response = new ExpandoObject();
             response.data = "未動作";
+
+            if (data.Page.IsNullOrEmpty()) {
+                response.data = "必須指定頁數";
+                string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                return Content(errorResponse, "application/json");
+            }
+
             try
             {
                 response.data = await AccidentService.GetReport(data);
@@ -55,6 +62,14 @@ namespace Heldom_SYS.Controllers
         {
             dynamic response = new ExpandoObject();
             response.data = "未動作";
+
+            if (data.Page.IsNullOrEmpty())
+            {
+                response.data = "必須指定頁數";
+                string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                return Content(errorResponse, "application/json");
+            }
+
             try
             {
                 response.data = await AccidentService.GetTrack(data);
@@ -77,6 +92,14 @@ namespace Heldom_SYS.Controllers
         {
             dynamic response = new ExpandoObject();
             response.data = "未動作";
+
+            if (data.ID.IsNullOrEmpty())
+            {
+                response.data = "未設定ID";
+                string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                return Content(errorResponse, "application/json");
+            }
+
             try
             {
                 response.data = await AccidentService.GetDetail(data.ID);
@@ -94,14 +117,33 @@ namespace Heldom_SYS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddAccident([FromForm] string AccidentType, [FromForm] string AccidentTitle, [FromForm] string Description, [FromForm] string StartTime, [FromForm] string EndTime, [FromForm] string Id, [FromForm] List<string> Files)
+        public async Task<IActionResult> AddAccident([FromForm] string AccidentType, [FromForm] string AccidentTitle, [FromForm] string Description, [FromForm] string StartTime, [FromForm] string Id, [FromForm] List<string> Files)
         {
             dynamic response = new ExpandoObject();
             response.data = "未動作";
 
+            int maxSize = 5 * 1024 * 1024;
+
+            for (int i = 0; i < Files.Count; i++)
+            {
+                if (Files[i].Length > maxSize)
+                {
+                    response.data = "檔案大於5M";
+                    string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                    return Content(errorResponse, "application/json");
+                }
+            }
+
+            if (AccidentType.IsNullOrEmpty() || AccidentTitle.IsNullOrEmpty() || Description.IsNullOrEmpty() || StartTime.IsNullOrEmpty() || Id.IsNullOrEmpty())
+            {
+                response.data = "未設定 AccidentType | AccidentTitle | Description | StartTime | Id";
+                string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                return Content(errorResponse, "application/json");
+            }
+
             try
             {
-                await AccidentService.AddAccident(AccidentType,AccidentTitle,Description,StartTime,EndTime,Id,Files);
+                await AccidentService.AddAccident(AccidentType,AccidentTitle,Description,StartTime,Id,Files);
                 response.data = "新增成功";
             }
             catch (Exception error)
@@ -116,15 +158,32 @@ namespace Heldom_SYS.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddReply([FromForm] string Reply, [FromForm] string AccidentId, [FromForm] string Type, [FromForm] string Id, [FromForm] List<string> Files)
+        public async Task<IActionResult> AddReply([FromForm] string Reply, [FromForm] string AccidentId, [FromForm] string Status, [FromForm] string EndTime, [FromForm] List<string> Files)
         {
 
             dynamic response = new ExpandoObject();
             response.data = "未動作";
 
+            int maxSize = 5 * 1024 * 1024;
+
+            for (int i = 0; i < Files.Count; i++) {
+                if (Files[i].Length > maxSize) {
+                    response.data = "檔案大於5M";
+                    string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                    return Content(errorResponse, "application/json");
+                }
+            }
+
+            if (Reply.IsNullOrEmpty() || AccidentId.IsNullOrEmpty() || Status.IsNullOrEmpty())
+            {
+                response.data = "未設定 Reply | AccidentId | Status";
+                string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                return Content(errorResponse, "application/json");
+            }
+
             try
             {
-                await AccidentService.AddReply(Reply,AccidentId, Files);
+                await AccidentService.AddReply(Reply,AccidentId, Status, EndTime, Files);
                 response.data = "修改成功";
 
             }
@@ -140,5 +199,33 @@ namespace Heldom_SYS.Controllers
 
         }
 
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteDetail([FromBody] AccidentDetailReq data)
+        {
+
+            dynamic response = new ExpandoObject();
+            response.data = "未動作";
+
+            if (data.ID.IsNullOrEmpty())
+            {
+                response.data = "未設定ID";
+                string errorResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+                return Content(errorResponse, "application/json");
+            }
+
+            try
+            {
+                response.data = await AccidentService.DeleteDetail(data.ID);
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine(error);
+                response.data = "拿取失敗";
+            }
+
+            string jsonResponse = JsonConvert.SerializeObject(response, Formatting.Indented);
+            return Content(jsonResponse, "application/json");
+        }
     }
 }

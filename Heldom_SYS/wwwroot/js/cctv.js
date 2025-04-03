@@ -61,7 +61,7 @@ function initializeCctv() {
         });
 
         document.getElementById("cctvNext").addEventListener("click", function () {
-            console.log(`cctvNext clicked, currentPage: ${cctvCurrentPage}`);
+            //console.log(`cctvNext clicked, currentPage: ${cctvCurrentPage}`);
             if (cctvCurrentPage < cctvTotalPage - 1) {
                 cctvCurrentPage = cctvCurrentPage + 1;
 

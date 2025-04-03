@@ -86,7 +86,7 @@
         </div>
     
     }
-    
+
 </div>
 
 <!-- track Pop-up -->
@@ -100,7 +100,7 @@
                 <h4 class="color-gray-dark bold">是否刪除此異常回報追蹤?</h4>
             </div>
             <div class="obj-center track-check">
-                <button class="track-button obj-center">
+                <button id="delete-track" class="track-button obj-center">
                     <p class="bold color-white">
                         是
                     </p>
@@ -118,6 +118,8 @@
 <script>
     let nowReportPage = 1
     let nowTrackPage = 1
+    let deleteID = ""
+    let trackData = []
     
     function GetReport() {
 
@@ -287,8 +289,16 @@
     //拿取異常追蹤紀錄
     let createTrackTable = async() => {
         let data = await GetTrack();
+
+        //現在頁數大於結果分頁總數
+        if(parseInt(nowTrackPage) > data.pageCount){
+            nowTrackPage = 1
+            data = await GetTrack();
+        }
+
         let tableData = data.data
-       
+        trackData = tableData
+
         $("#track .middle_area table tbody ").empty()
 
         for(let i = 0;i<tableData.length;i++){
@@ -318,7 +328,7 @@
                             <span>${EndTime[1]}</span>
                         </div>
                     </td>
-                    <td class="tb-txt">${tableData[i].EmployeeName}</td>
+                    <td class="tb-txt EmployeeNameTD">${tableData[i].EmployeeName}</td>
                     <td class="tb-txt td_center">
                        <div class="icon_display">
                             <p class="trackPopupButton">
@@ -379,6 +389,13 @@
             location.href='/Project/Issues?type=Track&id=' + ID + '&motion=select'
         });
 
+        
+        $(".EmployeeNameTD").on("click", function(e) {
+            e.stopPropagation();
+            let name = $(this).text()
+            let id = trackData.find((item)=> item.EmployeeName == name).EmployeeId.trim()
+            location.href=`/Profile/NewAccount/${id}`
+        });
 
         // 新增回復
         $(".trackPopupButton").on("click", function(e) {
@@ -390,6 +407,7 @@
 
         // 刪除回復
         $(".deleteTrack").on("click", function(e) {
+            deleteID = $(this).parent().parent().parent().children().eq(0).text().trim()
             e.stopPropagation();
             $(".track-popup-wrap").show()
         });
@@ -448,6 +466,31 @@
         // 新增異常
         $("#unusualPopupButton").on("click", function(e) {
             location.href='/Project/Issues?type=Unusual&id=000&motion=add'
+        });
+
+        //刪除異常回報
+        $("#delete-track").on("click", function(e) {
+
+            let req = {
+                ID: deleteID.toString(),
+            }
+
+
+            $.ajax({
+                url: "/Accident/DeleteDetail",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(req),
+                success: function (res) {
+                    nowTrackPage = 1
+                    createTrackTable()
+                    $(".track-popup-wrap").fadeOut()
+                },
+                error: function (error) {
+                    console.log('error',error)
+                },
+            });
+
         });
 
     });

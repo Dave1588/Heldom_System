@@ -4,6 +4,7 @@ using Heldom_SYS.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using NPOI.SS.Formula.Functions;
 
 namespace Heldom_SYS.Controllers
 {
@@ -12,11 +13,13 @@ namespace Heldom_SYS.Controllers
     {
         private readonly SqlConnection DataBase;
         private readonly ConstructionDbContext _context;
+        private readonly IAttendanceExcelService AttendanceExcelService;
 
-        public AttendanceController(SqlConnection connection, ConstructionDbContext context)
+        public AttendanceController(SqlConnection connection, ConstructionDbContext context, IAttendanceExcelService _AttendanceExcelService)
         {
             DataBase = connection;
             _context = context;
+            AttendanceExcelService = _AttendanceExcelService;
         }
 
         [Route("Records")]
@@ -53,7 +56,7 @@ namespace Heldom_SYS.Controllers
             var usedHours = await DataBase.QueryFirstOrDefaultAsync<int?>(usedLeaveSql, new { EmployeeID = userId }) ?? 0;
 
             int remainingLeave = annualLeave - usedHours;
-            ViewBag.RemainingLeave = remainingLeave >= 0 ? remainingLeave : 0; 
+            ViewBag.RemainingLeave = remainingLeave >= 0 ? remainingLeave : 0;
 
             var viewModel = new AttendanceViewModel
             {
@@ -178,17 +181,17 @@ namespace Heldom_SYS.Controllers
 
 
         // 生成下一个 AttendanceID
-        private string GenerateNextAttendanceId(string? lastAttendanceId)
+        private string GenerateNextAttendanceId(string lastAttendanceId)
         {
             if (string.IsNullOrEmpty(lastAttendanceId))
             {
                 return "A0001";
             }
 
-            var numberPart = lastAttendanceId.Substring(1); 
-            var nextNumber = int.Parse(numberPart) + 1; 
+            var numberPart = lastAttendanceId.Substring(1);
+            var nextNumber = int.Parse(numberPart) + 1;
 
-            return "A" + nextNumber.ToString("D4"); 
+            return "A" + nextNumber.ToString("D4");
         }
 
         [Route("LeaveRequest")]
@@ -270,21 +273,21 @@ namespace Heldom_SYS.Controllers
 
             while (currentDate <= endDate.Date)
             {
-                DateTime workStart = currentDate.AddHours(8); 
+                DateTime workStart = currentDate.AddHours(8);
                 DateTime lunchStart = currentDate.AddHours(12);
-                DateTime lunchEnd = currentDate.AddHours(13);  
-                DateTime workEnd = currentDate.AddHours(17);   
+                DateTime lunchEnd = currentDate.AddHours(13);
+                DateTime workEnd = currentDate.AddHours(17);
 
-                
+
                 DateTime dayStart = (currentDate == startDate.Date) ? startDate : workStart;
                 DateTime dayEnd = (currentDate == endDate.Date) ? endDate : workEnd;
 
                 // 確保請假時間在上班時段內
                 if (dayStart < workStart) dayStart = workStart;
                 if (dayEnd > workEnd) dayEnd = workEnd;
-                if (dayStart >= dayEnd) continue; 
+                if (dayStart >= dayEnd) continue;
 
-                
+
                 double hours = (dayEnd - dayStart).TotalHours;
 
                 // 若請假時間橫跨午休，需扣除 1 小時
@@ -314,9 +317,9 @@ namespace Heldom_SYS.Controllers
         public IActionResult Info()
         {
             string? role = HttpContext.Session.GetString("Role");
-           
+
             if (string.IsNullOrEmpty(role) || (role != "A" && role != "M"))
-                {
+            {
                 return RedirectToAction("Index", "Login");
             }
             ViewBag.Role = role;
@@ -329,13 +332,19 @@ namespace Heldom_SYS.Controllers
         {
             var query = _context.AttendanceRecords
                 .Include(ar => ar.Employee)
-                .ThenInclude(e => e.EmployeeDetail)
+                .ThenInclude(e => e.EmployeeDetail) // 正式員工資料
+                .Include(ar => ar.Employee)
+                .ThenInclude(e => e.Temporarier) // 臨時員工資料
                 .AsQueryable();
+
+            var today = DateTime.Now.Date;
+            query = query.Where(ar => !(ar.WorkDate == today && ar.CheckOutTime == null));
 
             if (!string.IsNullOrEmpty(employeeName))
             {
-                query = query.Where(ar => ar.Employee != null && ar.Employee.EmployeeDetail != null
-                    && ar.Employee.EmployeeDetail.EmployeeName.Contains(employeeName));
+                query = query.Where(ar =>
+                    (ar.Employee != null && ar.Employee.EmployeeDetail != null && ar.Employee.EmployeeDetail.EmployeeName.Contains(employeeName)) ||
+                    (ar.Employee != null && ar.Employee.Temporarier != null && ar.Employee.Temporarier.EmployeeName.Contains(employeeName)));
             }
             if (startDate.HasValue)
             {
@@ -347,20 +356,26 @@ namespace Heldom_SYS.Controllers
             }
 
             var records = await query
-                .OrderByDescending(ar => ar.CheckOutTime == null) 
-                .ThenByDescending(ar => ar.CheckInTime) // 再按簽到時間降序
+                .OrderByDescending(ar => ar.CheckOutTime == null) // 未簽退優先
+                .ThenBy(ar => ar.EmployeeId.StartsWith("E") ? 0 : 1) // 正式員工 (E) 次優先
+                .ThenBy(ar => (startDate.HasValue || endDate.HasValue) ? ar.CheckInTime : (DateTime?)null) // 有日期時升序，無日期時降序
+                .ThenByDescending(ar => (!startDate.HasValue && !endDate.HasValue) ? ar.CheckInTime : (DateTime?)null) // 無日期時降序
                 .Select(ar => new
                 {
                     id = ar.AttendanceId,
                     status = ar.CheckOutTime != null,
-                    workDate = ar.WorkDate.ToString("yyyy/MM/dd"), // 新增打卡日期
-                    employeeName = ar.Employee != null && ar.Employee.EmployeeDetail != null
-                        ? ar.Employee.EmployeeDetail.EmployeeName
+                    workDate = ar.WorkDate.ToString("yyyy/MM/dd"),
+                    employeeName = ar.Employee != null
+                        ? (ar.EmployeeId.StartsWith("E") && ar.Employee.EmployeeDetail != null
+                            ? ar.Employee.EmployeeDetail.EmployeeName
+                            : (ar.Employee.Temporarier != null
+                                ? ar.Employee.Temporarier.EmployeeName
+                                : "未知"))
                         : "未知",
                     employeeId = ar.EmployeeId,
                     startTime = ar.CheckInTime.ToString("HH:mm"),
                     endTime = ar.CheckOutTime.HasValue ? ar.CheckOutTime.Value.ToString("HH:mm") : "未簽退",
-                    countTime = ar.CheckOutTime.HasValue ? (ar.CheckOutTime.Value - ar.CheckInTime).TotalHours.ToString("F1") : "0"
+                    countTime = ar.CheckOutTime.HasValue ? (ar.CheckOutTime.Value - ar.CheckInTime).TotalHours.ToString("F0") : "0"
                 })
                 .ToListAsync();
 
@@ -378,9 +393,7 @@ namespace Heldom_SYS.Controllers
 
             if (!string.IsNullOrEmpty(employeeName))
             {
-                // 添加 null 檢查
-                query = query.Where(lr => lr.Employee != null && lr.Employee.EmployeeDetail != null
-                    && lr.Employee.EmployeeDetail.EmployeeName.Contains(employeeName));
+                query = query.Where(lr => lr.Employee.EmployeeDetail.EmployeeName.Contains(employeeName));
             }
             if (startDate.HasValue)
             {
@@ -392,8 +405,10 @@ namespace Heldom_SYS.Controllers
             }
 
             var records = await query
-                .OrderBy(lr => lr.LeaveStatus) // false (0) 排在 true (1) 之前
-                .ThenByDescending(lr => lr.StartTime) // 再按開始時間降序
+                .OrderBy(lr => lr.EmployeeId.StartsWith("E") ? 0 : 1) // 正式員工 (E) 優先
+                .ThenBy(lr => lr.LeaveStatus) // 未核准 (0) 優先
+                .ThenBy(lr => (startDate.HasValue || endDate.HasValue) ? lr.StartTime : (DateTime?)null) // 有日期時升序
+                .ThenByDescending(lr => (!startDate.HasValue && !endDate.HasValue) ? lr.StartTime : (DateTime?)null) // 無日期時降序
                 .Select(lr => new
                 {
                     id = lr.EmployeeId + lr.StartTime.ToString("yyyyMMddHHmmss"),
@@ -443,10 +458,60 @@ namespace Heldom_SYS.Controllers
                 return Json(new { success = false, message = $"伺服器錯誤: {ex.Message}" });
             }
         }
+        [Route("UpdateCheckOutTime")]
+        [HttpPost]
+        public async Task<IActionResult> UpdateCheckOutTime(string attendanceId, DateTime checkOutTime)
+        {
+            var attendanceRecord = await _context.AttendanceRecords
+                .FirstOrDefaultAsync(ar => ar.AttendanceId == attendanceId);
+
+            if (attendanceRecord == null)
+            {
+                return Json(new { success = false, message = "找不到該打卡記錄" });
+            }
+
+            if (attendanceRecord.CheckOutTime.HasValue)
+            {
+                return Json(new { success = false, message = "該記錄已簽退" });
+            }
+
+            attendanceRecord.CheckOutTime = checkOutTime; // 直接使用傳入的本地時間
+            await _context.SaveChangesAsync();
+
+            return Json(new { success = true, message = "下班時間已更新" });
+        }
         public class AttendanceViewModel
         {
             public IEnumerable<AttendanceRecord>? AttendanceRecords { get; set; }
             public IEnumerable<LeaveRecord>? LeaveRecords { get; set; }
         }
+
+
+        [Route("GetAttendanceRecordsFile")]
+        [HttpGet]
+        public async Task<IActionResult> GetAttendanceRecordsFile(string employeeName, DateTime? startDate, DateTime? endDate)
+        {
+
+            byte[] file = await AttendanceExcelService.GetAttendanceRecordsExcel(employeeName, startDate, endDate);
+            return new FileStreamResult(new MemoryStream(file), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            {
+                FileDownloadName = "GetAttendanceRecordsFile.xlsx"
+            };
+
+        }
+
+        [Route("GetLeaveRecordsFile")]
+        [HttpGet]
+        public async Task<IActionResult> GetLeaveRecordsFile(string employeeName, DateTime? startDate, DateTime? endDate)
+        {
+
+            byte[] file = await AttendanceExcelService.GetLeaveRecordsExcel(employeeName, startDate, endDate);
+
+            return new FileStreamResult(new MemoryStream(file), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            {
+                FileDownloadName = "GetLeaveRecordsFile.xlsx"
+            };
+        }
+
     }
 }

@@ -11,7 +11,7 @@ public partial class Blueprint
 
     public string BlueprintName { get; set; } = null!;
 
-    public byte BlueprintVersion { get; set; }
+    public decimal BlueprintVersion { get; set; }
 
     public byte[] BlueprintFile { get; set; } = null!;
 

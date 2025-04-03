@@ -10,6 +10,7 @@ using MathNet.Numerics;
 using static NPOI.POIFS.Crypt.CryptoFunctions;
 using System.Collections.Generic;
 using Org.BouncyCastle.Ocsp;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Heldom_SYS.Service
 {
@@ -73,9 +74,13 @@ namespace Heldom_SYS.Service
             // 需加入日期比對和人名join判斷
             string sql = @"SELECT Accident.*,EmployeeDetail.EmployeeName FROM Accident
                     left join EmployeeDetail on Accident.EmployeeID = EmployeeDetail.EmployeeID
-                    where IncidentControllerID = @IncidentControllerID
+                    where 1 = 1
                     ";
-            
+
+            if (UserRoleStore.GetRole() != "A") {
+                sql += @" and IncidentControllerID = @IncidentControllerID";
+            }
+
             if (!req.Title.IsNullOrEmpty()) {
                 sql += @" and AccidentTitle like @AccidentTitle";
             }
@@ -118,7 +123,12 @@ namespace Heldom_SYS.Service
         {
             string sql = @"SELECT count(*) as Total FROM Accident
                         left join EmployeeDetail on Accident.EmployeeID = EmployeeDetail.EmployeeID
-                        where IncidentControllerID = @IncidentControllerID";
+                        where 1 = 1";
+
+            if (UserRoleStore.GetRole() != "A")
+            {
+                sql += @" and IncidentControllerID = @IncidentControllerID";
+            }
 
             if (!req.Title.IsNullOrEmpty())
             {
@@ -197,7 +207,7 @@ namespace Heldom_SYS.Service
             public required string ImmediateSupervisor { get; set; }
         }
 
-        public async Task AddAccident(string AccidentType, string AccidentTitle, string Description, string StartTime, string EndTime, string Id, List<string> Files) {
+        public async Task AddAccident(string AccidentType, string AccidentTitle, string Description, string StartTime, string Id, List<string> Files) {
             
             // 尋找並生成最新ID
             string checkIDSql = @"SELECT TOP 1 AccidentID FROM Accident ORDER BY AccidentID DESC";
@@ -216,14 +226,15 @@ namespace Heldom_SYS.Service
             });
 
             string resultIncident = "";
-            if (UserRoleStore.GetRole() != "A") {
-                resultIncident = dataIncident.Select(x => x.ImmediateSupervisor).ToList().First().ToString();
+            var findItem = dataIncident.Select(x => x.ImmediateSupervisor).ToList().First();
+            if (UserRoleStore.GetRole() != "A" && !findItem.IsNullOrEmpty())
+            {
+                resultIncident = findItem.ToString();
             }
 
-
             string addSql = @"INSERT INTO Accident 
-            ([AccidentID], [AccidentType], [AccidentTitle], [Description], [StartTime], [EmployeeID], [UploadTime], [IncidentControllerID], [Response], [EndTime], [IncidentStatus]) VALUES
-            (@AccidentID, @AccidentType, @AccidentTitle, @Description, @StartTime, @EmployeeID, @StartTime, @IncidentControllerID, null, @EndTime, 0)";
+            ([AccidentID], [AccidentType], [AccidentTitle], [Description], [StartTime], [EmployeeID], [UploadTime], [IncidentControllerID], [Response], [IncidentStatus]) VALUES
+            (@AccidentID, @AccidentType, @AccidentTitle, @Description, @StartTime, @EmployeeID, @StartTime, @IncidentControllerID, null, 0)";
 
             int? dataAdd = await DataBase.QuerySingleOrDefaultAsync<int>(addSql, new
             {
@@ -235,7 +246,6 @@ namespace Heldom_SYS.Service
                 EmployeeID = UserRoleStore.UserID,
                 UploadTime = StartTime,
                 IncidentControllerID = resultIncident,
-                EndTime = EndTime ?? (object)DBNull.Value,
             });
 
 
@@ -291,14 +301,16 @@ namespace Heldom_SYS.Service
         {
             public required string FileID { get; set; }
         }
-        public async Task AddReply(string Reply, string AccidentId, List<string> Files)
+        public async Task AddReply(string Reply, string AccidentId,string Status, string EndTime, List<string> Files)
         {
-            string sql = @"UPDATE Accident SET Response = @Response WHERE AccidentID = @AccidentID";
+            string sql = @"UPDATE Accident SET Response = @Response ,IncidentStatus = @IncidentStatus, EndTime = @EndTime WHERE AccidentID = @AccidentID";
 
             await DataBase.QuerySingleOrDefaultAsync<int>(sql, new
             {
                 Response = Reply,
-                AccidentID = AccidentId
+                AccidentID = AccidentId,
+                IncidentStatus = (Status == "1") ? true : false,
+                EndTime = EndTime ?? (object)DBNull.Value,
             });
 
             string delSql = @"DELETE FROM AccidentFile WHERE AccidentID = @AccidentID and ResponseType = @ResponseType";
@@ -321,8 +333,6 @@ namespace Heldom_SYS.Service
             {
                 return ;
             }
-
-            //List<string> savedFiles = new();
 
             for (int i = 0; i < Files.Count; i++)
             {
@@ -348,51 +358,23 @@ namespace Heldom_SYS.Service
                     ResponseType = (true),
                 });
 
-
-                //// 驗證檔案大小
-                //if (file.Length > _maxFileSize)
-                //{
-                //    return BadRequest(new { message = $"檔案 {file.FileName} 超過最大大小 5MB" });
-                //}
-
-                //// 驗證副檔名
-                //var extension = Path.GetExtension(file.FileName).ToLower();
-                //if (!_allowedExtensions.Contains(extension))
-                //{
-                //    return BadRequest(new { message = $"檔案 {file.FileName} 的格式不支援 (允許: jpg, png, pdf, txt)" });
-                //}
-
-                //// 產生唯一檔名
-                //string uniqueFileName = $"{Guid.NewGuid()}{extension}";
-                //string filePath = Path.Combine(_targetFolder, uniqueFileName);
-
-                //// 儲存檔案
-                //using (var stream = new FileStream(filePath, FileMode.Create))
-                //{
-                //    await file.CopyToAsync(stream);
-                //}
-
-                //savedFiles.Add(uniqueFileName);
             }
 
         }
 
-  
 
-        //// 移除 Base64 開頭的 `data:image/png;base64,` 這類字串
-        //string base64Data = model.Base64Data.Contains(",") ? model.Base64Data.Split(',')[1] : model.Base64Data;
+        public async Task<int> DeleteDetail(string id)
+        {
 
-        //// 轉換為 byte[]
-        //byte[] fileBytes = Convert.FromBase64String(base64Data);
-        //byte[] fileBytes = (byte[])reader["FileData"];
+            string sql = @"DELETE FROM Accident WHERE AccidentID = @AccidentID";
+            int rowsAffected = await DataBase.ExecuteAsync(sql, new { AccidentID = id });
 
-        //// 將 byte[] 轉換為 Base64
-        //string base64String = Convert.ToBase64String(fileBytes)
+            string fileSql = @"DELETE FROM AccidentFile WHERE AccidentID = @AccidentID";
+            int rowsFileAffected = await DataBase.ExecuteAsync(fileSql, new { AccidentID = id });
 
+            return rowsAffected + rowsFileAffected;
+        }
 
-        //private readonly string _targetFolder = Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
-        //private readonly List<string> _allowedExtensions = new() { ".jpg", ".png", ".pdf", ".txt" };
-        //private const long _maxFileSize = 5 * 1024 * 1024; // 5MB 限制
 
     }
 }

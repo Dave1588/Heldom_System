@@ -81,7 +81,7 @@ namespace Heldom_SYS.Controllers
 
         [HttpPost]
         [Route("UpdateSettingsData")]
-        public async Task<IActionResult> UpdateSettingsData([FromBody] ProfileSettings userInput)
+        public async Task<IActionResult> UpdateSettingsData([FromBody] EmployeeDetailUpdateModel userInput)
         {
             bool result = await ProfileService.UpdateSettingsData(userInput);
             return Ok(result);
@@ -116,6 +116,32 @@ namespace Heldom_SYS.Controllers
         {
             IEnumerable<ProfileNewAccountData> supervisor = await ProfileService.GetSupervisor();
             return Ok(supervisor);
+        }
+
+        [HttpPost]
+        [Route("CreateAccount")]
+        public async Task<IActionResult> CreateAccount([FromBody] GetNewAccountEditData data)
+        {
+            string result = await ProfileService.CreateAccount(data);
+
+            return Ok(result);
+        }
+
+        [HttpPost]
+        [Route("GetAccountData")]
+        public async Task<IActionResult> GetAccountData([FromBody] string employeeId)
+        {
+            var employee = await ProfileService.GetAccountData(employeeId);
+            return Ok(employee);
+        }
+
+        [HttpPost]
+        [Route("UpdateAccount")]
+        public async Task<IActionResult> UpdateAccount([FromBody] GetNewAccountEditData userInput)
+        {
+            string result = await ProfileService.UpdateAccount(userInput);
+
+            return Ok(result);
         }
     }
 }

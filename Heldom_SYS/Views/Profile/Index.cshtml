@@ -44,12 +44,18 @@
                 <div class="contact-row">
                     <div class="contact-col contact-block"><p class="content-title">員工編號</p><p class="content-content bold" id="employeeId">ABC-123456789</p></div>
                     <div class="contact-col contact-block"><p class="content-title">出生日期</p><p class="content-content bold" id="birthDate">2025/02/20</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">電話</p><p class="content-content bold" id="phoneNumber">0919-123456</p></div>
+                    <div class="contact-col contact-block"><p class="content-title">電話</p><p class="content-content bold" id="phoneNumber">0919-123-456</p></div>
                 </div>
                 <div class="contact-row">
                     <div class="contact-col contact-block"><p class="content-title">地址</p><p class="content-content bold" id="address">台中市台中市台中市台中市台中市台中市台中市</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">緊急聯絡人</p><p class="content-content bold" id="emergencyContact">2025/02/20</p></div>
-                    <div class="contact-col contact-block"><p class="content-title">緊急電話</p><p class="content-content bold" id="emergencyPhone">0919-123456</p></div>
+                    <div class="contact-col contact-block">
+                        <p class="content-title">緊急聯絡人</p>
+                        <p class="content-content bold" id="emergencyContact" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" title="請輸入正確的手機號碼格式 (例如: 0919-123-456)">2025/02/20</p>
+                    </div>
+                    <div class="contact-col contact-block">
+                        <p class="content-title">緊急電話</p>
+                        <p class="content-content bold" id="emergencyPhone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" title="請輸入正確的手機號碼格式 (例如: 0919-123-456)">0919-123-456</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,25 +99,6 @@
         }
         });
 
-        /* axios
-        axios.get('/Profile/GetIndexData')
-        .then(function(response){
-
-            console.log(response);
-            console.log(response.data[0].name);
-            document.getElementById("ProfileImage").src = "data:image/jpg;base64," + response.data[0].photo;
-            appendProfileInfo(response.data[0]);
-        })
-        .catch(function(error){
-            console.error("GetIndexData failed!",error);
-        })
-        .finally(function() {
-            // Hide loading indicator and show profile content
-            $("#loading").hide();
-            $("#profileContainer").show();
-        });
-        */
-
         $('#towardSettings').click(function(){
             location.href ="https://" + location.hostname + ":" +window.location.port + "/profile/settings";
         });
@@ -134,7 +121,7 @@
         profileContainer.append(nameElement,emailElement);
 
         document.getElementById("yearsOfService").textContent = data.yearsBetween;
-        document.getElementById("leaveDays").textContent = data.annualLeave;
+        document.getElementById("leaveDays").textContent = parseInt((data.annualLeave/8));
 
         // 格式化日期函數
         function formatDate(dateString) {
@@ -152,32 +139,9 @@
         document.getElementById("department").textContent = data.department;
         document.getElementById("employeeId").textContent = data.employeeId;
         document.getElementById("birthDate").textContent = formatDate(data.birthDate);
-        document.getElementById("phoneNumber").textContent = data.phoneNumber;
+        document.getElementById("phoneNumber").textContent = data.phoneNumber.slice(0,4)+"-"+data.phoneNumber.slice(4,7)+"-"+data.phoneNumber.slice(7);
         document.getElementById("address").textContent = data.address;
         document.getElementById("emergencyContact").textContent = data.emergencyContact;
-        document.getElementById("emergencyPhone").textContent = data.emergencyContactPhone;
-
-        // const dataToTransfer = {
-        //     name: data.name,
-        //     email: data.email,
-        //     hireDate: formatDate(data.hireDate),
-        //     position: data.position,
-        //     department: data.department,
-        //     employeeID: data.employeeID,
-        //     birthDate: formatDate(data.birthDate),
-        //     phoneNumber: data.phoneNumber,
-        //     address: data.address,
-        //     emergencyContact: data.emergencyContact,
-        //     emergencyContactPhone: data.emergencyContactPhone
-        // };
-        // sessionStorage.setItem('profileData', JSON.stringify(dataToTransfer));
+        document.getElementById("emergencyPhone").textContent = data.emergencyContactPhone.slice(0,4)+"-"+data.emergencyContactPhone.slice(4,7)+"-"+data.emergencyContactPhone.slice(7);
     }
-
 </script>
-
-<style>
-    .main_wrap {
-        width: 1040px;
-        height: 458px;
-    }
-</style>

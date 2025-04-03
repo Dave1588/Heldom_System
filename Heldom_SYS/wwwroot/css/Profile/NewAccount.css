@@ -47,6 +47,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
+    position:relative;
 }
 
 input {
@@ -245,6 +246,8 @@ input {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    display: block;
 }
 
 .upload-area {
@@ -253,4 +256,70 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.error-icon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: var(--h4-size);
+    color: red;
+    font-size: var(--h4-size);
+}
+
+.delete-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.picture-popup-wrap {
+    display: none; /* 預設隱藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 36, 38, 0.7);
+}
+
+.picture-popup-content {
+    position: absolute;
+    background: var(--color-div-bg);
+    width: auto;
+    height: 75vh;
+    padding: 0px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+
+.picture-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.photo-container {
+    height: 100%;
+    width: auto;
+    position: relative;
+    background-color: var(--color-div-bg);
+    overflow: hidden;
+    border: 1px solid #8E8E93;
+    border-radius: 10px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #333333;
+    border-radius: 20px;
 }

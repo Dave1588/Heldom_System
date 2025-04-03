@@ -126,7 +126,7 @@
 }
 
     .table th {
-        width: 141px;
+/*        width: 141px;*/
         height: 38px;
         vertical-align: middle;
         padding: 0;
@@ -134,7 +134,7 @@
     }
 
     .table td {
-        width: 141px;
+/*        width: 141px;*/
         height: 56px;
         vertical-align: middle; /* 確保內容垂直置中 */
         padding: 0; /* 移除預設內邊距 */
@@ -171,19 +171,31 @@
 /*---------------------------------
             btn            
 ---------------------------------*/
-.button_style {
-    background-color: var(--color-blue);
-    width: 160px;
-    height: 32px;
-    border-radius: 28px;
-    font-size: var(--p-size);
-    color: var(--color-white);
+.button_area {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
+    .button_area button {
+        width: 240px !important;
+        height: 54px !important;
+        border-radius: 28px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .button_area button p {
+            margin: 0;
+            font-weight: bold;
+        }
 
 /* 修改取消按鈕樣式 */
 .btn-outline {
-    background-color: rgba(0, 64, 221, 0.2) !important; /* 使用 20% 透明度 */
+    background-color: rgba(0, 64, 221, 0.2);
+    !important; /* 使用 20% 透明度 */
     border: 1px solid var(--color-blue) !important;
 }
 
@@ -199,4 +211,5 @@
     .btn-primary p {
         color: white;
     }
+
 

@@ -9,7 +9,7 @@
         justify-content: center;
         row-gap: 20px;
     }
-
+    
     .report-display {
         width: 100%;
         display: flex;
@@ -30,6 +30,12 @@
         width: 480px;
         display: flex;
         flex-direction:column;
+    }
+
+    .status_wrap {
+        width: 480px;
+        display: flex;
+        flex-direction: column;
     }
 
     .text-wrap {
@@ -208,6 +214,13 @@
         align-items: center;
     }
 
+    .status_wrap {
+        width: 480px;
+        display: flex;
+        align-items: center;
+        gap:20px;
+    }
+
     .text-wrap {
         width: 100px;
     }
@@ -315,7 +328,7 @@
         height: 100%;
         background: rgba(36, 36, 38, 0.7);
     }
-
+    
     .picture-popup-content {
         position: absolute;
         background: var(--color-div-bg);

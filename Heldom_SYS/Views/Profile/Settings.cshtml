@@ -12,45 +12,45 @@
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">員工姓名</p>
-                    <input type="text" id="employeeName" class="form-control" value="姓名" disabled />
+                    <input type="text" id="employeeName" class="form-control" placeholder="姓名" disabled />
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">職位</p>
-                    <input type="text" id="position" class="form-control" value="技士" disabled />
+                    <input type="text" id="position" class="form-control" placeholder="技士" disabled />
                 </div>
             </div>
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">員工編號</p>
-                    <input type="text" id="employeeId" class="form-control" value="" disabled />
+                    <input type="text" id="employeeId" class="form-control" placeholder="個人編號" disabled />
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">生日</p>
-                    <input type="date" id="birthDate" class="form-control" value="2025-02-20" disabled />
+                    <input type="date" id="birthDate" class="form-control" placeholder="2025-02-20" disabled />
                 </div>
             </div>
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">聯絡電話</p>
-                    <input type="tel" id="phoneNumber" class="form-control" value="0919-123456"
-                           pattern="[0-9]{4}-[0-9]{6}"
-                           title="請輸入正確的手機號碼格式 (例如: 0919-123456)" />
+                    <input type="tel" id="phoneNumber" class="form-control" placeholder="0919-123-456"
+                           pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                           title="請輸入正確的手機號碼格式 (例如: 0919-123-456)" />
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">地址</p>
-                    <input type="text" id="address" class="form-control" value="台中市台中市台中市台中市台中市" />
+                    <input type="text" id="address" class="form-control" placeholder="台中市台中市台中市台中市台中市" />
                 </div>
             </div>
             <div class="setting-row">
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">緊急聯絡人</p>
-                    <input type="text" id="emergencyContact" class="form-control" value="聯絡人" />
+                    <input type="text" id="emergencyContact" class="form-control" placeholder="聯絡人" />
                 </div>
                 <div class="input_wrap">
                     <p class="color-gray-dark bold">緊急電話</p>
-                    <input type="tel" id="emergencyPhone" class="form-control" value="0919-123456"
-                           pattern="[0-9]{4}-[0-9]{6}"
-                           title="請輸入正確的手機號碼格式 (例如: 0919-123456)" />
+                    <input type="tel" id="emergencyPhone" class="form-control" placeholder="0919-123-456"
+                           pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                           title="請輸入正確的手機號碼格式 (例如: 0919-123-456)" />
                 </div>
             </div>
         </div>
@@ -128,8 +128,29 @@
 
     function formatPhone(phoneString){
         if(!phoneString) return;
-        return phoneString.slice(0,4) + "-" + phoneString.slice(4);
+        return phoneString.slice(0,4) + "-" + phoneString.slice(4,7)+"-"+phoneString.slice(7);
     }
+
+    $('#phoneNumber').on('input',function(){
+        var input = this.value.replace(/\D/g, '').substring(0, 10);
+        var formattedInput = input;
+        if (input.length > 4 && input.length <= 7) {
+            formattedInput = input.replace(/(\d{4})(\d{1,3})/, '$1-$2');
+        }else if(input.length >= 7){
+            formattedInput = input.replace(/(\d{4})(\d{3})(\d{1,3})/, '$1-$2-$3');
+        }
+        this.value = formattedInput;
+    })
+    $('#emergencyPhone').on('input',function(){
+        var input = this.value.replace(/\D/g, '').substring(0, 10);
+        var formattedInput = input;
+        if (input.length > 4 && input.length <= 7) {
+            formattedInput = input.replace(/(\d{4})(\d{1,3})/, '$1-$2');
+        }else if(input.length >= 7){
+            formattedInput = input.replace(/(\d{4})(\d{3})(\d{1,3})/, '$1-$2-$3');
+        }
+        this.value = formattedInput;
+    })
 
     $('#cancel').click(function(){
         location.href ="https://" + location.hostname + ":" +window.location.port + "/Profile/Index";
@@ -142,28 +163,33 @@
         let emergencyContact = document.getElementById("emergencyContact").value;
         let emergencyContactPhone = document.getElementById("emergencyPhone").value;
 
-        const phonePattern = /^[0-9]{4}-[0-9]{6}$/;
+        const phonePattern = /^[0-9]{4}-[0-9]{3}-[0-9]{3}$/;
         if (!phonePattern.test(phoneNumber)||!phonePattern.test(emergencyContactPhone)) {
             $("#clockPopup").fadeIn();
             popup();
             return;
         }
 
+        if(!emergencyContact || !emergencyContactPhone){
+            alert('不可留空');
+            return;
+        }
+
         let updateData = {
-            phoneNumber: phoneNumber.slice(0,4) + phoneNumber.slice(5),
+            phoneNumber: phoneNumber.slice(0,4) + phoneNumber.slice(5,8) + phoneNumber.slice(9),
             address: address,
             emergencyContact: emergencyContact,
-            emergencyContactPhone: emergencyContactPhone.slice(0,4) + emergencyContactPhone.slice(5)
+            emergencyContactPhone: emergencyContactPhone.slice(0,4) + emergencyContactPhone.slice(5,8) + emergencyContactPhone.slice(9)
         };
 
         if(updateData){
             $.ajax({
                 url: '/Profile/UpdateSettingsData',
                 method: 'POST',
-                data: updateData,
+                contentType: 'application/json',
+                data: JSON.stringify(updateData),
                 success: function(response) {
                     if (response==true) {
-                        // 有空再做即將跳轉，把alert刪掉
                         alert('資料更新成功！');
                         window.location.href = '/Profile/Index';
                     } else {

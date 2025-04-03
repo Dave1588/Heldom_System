@@ -28,6 +28,9 @@ namespace Heldom_SYS.Controllers
 
         public IActionResult Index()
         {
+            UserRoleStore.UserID = "";
+            UserRoleStore.UserName = "";
+            UserRoleStore.SetRole("X");
             return View();
         }
 

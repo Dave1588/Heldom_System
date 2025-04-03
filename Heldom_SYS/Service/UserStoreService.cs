@@ -35,19 +35,7 @@ namespace Heldom_SYS.Service
         public UserStoreService()
         {
             //預設未登入
-            this.Role = "X";
-            this.MenuStr = string.Empty;
-            this.UserID = string.Empty;
-            this.UserName = string.Empty;
-            this.CreateMenu();
-        }
-
-        public string Role { set; get; }
-        public string MenuStr { set; get; }
-        public string UserID { set; get; }
-        public string UserName { set; get; }
-
-        List<MenuItem> MenuData = new List<MenuItem>() {
+            MenuData = new List<MenuItem>() {
             new MenuItem {
                 Title = "施工監控平台",
                 IconNmae = "fa-columns",
@@ -134,6 +122,19 @@ namespace Heldom_SYS.Service
                 }
             },
         };
+            this.Role = "X";
+            this.MenuStr = string.Empty;
+            this.UserID = string.Empty;
+            this.UserName = string.Empty;
+            this.CreateMenu();
+        }
+
+        public string Role { set; get; }
+        public string MenuStr { set; get; }
+        public string UserID { set; get; }
+        public string UserName { set; get; }
+
+        public List<MenuItem> MenuData { set; get; }
 
         //SetRole 更新角色權限
         public void SetRole() {

@@ -35,8 +35,8 @@ public partial class ConstructionDbContext : DbContext
 
     public virtual DbSet<Temporarier> Temporariers { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Name=ConnectionStrings:ConstructionDB");
+    //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //    => optionsBuilder.UseSqlServer("Name=ConnectionStrings:ConstructionDB");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

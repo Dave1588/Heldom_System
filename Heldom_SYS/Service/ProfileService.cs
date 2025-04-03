@@ -1,4 +1,5 @@
-﻿using Dapper;
+﻿using System.Reflection;
+using Dapper;
 using Heldom_SYS.CustomModel;
 using Heldom_SYS.Interface;
 using Heldom_SYS.Models;
@@ -6,7 +7,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using NPOI.HSSF.Record.Chart;
 using NPOI.SS.Formula.Functions;
+using static Heldom_SYS.Controllers.ProfileController;
 using static Heldom_SYS.Service.AccidentService;
 
 namespace Heldom_SYS.Service
@@ -22,7 +25,7 @@ namespace Heldom_SYS.Service
             UserRoleStore = _UserRoleStore;
             DbContext = dbContext;
         }
-
+        
         // 查詢員工個人詳細資料
         public async Task<IEnumerable<ProfileIndex>> GetIndexData()
         {
@@ -84,7 +87,7 @@ namespace Heldom_SYS.Service
         }
 
         // 更新員工個人資料
-        public async Task<bool> UpdateSettingsData(ProfileSettings userInput)
+        public async Task<bool> UpdateSettingsData(EmployeeDetailUpdateModel userInput)
         {
             try
             {
@@ -241,8 +244,7 @@ namespace Heldom_SYS.Service
 
         public async Task<string> GetNewId()
         {
-            string sql = "SELECT TOP 1 EmployeeID FROM EmployeeDetail ORDER BY EmployeeID DESC";
-            string sql2 = "SELECT DISTINCT ImmediateSupervisor FROM EmployeeDetail WHERE ImmediateSupervisor IS NOT NULL ORDER BY ImmediateSupervisor ASC";
+            string sql = "SELECT TOP 1 EmployeeID FROM Employee WHERE EmployeeID like 'E%' ORDER BY EmployeeID DESC";
             try
             {
                 string NewId = await DataBase.QueryFirstAsync<string>(sql);
@@ -273,55 +275,126 @@ namespace Heldom_SYS.Service
             }
         }
         // 新增員工個人帳號資料
-        public async Task<bool> CreateAccount(ProfileAccount userInput)
+        public async Task<string> CreateAccount(GetNewAccountEditData userInput)
         {
             try
             {
-                string userID = UserRoleStore.UserID;
+                    string sqlCheck = "SELECT COUNT([PhoneNumber]) FROM EmployeeDetail WHERE PhoneNumber = @PhoneNumber";
+                    string sqlCheck2 = "SELECT COUNT([Mail]) FROM EmployeeDetail WHERE Mail = @Mail";
 
-                var employeeDetail = await DbContext.EmployeeDetails
-                    .FirstOrDefaultAsync(ed => ed.EmployeeId == userID);
+                    int checkResult = await DataBase.QueryFirstAsync<int>(sqlCheck,
+                            new
+                            {
+                                PhoneNumber = userInput.PhoneNumber
+                            });
 
-                if (employeeDetail != null)
+                    int checkResult2 = await DataBase.QueryFirstAsync<int>(sqlCheck2,
+                        new
+                        {
+                            Mail = userInput.Mail
+                        });
+
+                    if (checkResult != 0)
+                    {
+                        return "電話號碼已存在!";
+                    }else if(checkResult2 != 0)
+                    {
+                        return "電子信箱已存在！";
+                    }
+                
+                    var employee = new Employee
+                    {
+                        EmployeeId = userInput.EmployeeId,
+                        IsActive = userInput.IsActive,
+                        Position = userInput.Position,
+                        PositionRole = userInput.PositionRole,
+                        HireDate = userInput.HireDate,
+                        ResignationDate = userInput.ResignationDate
+                    };
+
+                await DbContext.Employees.AddAsync(employee);
+                int affectedRows = await DbContext.SaveChangesAsync();
+                if (affectedRows == 0)
                 {
-                    // 實作新增邏輯
-                    await DbContext.SaveChangesAsync();
-                    return true;
+                    return "Employee表格建立失敗！";
                 }
-                else
+
+                try
                 {
-                    throw new Exception("找不到員工資料");
+                    byte[] photo = Convert.FromBase64String(userInput.EmployeePhoto);
+
+                    var employeeDetail = new EmployeeDetail
+                    {
+                        EmployeeId = userInput.EmployeeId,
+                        Department = userInput.Department,
+                        ImmediateSupervisor = (userInput.ImmediateSupervisor == "總經理" ? null: userInput.ImmediateSupervisor),
+                        EmployeePhoto = photo,
+                        EmployeeName = userInput.EmployeeName,
+                        PhoneNumber = userInput.PhoneNumber,
+                        Mail = userInput.Mail,
+                        Password = userInput.Password,
+                        Address = userInput.Address,
+                        Gender = userInput.Gender,
+                        BirthDate = userInput.BirthDate,
+                        EmergencyContact = userInput.EmergencyContact,
+                        EmergencyRelationship = userInput.EmergencyRelationship,
+                        EmergencyContactPhone = userInput.EmergencyContactPhone,
+                        AnnualLeave = (byte)userInput.AnnualLeave
+                    };
+
+                    await DbContext.EmployeeDetails.AddAsync(employeeDetail);
+                    affectedRows = await DbContext.SaveChangesAsync();
+                    if (affectedRows == 0)
+                    {
+                        return "EmployeeDetail表格建立失敗！";
+                    }
+                    return "員工檔案建立成功！";
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("EmployeeDetail表格更新失敗: " + ex.Message);
                 }
             }
+
             catch (Exception ex)
             {
-                throw new Exception("更新失敗: " + ex.Message);
+                throw new Exception("Employee表格更新失敗: " + ex.Message);
             }
         }
 
-        // 更新員工個人帳號資料
-        public async Task<IEnumerable<ProfileAccount>> GetAccountData()
+            // 更新員工個人帳號資料 的 GET & UPDATE
+        public async Task<IEnumerable<GetNewAccountEditData>> GetAccountData(string employeeId)
         {
             try
             {
-                string userID = UserRoleStore.UserID;
+                string userID = employeeId;
 
                 var employeesWithDetail = await DbContext.Employees
                     .Where(employee => employee.EmployeeId == userID)
                     .Join(DbContext.EmployeeDetails,
                     employee => employee.EmployeeId,
                     detail => detail.EmployeeId,
-                    (employee, detail) => new ProfileAccount
+                    (employee, detail) => new GetNewAccountEditData
                     {
-                        //photo = Convert.ToBase64String(detail.EmployeePhoto),
-                        //name = detail.EmployeeName,
-                        //employeeID = employee.EmployeeId,
-                        //phoneNumber = detail.PhoneNumber,
-                        //department = detail.Department,
-                        //position = employee.Position,
-                        //hireDate = employee.HireDate,
-                        //activestat = employee.IsActive
-                        //YearsBetween = (int)((employee.ResignationDate ?? DateTime.Now) - employee.HireDate).TotalDays / 365
+                        EmployeePhoto = Convert.ToBase64String(detail.EmployeePhoto),
+                        EmployeeName = detail.EmployeeName,
+                        Gender = detail.Gender,
+                        BirthDate = detail.BirthDate,
+                        PhoneNumber = detail.PhoneNumber,
+                        EmergencyContact = detail.EmergencyContact,
+                        EmergencyRelationship = detail.EmergencyRelationship,
+                        EmergencyContactPhone = detail.EmergencyContactPhone,
+                        HireDate = employee.HireDate,
+                        IsActive = employee.IsActive,
+                        EmployeeId = employee.EmployeeId,
+                        PositionRole = employee.PositionRole,
+                        Department = detail.Department,
+                        Position = employee.Position,
+                        ImmediateSupervisor = detail.ImmediateSupervisor,
+                        Address = detail.Address,
+                        Mail = detail.Mail,
+                        Password = detail.Password,
+                        ResignationDate = employee.ResignationDate
                     }).ToListAsync();
                 return employeesWithDetail;
             }
@@ -331,24 +404,107 @@ namespace Heldom_SYS.Service
             }
         }
 
-        public async Task<bool> UpdateAccount(ProfileAccount userInput)
+        public async Task<string> UpdateAccount(GetNewAccountEditData userInput)
         {
             try
             {
-                string userID = UserRoleStore.UserID;
+                string sql = "UPDATE Employee SET [IsActive] = @IsActive," +
+                    "[Position] = @Position," +
+                    "[PositionRole] = @PositionRole," +
+                    "[HireDate] = @HireDate," +
+                    "[ResignationDate] = @ResignationDate " +
+                    "WHERE EmployeeID = @EmployeeID";
 
-                var employeeDetail = await DbContext.EmployeeDetails
-                    .FirstOrDefaultAsync(ed => ed.EmployeeId == userID);
+                string sql2 = "UPDATE EmployeeDetail SET [Department] = @Department," +
+                    "[ImmediateSupervisor] = @ImmediateSupervisor," +
+                    "[EmployeePhoto] = @EmployeePhoto," +
+                    "[EmployeeName] = @EmployeeName," +
+                    "[PhoneNumber] = @PhoneNumber," +
+                    "[Mail] = @Mail," +
+                    "[Password] = @Password," +
+                    "[Address] = @Address," +
+                    "[Gender] = @Gender," +
+                    "[BirthDate] = @BirthDate," +
+                    "[EmergencyContact] = @EmergencyContact," +
+                    "[EmergencyRelationship] = @EmergencyRelationship," +
+                    "[EmergencyContactPhone] = @EmergencyContactPhone," +
+                    "[AnnualLeave] = @AnnualLeave " +
+                    "WHERE EmployeeID = @EmployeeID";
 
-                if (employeeDetail != null)
+                string sqlCheck = "SELECT COUNT([PhoneNumber]) FROM EmployeeDetail WHERE PhoneNumber = @PhoneNumber and EmployeeID NOT IN (@EmployeeID)";
+                string sqlCheck2 = "SELECT COUNT([Mail]) FROM EmployeeDetail WHERE Mail = @Mail and EmployeeID NOT IN (@EmployeeID)";
+
+                try
                 {
-                    // 實作新增邏輯
-                    await DbContext.SaveChangesAsync();
-                    return true;
+                    int checkResult = await DataBase.QueryFirstAsync<int>(sqlCheck,
+                        new
+                        {
+                            PhoneNumber = userInput.PhoneNumber,
+                            EmployeeID = userInput.EmployeeId
+                        });
+
+                    int checkResult2 = await DataBase.QueryFirstAsync<int>(sqlCheck2,
+                        new
+                        {
+                            Mail = userInput.Mail,
+                            EmployeeID = userInput.EmployeeId
+                        });
+
+                    if (checkResult != 0)
+                    {
+                        return "電話號碼已存在!";
+                    }
+                    else if (checkResult2 != 0)
+                    {
+                        return "電子信箱已存在！";
+                    }
+
+                    var rowsAffected = await DataBase.ExecuteAsync(sql,
+                        new
+                        {
+                            IsActive = userInput.IsActive,
+                            Position = userInput.Position,
+                            PositionRole = userInput.PositionRole,
+                            HireDate = userInput.HireDate,
+                            ResignationDate = userInput.ResignationDate,
+                            EmployeeID = userInput.EmployeeId
+                        });
+
+                    if (rowsAffected == 0)
+                    {
+                        return "Employee表格更新失敗！";
+                    }
+
+                    rowsAffected = await DataBase.ExecuteAsync(sql2,
+                        new
+                        {
+                            Department = userInput.Department,
+                            ImmediateSupervisor = userInput.ImmediateSupervisor,
+                            EmployeePhoto = Convert.FromBase64String(userInput.EmployeePhoto),
+                            EmployeeName = userInput.EmployeeName,
+                            PhoneNumber = userInput.PhoneNumber,
+                            Mail = userInput.Mail,
+                            Password = userInput.Password,
+                            Address = userInput.Address,
+                            Gender = userInput.Gender,
+                            BirthDate = userInput.BirthDate,
+                            EmergencyContact = userInput.EmergencyContact,
+                            EmergencyRelationship = userInput.EmergencyRelationship,
+                            EmergencyContactPhone = userInput.EmergencyContactPhone,
+                            AnnualLeave = userInput.AnnualLeave,
+                            EmployeeID = userInput.EmployeeId
+                        });
+
+                    if (rowsAffected == 0)
+                    {
+                        return "EmployeeDetail表格更新失敗！";
+                    }
+
+                    return "資料更新完畢！";
                 }
-                else
+                catch (Exception ex)
                 {
-                    throw new Exception("找不到員工資料");
+                    throw new Exception("資料取得失敗: " + ex.Message);
                 }
             }
             catch (Exception ex)

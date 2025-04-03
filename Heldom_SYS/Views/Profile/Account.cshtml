@@ -69,9 +69,9 @@
                     <tr>
                         <td>1</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -81,9 +81,9 @@
                     <tr>
                         <td>2</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -93,9 +93,9 @@
                     <tr>
                         <td>3</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -105,9 +105,9 @@
                     <tr>
                         <td>4</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -117,9 +117,9 @@
                     <tr>
                         <td>5</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -129,9 +129,9 @@
                     <tr>
                         <td>6</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -141,9 +141,9 @@
                     <tr>
                         <td>7</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -153,9 +153,9 @@
                     <tr>
                         <td>8</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -165,9 +165,9 @@
                     <tr>
                         <td>9</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -177,9 +177,9 @@
                     <tr>
                         <td>10</td>
                         <td><img class="employeeImg" src="" alt="員工頭貼" /></td>
-                        <td>員姓名</td>
-                        <td>ABC-123456</td>
-                        <td>0919-12345</td>
+                        <td>員工姓名</td>
+                        <td>A00000</td>
+                        <td>0919-123-456</td>
                         <td>管理部</td>
                         <td>現場主管</td>
                         <td>2012/02/01</td>
@@ -199,17 +199,35 @@
     let currentPage = 1;
     let totalPage = 1;
     let apiLoading = 0;
+    let options = {currentPage:currentPage.toString(),};
     document.addEventListener('DOMContentLoaded', function async () {
 
         addPageButton();
 
-        setTable();
-        console.log(totalPage);
+        setTable(options);
+        // console.log(totalPage);
     });
 
     document.getElementById("searchButton").addEventListener("click", function() {
         currentPage = 1;
-        setTable();
+        options.currentPage = currentPage.toString();
+
+        if($("#departmentSelect").val()){
+            options.department = $("#departmentSelect").val();
+        }
+
+        if($("#statusSelect").val()){
+            options.IsActive = $("#statusSelect").val();
+        }
+
+        if($("#employeeId").val()){
+            options.employeeId = $("#employeeId").val();
+        }
+
+        if($("#employeeName").val()){
+            options.employeeName = $("#employeeName").val();
+        }
+        setTable(options);
     });
 
     if("@ViewBag.role" == "A"){
@@ -220,30 +238,30 @@
             </button>
             `;
         document.getElementById("addButton").addEventListener("click", function() {
-            location.href="/Profile/NewAccount";
+            location.href="/profile/NewAccount";
         });
     }
 
-    let setTable = async() =>{
+    let setTable = async(options) =>{
         if(apiLoading){
             return;
         }
         apiLoading = 1;
-        let data = await getAccounts();
+        let data = await getAccounts(options);
         let tableData = data.data;
         console.log(tableData);
 
         const tableHeader = document.getElementById("tableHeader");
         tableHeader.innerHTML = `
-            <th>ID</th>
+            <th>序號</th>
             <th>照片</th>
-            <th>姓名</th>
-            <th>工號</th>
-            <th>電話</th>
+            <th>員工姓名</th>
+            <th>員工編號</th>
+            <th>聯絡電話</th>
             <th>部門</th>
-            <th>職位</th>
-            <th>入職日期</th>
-            <th>狀態</th>
+            <th>職稱</th>
+            <th>到職日</th>
+            <th>啟用狀態</th>
         `;
 
         if("@ViewBag.role" == "A"){
@@ -266,7 +284,7 @@
             <td><img class="employeeImg" src="${row.employeePhoto}" alt="員工頭貼" /></td>
             <td>${row.employeeName}</td>
             <td>${row.employeeId}</td>
-            <td>${row.phoneNumber}</td>
+            <td>${row.phoneNumber.slice(0,4)+"-"+row.phoneNumber.slice(4,7)+"-"+row.phoneNumber.slice(7)}</td>
             <td>${row.department}</td>
             <td>${row.position}</td>
             <td>${hireDate}</td>
@@ -288,28 +306,8 @@
     };
 
 
-    function getAccounts(){
-
-        let options = {
-            currentPage:currentPage.toString(),
-        }
-
-        if($("#departmentSelect").val()){
-            options.department = $("#departmentSelect").val();
-        }
-
-        if($("#statusSelect").val()){
-            options.IsActive = $("#statusSelect").val();
-        }
-
-        if($("#employeeId").val()){
-            options.employeeId = $("#employeeId").val();
-        }
-
-        if($("#employeeName").val()){
-            options.employeeName = $("#employeeName").val();
-        }
-
+    function getAccounts(options){
+        console.log('傳送參數:', options); // 驗證傳送內容
         return new Promise((resolve, reject) => {
             $.ajax({
                 url: "/Profile/GetAccountsData",
@@ -368,16 +366,18 @@
         $('#Last').click(function() {
             if (currentPage > 1) {
                 currentPage--;
+                options.currentPage = currentPage.toString();
                 updatePageSelection();
-                setTable();
+                setTable(options);
             }
         });
 
         $('#Next').click(function() {
             if (currentPage < totalPage) {
                 currentPage++;
+                options.currentPage = currentPage.toString();
                 updatePageSelection();
-                setTable();
+                setTable(options);
             }
         });
 
@@ -385,8 +385,9 @@
             const newPage = parseInt($(this).attr('id').replace('page_circle', ''));
             if (newPage !== currentPage) {
                 currentPage = newPage;
+                options.currentPage = currentPage.toString();
                 updatePageSelection();
-                setTable();
+                setTable(options);
             }
         });
     };

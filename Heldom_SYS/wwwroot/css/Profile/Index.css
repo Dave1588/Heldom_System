@@ -1,4 +1,7 @@
-﻿
+﻿.main_wrap {
+    width: 1040px;
+    height: 458px;
+}
 .profile-card {
     background: white;
     display: flex;

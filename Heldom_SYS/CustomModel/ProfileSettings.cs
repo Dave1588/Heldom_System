@@ -11,4 +11,12 @@
         public string emergencyContact { get; set; } = null!;
         public string emergencyContactPhone { get; set; } = null!;
     }
+
+    public class EmployeeDetailUpdateModel
+    {
+        public string phoneNumber { get; set; } = null!;
+        public string address { get; set; } = null!;
+        public string emergencyContact { get; set; } = null!;
+        public string emergencyContactPhone { get; set; } = null!;
+    }
 }

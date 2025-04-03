@@ -2,67 +2,78 @@
 	<link href="~/css/dashboard/dashboard.css" rel="stylesheet" />
     <script src="~/js/dashboard.js"></script>
 
+@* 上線前需刪除 *@
+@* @ViewBag.userId @ViewBag.Role @ViewBag.userName *@
+
+<body data-role=@ViewBag.Role data-ID=@ViewBag.userId>
+
+    <!-- 這裡的角色應由後端動態生成 -->
+
 <div class="dashboard-container">
     <!-- 現場作業人員 -->
     @* <div class=""> *@
         <div class="card worker-card">
             <h3 class="db-title-l"><i class="fas fa-users"></i> 現場作業人員</h3>
-        <h1 class="worker-count" id="openPopupTrigger">123 <span class="color-gray-light">人</span></h1>
+            <div id="openPopupTrigger" class="pointer">
+                <span class="worker-count">載入中...</span><span class="color-gray-light">人</span>
+        </div>
+
             <h5 class="db-title-s">人員狀態</h5>
 
             <div class="worker-list border-radius">
                 <div class="worker-area">
                     <h3 class="worker-title">水電</h3>
-                    <h3 class="worker-area-count">213<span class="color-gray-light">人</span></h3>
+                <h3 class="worker-area-count" id="C01Num">213<span class="color-gray-light">人</span></h3>
                 </div>
                 <div class="worker-area">
                     <h3 class="worker-title">板模</h3>
-                    <h3 class="worker-area-count">5<span class="color-gray-light">人</span></h3>
+                <h3 class="worker-area-count" id="C02Num">5<span class="color-gray-light">人</span></h3>
                 </div>
                 <div class="worker-area">
                     <h3 class="worker-title">泥作</h3>
-                    <h3 class="worker-area-count">4<span class="color-gray-light">人</span></h3>
+                <h3 class="worker-area-count" id="C03Num">4<span class="color-gray-light">人</span></h3>
                 </div>
                 <div class="worker-area">
                     <h3 class="worker-title">起重</h3>
-                    <h3 class="worker-area-count">2<span class="color-gray-light">人</span></h3>
+                <h3 class="worker-area-count" id="C04Num">2<span class="color-gray-light">人</span></h3>
                 </div>                
                 <div class="worker-area">
                     <h3 class="worker-title">焊接</h3>
-                    <h3 class="worker-area-count">2<span class="color-gray-light">人</span></h3>
+                <h3 class="worker-area-count" id="C05Num">2<span class="color-gray-light">人</span></h3>
                 </div>
                 <div class="worker-area">
                     <h3 class="worker-title">其他</h3>
-                    <h3 class="worker-area-count">1<span class="color-gray-light">人</span></h3>
+                <h3 class="worker-area-count" id="othersNum">1<span class="color-gray-light">人</span></h3>
                 </div>
             </div>
 
         @*  臨時工入場待核可  *@
-        <div class="card border-left-warning shadow h-100 py-2 card-hover" id="openPopupTrigger2">
+            <div class="card border-left-warning shadow h-100 py-2 card-hover pointer" id="openPopupTrigger2">
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <h5 class="text-xs font-weight-bold text-uppercase mb-1 color-menu ">臨時工入場待核可</h5> 
-                        <div class="mb-0"><h5 class="db-title-l padding-20-0">18</h5></div>
+                        <div class="mb-0"><h5 class="db-title-l padding-20-0 approvingTempNum">...</h5></div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-user-plus fa-2x text-gray-300"></i>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
 
         <!-- 異常回報通知 -->
         <h3 class="db-title-l padding-20-0"><i class="fas fa-exclamation-circle"></i> 異常回報通知</h3>
-        <div class="card border-left-warning shadow h-100 py-2 card-hover" id="openPopupTrigger3">
+            <div class="card border-left-warning shadow h-100 py-2 card-hover pointer" id="openPopupTrigger3">
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <h5 class="text-xs font-weight-bold text-uppercase mb-1 color-menu ">
                             未處理異常
                         </h5>
-                        <div class="mb-0"><h5 class="db-title-l padding-20-0">18</h5></div>
+                            <div class="mb-0"><h5 id="issuesNum1" class="db-title-l padding-20-0 issuesNum">...</h5></div>
                     </div>
+                        @* <div class="mb-0"><h5 class="db-title-l padding-20-0 issuesNum">18</h5></div> </div> *@
                     <div class="col-auto">
                         <i class="fas fa-comment fa-2x text-gray-300"></i>
                     </div>
@@ -158,11 +169,12 @@
                     <p class="db-title-l">現場作業人員</p>
                 </div>
                 <div class="peopleNumShow">
-                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue">123</h1></div>
-                    <div class="peopleNum2"><p class="db-title-s peopleNum3">人</p></div>
+                    @* <span class="worker-count" id="activeWorkingCount">載入中...</span><span class="color-gray-light">人</span> *@
+                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue worker-count">載入中...</h1></div>
+                    <div class="peopleNum2"><p class="db-title-s peopleNum3">人</p></div> 
                 </div>
                 <div>
-                    <p class="db-title-l">人員出入資訊</p>
+                    <p class="db-title-l">人員出入狀態</p>
                 </div>
                 <div class="txt-table">
                     <table class="table table-striped txt-center table-hover">
@@ -191,11 +203,13 @@
                     </table>
                 </div>
             </div>
-            <div class="pagenav-container">
-                <div class="pagenav">
-                    <!-- 頁面導航將由JavaScript動態生成 -->
-                </div>
-            </div>
+            @* <div class="pagenav-container"> *@
+            @*     <div class="pagenav"> *@
+            @*         <!-- 頁面導航將由JavaScript動態生成 --> *@
+            @*     </div> *@
+            @* </div> *@
+            <!-- 分頁 -->
+            <div id="paginationPopup1" class="end_area obj-center" style="gap:10px;"></div>
         </div>
     </div>
 </div>
@@ -208,23 +222,22 @@
         </div>
         <div class="popup-body">
             <div class="content-area">
-                <div>
-                    <p class="db-title-l">臨時工入場待核可</p>
-                </div>
-                <div class="peopleNumShow">
-                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue">123</h1></div>
-                    <div class="peopleNum2"><p class="db-title-s peopleNum3">人</p></div>
-                </div>
-                @* <div><p class="db-title-l">人員出入資訊</p></div> *@
+                @* <div> *@
+                @*     <p class="db-title-l">臨時工入場待核可</p> *@
+                @* </div> *@
+                @* <div class="peopleNumShow"> *@
+                @*     <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue approvingTempNum">...</h1></div> *@
+                @*     <div class="peopleNum2"><p class="db-title-s peopleNum3">人</p></div> *@
+                @* </div> *@
+
                 <div class="txt-table">
                     <table class="table table-striped txt-center table-hover">
                         <thead>
                             <tr>
-                                <th scope="col">核可</th>
+                                <th scope="col"><input type="checkbox" id="selectAll"></th>
                                 <th scope="col">序號</th>
                                 <th scope="col">員工姓名</th>
                                 <th scope="col">員工電話</th>
-                                <th scope="col">上班簽到</th>
                                 <th scope="col">廠商名稱</th>
                             </tr>
                         </thead>
@@ -234,14 +247,23 @@
                                 <td>1</td>
                                 <td>員姓名</td>
                                 <td>0912-3456789</td>
-                                <td>09:18</td>
                                 <td>達威起重機械</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+
+            <!-- 核可按鈕 -->
+            <button type="button" id="approveButton" class="btn btn-primary"><p>核可</p></button>
+                                                                                              
+            @* <button id="approveButton" class="btn btn-primary">核可</button> *@
+
             <div class="pagenav-container">
+
+                <!-- 分頁區塊 -->
+                <div id="pagination" class="end_area obj-center"></div>
+
                 <div class="pagenav">
                     <!-- 頁面導航將由JavaScript動態生成 -->
                 </div>
@@ -257,53 +279,44 @@
             <button class="close txt-right" aria-label="關閉彈窗"><i class="fas fa-times"></i></button>
         </div>
         <div class="popup-body">
-            <div class="content-area">
-                <div>
-                    <p class="db-title-l">未處理異常</p>
-                </div>
-                <div class="peopleNumShow">
-                    <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue">123</h1></div>
-                    <div class="peopleNum2"><p class="db-title-s peopleNum3">件</p></div>
-                </div>
-                @* <div><p class="db-title-l">未處理異常</p></div> *@
+                <div class="content-area">
+                @* <div> *@
+                @*     <p class="db-title-l">未處理異常</p> *@
+                @* </div> *@
+                @* <div class="peopleNumShow"> *@
+                @*         <div class="peopleNum"><h1 class="bold txt-right txtNumber color-blue issuesNum">...</h1></div> *@
+                @*     <div class="peopleNum2"><p class="db-title-s peopleNum3">件</p></div> *@
+                @* </div> *@
+                @* 表格 *@
                 <div class="txt-table">
                     <table class="table table-striped txt-center table-hover">
                         <thead>
                             <tr>
+                                <th scope="col">序號</th>
                                 <th scope="col">事件編號</th>
-                                <th scope="col">狀態</th>
                                 <th scope="col">事件類型</th>
                                 <th scope="col">事件標題</th>
                                 <th scope="col">開始時間</th>
-                                <th scope="col">結束時間</th>
+                                <th scope="col">上傳時間</th>
                                 <th scope="col">紀錄員工</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><i class="fas fa-circle color-blue"></i></td>
-                                <td>工地安全</td>
-                                <td>高空墜落</td>
-                                <td>09:18</td>
-                                <td> </td>
-                                <td>王大華</td>
-                            </tr>
-                        </tbody>
+                        <tbody><!-- 這裡 JavaScript 會動態填入資料 --></tbody>
                     </table>
                 </div>
-            </div>
-            <div class="pagenav-container">
-                <div class="pagenav">
-                    <!-- 頁面導航將由JavaScript動態生成 -->
                 </div>
             </div>
+            <!-- 分頁 -->
+            <div id="paginationPopup3" class="end_area obj-center" style="gap:10px;"></div>
+
         </div>
     </div>
-</div>
+
+
+</body>
 
 
 <script src="~/js/data.js"></script>
 <script src="~/js/cctv.js"></script>
 <script src="~/js/dcamera.js"></script>
-<script  src="~/js/dasshboard/flash.js"></script>
+@* <script  src="~/js/dasshboard/flash.js"></script> *@

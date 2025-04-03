@@ -7,7 +7,7 @@
 <div class="main_wrap border-radius box-shadow">
     <h4 class="bold">新增異常回報紀錄</h4>
     <div class="report-display">
-        
+
         <div class="input_wrap">
             <div class="text-wrap">
                 <p class="color-gray-dark bold p-width">事件標題</p>
@@ -43,13 +43,16 @@
             <input type="datetime-local" class="form-control" id="startDate">
         </div>
 
-        <div class="input_wrap">
-            <div class="text-wrap">
-                <p class="color-gray-dark bold p-width">結束時間</p>
+        @if (!(ViewBag.Motion == "add" && ViewBag.Type == "Unusual"))
+        {
+            <div class="input_wrap">
+                <div class="text-wrap">
+                    <p class="color-gray-dark bold p-width">結束時間</p>
+                </div>
+                <input type="datetime-local" class="form-control" id="endDate">
             </div>
-            <input type="datetime-local" class="form-control" id="endDate">
-        </div>
-
+        }
+       
         <div class="explain_wrap">
             <div class="text-wrap">
                 <p maxlength="50" class="color-gray-dark bold p-width">事件描述</p>
@@ -63,8 +66,23 @@
             </div>
 
         </div>
+        @if (!(ViewBag.Motion == "add" && ViewBag.Type == "Unusual"))
+        {
+            <div class="status_wrap">
+                <div class="text-wrap">
+                    <p class="color-gray-dark bold p-width">事件狀態</p>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <p class="form-check-label" id="status-word" for="flexSwitchCheckDefault">處理中/完成</p>
+                </div>
+            </div>
+        }
+       
 
     </div>
+
     @if (!(ViewBag.Motion == "add" && ViewBag.Type == "Unusual"))
     {
         <div class="track-display">
@@ -119,6 +137,7 @@
     let fileList = []
     let fileListTrack = []
     let maxSize = 1024 * 1024 * 3 // 3M
+    let IncidentStatus = false
     // 回報區塊
     let fileDiv = `
         <div class="file-area obj-center chose-temp">
@@ -128,15 +147,35 @@
 
     function AddReply() {
         let reply = $("#reply").val();
+        let StartTime = $("#startDate").val()
+        let EndTime = $("#endDate").val()
 
         if(!reply || !AccidentId){
+            alert("回復為空值")
             return false
         }
 
+        if (new Date(StartTime).getTime() > new Date(EndTime).getTime()) {
+            alert("結束時間早於開始時間")
+            return false
+        }
 
         let formData = new FormData();
         formData.append("Reply", reply);
         formData.append("AccidentId", AccidentId);
+
+        if(IncidentStatus){
+            formData.append("Status", "1");
+        }else{
+            formData.append("Status", "0");
+        }
+
+        if(EndTime){
+            let jsDateStr = EndTime;
+            let jsDate = new Date(jsDateStr);
+            let formattedDate = jsDate.toISOString().slice(0, 19).replace("T", " ");
+            formData.append("EndTime", formattedDate);
+        }
 
         for(let i = 0;i < fileListTrack.length;i++){
             formData.append("Files", fileListTrack[i]);
@@ -187,33 +226,17 @@
         let category = $("#categorySelect option:selected").text()
         let description = $("#description").val()
         let StartTime = $("#startDate").val()
-        let EndTime = $("#endDate").val()
 
         if(!title || !description || !StartTime){
+            alert("標題|描述|開始時間，不能空值")
             return false
         }
-
-
-        if (new Date(StartTime).getTime() > new Date(EndTime).getTime()) {
-            console.log("結束時間早於開始時間");
-            return false
-
-        }
-      
 
         let formData = new FormData();
         formData.append("AccidentTitle", title);
         formData.append("AccidentType", category);
         formData.append("Description", description);
         formData.append("StartTime", new Date(StartTime).toISOString().slice(0, 19).replace("T", " "));
-
-        if(EndTime){
-            let jsDateStr = EndTime;
-            let jsDate = new Date(jsDateStr);
-            let formattedDate = jsDate.toISOString().slice(0, 19).replace("T", " ");
-            formData.append("EndTime", formattedDate);
-        }
-
         formData.append("Id", ID);
 
         for(let i = 0;i < fileList.length;i++){
@@ -317,6 +340,7 @@
             }
         });
     }
+
     // 讀取詳細資料
     let setDetailData =  async() => {
         let detail = await GetDetail()
@@ -378,11 +402,47 @@
         }
         listenImg()
 
+        // 事件狀態設定
+
+        IncidentStatus = detail.data.IncidentStatus
+        if(IncidentStatus){
+            $(".form-check-input").click()
+            // 爛方法
+            setTimeout(() => {
+                $("#status-word").text("完成")
+                IncidentStatus = true
+            }, 100);
+        }
+
+        changeStatus(IncidentStatus)
+       
+    }
+
+     // 事件狀態設定
+    $(".form-check-input").on("click", function(e) {
+        e.stopPropagation()
+        IncidentStatus = !IncidentStatus
+        changeStatus()
+    });
+
+    let changeStatus = () => {
+        if(Motion == "add" && Type == "Track"){
+            $("#flexSwitchCheckChecked").prop("disabled", false)
+        }else{
+            $("#flexSwitchCheckChecked").prop("disabled", true)
+        }
+
+        if(IncidentStatus){
+            $("#status-word").text("完成")
+        }else{
+            $("#status-word").text("處理中")
+        }
+
     }
 
 
     $(document).ready(async function() {
-         if((Motion == "select") || (Motion == "add" && Type == "Track")){
+        if((Motion == "select") || (Motion == "add" && Type == "Track")){
             await setDetailData()
         }
 
@@ -402,6 +462,7 @@
             $.each(fileChoseList, function(index, item) {
                 if(!item.type.startsWith("image/") || !(item.size < maxSize)){
                     check = false
+                    alert("不是圖片檔|檔案大小大於3MB")
                     return
                 }
             });
@@ -431,7 +492,7 @@
                     reader.readAsDataURL(file);
                 });
             }else{
-                console.log("檔案格式不正確 || 超過3M || 超過5個");
+                alert("檔案格式不正確 || 超過3M || 超過5個")
             }
         });
 
@@ -449,6 +510,7 @@
             $.each(fileChoseList, function(index, item) {
                 if(!item.type.startsWith("image/") || !(item.size < maxSize)){
                     check = false
+                    alert("不是圖片檔|檔案大小大於3MB")
                     return
                 }
             });
@@ -480,7 +542,7 @@
                     reader.readAsDataURL(file);
                 });
             }else{
-                console.log("檔案格式不正確 || 超過3M || 超過5個");
+                alert("檔案格式不正確 || 超過3M || 超過5個")
             }
         });
 
@@ -495,6 +557,8 @@
             $(".report-display .input_wrap input").prop('disabled', true)
             $(".report-display .input_wrap select").prop('disabled', true)
             $(".report-display .explain_wrap textarea").prop('disabled', true)
+            $("#endDate").prop('disabled', false)
+            
         }
 
         //回上頁
@@ -513,9 +577,9 @@
             }
 
         });
-        
 
-        listenFile()
+    
+            listenFile()
         listenFileTrack()
 
  

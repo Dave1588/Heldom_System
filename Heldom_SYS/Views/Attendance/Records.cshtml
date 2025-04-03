@@ -1,6 +1,6 @@
 ﻿@model Heldom_SYS.Controllers.AttendanceController.AttendanceViewModel
 @* 測試用 *@
-@ViewBag.userId @ViewBag.Role @ViewBag.userName
+@* @ViewBag.userId @ViewBag.Role @ViewBag.userName *@
 
 @* stylesheet *@
 <link rel="stylesheet" href="~/css/Attendance/Records.css" asp-append-version="true" />
@@ -124,7 +124,7 @@
                     <p class="bold color-white">上班簽到</p>
                 </button>
                 <!-- 下班打卡 -->
-                <button class="clock-button obj-center" onclick="handleCheckOut('@Model.AttendanceRecords.FirstOrDefault()?.AttendanceId')">
+                <button class="clock-button obj-center" onclick="handleCheckOut('@Model?.AttendanceRecords?.FirstOrDefault()?.AttendanceId')">
                     <p class="bold color-white">下班簽退</p>
                 </button>
             </div>
@@ -228,17 +228,17 @@
 </script>
 
 <script>
-    const clockData = @Html.Raw(Json.Serialize(Model.AttendanceRecords.Select(record => new
+    const clockData = @Html.Raw(Json.Serialize(Model?.AttendanceRecords?.Select(record => new
         {
-            attendanceId = record.AttendanceId, // 簽退功能-依靠值
+            attendanceId = record.AttendanceId,
             workDate = record.WorkDate.ToString("yyyy/MM/dd"),
             status = record.CheckOutTime.HasValue,
             checkInTime = record.CheckInTime.ToString("HH:mm"),
             checkOutTime = record.CheckOutTime?.ToString("HH:mm") ?? "未簽退",
-            totalHours = record.CheckOutTime.HasValue ? (record.CheckOutTime.Value - record.CheckInTime).TotalHours.ToString("F1") : "0"
+            totalHours = record.CheckOutTime.HasValue ? Math.Max(0, (record.CheckOutTime.Value - record.CheckInTime).TotalHours - 1).ToString("F0") : "0"
         })));
 
-    const holidayData = @Html.Raw(Json.Serialize(Model.LeaveRecords.Select(leave => new
+    const holidayData = @Html.Raw(Json.Serialize(Model?.LeaveRecords?.Select(leave => new
         {
             startDate = leave.StartTime.ToString("yyyy/MM/dd"),
             startTime = leave.StartTime.ToString("HH:mm"),

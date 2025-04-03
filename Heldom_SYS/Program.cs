@@ -8,6 +8,7 @@ using Heldom_SYS.Interface;
 using Heldom_SYS.Service;
 using Heldom_SYS.Models;
 using Microsoft.Data.SqlClient;
+using Heldom_SYS.Filter;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +41,7 @@ builder.Services.AddSession(); // 啟用 Session
 
 builder.Services.AddScoped<IAccidentService, AccidentService>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
+builder.Services.AddScoped<IAttendanceExcelService, AttendanceExcelService>();
 
 // 添加身份驗證
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
@@ -68,8 +70,13 @@ builder.Services.AddScoped<SqlConnection>(provider => new SqlConnection(finalCon
 
 // 資料庫連線 FEcore(快取)   
 builder.Services.AddDbContext<ConstructionDbContext>(
-            options => options.UseSqlServer(builder.Configuration.GetConnectionString($" {finalConnection}")));
+            options => options.UseSqlServer(finalConnection));
 
+// user驗證
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<UserFilter>();
+});
 
 var app = builder.Build();
 
